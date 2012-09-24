@@ -2,7 +2,9 @@
 
 namespace Bioteawebapi\Controllers;
 
-
+/**
+ * URL is: /topics
+ */
 class Topics extends Abstracts\SparqlClientController
 {
     public function run($topic = null)
