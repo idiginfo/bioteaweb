@@ -12,8 +12,10 @@
         "symfony/validator": "2.1.*",
         "symfony/monolog-bridge": "2.1.*",
         "symfony/class-loader": "2.1.*",
+        "symfony/console": "2.1.*",
         "monolog/monolog": ">=1.0.0,<1.2-dev",
         "friendsofsymfony/rest": "0.8.x-dev",
-        "njh/easyrdf": "dev-master"
+        "njh/easyrdf": "dev-master",
+        "solarium/solarium": "2.4.0"
     }
  }

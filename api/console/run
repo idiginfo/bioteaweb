@@ -1,0 +1,49 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Biotea API
+ *
+ * @author Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Florida State University - All Rights Reserved
+ */
+
+/**
+ * @file Console File
+ */
+
+// ------------------------------------------------------------------
+
+/*
+ * Uses
+ */
+use FOS\Rest\Util\FormatNegotiator;
+use Symfony\Component\Console\Application;
+
+// ------------------------------------------------------------------
+
+/*
+ * Bootstrap
+ */
+require(__DIR__ . '/../src/bootstrap.php');
+
+// ------------------------------------------------------------------
+
+/*
+ * CLI Specific Libraries
+ */
+
+//Libraries
+$app['consoleapp'] = new Application();
+
+//Commands
+$app['consoleapp']->add(new Bioteawebapi\Commands\Test($app));
+
+// ------------------------------------------------------------------
+
+/*
+ * Run
+ */
+$app['consoleapp']->run();
+
+/* EOF: run.php */

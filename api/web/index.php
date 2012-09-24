@@ -16,43 +16,23 @@
 /*
  * Uses
  */
-use Silex\Application;
-use Symfony\Component\HttpFoundation\Request;
 use FOS\Rest\Util\FormatNegotiator;
-use Symfony\Component\ClassLoader\UniversalClassLoader;
 
 // ------------------------------------------------------------------
 
 /*
  * Bootstrap
  */
-
-//BASEPATH
-define('BASEPATH', realpath(__DIR__ . '/../'));
-
-//Autoloader
-require(BASEPATH . '/vendor/autoload.php');
-
-//Setup Classloader
-$loader = new UniversalClassLoader();
-$loader->registerNamespace('Bioteawebapi', BASEPATH . '/src');
-$loader->registerPrefix('EasyRdf', BASEPATH . '/vendor/njh/easyrdf/lib');
-$loader->register();
-
-//EasyRDF Lunacy
-set_include_path(get_include_path() . PATH_SEPARATOR . BASEPATH . '/vendor/njh/easyrdf/lib');
+require(__DIR__ . '/../src/bootstrap.php');
 
 // ------------------------------------------------------------------
 
 /*
- * Load Silex
+ * Web Specific Libraries
  */
-$app = new Application();
 
 //Libraries
-$app['sparql_url']        = 'http://biotea.idiginfo.org/sparql';
-$app['sparql_client']     = new EasyRdf_Sparql_Client($app['sparql_url']);
-$app['fosrest']           = new FormatNegotiator();
+$app['fosrest'] = new FormatNegotiator();
 
 //Controllers
 $app['front_controller']  = new Bioteawebapi\Controllers\Front($app);
