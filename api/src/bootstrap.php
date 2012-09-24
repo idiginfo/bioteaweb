@@ -42,6 +42,8 @@ $loader->register();
 //EasyRDF Lunacy
 set_include_path(get_include_path() . PATH_SEPARATOR . BASEPATH . '/vendor/njh/easyrdf/lib');
 
+//Solarium 
+
 // ------------------------------------------------------------------
 
 /*
