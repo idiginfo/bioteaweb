@@ -45,10 +45,13 @@ class SolrIndexDocument
      * Conforms to Solarium requirement that the constructor accept
      * a parameter (array) representing the class proprties
      *
-     * @param array $params 
+     * @param object|array $params 
      */
     public function __construct($params = array())
     {
+        //Convert it to an array if it is an object
+        $params = (array) $params;
+
         //Set the parameters per Solarium requirements
         foreach($params as $param => $value)
         {

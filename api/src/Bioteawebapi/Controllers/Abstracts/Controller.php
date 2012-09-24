@@ -21,7 +21,7 @@ abstract class Controller
     /**
      * @var Silex\Application
      */
-    private $app;
+    protected $app;
 
     // --------------------------------------------------------------
 
