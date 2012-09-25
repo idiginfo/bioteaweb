@@ -19,7 +19,7 @@
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\ClassLoader\UniversalClassLoader;
-use Bioteawebapi\Services\SolrIndexDocumentManager;
+use Bioteawebapi\Services\SolrClient;
 use Silex\Application;
 
 // ------------------------------------------------------------------
@@ -59,12 +59,13 @@ $app = new Application();
  */
 
 //RDF SPARQL Client
-$app['sparql_url']        = 'http://biotea.idiginfo.org/sparql';
-$app['sparql_client']     = new EasyRdf_Sparql_Client($app['sparql_url']);
+// $app['sparql_url']        = 'http://biotea.idiginfo.org/sparql';
+// $app['sparql_client']     = new EasyRdf_Sparql_Client($app['sparql_url']);
+
 
 //SOLR Client
 $app['solr_config'] = array('adapteroptions' => array('host' => '127.0.0.1', 'port' => 8080, 'path' => '/solr/'));
-$app['solr_client'] = new SolrIndexDocumentManager(new Solarium_Client($app['solr_config']));
+$app['solr_client'] = new SolrClient(new Solarium_Client($app['solr_config']));
 
 // ------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bioteawebapi\Controllers\Abstracts;
+namespace Bioteawebapi\Controllers;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Response;
@@ -40,15 +40,6 @@ abstract class Controller
         //Register error controller
         $this->app->error(array($this, 'handleError'));
     }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Run Abstract
-     *
-     * @return object|array  That can be encoded as JSON
-     */
-    public abstract function run();
 
     // --------------------------------------------------------------
 

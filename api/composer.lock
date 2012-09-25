@@ -75,7 +75,7 @@
             "suggest": {
                 "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server"
             },
-            "time": "2012-04-24 12:27:40",
+            "time": "2012-04-24 16:27:40",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -107,18 +107,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/njh/easyrdf.git",
-                "reference": "d9495923e1d4dc54f98d500c6cee2708cea97ad9"
+                "reference": "b29cbb1bb0a104442f909d0f565c602c3043a42f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/njh/easyrdf/zipball/d9495923e1d4dc54f98d500c6cee2708cea97ad9",
-                "reference": "d9495923e1d4dc54f98d500c6cee2708cea97ad9",
+                "url": "https://github.com/njh/easyrdf/zipball/b29cbb1bb0a104442f909d0f565c602c3043a42f",
+                "reference": "b29cbb1bb0a104442f909d0f565c602c3043a42f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.8"
             },
-            "time": "1348259968",
+            "time": "1348524796",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -286,7 +286,7 @@
             "require": {
                 "php": ">=5.2.0"
             },
-            "time": "2012-04-16 11:31:52",
+            "time": "2012-04-16 15:31:52",
             "type": "library",
             "installation-source": "dist",
             "autoload": {

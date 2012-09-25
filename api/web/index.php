@@ -36,22 +36,16 @@ $app['fosrest'] = new FormatNegotiator();
 
 //Controllers
 $app['front_controller']  = new Bioteawebapi\Controllers\Front($app);
-$app['topics_controller'] = new Bioteawebapi\Controllers\Topics($app);
-$app['vocabs_controller'] = new Bioteawebapi\Controllers\Vocabularies($app);
-$app['terms_controller']  = new Bioteawebapi\Controllers\Terms($app);
+$app['solrq_controller']  = new Bioteawebapi\Controllers\SolrQuery($app, $app['solr_client']);
 
 // ------------------------------------------------------------------
 
 /*
  * Routes
  */
-$app->get('/',                     array($app['front_controller'], 'run'));
-$app->get('/topics',               array($app['topics_controller'], 'run'));
-$app->get('/topics/{topic}',       array($app['topics_controller'], 'run'));
-$app->get('/vocabularies',         array($app['vocabs_controller'], 'run'));
-$app->get('/vocabularies/{vocab}', array($app['vocabs_controller'], 'run'));
-$app->get('/terms',                array($app['terms_controller'], 'run'));
-$app->get('/terms/{term}',         array($app['terms_controller'], 'run'));
+$app->get('/',                array($app['front_controller'], 'run'));
+$app->get('/{field}',         array($app['solrq_controller'], 'run'));
+$app->get('/{field}/{value}', array($app['solrq_controller'], 'run'));
 
 // ------------------------------------------------------------------
 

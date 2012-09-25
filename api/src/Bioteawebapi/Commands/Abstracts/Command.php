@@ -17,6 +17,10 @@ abstract class Command extends SymfonyCommand
      */
     public function __construct(Application $app)
     {
+        //Run parent constructor
+        parent::__construct();
+
+        //Set dependencies
         $this->app = $app;
     }
 

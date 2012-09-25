@@ -1,20 +1,31 @@
 <?php
 
 namespace Bioteawebapi\Services;
-use Solarium_Client as SolrClient;
+use Solarium_Client as SolariumClient;
 use Bioteawebapi\Models\SolrIndexDocument as Document;
 
-class SolrIndexDocumentManager
+class SolrClient
 {
+    /**
+     * @var \Solarium_Client
+     */
     private $client;
 
+    /**
+     * @var \Solarium_Query
+     */
     private $update = null;
 
     // --------------------------------------------------------------
 
-    public function __construct(SolrClient $client)
+    /**
+     * Constructor
+     *
+     * @param \Solarium_Client $client
+     */
+    public function __construct(SolariumClient $solariumClient)
     {
-        $this->client = $client;
+        $this->client = $solariumClient;
     }
 
     // --------------------------------------------------------------

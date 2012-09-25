@@ -1,23 +1,37 @@
 <?php
 
 namespace Bioteawebapi\Controllers;
-use EasyRdf_Sparql_Client as SparqlClient;
 
 /**
- * URL is: /
+ * Front Controller
  */
-class Front extends Abstracts\SparqlClientController
+class Front extends Controller
 {
     // --------------------------------------------------------------
 
+    /**
+     * @inheritdoc 
+     */
     public function run()
     {
         //For now, we'll just be a-testin
         return $this->test();
     }
 
+
     // --------------------------------------------------------------
 
+    /** @inheritdoc */
+    public function getAllowedFormats()
+    {
+        return array('json', 'html');
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Test method - delete me
+     */
     public function test()
     {
         echo "Oh Hai";
