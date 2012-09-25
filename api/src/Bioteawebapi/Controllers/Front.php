@@ -10,7 +10,7 @@ class Front extends Controller
     // --------------------------------------------------------------
 
     /**
-     * @inheritdoc 
+     * Run the front controller
      */
     public function run()
     {
