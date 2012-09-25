@@ -21,6 +21,14 @@ use FOS\Rest\Util\FormatNegotiator;
 // ------------------------------------------------------------------
 
 /*
+ * Fix trailing slash issue with URI
+ * @see https://github.com/fabpot/Silex/issues/149
+ */
+$_SERVER['REQUEST_URI'] = rtrim($_SERVER['REQUEST_URI'], '/');
+
+// ------------------------------------------------------------------
+
+/*
  * Bootstrap
  */
 require(__DIR__ . '/../src/bootstrap.php');
