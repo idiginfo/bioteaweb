@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:doco="http://purl.org/spar/doco/"
+	xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+	xmlns:cnt="http://www.w3.org/2011/content#"
+	xmlns:prov="http://www.w3.org/ns/prov#">
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<dcterms:description>research-article</dcterms:description>
+	<dcterms:identifier>pmc:55341</dcterms:identifier>
+	<dcterms:source rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55341"/>
+	<prov:wasDerivedFrom rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55341"/>
+	<dcterms:isFormatOf rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55341">
+	<dcterms:hasFormat rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:created>19-09-2012 15:55:41</dcterms:created>
+	<prov:generatedAtTime>19-09-2012 15:55:41</prov:generatedAtTime>
+	<dcterms:creator>http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/</dcterms:creator>
+	<prov:wasAttributedTo rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/"/>
+	<bibo:pmid>11545683</bibo:pmid>
+	<dcterms:identifier>pmid:11545683</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55341">
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11545683"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11545683"/>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11545683"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:doi>10.1186/1472-6874-1-3</bibo:doi>
+	<dcterms:identifier>doi:10.1186/1472-6874-1-3</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC55341">
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1186/1472-6874-1-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/issn_1472-6874">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>BMC Women's Health</dcterms:title>
+	<bibo:issn>1472-6874</bibo:issn>
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+	<bibo:volume>1</bibo:volume>
+	<bibo:pageStart>3</bibo:pageStart>
+	<bibo:pageEnd>3</bibo:pageEnd>
+	<dcterms:title>Diagnostic and treatment characteristics of polycystic ovary syndrome: descriptive measurements of patient perception and awareness from 657 confidential self-reports</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_1472-6874_1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_1472-6874_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/issn_1472-6874"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/issn_1472-6874">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/E-ScottSills">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Scott Sills</foaf:name>
+	<foaf:givenName>E Scott</foaf:givenName>
+	<foaf:familyName>Sills</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/dr-sills-ivf-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/dr-sills-ivf-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>dr.sills@ivf.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/MarkPerloe">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Mark Perloe</foaf:name>
+	<foaf:givenName>Mark</foaf:givenName>
+	<foaf:familyName>Perloe</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/mpmd-ivf-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/mpmd-ivf-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>mpmd@ivf.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Michael-JTucker">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Michael J Tucker</foaf:name>
+	<foaf:givenName>Michael J</foaf:givenName>
+	<foaf:familyName>Tucker</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/mtucker-ivf-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/mtucker-ivf-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>mtucker@ivf.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Carolyn-RKaplan">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Carolyn R Kaplan</foaf:name>
+	<foaf:givenName>Carolyn R</foaf:givenName>
+	<foaf:familyName>Kaplan</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/ckaplan-ivf-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/ckaplan-ivf-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>ckaplan@ivf.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Marc-GeorgesGenton">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Marc Georges Genton</foaf:name>
+	<foaf:givenName>Marc Georges</foaf:givenName>
+	<foaf:familyName>Genton</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/genton-math-mit-edu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/genton-math-mit-edu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>genton@math.mit.edu</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Glenn-LSchattman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Glenn L Schattman</foaf:name>
+	<foaf:givenName>Glenn L</foaf:givenName>
+	<foaf:familyName>Schattman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/glschatt-mail-med-cornell-edu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/email/glschatt-mail-med-cornell-edu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>glschatt@mail.med.cornell.edu</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/list/listAuthors">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/E-ScottSills"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/MarkPerloe"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Michael-JTucker"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Carolyn-RKaplan"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Marc-GeorgesGenton"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/person/Glenn-LSchattman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/list/listAuthors"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Abstract">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Abstract"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Abstract">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<dcterms:title>Abstract</dcterms:title>
+	<cnt:chars>Background: This investigation was undertaken to describe patient perception and awareness of the polycystic ovary syndrome (PCOS), the most common cause of anovulation/oligoovulation among women of reproductive age. Methods: Fifteen parameters were evaluated by a computer-based research instrument accessed by a large, unscreened population. Incomplete questionnaires were not entered, and responses were electronically tabulated to block duplicate submissions. Results: From 657 participants, the majority (63%) were between 26?34 years old; mean BMI was 30.4 kg/m2. 343 of 657 had at least one pregnancy and 61% of the study group had taken fertility medicine (any type) at least once. Physicians were the most common provider of PCOS information for all study participants, irrespective of age. Patient emotions associated with the diagnosis of PCOS included "frustration" (67%), "anxiety" (16%), "sadness" (10%), and "indifference" (2%). Self-reported patient aptitude regarding PCOS was scored as high or "very aware" in &gt;60% of women. Respondents were also asked: "If your PCOS could be safely and effectively helped by something else besides fertility drugs or birth control pills, would that interest you?" Interest in alternative PCOS treatments was expressed by 99% of the sample (n = 648). Conclusions: In our study population, most women associated negative emotions with PCOS although the self-reported knowledge level for the disorder was high. While these women regarded their obstetrician-gynecologist as integral to their PCOS education, traditional PCOS therapies based on oral contraceptives or ovulation induction agents were regarded as unsatisfactory by most women. </cnt:chars>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:abstract>Background: This investigation was undertaken to describe patient perception and awareness of the polycystic ovary syndrome (PCOS), the most common cause of anovulation/oligoovulation among women of reproductive age. Methods: Fifteen parameters were evaluated by a computer-based research instrument accessed by a large, unscreened population. Incomplete questionnaires were not entered, and responses were electronically tabulated to block duplicate submissions. Results: From 657 participants, the majority (63%) were between 26?34 years old; mean BMI was 30.4 kg/m2. 343 of 657 had at least one pregnancy and 61% of the study group had taken fertility medicine (any type) at least once. Physicians were the most common provider of PCOS information for all study participants, irrespective of age. Patient emotions associated with the diagnosis of PCOS included "frustration" (67%), "anxiety" (16%), "sadness" (10%), and "indifference" (2%). Self-reported patient aptitude regarding PCOS was scored as high or "very aware" in &gt;60% of women. Respondents were also asked: "If your PCOS could be safely and effectively helped by something else besides fertility drugs or birth control pills, would that interest you?" Interest in alternative PCOS treatments was expressed by 99% of the sample (n = 648). Conclusions: In our study population, most women associated negative emotions with PCOS although the self-reported knowledge level for the disorder was high. While these women regarded their obstetrician-gynecologist as integral to their PCOS education, traditional PCOS therapies based on oral contraceptives or ovulation induction agents were regarded as unsatisfactory by most women. </bibo:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B1_LCronin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Cronin</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Cronin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B1_GGuyatt">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>G Guyatt</foaf:name>
+	<foaf:givenName>G</foaf:givenName>
+	<foaf:familyName>Guyatt</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B1_LGriffith">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Griffith</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Griffith</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9626128</dcterms:identifier>
+	<bibo:pmid>9626128</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9626128"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9626128"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9626128"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_JClinEndocrinolMetab">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>J Clin Endocrinol Metab</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<dcterms:title>Development of a health related quality of life questionnaire for women with polycystic ovary syndrome (PCOS).</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_JClinEndocrinolMetab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_JClinEndocrinolMetab">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>1976</bibo:pageStart>
+	<bibo:pageEnd>87</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B1">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B1_LCronin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B1_GGuyatt"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B1_LGriffith"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B2_WKidson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>W Kidson</foaf:name>
+	<foaf:givenName>W</foaf:givenName>
+	<foaf:familyName>Kidson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9861912</dcterms:identifier>
+	<bibo:pmid>9861912</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9861912"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9861912"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9861912"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_MedJAust">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Med J Aust</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<dcterms:title>Polycystic ovary syndrome: a new direction in treatment.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_MedJAust_3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_MedJAust_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_MedJAust_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_MedJAust"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_MedJAust">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_MedJAust_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>537</bibo:pageStart>
+	<bibo:pageEnd>40</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B2">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B2_WKidson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B3_DJJakubowicz">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DJ Jakubowicz</foaf:name>
+	<foaf:givenName>DJ</foaf:givenName>
+	<foaf:familyName>Jakubowicz</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B3_MSeppala">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Seppala</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Seppala</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B3_SJakubowicz">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Jakubowicz</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Jakubowicz</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11238496</dcterms:identifier>
+	<bibo:pmid>11238496</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11238496"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11238496"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11238496"/>
+	<dcterms:title>Insulin reduction with metformin increases luteal phase glycodelin and insulin-like growth factor-binding protein 1 concentrations and enhances uterine vascularity and blood flow in the polycystic ovary syndrome.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_JClinEndocrinolMetab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_JClinEndocrinolMetab">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_JClinEndocrinolMetab_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>1126</bibo:pageStart>
+	<bibo:pageEnd>33</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B3">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B3_DJJakubowicz"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B3_MSeppala"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B3_SJakubowicz"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_ESSills">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>ES Sills</foaf:name>
+	<foaf:givenName>ES</foaf:givenName>
+	<foaf:familyName>Sills</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_DPLevy">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DP Levy</foaf:name>
+	<foaf:givenName>DP</foaf:givenName>
+	<foaf:familyName>Levy</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_KMWittkowski">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>KM Wittkowski</foaf:name>
+	<foaf:givenName>KM</foaf:givenName>
+	<foaf:familyName>Wittkowski</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_MPerloe">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Perloe</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Perloe</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_FertilSteril">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Fertil Steril</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<dcterms:title>Preliminary experience with metformin treatment of polycystic ovary syndrome: reproductive outcomes among 20 consecutive patients.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_FertilSteril"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_FertilSteril">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>S187</bibo:pageStart>
+	<bibo:pageEnd>8</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B4">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_ESSills"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_DPLevy"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_KMWittkowski"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B4_MPerloe"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B5_ESSills">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>ES Sills</foaf:name>
+	<foaf:givenName>ES</foaf:givenName>
+	<foaf:familyName>Sills</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B5_MPerloe">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Perloe</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Perloe</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B5_GDPalermo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>GD Palermo</foaf:name>
+	<foaf:givenName>GD</foaf:givenName>
+	<foaf:familyName>Palermo</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10869785</dcterms:identifier>
+	<bibo:pmid>10869785</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10869785"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10869785"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10869785"/>
+	<bibo:doi>10.1016/S0301-2115(99)00287-0</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0301-2115(99)00287-0</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0301-2115(99)00287-0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_EurJObstetGynecolReprodBiol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Eur J Obstet Gynecol Reprod Biol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<dcterms:title>Correction of hyperinsulinemia in oligoovulatory women with clomiphene-resistant polycystic ovary syndrome: a review of therapeutic rationale and reproductive outcomes.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_EurJObstetGynecolReprodBiol_6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_EurJObstetGynecolReprodBiol_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_EurJObstetGynecolReprodBiol_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_EurJObstetGynecolReprodBiol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_EurJObstetGynecolReprodBiol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_EurJObstetGynecolReprodBiol_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<dcterms:issued>2000</dcterms:issued>
+	<bibo:pageStart>135</bibo:pageStart>
+	<bibo:pageEnd>41</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B5">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B5_ESSills"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B5_MPerloe"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B5_GDPalermo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B6_MGRHull">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MGR Hull</foaf:name>
+	<foaf:givenName>MGR</foaf:givenName>
+	<foaf:familyName>Hull</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:3140583</dcterms:identifier>
+	<bibo:pmid>3140583</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/3140583"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/3140583"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:3140583"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_GynecolEndocrinol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Gynecol Endocrinol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<dcterms:title>Epidemiology of infertility and polycystic ovarian disease: endocrinological and demographic studies.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_GynecolEndocrinol_7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_GynecolEndocrinol_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_GynecolEndocrinol_7">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_GynecolEndocrinol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_GynecolEndocrinol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_GynecolEndocrinol_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<dcterms:issued>1987</dcterms:issued>
+	<bibo:pageStart>235</bibo:pageStart>
+	<bibo:pageEnd>45</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B6">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B6_MGRHull"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B7_EOTalbott">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>EO Talbott</foaf:name>
+	<foaf:givenName>EO</foaf:givenName>
+	<foaf:familyName>Talbott</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B7_DSGuzick">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DS Guzick</foaf:name>
+	<foaf:givenName>DS</foaf:givenName>
+	<foaf:familyName>Guzick</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B7_KSutton-Tyrrell">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>K Sutton-Tyrrell</foaf:name>
+	<foaf:givenName>K</foaf:givenName>
+	<foaf:familyName>Sutton-Tyrrell</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11073846</dcterms:identifier>
+	<bibo:pmid>11073846</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11073846"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11073846"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11073846"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_ArteriosclerThrombVascBiol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Arterioscler Thromb Vasc Biol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<dcterms:title>Evidence for association between polycystic ovary syndrome and premature carotid atherosclerosis in middle-aged women.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ArteriosclerThrombVascBiol_8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ArteriosclerThrombVascBiol_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ArteriosclerThrombVascBiol_8">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_ArteriosclerThrombVascBiol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_ArteriosclerThrombVascBiol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ArteriosclerThrombVascBiol_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<dcterms:issued>2000</dcterms:issued>
+	<bibo:pageStart>2414</bibo:pageStart>
+	<bibo:pageEnd>21</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B7">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B7_EOTalbott"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B7_DSGuzick"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B7_KSutton-Tyrrell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B8_CGSolomon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>CG Solomon</foaf:name>
+	<foaf:givenName>CG</foaf:givenName>
+	<foaf:familyName>Solomon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B8_FBHu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>FB Hu</foaf:name>
+	<foaf:givenName>FB</foaf:givenName>
+	<foaf:familyName>Hu</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B8_WCWillett">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WC Willett</foaf:name>
+	<foaf:givenName>WC</foaf:givenName>
+	<foaf:familyName>Willett</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B9_JVZborowski">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JV Zborowski</foaf:name>
+	<foaf:givenName>JV</foaf:givenName>
+	<foaf:familyName>Zborowski</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B9_EOTalbott">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>EO Talbott</foaf:name>
+	<foaf:givenName>EO</foaf:givenName>
+	<foaf:familyName>Talbott</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B9_JACanley">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JA Canley</foaf:name>
+	<foaf:givenName>JA</foaf:givenName>
+	<foaf:familyName>Canley</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11292999</dcterms:identifier>
+	<bibo:pmid>11292999</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11292999"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11292999"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11292999"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_ObstetGynecolClinNorthAm">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Obstet Gynecol Clin North Am</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9">
+	<dcterms:title>Polycystic ovary syndrome, androgen excess, and the impact on bone.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ObstetGynecolClinNorthAm_9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ObstetGynecolClinNorthAm_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ObstetGynecolClinNorthAm_9">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_ObstetGynecolClinNorthAm"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_ObstetGynecolClinNorthAm">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_ObstetGynecolClinNorthAm_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>135</bibo:pageStart>
+	<bibo:pageEnd>51</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B9">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B9_JVZborowski"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B9_EOTalbott"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B9_JACanley"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_CJKelly">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>CJ Kelly</foaf:name>
+	<foaf:givenName>CJ</foaf:givenName>
+	<foaf:familyName>Kelly</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_JMConnell">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JM Connell</foaf:name>
+	<foaf:givenName>JM</foaf:givenName>
+	<foaf:familyName>Connell</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_ITCameron">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>IT Cameron</foaf:name>
+	<foaf:givenName>IT</foaf:givenName>
+	<foaf:familyName>Cameron</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_GWGould">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>GW Gould</foaf:name>
+	<foaf:givenName>GW</foaf:givenName>
+	<foaf:familyName>Gould</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_HLyell">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Lyell</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Lyell</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11117758</dcterms:identifier>
+	<bibo:pmid>11117758</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11117758"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11117758"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11117758"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_BrJObstetGynaecol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Br J Obstet Gynaecol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<dcterms:title>The long term health consequences of polycystic ovary syndrome.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_BrJObstetGynaecol_10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_BrJObstetGynaecol_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_BrJObstetGynaecol_10">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_BrJObstetGynaecol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_BrJObstetGynaecol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_BrJObstetGynaecol_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<dcterms:issued>2000</dcterms:issued>
+	<bibo:pageStart>1327</bibo:pageStart>
+	<bibo:pageEnd>38</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B10">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_CJKelly"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_JMConnell"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_ITCameron"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_GWGould"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B10_HLyell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B11_BHacihanefioglu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Hacihanefioglu</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Hacihanefioglu</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10856497</dcterms:identifier>
+	<bibo:pmid>10856497</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10856497"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10856497"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10856497"/>
+	<bibo:doi>10.1016/S0015-0282(00)00525-2</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0015-0282(00)00525-2</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0015-0282(00)00525-2"/>
+	<dcterms:title>Polycystic ovary syndrome nomenclature: chaos?</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_11">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_FertilSteril"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/journal/name_FertilSteril">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/issue/journal_FertilSteril_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11">
+	<dcterms:issued>2000</dcterms:issued>
+	<bibo:pageStart>1261</bibo:pageStart>
+	<bibo:pageEnd>2</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B11">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B11_BHacihanefioglu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/list/listAuthors_B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/person/B12_BJancin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Jancin</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Jancin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Background</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Little is known of how patients with the polycystic ovary syndrome (PCOS) acquire information about their condition, whether they feel their level of understanding about PCOS is adequate, or what emotions are associated with this diagnosis. Some of the components of PCOS are known to be profoundly stressful, yet effective and systematic efforts to characterize the subjective awareness of this disorder have only recently been developed [[B1]]. Mainstream treatments for PCOS have remained fairly fixed over the past 30 years, with the two principal non-surgical approaches being oral contraceptives and clomiphene citrate. PCOS therapies based on orally-active insulin sensitizers account for limited clinical use at present, although preliminary data suggests an acceptable safety and efficacy profile for such treatment [[B2]-[B4]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Background"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In this study, we wished to describe the self-reported knowledge base for PCOS in a large, unscreened patient group, as well as to identify where patient information about PCOS originates. We were especially interested to learn which emotions PCOS patients ascribe to their problem once the diagnosis is made, and how they feel about the treatments proposed for their condition. Additionally, this study sought to measure women's receptiveness to alternative treatment strategies not predicated on oral contraceptives or ovulation induction when queried in a patient-centered, confidential and anonymous manner.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Methods</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>A multidisciplinary team developed a 15-item research questionnaire specifically targeted to women with PCOS. Queries were structured as single-answer from multiple choice responses and data tabulated accordingly for analysis; the questionnaire was then configured electronically for internet access [see link: ]. Although participants were required to register via computer in order to access the questionnaire site, there was no cost to do so. When a group of volunteers (n = 12) pre-tested the study questionnaire, the mean time required for completion was 8 min (including registration). The PCOS questionnaire was posted in English and continuously maintained on a free public-access medical internet site (OBGYN.net; Austin, TX) throughout the month of January, 2000. The questionnaire site was identifiable and its recognition confirmed via three major internet search engines directed to the terms "PCOS" or "PCOS studies".</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Participation in this open study was not restricted to current or former patients of the investigators, but was made available to all women who had been diagnosed with PCOS from any center. Participants received no compensation or acknowledgement for their reply to this study questionnaire. Incomplete questionnaires were not tabulated, and responses were electronically tracked to block duplicate submissions from the same individual. Height and weight information was received from participants either in Imperial (U.S.) or SI (metric) units, with automated metric conversion for analysis. Only investigators were permitted access to running totals of the questionnaire during the study.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Our research design was submitted to the Institutional Review Board of Atlanta Medical Center prior to questionnaire implementation. As our study required no direct patient contact or medical record review, the research protocol was judged as "no risk to human subjects"; IRB oversight was therefore offered but not required.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Chi-square/contingency table test was used to determine dependence between measured variables in the data array. P values &lt;0.05 were considered significant.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Results</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>During the study interval, 657 unique responses to the questionnaire were registered. More than 97% (n = 638) of the respondents indicated that they were familiar with PCOS, while 1.9% had not been told about PCOS, and &lt;1% were uncertain. Approximately 61% of women regarded their level of understanding for PCOS as "very aware" (n = 403), but 9.1% and 2.9% of women considered themselves to be "minimally aware" or "not aware at all" regarding PCOS, respectively. The proportion of the sample registering as ever-pregnant was 52.2% (n = 343), and the average number of pregnancies reported (including miscarriages) was 2.08/patient. Median [IQR 25;75] height and weight in this study population was 165.1 [160;170] cm and 86.0 [70;104] kg, respectively (median BMI = 31.9 kg/m2).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/F7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>A summary of responses stratified by age and other parameters is given in Figures [F1],[F2],[F3],[F4],[F5],[F6],[F7]. When these demographic data were related to the self-reported "awareness" of PCOS among these women, those subjects between age 26?34 were significantly more "aware" of PCOS than any other age group (p = 0.038). This age group was also more likely to have their most recent physician appointment occur within the past six months (p = 0.036). Analysis of matched-data from each age category supported a dependence between patient age and preferred information resource, as the physician was identified as responsible for a significant amount of counseling in the 26?34 year-old group (p = 0.022).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In contrast, distribution of self-reported emotional reaction to the diagnosis of PCOS could not be predicted by any clinical parameter, and the feelings experienced about PCOS did not follow any age-specific pattern (p = 0.268). There were, however, expected statistical dependencies between increasing age and ever-pregnant status (p &lt; 0.001), as well as between age and history of receiving fertility therapy (p &lt; 0.001). When asked: "If your PCOS could be safely and effectively helped by something else besides fertility drugs or birth control pills, would that interest you?", interest in alternative PCOS treatments was expressed by 99% of the sample (n = 648). Assuming normal distribution of PCOS in the general population, power analysis defined the probability of detecting a significant (p &lt; 0.05) relationship between dependent and independent variables at .80 with a sample of n = 657.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Results"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The total number of page-views specifically attributed to the PCOS questionnaire site during the study period was 1,585 (41.5% response rate). Although completely voluntary, any prospective questionnaire viewer was given an opportunity to critique the instrument and post any concerns to the host. During the study there were no complaints or adverse outcomes regarding questionnaire content/format.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Discussion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Polycystic ovary syndrome (PCOS) describes a convergence of chronic multisystem endocrine derangements, including irregular menses, hirsutism, obesity, hyperlipidemia, androgenization, large and polycystic-appearing ovaries, insulin resistance and infertility [[B5]]. Although PCOS is the most common hormonal disorder among reproductive age women [[B1]], is the leading cause for anovulatory/oligoovulatory infertility [[B6]], and has the potential for serious long-term health effects [[B7]-[B10]], paradoxically the condition is often underdiagnosed. The absence of uniform diagnostic criteria for PCOS [[B11]] has probably contributed to its low clinical diagnosis rate, although organized media campaigns [[B12]] aimed to increase PCOS awareness (both among physicians and patients) should result in more women seeking medical evaluation specifically because PCOS is suspected. As these laudable education efforts gain momentum, however, the current state of patient comfort with their "level of awareness" regarding PCOS, where their facts come from, and how they feel about their diagnosis are imprecisely characterized. If the objective of heightened public interest in PCOS is indeed achieved through wide public-service announcements or other structured media exposure, then a contemporary (baseline) measurement of patient perception and awareness of PCOS as reported here would be helpful.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Although we could not verify the self-reported cognitive claims made by study participants, more than half of respondents considered themselves to be "very aware" of PCOS. These data confirm an intuitive association between physicians and PCOS patient teaching through office-based patient education and counseling. That most women would turn first to their doctor for further guidance regarding PCOS is not a new finding, although these data indicate that the messages conveyed by doctors appears to be poorly received by patients.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Specifically, the strongly negative emotions study participant identified with PCOS management by physicians demonstrated a profound gap between patient expectations and actual (prescribed) therapy. Indeed, our study population appeared unsatisfied with oral contraceptives or clomiphene citrate when prescribed as treatment for PCOS. In this study we were careful not to call specific attention to any substitute therapy, but rather to describe patient acceptance of these two existing treatments. This investigation detected a strong receptiveness among PCOS women regarding any safe and effective alternative to PCOS management. "Frustration" and "anxiety" associated with PCOS was observed across all age groups in this sample, perhaps suggesting either that a PCOS diagnosis was delayed in some older patients, or that negative emotions persist in some PCOS patients for many years after they are informed of their condition.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>As with any questionnaire-based research, there were some important limitations with our study that should be acknowledged. Our research method relied on an unscreened but motivated audience and a functional computer interface, with the result that PCOS patients lacking the means and/or ability to access the study questionnaire were excluded from our sample. The fact that study participation depended on internet use likely explains the high self-reported familiarity and knowledge level for PCOS in this group. While PCOS preferentially affects women of reproductive age, and patients in this age group may tend to have a greater fluency with computer-based research tools, a full exploration of this demographic association was beyond the scope of our investigation. Conversely, the possibility also existed that some of our respondents had not been properly diagnosed with PCOS and therefore inappropriately inflated the sample. We regarded these two balanced sources of selection bias to be of essentially equivalent magnitude and therefore mutually negating. Whether or not the observations reported by computer-assisted questionnaire are representative of all PCOS patients is difficult to establish, although this represents the focus of ongoing research at our institutions. It may be that results obtained exclusively from an anonymous, confidential computer-accessed questionnaire are more likely to depict extreme views not typical of those encountered clinically, yet the sample size registered here was considered sufficiently large to attenuate this effect.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Conclusion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Conclusion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Efforts to heighten the profile of PCOS among the general public remain critical, as "minimal awareness" or "no awareness" of PCOS was present among &gt;10% of this motivated sample of unscreened patients. Although many women are affected by the polycystic ovary syndrome, difficulties associated with its uniform diagnosis persist. Given the diagnostic challenges of PCOS, there is perhaps little wonder that confusion also accompanies its treatment. Our work suggests that the present state of mainstream clinical management for this common endocrine disorder (birth control pills or clomiphene) appears to fall short of patient expectations, and therefore may represent a ready clinical niche for newer therapeutic modalities.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Competing interests</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Competing-interests"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>None declared.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341"/>
+	<dcterms:title>Pre-publication history</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The pre-publication history for this paper can be accessed here:</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC55341/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars></cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+</rdf:RDF>

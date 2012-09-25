@@ -1,0 +1,2766 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:doco="http://purl.org/spar/doco/"
+	xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+	xmlns:cnt="http://www.w3.org/2011/content#"
+	xmlns:prov="http://www.w3.org/ns/prov#">
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<dcterms:description>research-article</dcterms:description>
+	<dcterms:identifier>pmc:1851951</dcterms:identifier>
+	<dcterms:source rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1851951"/>
+	<prov:wasDerivedFrom rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1851951"/>
+	<dcterms:isFormatOf rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1851951">
+	<dcterms:hasFormat rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:created>19-09-2012 15:53:23</dcterms:created>
+	<prov:generatedAtTime>19-09-2012 15:53:23</prov:generatedAtTime>
+	<dcterms:creator>http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/</dcterms:creator>
+	<prov:wasAttributedTo rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/"/>
+	<bibo:pmid>17397542</bibo:pmid>
+	<dcterms:identifier>pmid:17397542</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1851951">
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/17397542"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:17397542"/>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17397542"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:doi>10.1186/1472-6874-7-4</bibo:doi>
+	<dcterms:identifier>doi:10.1186/1472-6874-7-4</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1851951">
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1186/1472-6874-7-4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/issn_1472-6874">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>BMC Women's Health</dcterms:title>
+	<bibo:issn>1472-6874</bibo:issn>
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+	<bibo:volume>7</bibo:volume>
+	<bibo:pageStart>4</bibo:pageStart>
+	<bibo:pageEnd>4</bibo:pageEnd>
+	<dcterms:title>Trends in complementary/alternative medicine use by breast cancer survivors: Comparing survey data from 1998 and 2005</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_1472-6874_1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_1472-6874_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/issn_1472-6874"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/issn_1472-6874">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/Heather-SBoon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Heather S Boon</foaf:name>
+	<foaf:givenName>Heather S</foaf:givenName>
+	<foaf:familyName>Boon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/email/heather-boon-utoronto-ca"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/email/heather-boon-utoronto-ca">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>heather.boon@utoronto.ca</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/FolashadeOlatunde">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Folashade Olatunde</foaf:name>
+	<foaf:givenName>Folashade</foaf:givenName>
+	<foaf:familyName>Olatunde</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/email/shade-olatunde-utoronto-ca"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/email/shade-olatunde-utoronto-ca">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>shade.olatunde@utoronto.ca</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/Suzanna-MZick">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Suzanna M Zick</foaf:name>
+	<foaf:givenName>Suzanna M</foaf:givenName>
+	<foaf:familyName>Zick</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/email/szick-med-umich-edu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/email/szick-med-umich-edu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>szick@med.umich.edu</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/list/listAuthors">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/Heather-SBoon"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/FolashadeOlatunde"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/person/Suzanna-MZick"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/list/listAuthors"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abstract">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abstract"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abstract">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<dcterms:title>Abstract</dcterms:title>
+	<cnt:chars>Background: Use of complementary and alternative medicine (CAM) by women with breast cancer is often said to be increasing, yet few data exist to confirm this commonly held belief. Methods: Surveys were mailed to women randomly selected from the Ontario Cancer Registry (Canada) in the spring of 1998 (n = 557) and again in the spring of 2005(n = 877). Results: The response rates were 76.3% in 1998 and 63% in 2005. In 1998, 66.7% of women reported using either a CAM product/therapy or seeing a CAM therapist at some time in their lives as compared with 81.9% in 2005 (p = 0.0002). Increases were seen in both use of CAM products/therapies (62% in 1998 vs. 70.6% in 2005) and visits to CAM practitioners (39.4% of respondents in 1998 vs 57.4% of respondents in 2005). Women in 2005 reported that 41% used CAM for treating their breast cancer. The most commonly used products and practitioners for treating breast cancer as reported in 2005 were green tea, vitamin E, flaxseed, vitamin C, massage therapists and dietitians/nutritionists. Conclusion: CAM use (both self-medication with products and visits to CAM practitioners) increased significantly from 1998 to 2005. Now that more than 80% of all women with breast cancer report using CAM (41% in a specific attempt to management their breast cancer), CAM use can no longer be regarded as an "alternative" or unusual approach to managing breast cancer. </cnt:chars>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:abstract>Background: Use of complementary and alternative medicine (CAM) by women with breast cancer is often said to be increasing, yet few data exist to confirm this commonly held belief. Methods: Surveys were mailed to women randomly selected from the Ontario Cancer Registry (Canada) in the spring of 1998 (n = 557) and again in the spring of 2005(n = 877). Results: The response rates were 76.3% in 1998 and 63% in 2005. In 1998, 66.7% of women reported using either a CAM product/therapy or seeing a CAM therapist at some time in their lives as compared with 81.9% in 2005 (p = 0.0002). Increases were seen in both use of CAM products/therapies (62% in 1998 vs. 70.6% in 2005) and visits to CAM practitioners (39.4% of respondents in 1998 vs 57.4% of respondents in 2005). Women in 2005 reported that 41% used CAM for treating their breast cancer. The most commonly used products and practitioners for treating breast cancer as reported in 2005 were green tea, vitamin E, flaxseed, vitamin C, massage therapists and dietitians/nutritionists. Conclusion: CAM use (both self-medication with products and visits to CAM practitioners) increased significantly from 1998 to 2005. Now that more than 80% of all women with breast cancer report using CAM (41% in a specific attempt to management their breast cancer), CAM use can no longer be regarded as an "alternative" or unusual approach to managing breast cancer. </bibo:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B1_DCollyar">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>D Collyar</foaf:name>
+	<foaf:givenName>D</foaf:givenName>
+	<foaf:familyName>Collyar</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JClinOncol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>J Clin Oncol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<dcterms:title>Breast cancer: A global perspective</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JClinOncol_2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JClinOncol_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JClinOncol_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JClinOncol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JClinOncol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JClinOncol_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>1001s</bibo:pageStart>
+	<bibo:pageEnd>105s</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B1">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B1_DCollyar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B2_CMettlin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C Mettlin</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>Mettlin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10445013</dcterms:identifier>
+	<bibo:pmid>10445013</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10445013"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10445013"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10445013"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CACancerJClin">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>CA Cancer J Clin</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<dcterms:title>Global breast cancer mortality statistics</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CACancerJClin_3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CACancerJClin_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CACancerJClin_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CACancerJClin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CACancerJClin">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CACancerJClin_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>138</bibo:pageStart>
+	<bibo:pageEnd>144</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B2">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B2_CMettlin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_ECrocetti">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Crocetti</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Crocetti</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_NCrotti">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>N Crotti</foaf:name>
+	<foaf:givenName>N</foaf:givenName>
+	<foaf:familyName>Crotti</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_AFeltrin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Feltrin</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Feltrin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_PPonton">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>P Ponton</foaf:name>
+	<foaf:givenName>P</foaf:givenName>
+	<foaf:familyName>Ponton</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_MGeddes">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Geddes</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Geddes</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_EBuiatti">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Buiatti</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Buiatti</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9640216</dcterms:identifier>
+	<bibo:pmid>9640216</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9640216"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9640216"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9640216"/>
+	<bibo:doi>10.1016/S0959-8049(97)10043-0</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0959-8049(97)10043-0</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0959-8049(97)10043-0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_EuropeanJournalofCancer">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>European Journal of Cancer</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<dcterms:title>The Use of Complementary Therapies by Breast Cancer Patients Attending Conventional Treatment.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_EuropeanJournalofCancer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_EuropeanJournalofCancer">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>324</bibo:pageStart>
+	<bibo:pageEnd>328</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B4">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_ECrocetti"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_NCrotti"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_AFeltrin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_PPonton"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_MGeddes"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B4_EBuiatti"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_RRees">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Rees</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Rees</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_IFeigel">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Feigel</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Feigel</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_AVickers">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Vickers</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Vickers</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_CZollman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C Zollman</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>Zollman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_RMcGurk">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R McGurk</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>McGurk</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_CSmith">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C Smith</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>Smith</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10899648</dcterms:identifier>
+	<bibo:pmid>10899648</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10899648"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10899648"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10899648"/>
+	<bibo:doi>10.1016/S0959-8049(00)00099-X</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0959-8049(00)00099-X</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0959-8049(00)00099-X"/>
+	<dcterms:title>Prevalence of complementary therapy use by women with breast cancer: a population-based survey</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_EuropeanJournalofCancer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_EuropeanJournalofCancer">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_EuropeanJournalofCancer_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5">
+	<bibo:pageStart>1359</bibo:pageStart>
+	<bibo:pageEnd>1364</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B5">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_RRees"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_IFeigel"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_AVickers"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_CZollman"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_RMcGurk"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B5_CSmith"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_RMoschen">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Moschen</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Moschen</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_GKemmler">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>G Kemmler</foaf:name>
+	<foaf:givenName>G</foaf:givenName>
+	<foaf:familyName>Kemmler</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_HSchweigkofler">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Schweigkofler</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Schweigkofler</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_BHolzner">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Holzner</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Holzner</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_MDunser">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Dunser</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Dunser</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_RRichter">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Richter</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Richter</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11430423</dcterms:identifier>
+	<bibo:pmid>11430423</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11430423"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11430423"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11430423"/>
+	<bibo:doi>10.1007/s005200000208</bibo:doi>
+	<dcterms:identifier>doi:10.1007/s005200000208</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1007/s005200000208"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_SupportCareCancer">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Support Care Cancer</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6">
+	<dcterms:title>Use of alternative / complementary therapy in breast cancer patients - a psychological perspective</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SupportCareCancer_6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SupportCareCancer_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SupportCareCancer_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_SupportCareCancer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_SupportCareCancer">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SupportCareCancer_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>267</bibo:pageStart>
+	<bibo:pageEnd>274</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B6">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_RMoschen"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_GKemmler"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_HSchweigkofler"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_BHolzner"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_MDunser"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B6_RRichter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_HJBurstein">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>HJ Burstein</foaf:name>
+	<foaf:givenName>HJ</foaf:givenName>
+	<foaf:familyName>Burstein</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_SGelber">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Gelber</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Gelber</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_EGuadagnoli">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Guadagnoli</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Guadagnoli</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_JCWeeks">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JC Weeks</foaf:name>
+	<foaf:givenName>JC</foaf:givenName>
+	<foaf:familyName>Weeks</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10352166</dcterms:identifier>
+	<bibo:pmid>10352166</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10352166"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10352166"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10352166"/>
+	<bibo:doi>10.1056/NEJM199906033402206</bibo:doi>
+	<dcterms:identifier>doi:10.1056/NEJM199906033402206</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1056/NEJM199906033402206"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_NewEnglandJournalofMedicine">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>New England Journal of Medicine</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7">
+	<dcterms:title>Use of Alternative Medicine by Women with Early Stage Breast Cancer</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_NewEnglandJournalofMedicine_7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_NewEnglandJournalofMedicine_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_NewEnglandJournalofMedicine_7">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_NewEnglandJournalofMedicine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_NewEnglandJournalofMedicine">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_NewEnglandJournalofMedicine_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>1733</bibo:pageStart>
+	<bibo:pageEnd>1759</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B7">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_HJBurstein"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_SGelber"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_EGuadagnoli"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B7_JCWeeks"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_HBoon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Boon</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Boon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_MStewart">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Stewart</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Stewart</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_MAKennard">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MA Kennard</foaf:name>
+	<foaf:givenName>MA</foaf:givenName>
+	<foaf:familyName>Kennard</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_RGray">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Gray</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Gray</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_CSawka">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C Sawka</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>Sawka</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_JBBrown">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JB Brown</foaf:name>
+	<foaf:givenName>JB</foaf:givenName>
+	<foaf:familyName>Brown</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_CMcWilliam">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C McWilliam</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>McWilliam</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_AGavin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Gavin</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Gavin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_RABaron">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RA Baron</foaf:name>
+	<foaf:givenName>RA</foaf:givenName>
+	<foaf:familyName>Baron</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_DAaron">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>D Aaron</foaf:name>
+	<foaf:givenName>D</foaf:givenName>
+	<foaf:familyName>Aaron</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_THaines-Kamka">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>T Haines-Kamka</foaf:name>
+	<foaf:givenName>T</foaf:givenName>
+	<foaf:familyName>Haines-Kamka</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10893281</dcterms:identifier>
+	<bibo:pmid>10893281</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10893281"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10893281"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10893281"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofClinicalOncology">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Journal of Clinical Oncology</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<dcterms:title>The use of complementary/alternative medicine by breast cancer survivors in Ontario: Prevalence and perceptions</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofClinicalOncology_8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofClinicalOncology_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofClinicalOncology_8">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofClinicalOncology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofClinicalOncology">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofClinicalOncology_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<dcterms:issued>2000</dcterms:issued>
+	<bibo:pageStart>2515</bibo:pageStart>
+	<bibo:pageEnd>2521</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B8">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_HBoon"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_MStewart"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_MAKennard"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_RGray"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_CSawka"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_JBBrown"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_CMcWilliam"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_AGavin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_RABaron"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_DAaron"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B8_THaines-Kamka"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B9_LGBalneaves">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>LG Balneaves</foaf:name>
+	<foaf:givenName>LG</foaf:givenName>
+	<foaf:familyName>Balneaves</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B9_JLBottorff">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JL Bottorff</foaf:name>
+	<foaf:givenName>JL</foaf:givenName>
+	<foaf:familyName>Bottorff</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B9_TGHislop">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>TG Hislop</foaf:name>
+	<foaf:givenName>TG</foaf:givenName>
+	<foaf:familyName>Hislop</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<bibo:doi>10.1089/acm.2006.12.459</bibo:doi>
+	<dcterms:identifier>doi:10.1089/acm.2006.12.459</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1089/acm.2006.12.459"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofAlternativeandComplementaryMedicine">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Journal of Alternative and Complementary Medicine</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<dcterms:title>Levels of Commitment: Exploring Complementary Therapy Use by Women with Breast Cancer</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternativeandComplementaryMedicine_9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternativeandComplementaryMedicine_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternativeandComplementaryMedicine_9">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofAlternativeandComplementaryMedicine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofAlternativeandComplementaryMedicine">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternativeandComplementaryMedicine_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<dcterms:issued>2006</dcterms:issued>
+	<bibo:pageStart>459</bibo:pageStart>
+	<bibo:pageEnd>466</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B9">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B9_LGBalneaves"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B9_JLBottorff"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B9_TGHislop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_DMEisenberg">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DM Eisenberg</foaf:name>
+	<foaf:givenName>DM</foaf:givenName>
+	<foaf:familyName>Eisenberg</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_RBDavis">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RB Davis</foaf:name>
+	<foaf:givenName>RB</foaf:givenName>
+	<foaf:familyName>Davis</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_SLEttner">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>SL Ettner</foaf:name>
+	<foaf:givenName>SL</foaf:givenName>
+	<foaf:familyName>Ettner</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_SAppel">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Appel</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Appel</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_SWilkey">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Wilkey</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Wilkey</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_MVan-Rompay">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Van Rompay</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Van Rompay</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_RCKessler">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RC Kessler</foaf:name>
+	<foaf:givenName>RC</foaf:givenName>
+	<foaf:familyName>Kessler</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9820257</dcterms:identifier>
+	<bibo:pmid>9820257</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9820257"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9820257"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9820257"/>
+	<bibo:doi>10.1001/jama.280.18.1569</bibo:doi>
+	<dcterms:identifier>doi:10.1001/jama.280.18.1569</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1001/jama.280.18.1569"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JAMA">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>JAMA</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<dcterms:title>Trends in alternative medicine use in the United States, 1990-1997:  Results of a follow-up national survey</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JAMA_10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JAMA_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JAMA_10">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JAMA"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JAMA">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JAMA_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>1569</bibo:pageStart>
+	<bibo:pageEnd>1575</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B10">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_DMEisenberg"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_RBDavis"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_SLEttner"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_SAppel"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_SWilkey"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_MVan-Rompay"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B10_RCKessler"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B11_SZick">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Zick</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Zick</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B11_ASen">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Sen</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Sen</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B11_YFeng">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Y Feng</foaf:name>
+	<foaf:givenName>Y</foaf:givenName>
+	<foaf:familyName>Feng</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B11_JGreen">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Green</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Green</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B11_SOlatunde">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Olatunde</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Olatunde</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B11_HBoon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Boon</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Boon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_JAAstin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JA Astin</foaf:name>
+	<foaf:givenName>JA</foaf:givenName>
+	<foaf:familyName>Astin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_AMarie">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Marie</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Marie</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_KRPelletier">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>KR Pelletier</foaf:name>
+	<foaf:givenName>KR</foaf:givenName>
+	<foaf:familyName>Pelletier</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_EHansen">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Hansen</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Hansen</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_WLHaskell">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WL Haskell</foaf:name>
+	<foaf:givenName>WL</foaf:givenName>
+	<foaf:familyName>Haskell</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9827781</dcterms:identifier>
+	<bibo:pmid>9827781</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9827781"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9827781"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9827781"/>
+	<bibo:doi>10.1001/archinte.158.21.2303</bibo:doi>
+	<dcterms:identifier>doi:10.1001/archinte.158.21.2303</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1001/archinte.158.21.2303"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ArchivesofInternalMedicine">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Archives of Internal Medicine</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<dcterms:title>A review of the incorporation of complementary and alternative medicine by mainstream physicians</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ArchivesofInternalMedicine_11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ArchivesofInternalMedicine_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ArchivesofInternalMedicine_11">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ArchivesofInternalMedicine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ArchivesofInternalMedicine">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ArchivesofInternalMedicine_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>2303</bibo:pageStart>
+	<bibo:pageEnd>2310</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B12">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_JAAstin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_AMarie"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_KRPelletier"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_EHansen"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B12_WLHaskell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B13_MJVerhoef">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MJ Verhoef</foaf:name>
+	<foaf:givenName>MJ</foaf:givenName>
+	<foaf:familyName>Verhoef</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B13_SAPage">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>SA Page</foaf:name>
+	<foaf:givenName>SA</foaf:givenName>
+	<foaf:familyName>Page</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9612587</dcterms:identifier>
+	<bibo:pmid>9612587</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9612587"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9612587"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9612587"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CanadianFamilyPhysician">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Canadian Family Physician</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13">
+	<dcterms:title>Physicians' perspectives on massage therapy</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianFamilyPhysician_12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianFamilyPhysician_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianFamilyPhysician_12">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CanadianFamilyPhysician"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CanadianFamilyPhysician">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianFamilyPhysician_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13">
+	<dcterms:issued>1998</dcterms:issued>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B13">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B13_MJVerhoef"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B13_SAPage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B14_LLipman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Lipman</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Lipman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B14_JDale">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Dale</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Dale</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B14_HMacPherson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H MacPherson</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>MacPherson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:12801497</dcterms:identifier>
+	<bibo:pmid>12801497</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/12801497"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/12801497"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:12801497"/>
+	<bibo:doi>10.1016/S0965-2299(03)00042-6</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0965-2299(03)00042-6</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0965-2299(03)00042-6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ComplementTherMed">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Complement Ther Med</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14">
+	<dcterms:title>Attitudes of GPs towards the provision of acupuncture on the NHS</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ComplementTherMed_13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ComplementTherMed_13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ComplementTherMed_13">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ComplementTherMed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ComplementTherMed">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ComplementTherMed_13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14">
+	<dcterms:issued>2003</dcterms:issued>
+	<bibo:pageStart>110</bibo:pageStart>
+	<bibo:pageEnd>114</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B14">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B14_LLipman"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B14_JDale"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B14_HMacPherson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B14">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B15_BBerman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Berman</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Berman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:14668648</dcterms:identifier>
+	<bibo:pmid>14668648</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/14668648"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/14668648"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:14668648"/>
+	<bibo:doi>10.1097/00002508-200401000-00001</bibo:doi>
+	<dcterms:identifier>doi:10.1097/00002508-200401000-00001</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1097/00002508-200401000-00001"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ClinJPain">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Clin J Pain</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<dcterms:title>Complementary and alternative medicine:  Is it just a case of more tools for the medical bag?</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ClinJPain_14">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ClinJPain_14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ClinJPain_14">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ClinJPain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ClinJPain">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ClinJPain_14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<dcterms:issued>2004</dcterms:issued>
+	<bibo:pageStart>1</bibo:pageStart>
+	<bibo:pageEnd>2</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B15">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B15_BBerman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_DLDiehl">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DL Diehl</foaf:name>
+	<foaf:givenName>DL</foaf:givenName>
+	<foaf:familyName>Diehl</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_GKaplan">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>G Kaplan</foaf:name>
+	<foaf:givenName>G</foaf:givenName>
+	<foaf:familyName>Kaplan</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_ICoulter">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Coulter</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Coulter</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_DGlik">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>D Glik</foaf:name>
+	<foaf:givenName>D</foaf:givenName>
+	<foaf:familyName>Glik</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_ELHurwitz">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>EL Hurwitz</foaf:name>
+	<foaf:givenName>EL</foaf:givenName>
+	<foaf:familyName>Hurwitz</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofAlternative-ComplementaryMedicine">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Journal of Alternative &amp; Complementary Medicine</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<dcterms:title>Use of acupuncture by American physicians</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternative-ComplementaryMedicine_15">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternative-ComplementaryMedicine_15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternative-ComplementaryMedicine_15">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofAlternative-ComplementaryMedicine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_JournalofAlternative-ComplementaryMedicine">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_JournalofAlternative-ComplementaryMedicine_15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<dcterms:issued>1997</dcterms:issued>
+	<bibo:pageStart>103</bibo:pageStart>
+	<bibo:pageEnd>104</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B16">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_DLDiehl"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_GKaplan"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_ICoulter"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_DGlik"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B16_ELHurwitz"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_SWelsh">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Welsh</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Welsh</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_MJKelner">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MJ Kelner</foaf:name>
+	<foaf:givenName>MJ</foaf:givenName>
+	<foaf:familyName>Kelner</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_HBoon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Boon</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Boon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_BWellman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Wellman</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Wellman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:15027985</dcterms:identifier>
+	<bibo:pmid>15027985</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15027985"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/15027985"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:15027985"/>
+	<bibo:doi>10.1111/j.1467-9566.2004.00387.x</bibo:doi>
+	<dcterms:identifier>doi:10.1111/j.1467-9566.2004.00387.x</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1111/j.1467-9566.2004.00387.x"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_SociologyofHealth-Illness">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Sociology of Health &amp; Illness</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<dcterms:title>Moving Forward?  Complementary and alternative practitioners seeking self-regulation</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SociologyofHealth-Illness_16">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SociologyofHealth-Illness_16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SociologyofHealth-Illness_16">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_SociologyofHealth-Illness"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_SociologyofHealth-Illness">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_SociologyofHealth-Illness_16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<dcterms:issued>2004</dcterms:issued>
+	<bibo:pageStart>216</bibo:pageStart>
+	<bibo:pageEnd>241</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B17">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_SWelsh"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_MJKelner"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_HBoon"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B17_BWellman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B18_HBoon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Boon</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Boon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B18_JWong">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Wong</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Wong</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<bibo:doi>10.1517/14656566.5.12.2485</bibo:doi>
+	<dcterms:identifier>doi:10.1517/14656566.5.12.2485</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1517/14656566.5.12.2485"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ExpertOpinion">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Expert Opinion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<dcterms:title>Botanical medicine and cancer:  a review of the safety and efficacy</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ExpertOpinion_17">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ExpertOpinion_17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ExpertOpinion_17">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ExpertOpinion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_ExpertOpinion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_ExpertOpinion_17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<dcterms:issued>2004</dcterms:issued>
+	<bibo:pageStart>2485</bibo:pageStart>
+	<bibo:pageEnd>2501</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B18">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B18_HBoon"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B18_JWong"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_WWeiger">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>W Weiger</foaf:name>
+	<foaf:givenName>W</foaf:givenName>
+	<foaf:familyName>Weiger</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_MJSmith">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MJ Smith</foaf:name>
+	<foaf:givenName>MJ</foaf:givenName>
+	<foaf:familyName>Smith</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_HBoon">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Boon</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Boon</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_MARichardson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MA Richardson</foaf:name>
+	<foaf:givenName>MA</foaf:givenName>
+	<foaf:familyName>Richardson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_TJKaptchuk">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>TJ Kaptchuk</foaf:name>
+	<foaf:givenName>TJ</foaf:givenName>
+	<foaf:familyName>Kaptchuk</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_DMEisenberg">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DM Eisenberg</foaf:name>
+	<foaf:givenName>DM</foaf:givenName>
+	<foaf:familyName>Eisenberg</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:12458989</dcterms:identifier>
+	<bibo:pmid>12458989</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/12458989"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/12458989"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:12458989"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_AnnalsofInternalMedicine">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Annals of Internal Medicine</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<dcterms:title>Advising patients who seek complementary and alternative medical therapies for cancer</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_AnnalsofInternalMedicine_18">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_AnnalsofInternalMedicine_18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_AnnalsofInternalMedicine_18">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_AnnalsofInternalMedicine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_AnnalsofInternalMedicine">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_AnnalsofInternalMedicine_18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<dcterms:issued>2002</dcterms:issued>
+	<bibo:pageStart>889</bibo:pageStart>
+	<bibo:pageEnd>903</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B19">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_WWeiger"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_MJSmith"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_HBoon"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_MARichardson"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_TJKaptchuk"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B19_DMEisenberg"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B20_EKaegi">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Kaegi</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Kaegi</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9559016</dcterms:identifier>
+	<bibo:pmid>9559016</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9559016"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9559016"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9559016"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CanadianMedicalAssociationJournal">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Canadian Medical Association Journal</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<dcterms:title>Unconventional therapies for cancer. 1. Essiac</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianMedicalAssociationJournal_19">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianMedicalAssociationJournal_19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianMedicalAssociationJournal_19">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CanadianMedicalAssociationJournal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/journal/name_CanadianMedicalAssociationJournal">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/issue/journal_CanadianMedicalAssociationJournal_19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>897</bibo:pageStart>
+	<bibo:pageEnd>902</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B20">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/person/B20_EKaegi"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/list/listAuthors_B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Background</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The importance of breast cancer in women, as a public health problem, is well recognized worldwide [[B1],[B2]]. In Canadian women, breast cancer is a common malignant neoplasm, with a lifetime risk calculated as 1 in 9 [[B3]]. Due to mammographic screening, early detection of disease, and improved therapies, the rate of BC mortality is steadily declining in Canada [[B3]]. Nonetheless, in 2005, it is estimated that 21,600 women were diagnosed and 5,300 women died from this disease [[B3]]. Ontario has the highest incidence of BC cases in Canada, with 8,200 of the 21,600 new cases in 2005 [[B3]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>There have been many surveys of CAM use among patients with breast cancer in the US, Britain, and Canada. Survey results among breast cancer patients find that prevalence of CAM use ranges from 16.5 percent to 84 percent [[B4]-[B9]]. Our own study of a random sample of breast cancer survivors in Ontario, Canada found that 66.7 percent had used some form of CAM [[B8]]. Women cite numerous reasons for taking alternative treatments including to reduce physical distress, fatigue, anxiety, depression, sleep disturbance, nausea, weight change, hair loss, diminished concentration, and pain.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Background/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Many reports suggest that the prevalence of CAM in cancer patients and survivors has been increasing, yet few follow-up studies are available to confirm this. In addition, the use of different definitions of CAM, and thus different instruments to measure CAM prevalence, makes it difficult to compare studies completed at different points-in-time. The primary purpose of this paper is to compare overall patterns of prevalence of CAM use, as well as use of specific CAM products and therapies in two random samples of women diagnosed with breast cancer in 1998 and seven years later in 2005, using the same survey questions and definition of CAM. Specifically, CAM was defined as medical interventions that are not taught widely in medical schools or generally available in hospitals[[B10]] In addition, the clinical, sociodemographic, and characteristics of CAM consumers in 1998 are compared with those of consumers in 2005.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Methods</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/F1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/F1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/F1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>At both time points (1998 and 2005), a random sample of women 18 years and older and diagnosed with breast cancer were selected from the Ontario Cancer Registry based on pathology reports (See Figure [F1]). A mailed reminder letter was posted approximately one week following the initial mail out. In addition, approximately three weeks after the initial mailing, a final reminder letter and second survey was mailed to each non-respondent. This Registry is a computerized database that contains information on virtually all Ontario residents diagnosed with cancer. As stipulated by the Registry, permission to contact each woman was requested from her family physician or oncologist. Up to three telephone reminders were provided in attempts to obtain responses from as many physicians as possible. Surveys were mailed to all women for whom permission and mailing addresses were received. Women who did not respond to two follow-up letters were identified as non-responders. See Figure [F1] for details on the derivation of the sample.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The questionnaire asks women to identify which CAM practitioners and CAM therapies/products (from a specific list) they had ever visited or used. In 2005, each respondent was also asked to indicate if she visited the practitioners and/or used the therapies for her breast cancer or for some other reason. In both years, demographic information and details about each participant's cancer (e.g., stage, conventional treatment, hormone receptor status) were also collected.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Statistical analysis</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Statistical-analysis/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Statistical-analysis/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Statistical-analysis/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Respondents of the 2005 survey were categorized as CAM consumers or nonconsumers. CAM consumers were further categorized as either using or not using particular CAM products or visiting CAM practitioners. We calculated frequencies, counts, and means to describe the pattern of clinical, sociodemographic and prevalence of CAM practitioners and products characteristics for respondents of the 2005 survey. To compare the relationship of respondents of the 2005 group who were CAM consumers to nonconsumers on sociodemographic and clinical characteristics we calculated Fisher Exact tests for categorical variables and independent t-tests for continuous variables. We calculated Z-values for independent proportions (two-sided) to compare sociodemographic and clinical characteristics as well as the prevalence of CAM products used and practitioners visited between the 1998 and the 2005 respondents. The data were analyzed using Statistical Package for Social Sciences for Windows, version 12.0 (SPSS, Chicago, ILL).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Statistical-analysis/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Statistical-analysis/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Statistical-analysis/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Methods/Statistical-analysis"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>This study was approved by the University of Toronto Ethics Review Office and the Institutional Review Board for Human Subject Research at the University of Michigan Medical School.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Results</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In 1998, the survey was mailed to 557 women and the final response rate was 76.3 percent (411/539). Seven of the 1998 respondents were reported to have died and 11 women reported that their first diagnosis of cancer was prior to 1994 and thus did not meet the inclusion criteria for the study. Thus these women were not counted in the denominator when calculating the response rate for the study. See Boon et al. 2000 for additional details on the 1998 data collection [[B8]]. In 2005, the survey was mailed to 877 women who were diagnosed with breast cancer between 2001 and 2003. A total of 541 surveys were returned and sixteen families provided information that the potential participant had died. In addition, 31 surveys were removed from the analysis because the individual reported her date of diagnosis as being prior to 2001. Thus the final response rate in 2005 was 63 percent (541/(877-16)). See Zick et al. 2006 for additional details on the 2005 data collection[[B11]]</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Participants</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Participants/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Participants/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Participants/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Participants"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Participants/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Participants/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Participants/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Table [T1] provides demographic and breast cancer diagnosis/treatment data. The 2005 group was surveyed significantly closer to their date of diagnosis compared to the 1998 group and had a slightly higher level of education. Compared to the 1998 cohort, significantly fewer respondents in 2005 reported having surgery, but significantly more reported having chemotherapy and hormone therapy for their breast cancer.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Use of CAM</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In 2005, 81.9 percent of women reported using either a CAM product/practice or seeing a CAM therapist at some time in their lives as compared with 66.7 percent in 1998 (p = 0.0002). Increases were seen in both use of at least one CAM product or therapy (70.6 percent in 2005 vs. 62 percent in 1998) and visits to CAM practitioners (57.4 percent of respondents in 2005 versus 39.4 percent or respondents in 1998). In both years, the median number of CAM practitioners ever seen was one and the median number of products/practices ever used was two. Women in 2005 reported that 41 percent (n = 220) used CAM as part of the management of their breast cancer. The most commonly used products and practitioners for managing breast cancer included green tea, vitamin E, flaxseed and vitamin C, massage therapists and dietitians/nutritionists (see Table [T2]). Questions about the use of CAM specifically to manage breast cancer were not asked in the 1998 survey.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Results/Use-of-CAM"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/T3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Use-of-CAM/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Table [T3] provides details on use of specific CAM practitioners and products in 1998 compared to in 2005. Significant increases were seen in use of body work practitioners (including Reiki practitioners, massage therapists, therapeutic touch practitioners and shiatsu practitioners), acupuncturists/traditional Chinese medicine (TCM) practitioners, homeopathic practitioners and a general "other" category in 2005 compared to 1998. Significant increases were also seen in use of herbal remedies overall and specifically in the use of green tea and special foods/diets. Use of Essiac (Essiac is a blend of at least four herbs (burdock root (Arctium lappa), Indian rhubarb (Rheum palmatum), sheep sorrel (Rumex acetosella) and the inner bark of slippery elm (Ulmus fulva or U. rubra) significantly decreased.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Discussion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Overall, we found that both the use of CAM products and visits to CAM practitioners by women diagnosed with breast cancer significantly increased from 1998 to 2005. In 2005, 81.9 percent of respondents reported using CAM (41 percent to help manage their breast cancer) compared to 66.7 percent in 1998, suggesting that in 2005 CAM use has become the "norm" in this patient population.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The observed increase in CAM use appears not to be explained by changing demographics in the breast cancer population. The two cohorts were approximately the same with respect to age and income levels. The differences in ethnicity, the percentage that were married, and the level of education appear not to be big enough to account for the increases in use. For example, a mean age difference of 3 years is unlikely to be clinically significant. The 2005 cohort reported less surgery, but more chemotherapy and more hormone therapy (e.g., tamoxifen) which may be a reflection of differences in stage of cancer at diagnoses; however since cancer stage information was not collected in 1998, it is not possible to assess this. The differences in conventional treatments may also be related to changes in therapeutic protocols for breast cancer that have occurred since 1998.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B15">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B16">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Overall, the biggest increases were seen in the percentage of women seeing bodywork practitioners (including massage therapists, but not chiropractors), TCM practitioners/acupuncturists, homeopaths and "others". This may be related to the fact that massage therapy and acupuncture are two of the CAM practices which are generally the most accepted by the medical profession [[B12]-[B15]]. For example, many physicians use acupuncture in their practices [[B16]]. In addition, given that neither acupuncture nor massage involves taking anything orally, it is likely they are perceived to have fewer potential adverse effects or interactions with conventional cancer treatments than some other CAM therapies. So it is possible that conventional MDs are either recommending these options more often to patients or at least not discouraging patients from using them.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B17">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Perception of safety and perceived lack of drug interactions may also explain the increased use of homeopathy. In addition, the homeopathic community was under review by the Health Professions Regulation Advisory Council for consideration as a future regulated health profession in Ontario during 2005 when this survey was conducted [[B17]]. Although the council hearing did not receive much media attention at the time, it may partially explain the increased use of homeopathy reported here.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B18">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B19">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_5">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Overall, there was a significant increase in the use of herbal products such as garlic, ginger, ginseng and green tea and special foods/diets. Both green tea and special diets/foods are used by more than 10 percent of all women diagnosed with breast cancer specifically to help manage their breast cancer. A review of the evidence suggests that there may be an overall decreased risk of cancer associated with taking Asian ginseng (Panax ginseng), garlic, green tea, soy, and tomatoes but research is extremely preliminary and in some cases contradictory. Also, the minimum dose associated with decreased cancer risk has not been clearly defined for any of the supplements or herbs [[B18],[B19]]. Although there is evidence that ginger may be useful in the management of chemotherapy-induced nausea, it is not clear exactly what dose or dosing schedule is best. It is also not clear what additional benefits ginger products have over and above conventional anti-nausea medications (fewer adverse effects are claimed) [[B18],[B19]]. There are currently no herbs with significant evidence of efficacy as cancer treatments [[B18],[B19]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B20">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_6">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Our results also found the use of Essiac significantly decreased. Essiac has been used in Canada for over 70 years [[B20]]. In contrast to green tea and soy, which has received considerable media and scientific attention as possible cancer prevention agents, Essiac has received little notice and has no peer-reviewed clinical trials or encouraging animal studies demonstrating any significant beneficial effects. For example, our retrospective survey found that Essiac did not have a significant effect on either health related quality of life or mood states in women with breast cancer. Women in the study were taking low doses (total daily dose 43.6 ± 30.8 mL) of Essiac that corresponded to label directions found on most Essiac products, but appear unlikely to have significant pharmacological effects[[B11]] Thus, it appears at least in part, that women are using more natural health products that are receiving increased positive attention in the media and by the scientific community and decreasing those that have garnered little evidence or interest.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_7">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_7">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Several limitations of our study need to be addressed. As with any retrospective study recall bias is a possible limitation. In 1998, respondents were only asked if they had ever used CAM products or visited CAM therapies. Thus, although we can comment on what women in 2005 were using to help manage their breast cancer, it is not possible to compare this to women in 1998.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_8">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_8">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Both in 1998, and in 2005, the most up-to-date records from the Ontario Cancer Registry were used to select samples as close to diagnosis as possible. However, given the recent computerization of the Registry, the 2005 cohort was surveyed almost 12 months closer to their diagnosis of cancer than the 1998 cohort and thus may have been more active in using CAM products and therapies to manage the lingering side effects of conventional cancer treatments. It might also have been easier for these women to recall the CAM they had used in the more active symptom phase of the management of the cancer than the women surveyed in 1998. It is possible that the difference in time since diagnosis accounts for the changes in CAM use reported by the two cohorts.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_9">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_9">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/F1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/reference/F1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Discussion/paragraph_9">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>We originally selected a random sample from the Ontario Cancer Registry; however we were only able to mail surveys to approximately one-half of the sample from 1998 and just over one-third of the sample in 2005 (see Figure [F1]). Physicians declined to provide permission for women that were too ill or emotionally unstable to respond or were unable to speak English (less than ten percent of the original sample). The reason we were unable to contact most of the other women was our inability to obtain a response from the physicians we contacted to obtain permission to mail a survey to the patient. It is possible that physicians who did not respond had more negative attitudes toward CAM and may have influenced their patients not to take CAM than those who agreed to allow their patients to participate. Thus, our prevalence rates may be an over-estimate of the actual prevalence of CAM use in the population of women with breast cancer.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Conclusion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Our findings suggest that the majority of women with breast cancer use CAM in combination with conventional medical breast cancer treatments and this highlights the importance of additional research on the safety, efficacy and interactions of these products and therapies. It is important for clinicians to routinely ask patients about their CAM use, but making recommendations about use, especially in conjunction with chemotherapy, radiation therapy and hormone therapy remains problematic due to lack of research of the potential benefits or harmful effects of these combinations.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Conclusion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>CAM use (both self-medication with products and visits to CAM practitioners) increased from 1998 to 2005 in our samples. Now that more than 80 percent of all women with breast cancer report using CAM (41 percent in a specific attempt to management their breast cancer), CAM use can no longer be regarded as an "alternative" or unusual approach to managing breast cancer. The increasing popularity of CAM increases the urgency for research into the safety and efficacy of these products and therapies.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Abbreviations</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>CAM ? complementary and alternative medicine</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Abbreviations"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>TCM ? traditional Chinese medicine</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Competing interests</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Competing-interests"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The author(s) declare that they have no competing interests.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Authors' contributions</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Authors--contributions"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>HB and SZ conceived and designed the study. HB organized and supervised data collection and inputting; drafted the paper and approved the final version. SZ organized and supervised the data analysis, provided critical comments on various drafts of the paper and approved the final version. SO helped to develop and pre-test the survey instrument, helped to organize data collection, commented on drafts of the paper and approved the final version. All authors read and approved the final manuscript.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951"/>
+	<dcterms:title>Pre-publication history</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The pre-publication history for this paper can be accessed here:</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1851951/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars></cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+</rdf:RDF>

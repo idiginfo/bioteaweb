@@ -1,0 +1,569 @@
+<rdf:RDF
+    xmlns:bio2rdf_mesh="http://bio2rdf.org/ns/mesh#"
+    xmlns:symptom="http://purl.org/obo/owl/SYMP#SYMP_"
+    xmlns:fma="http://purl.org/obo/owl/FMA#FMA_"
+    xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+    xmlns:medline="http://purl.bioontology.org/ontology/MEDLINEPLUS/"
+    xmlns:nddf="http://purl.bioontology.org/ontology/NDDF/"
+    xmlns:ncithesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+    xmlns:po="http://purl.bioontology.org/ontology/PO/"
+    xmlns:omim="http://purl.bioontology.org/ontology/OMIM/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:aoa="http://purl.org/ao/annotea/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mesh="http://purl.bioontology.org/ontology/MSH/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi="http://purl.obolibrary.org/obo/OBI_"
+    xmlns:icd9="http://purl.bioontology.org/ontology/ICD9-9/"
+    xmlns:bio2rdf_ns="http://bio2rdf.org/ns/bio2rdf#"
+    xmlns:umls="http://berkeleybop.org/obo/UMLS:"
+    xmlns:ao="http://purl.org/ao/core/"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:go="http://purl.org/obo/owl/GO#GO_"
+    xmlns:doco="http://purl.org/spar/doco/"
+    xmlns:aof="http://purl.org/ao/foaf/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:chebi="http://purl.obolibrary.org/obo/CHEBI_"
+    xmlns:mged="http://mged.sourceforge.net/ontologies/MGEDOntology.owl#"
+    xmlns:aold="http://biotea.ws/ontologies/aold/"
+    xmlns:pw="http://purl.org/obo/owl/PW#PW_"
+    xmlns:uniprot="http://purl.uniprot.org/core/"
+    xmlns:meddra="http://purl.bioontology.org/ontology/MDR/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ncbitaxon="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_"
+    xmlns:taxonomy="http://www.uniprot.org/taxonomy/"
+    xmlns:pav="http://purl.org/swan/pav/provenance/"
+    xmlns:aos="http://purl.org/ao/selectors/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:aot="http://purl.org/ao/types/"
+    xmlns:ldao="http://www.biotea.ws/ao/hypertag.owl#"
+    xmlns:mddb="http://purl.bioontology.org/ontology/MDDB/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/32298c506826f751e3aea42c38af5eb6_breast-cancer">
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breast cancer</ao:body>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006142">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006142"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Measures/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0678222">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0678222"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:57.646Z</pav:createdOn>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/4d9564eecda3d8d83d6db55a74b1d159_thinking">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0233629">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0233629"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:54.83Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >thinking</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/b89f7b1c2d6893278a343e8c5a3a87ba_cognitive-impairment">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0338656">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0338656"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Participants/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:59.36Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cognitive impairment</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/506ed140bca317d2b8df46907bd58070_heart-failure">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:56.263Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heart failure</ao:body>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0018801">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0018801"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/a9027320a9ac070b828b0d930f843b07_cancer">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:56.263Z</pav:createdOn>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cancer</ao:body>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1306459">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1306459"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>4</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006826">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006826"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/3ddf5773907ae3dc1fc4ffaba999248c_psoriasis">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0033860">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0033860"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:56.263Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >psoriasis</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/2fa2b69fed1a0eeb78eb0d9235ca0d66_cognitive-disorders">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0009241">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0009241"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Measures/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:58:00.534Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cognitive disorders</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/c81bb65624e624e2c53ba26b1155aa9b_lung-disease">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0024115">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0024115"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:59.769Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >lung disease</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/0e160883f6decfdd3fb3721471c40bb9_MOS">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q90XV6">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q90XV6"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q90XV6"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q90XV9">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q90XV9"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q90XV9"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8IU29">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8IU29"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8IU29"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P10741">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P10741"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P10741"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9C5X8">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9C5X8"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9C5X8"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8LGM7">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8LGM7"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8LGM7"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8AX00">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8AX00"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8AX00"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9UV64">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9UV64"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9UV64"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8QHF0">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8QHF0"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8QHF0"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P50118">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P50118"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P50118"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8AX01">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8AX01"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8AX01"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9N0E7">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9N0E7"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9N0E7"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9VRA2">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9VRA2"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9VRA2"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q655R6">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q655R6"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q655R6"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q14CH1">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q14CH1"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q14CH1"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P00540">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P00540"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P00540"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q29GM0">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q29GM0"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q29GM0"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Measures/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:58:01.312Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q2UH11">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q2UH11"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q2UH11"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MOS</ao:body>
+    <sioc:num_items>4</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8AX02">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8AX02"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8AX02"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P10650">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P10650"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P10650"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q96EN8">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q96EN8"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q96EN8"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q21657">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q21657"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q21657"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q4WPE6">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q4WPE6"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q4WPE6"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q90XV7">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q90XV7"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q90XV7"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P87347">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P87347"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P87347"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q90XV8">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q90XV8"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q90XV8"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/36adde5ad52270f5eddfafd9b34efb18_COPE">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/O14579">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:O14579"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/O14579"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >COPE</ao:body>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q28104">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q28104"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q28104"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q60445">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q60445"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q60445"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Measures/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:54.315Z</pav:createdOn>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/63a4ac538466bbd12fd245052a207879_tobacco">
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_4097">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:4097"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/4097"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/4097">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:4097"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:4097"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tobacco</ao:body>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:54.83Z</pav:createdOn>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/03c97555702b74f7a1168ad8f0a85431_dementia">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Participants/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Measures/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0497327">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0497327"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:54.315Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dementia</ao:body>
+    <sioc:num_items>4</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Procedures/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2876066_whatizitUkPmcAll.rdf/c3781895490700f7277da5e447d63dbe_human">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066/section/Procedures/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/9606">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9606"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:9606"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >human</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9606"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2876066"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:57:59.128Z</pav:createdOn>
+  </aot:ExactQualifier>
+</rdf:RDF>

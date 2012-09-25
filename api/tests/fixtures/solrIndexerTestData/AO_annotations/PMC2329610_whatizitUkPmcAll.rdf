@@ -1,0 +1,305 @@
+<rdf:RDF
+    xmlns:bio2rdf_mesh="http://bio2rdf.org/ns/mesh#"
+    xmlns:symptom="http://purl.org/obo/owl/SYMP#SYMP_"
+    xmlns:fma="http://purl.org/obo/owl/FMA#FMA_"
+    xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+    xmlns:medline="http://purl.bioontology.org/ontology/MEDLINEPLUS/"
+    xmlns:nddf="http://purl.bioontology.org/ontology/NDDF/"
+    xmlns:ncithesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+    xmlns:po="http://purl.bioontology.org/ontology/PO/"
+    xmlns:omim="http://purl.bioontology.org/ontology/OMIM/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:aoa="http://purl.org/ao/annotea/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mesh="http://purl.bioontology.org/ontology/MSH/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi="http://purl.obolibrary.org/obo/OBI_"
+    xmlns:icd9="http://purl.bioontology.org/ontology/ICD9-9/"
+    xmlns:bio2rdf_ns="http://bio2rdf.org/ns/bio2rdf#"
+    xmlns:umls="http://berkeleybop.org/obo/UMLS:"
+    xmlns:ao="http://purl.org/ao/core/"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:go="http://purl.org/obo/owl/GO#GO_"
+    xmlns:doco="http://purl.org/spar/doco/"
+    xmlns:aof="http://purl.org/ao/foaf/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:chebi="http://purl.obolibrary.org/obo/CHEBI_"
+    xmlns:mged="http://mged.sourceforge.net/ontologies/MGEDOntology.owl#"
+    xmlns:aold="http://biotea.ws/ontologies/aold/"
+    xmlns:pw="http://purl.org/obo/owl/PW#PW_"
+    xmlns:uniprot="http://purl.uniprot.org/core/"
+    xmlns:meddra="http://purl.bioontology.org/ontology/MDR/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ncbitaxon="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_"
+    xmlns:taxonomy="http://www.uniprot.org/taxonomy/"
+    xmlns:pav="http://purl.org/swan/pav/provenance/"
+    xmlns:aos="http://purl.org/ao/selectors/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:aot="http://purl.org/ao/types/"
+    xmlns:ldao="http://www.biotea.ws/ao/hypertag.owl#"
+    xmlns:mddb="http://purl.bioontology.org/ontology/MDDB/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/9ec7ffa60d6cbb2bfdeade11dd89c622_recurrent-cervical-cancer">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0278579">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0278579"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:11.737Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >recurrent cervical cancer</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/2ec424cf7289a9513e8db859e3b43b74_Cervical-Intraepithelial-Neoplasia">
+    <sioc:num_items>2</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0206708">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0206708"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:22.622Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cervical Intraepithelial Neoplasia</ao:body>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/a488d96f17bc9e20c67b5ab12a610e9d_neoplasia">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0027651">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0027651"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:11.737Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >neoplasia</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/b887bc88d0cfd28f2db91720bbe8acb8_leiomyoma">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0023267">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0023267"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:20.529Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >leiomyoma</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/4da040dcd050ef000b67716a5207004e_noncancerous-conditions">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1513655">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1513655"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:20.529Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >noncancerous conditions</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/1f8ec0469276623ccaf3925b35b2de74_malignancy">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1306459">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1306459"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:32.755Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >malignancy</ao:body>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006826">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006826"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/e690416801568ee713da0457bf2cd663_tumour-of-the-cervix-uteri">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0007873">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0007873"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:32.755Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tumour of the cervix uteri</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/53b608fa5381ff9d4be8d71902defba6_fibroids">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0023267"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:20.529Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fibroids</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/6b63fa2ccf0b50c06d0969f327d0e03d_cervical-intraepithelial-neoplasia">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0206708"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Power-calculation-justification-of-sample-size/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:35.116Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cervical intraepithelial neoplasia</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/1936906259f1aa21c3f9a27ea0e46bcf_Prolapse">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0033377">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0033377"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:20.529Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Prolapse</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2329610_whatizitUkPmcAll.rdf/25421025219b569d3211b5595b5743a5_cancer">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:53:20.854Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Assumptions/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>3</sioc:num_items>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cancer</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Assumptions/paragraph_6"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006826"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610/section/Analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C1306459"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2329610"/>
+  </ao:Annotation>
+</rdf:RDF>

@@ -1,0 +1,176 @@
+<rdf:RDF
+    xmlns:bio2rdf_mesh="http://bio2rdf.org/ns/mesh#"
+    xmlns:symptom="http://purl.org/obo/owl/SYMP#SYMP_"
+    xmlns:fma="http://purl.org/obo/owl/FMA#FMA_"
+    xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+    xmlns:medline="http://purl.bioontology.org/ontology/MEDLINEPLUS/"
+    xmlns:nddf="http://purl.bioontology.org/ontology/NDDF/"
+    xmlns:ncithesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+    xmlns:po="http://purl.bioontology.org/ontology/PO/"
+    xmlns:omim="http://purl.bioontology.org/ontology/OMIM/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:aoa="http://purl.org/ao/annotea/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mesh="http://purl.bioontology.org/ontology/MSH/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi="http://purl.obolibrary.org/obo/OBI_"
+    xmlns:icd9="http://purl.bioontology.org/ontology/ICD9-9/"
+    xmlns:bio2rdf_ns="http://bio2rdf.org/ns/bio2rdf#"
+    xmlns:umls="http://berkeleybop.org/obo/UMLS:"
+    xmlns:ao="http://purl.org/ao/core/"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:go="http://purl.org/obo/owl/GO#GO_"
+    xmlns:doco="http://purl.org/spar/doco/"
+    xmlns:aof="http://purl.org/ao/foaf/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:chebi="http://purl.obolibrary.org/obo/CHEBI_"
+    xmlns:mged="http://mged.sourceforge.net/ontologies/MGEDOntology.owl#"
+    xmlns:aold="http://biotea.ws/ontologies/aold/"
+    xmlns:pw="http://purl.org/obo/owl/PW#PW_"
+    xmlns:uniprot="http://purl.uniprot.org/core/"
+    xmlns:meddra="http://purl.bioontology.org/ontology/MDR/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ncbitaxon="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_"
+    xmlns:taxonomy="http://www.uniprot.org/taxonomy/"
+    xmlns:pav="http://purl.org/swan/pav/provenance/"
+    xmlns:aos="http://purl.org/ao/selectors/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:aot="http://purl.org/ao/types/"
+    xmlns:ldao="http://www.biotea.ws/ao/hypertag.owl#"
+    xmlns:mddb="http://purl.bioontology.org/ontology/MDDB/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2527301_whatizitUkPmcAll.rdf/e64b67f96c3410f267f779f84d6f9ce4_miscarriage">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0000786">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0000786"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301/section/Participants/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:55:17.9Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >miscarriage</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2527301_whatizitUkPmcAll.rdf/4956d867d16dc23cacf8afaecf3a0502_substance-abuse">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0740858">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0740858"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301/section/Participants/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:55:17.9Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >substance abuse</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2527301_whatizitUkPmcAll.rdf/e5b6ed5e827c4c9a4c126cc6bb846fe9_obese">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0028754">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0028754"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:55:08.231Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >obese</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2527301_whatizitUkPmcAll.rdf/0067fe1a21f1dfa99fb51e7715747316_gestational-diabetes">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0085207">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0085207"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:55:08.231Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >gestational diabetes</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2527301_whatizitUkPmcAll.rdf/6eec126a61a9c7214cfd00304aafb46c_miscarriages">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0000786"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301/section/Results/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:55:07.553Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >miscarriages</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC2527301_whatizitUkPmcAll.rdf/7ec314de5940120beb470a2211416113_psychiatric-illness">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0004936">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0004936"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301/section/Participants/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2527301"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:55:17.9Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >psychiatric illness</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+</rdf:RDF>

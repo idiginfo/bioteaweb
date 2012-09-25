@@ -1,0 +1,586 @@
+<rdf:RDF
+    xmlns:bio2rdf_mesh="http://bio2rdf.org/ns/mesh#"
+    xmlns:symptom="http://purl.org/obo/owl/SYMP#SYMP_"
+    xmlns:fma="http://purl.org/obo/owl/FMA#FMA_"
+    xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+    xmlns:medline="http://purl.bioontology.org/ontology/MEDLINEPLUS/"
+    xmlns:nddf="http://purl.bioontology.org/ontology/NDDF/"
+    xmlns:ncithesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+    xmlns:po="http://purl.bioontology.org/ontology/PO/"
+    xmlns:omim="http://purl.bioontology.org/ontology/OMIM/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:aoa="http://purl.org/ao/annotea/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mesh="http://purl.bioontology.org/ontology/MSH/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi="http://purl.obolibrary.org/obo/OBI_"
+    xmlns:icd9="http://purl.bioontology.org/ontology/ICD9-9/"
+    xmlns:bio2rdf_ns="http://bio2rdf.org/ns/bio2rdf#"
+    xmlns:umls="http://berkeleybop.org/obo/UMLS:"
+    xmlns:ao="http://purl.org/ao/core/"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:go="http://purl.org/obo/owl/GO#GO_"
+    xmlns:doco="http://purl.org/spar/doco/"
+    xmlns:aof="http://purl.org/ao/foaf/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:chebi="http://purl.obolibrary.org/obo/CHEBI_"
+    xmlns:mged="http://mged.sourceforge.net/ontologies/MGEDOntology.owl#"
+    xmlns:aold="http://biotea.ws/ontologies/aold/"
+    xmlns:pw="http://purl.org/obo/owl/PW#PW_"
+    xmlns:uniprot="http://purl.uniprot.org/core/"
+    xmlns:meddra="http://purl.bioontology.org/ontology/MDR/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ncbitaxon="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_"
+    xmlns:taxonomy="http://www.uniprot.org/taxonomy/"
+    xmlns:pav="http://purl.org/swan/pav/provenance/"
+    xmlns:aos="http://purl.org/ao/selectors/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:aot="http://purl.org/ao/types/"
+    xmlns:ldao="http://www.biotea.ws/ao/hypertag.owl#"
+    xmlns:mddb="http://purl.bioontology.org/ontology/MDDB/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/682bc5aa2746bd071e3c06fadfa1d3bf_infertility">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.298Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0021359">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0021359"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >infertility</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>2</sioc:num_items>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/4ff5c7024bdb00145f54ef3672befd15_other-viral-infections">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0042769">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0042769"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.299Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >other viral infections</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/adc1bc4fd14d067d6a98ed2a0b67a307_Chlamydia-trachomatis">
+    <sioc:num_items>3</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/813">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:813"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:813"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chlamydia trachomatis</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.33Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_813">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:813"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/813"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/ae5afcc3ac46a8a12e6f135fdd0cf58e_Human">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.299Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/9606">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9606"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:9606"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <sioc:num_items>1</sioc:num_items>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human</ao:body>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9606"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/3a84deb3a2e437baa3620460f8045e20_Papilloma">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0030354">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0030354"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.3Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Papilloma</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/e62a1148e415c038b02886eab650bdc1_Chlamydia">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Conclusions/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/810">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:810"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:810"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Methods/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:38.966Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Methods/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_810">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:810"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/810"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_5"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>25</sioc:num_items>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chlamydia</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_6"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Statistical-analysis/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/064663b9f06359bd3ad4a070915cd643_genital-infections">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0729552">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0729552"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:47:01.321Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >genital infections</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/44016c83e2dc54f4211cccd11ea34554_vaginal-discharge">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0227791">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0227791"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:45.654Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vaginal discharge</ao:body>
+    <sioc:num_items>3</sioc:num_items>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Methods/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/853d95e104fdc34a9f4cd5d0be9a57c6_vaginal-infections">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0404521">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0404521"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.26Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vaginal infections</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/6badd24d4a6747295fc7545921134ab6_urethritis">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0041976">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0041976"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:47:00.645Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >urethritis</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/f47199f03b87922041b7cab7e428d1d6_cervical-cancer">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0302592">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0302592"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:55.3Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cervical cancer</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/711735755784dc62cc942c1a7f8d7a82_infections">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0021311">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0021311"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:42.68Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_5"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0009450">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0009450"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>3</sioc:num_items>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >infections</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/b794b920d50333b21815abc842b9ac59_cardiovascular-disorders">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0007222">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Disease or Syndrome</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0007222"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:40.304Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cardiovascular disorders</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/74d40506422bf94323eb33c7150ac8ea_cancer">
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1306459">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1306459"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:40.346Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006826">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006826"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cancer</ao:body>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/62a05a5275b78d88d458ca341260998a_Infectious-disease">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0009450"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:47:02.446Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Infectious disease</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC434520_whatizitUkPmcAll.rdf/20df8b95e0e105c89815a7932d7c43a2_infection">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Statistical-analysis/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_5"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Conclusions/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0009450"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >infection</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520/section/Discussion/paragraph_6"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC434520"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:46:38.966Z</pav:createdOn>
+    <sioc:num_items>21</sioc:num_items>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0021311"/>
+  </aot:ExactQualifier>
+</rdf:RDF>

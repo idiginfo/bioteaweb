@@ -1,0 +1,1518 @@
+<rdf:RDF
+    xmlns:bio2rdf_mesh="http://bio2rdf.org/ns/mesh#"
+    xmlns:symptom="http://purl.org/obo/owl/SYMP#SYMP_"
+    xmlns:fma="http://purl.org/obo/owl/FMA#FMA_"
+    xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+    xmlns:medline="http://purl.bioontology.org/ontology/MEDLINEPLUS/"
+    xmlns:nddf="http://purl.bioontology.org/ontology/NDDF/"
+    xmlns:ncithesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+    xmlns:po="http://purl.bioontology.org/ontology/PO/"
+    xmlns:omim="http://purl.bioontology.org/ontology/OMIM/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:aoa="http://purl.org/ao/annotea/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mesh="http://purl.bioontology.org/ontology/MSH/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi="http://purl.obolibrary.org/obo/OBI_"
+    xmlns:icd9="http://purl.bioontology.org/ontology/ICD9-9/"
+    xmlns:bio2rdf_ns="http://bio2rdf.org/ns/bio2rdf#"
+    xmlns:umls="http://berkeleybop.org/obo/UMLS:"
+    xmlns:ao="http://purl.org/ao/core/"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:go="http://purl.org/obo/owl/GO#GO_"
+    xmlns:doco="http://purl.org/spar/doco/"
+    xmlns:aof="http://purl.org/ao/foaf/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:chebi="http://purl.obolibrary.org/obo/CHEBI_"
+    xmlns:mged="http://mged.sourceforge.net/ontologies/MGEDOntology.owl#"
+    xmlns:aold="http://biotea.ws/ontologies/aold/"
+    xmlns:pw="http://purl.org/obo/owl/PW#PW_"
+    xmlns:uniprot="http://purl.uniprot.org/core/"
+    xmlns:meddra="http://purl.bioontology.org/ontology/MDR/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ncbitaxon="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_"
+    xmlns:taxonomy="http://www.uniprot.org/taxonomy/"
+    xmlns:pav="http://purl.org/swan/pav/provenance/"
+    xmlns:aos="http://purl.org/ao/selectors/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:aot="http://purl.org/ao/types/"
+    xmlns:ldao="http://www.biotea.ws/ao/hypertag.owl#"
+    xmlns:mddb="http://purl.bioontology.org/ontology/MDDB/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/52eb46c2438b0fbceae8d5a2d0c7f3da_breast-tumor">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1458155">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1458155"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:33.969Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breast tumor</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/2de636c1d3325facb6d0b8a4deb8e9f3_ductal-carcinomas">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1176475">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1176475"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:41.534Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ductal carcinomas</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/174383a89ede5a206a9de6f7b502d3ed_breast-cancer">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006142">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006142"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breast-cancer</ao:body>
+    <ao:context>
+      <aold:ElementSelector rdf:nodeID="A0">
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_8"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0678222">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0678222"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:41.039Z</pav:createdOn>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/97cc8f2533801a737500e95484a14e87_invasive-carcinoma">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1334274">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1334274"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:43.242Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >invasive carcinoma</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/aec277a1890caed8b2a821f337110dbf_mouse">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:43.921Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10090">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:10090"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/10090"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/10090">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:10090"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:10090"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mouse</ao:body>
+    <sioc:num_items>2</sioc:num_items>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/bff922b9cee43ea70dccb8cd7249646a_breast-cancers">
+    <sioc:num_items>1</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_7"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006142"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:34.558Z</pav:createdOn>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0678222"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breast cancers</ao:body>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/e11dec0148f00d7e55025b3528914d56_Medullary-carcinomas">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0206693">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0206693"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:41.534Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Medullary carcinomas</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/6e7b4f847a4f308fe1ed83e8cf6653d9_Arizona">
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Arizona</ao:body>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:43.921Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_94892">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:94892"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/94892"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/94892">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:94892"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:94892"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/699c30615a460f67294d8bd05ebb502c_Tumors">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0027651">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0027651"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Comparison-of-tumor-size--histologic-subtype--lymph-node-status-and-proliferation-index-among-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tumors</ao:body>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:41.534Z</pav:createdOn>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>4</sioc:num_items>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/37cd55cd18e544efda304a80e06a27ff_Breast-Cancer">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Conclusions/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006142"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:42.214Z</pav:createdOn>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0678222"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Breast Cancer</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/d644a6fe032023c756e6b3bd96126293_HER2">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:33.143Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HER2</ao:body>
+    <sioc:num_items>3</sioc:num_items>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Comparison-of-tumor-size--histologic-subtype--lymph-node-status-and-proliferation-index-among-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P04626">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P04626"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P04626"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Prevalence-of-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/56ae3f316ffcbc48c5ca649dfdca3556_cat">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/9685">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9685"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:9685"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>5</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cat</ao:body>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9685">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9685"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9685"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:43.921Z</pav:createdOn>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/cc0ef165e7b08c657babb2f77a43fe24_breast-cancer">
+    <sioc:num_items>25</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context rdf:nodeID="A0"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_6"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_5"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0678222"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Statistical-Analysis/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:35.665Z</pav:createdOn>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >breast cancer</ao:body>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006142"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Conclusions/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/5a358bbb53f78cdabe9e0a91fc598dd3_Carpentaria">
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Carpentaria</ao:body>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:43.921Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/292694">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:292694"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:292694"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_292694">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:292694"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/292694"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/a2716111668f17ed8db0ad8e905a8986_Cancer">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006826">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006826"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:37.274Z</pav:createdOn>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1306459">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1306459"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cancer</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/702946c15d1acffebafa533283354100_human">
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/9606">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9606"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:9606"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >human</ao:body>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:38.467Z</pav:createdOn>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9606"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9606"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/255f2bbe72a8469ebb2a69d096f3331e_Breast-cancer">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:39.886Z</pav:createdOn>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0678222"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006142"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Breast cancer</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/225ab0def76c8c56752f074c91f71d16_cytokeratin-5">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q922U2">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q922U2"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q922U2"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:38.467Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P13647">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P13647"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P13647"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q5XQN5">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q5XQN5"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q5XQN5"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q6P6Q2">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q6P6Q2"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q6P6Q2"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cytokeratin 5</ao:body>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/5b3a57502d9636902f0d3bd75094b62c_metastasis">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0027627">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0027627"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:37.274Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >metastasis</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/07f6d3b61f9322ba2f8a197e0f49ac2d_epidermal-growth-factor-receptor">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:38.467Z</pav:createdOn>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <sioc:num_items>3</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >epidermal growth factor receptor</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P55245">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P55245"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P55245"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/7b5ae5341fb38d560fd4697b56ce4109_tumors">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <sioc:num_items>49</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Comparison-of-tumor-size--histologic-subtype--lymph-node-status-and-proliferation-index-among-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0027651"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tumors</ao:body>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:33.143Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Prevalence-of-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_7"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/b2650ec531926bec9bf2cba869a7c3f2_T4">
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T4</ao:body>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10665">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:10665"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/10665"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/10665">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:10665"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:10665"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:37.274Z</pav:createdOn>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/c5d326a93993921a208f3040e2867f51_aggressive-disease">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0001807">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Mental or Behavioral Dysfunction</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0001807"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_8"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:41.039Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >aggressive disease</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/0bbd96ed5be591b74f682bc491be5d4a_invasive-breast-cancer">
+    <sioc:num_items>2</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0853879">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0853879"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >invasive breast cancer</ao:body>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:38.21Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/8596cc9e9dd0584f658ff7113ac0e3cb_Estrogen-receptor">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9QZJ5">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9QZJ5"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9QZJ5"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/O42132">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:O42132"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/O42132"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P57717">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P57717"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P57717"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P16058">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P16058"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P16058"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:39.886Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q91250">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q91250"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q91250"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P50242">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P50242"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P50242"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P19785">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P19785"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P19785"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P50240">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P50240"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P50240"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P03372">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P03372"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P03372"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Estrogen-receptor</ao:body>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P06211">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P06211"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P06211"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q91424">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q91424"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q91424"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9TV98">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9TV98"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9TV98"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P06212">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P06212"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P06212"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9YHZ7">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9YHZ7"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9YHZ7"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P49885">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P49885"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P49885"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P50241">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P50241"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P50241"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P49886">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P49886"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P49886"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P81559">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P81559"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P81559"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9YH33">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9YH33"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9YH33"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9PVZ9">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9PVZ9"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9PVZ9"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q53AD2">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q53AD2"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q53AD2"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9YHT3">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9YHT3"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9YHT3"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P57753">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P57753"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P57753"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P49884">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P49884"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P49884"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q29040">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q29040"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q29040"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/b1e5733123c83d867d13369acc9890f2_tumor">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:33.969Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0027651"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Comparison-of-tumor-size--histologic-subtype--lymph-node-status-and-proliferation-index-among-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Statistical-Analysis/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_7"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>22</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tumor</ao:body>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/54ed6c3a2460492ef4abf56e9755d9bb_CK-5">
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <sioc:num_items>3</sioc:num_items>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q5XQN5"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q922U2"/>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CK 5</ao:body>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P13647"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q6P6Q2"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:37.711Z</pav:createdOn>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/c663017b09d96e0b1fbe2a3e4f2ae771_EGFR">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P55245"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P13387">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P13387"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P13387"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P00533">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P00533"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P00533"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:36.146Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>10</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >EGFR</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Authors--contributions/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/4d25e44de81e3de0eb0f1d518da7cb57_BRCA1">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q864U1">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q864U1"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q864U1"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9GKK8">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9GKK8"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9GKK8"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q6J6J0">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q6J6J0"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q6J6J0"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:34.558Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_7"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >BRCA1</ao:body>
+    <sioc:num_items>1</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q6J6I9">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q6J6I9"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q6J6I9"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q95153">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q95153"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q95153"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P38398">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P38398"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P38398"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q6J6I8">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q6J6I8"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q6J6I8"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+  </aot:ExactQualifier>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/87bd78c09d17e6a482aa1ce8f19917e3_medullary-tumors">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Comparison-of-tumor-size--histologic-subtype--lymph-node-status-and-proliferation-index-among-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0751887">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0751887"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>4</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_7"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >medullary tumors</ao:body>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:34.558Z</pav:createdOn>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/7192ad39ba9e75203487e27e2a75cca0_Her2">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:33.143Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Prevalence-of-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P34708">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P34708"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P34708"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Discussion/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Her2</ao:body>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <sioc:num_items>19</sioc:num_items>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/684455585403c53056a5e07c15d87f47_cancer">
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C1306459"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_3"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006826"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:35.665Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cancer</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Background/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>7</sioc:num_items>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/b97d03f3e218b29fbb4669fb0ed74fd9_estrogen-receptor">
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P19785"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q9PVZ9"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P50242"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q9YHT3"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q91424"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q29040"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q9YHZ7"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P49885"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q9QZJ5"/>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >estrogen receptor</ao:body>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P49886"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P57717"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P81559"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/O42132"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q53AD2"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q91250"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P06211"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P57753"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P16058"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P06212"/>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P03372"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q9YH33"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P50240"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:36.145Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P49884"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P50241"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q9TV98"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/38a20eb639ad79559c85d91d0adf8186_rabbit">
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:43.921Z</pav:createdOn>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rabbit</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9986">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9986"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy/9986"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://www.uniprot.org/taxonomy/9986">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/taxonomy:9986"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/taxonomy:9986"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/086775a6579362a1d39603d767b2c7ec_lymph-node-metastases">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:37.274Z</pav:createdOn>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Sample-Collection/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0686619">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0686619"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >lymph node metastases</ao:body>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Results/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+  </ao:Annotation>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/0484fe2068137009c4028a47f68f3ba8_Tumor">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0027651"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Comparison-of-tumor-size--histologic-subtype--lymph-node-status-and-proliferation-index-among-molecular-subtypes/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <sioc:num_items>1</sioc:num_items>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:44.373Z</pav:createdOn>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tumor</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/88ce90d0c2158fff3341de16b7db88f5_CK5">
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Authors--contributions/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q922U2"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q6P6Q2"/>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/P13647"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:36.146Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Construction-of-Tissue-Microarray--TMA---Immunohistochemistry-and-Semi-quantitative-analysis/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CK5</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <sioc:num_items>4</sioc:num_items>
+    <ao:hasTopic rdf:resource="http://purl.uniprot.org/core/Q5XQN5"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3204283_whatizitUkPmcAll.rdf/f078215d5ab4c27aeb5d6bde91b26631_progesterone-receptor">
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:52:36.146Z</pav:createdOn>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abbreviations/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P06401">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P06401"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P06401"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q63449">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q63449"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q63449"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P07812">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P07812"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P07812"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9GLW0">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9GLW0"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9GLW0"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283/section/Abstract"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3204283"/>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P06186">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P06186"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P06186"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P79373">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P79373"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P79373"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q28590">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q28590"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q28590"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q8AYI2">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q8AYI2"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q8AYI2"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q00175">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q00175"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q00175"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >progesterone receptor</ao:body>
+  </ao:Annotation>
+</rdf:RDF>

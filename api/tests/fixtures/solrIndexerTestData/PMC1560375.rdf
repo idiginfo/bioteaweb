@@ -1,0 +1,2673 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:doco="http://purl.org/spar/doco/"
+	xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+	xmlns:cnt="http://www.w3.org/2011/content#"
+	xmlns:prov="http://www.w3.org/ns/prov#">
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<dcterms:description>research-article</dcterms:description>
+	<dcterms:identifier>pmc:1560375</dcterms:identifier>
+	<dcterms:source rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560375"/>
+	<prov:wasDerivedFrom rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560375"/>
+	<dcterms:isFormatOf rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560375">
+	<dcterms:hasFormat rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:created>19-09-2012 15:56:06</dcterms:created>
+	<prov:generatedAtTime>19-09-2012 15:56:06</prov:generatedAtTime>
+	<dcterms:creator>http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/</dcterms:creator>
+	<prov:wasAttributedTo rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/"/>
+	<bibo:pmid>16889672</bibo:pmid>
+	<dcterms:identifier>pmid:16889672</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560375">
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16889672"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16889672"/>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16889672"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:doi>10.1186/1472-6874-6-12</bibo:doi>
+	<dcterms:identifier>doi:10.1186/1472-6874-6-12</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1560375">
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1186/1472-6874-6-12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/issn_1472-6874">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>BMC Women's Health</dcterms:title>
+	<bibo:issn>1472-6874</bibo:issn>
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+	<bibo:volume>6</bibo:volume>
+	<bibo:pageStart>12</bibo:pageStart>
+	<bibo:pageEnd>12</bibo:pageEnd>
+	<dcterms:title>Counselling and knowledge about contraceptive mode of action among married women; a cross-sectional study</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_1472-6874_1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_1472-6874_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/issn_1472-6874"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/issn_1472-6874">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/P-narTopsever">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>P?nar Topsever</foaf:name>
+	<foaf:givenName>P?nar</foaf:givenName>
+	<foaf:familyName>Topsever</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/topsever-gmail-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/topsever-gmail-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>topsever@gmail.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/M-geFiliz">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Müge Filiz</foaf:name>
+	<foaf:givenName>Müge</foaf:givenName>
+	<foaf:familyName>Filiz</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/dalim-99-hotmail-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/dalim-99-hotmail-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>dalim_99@hotmail.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/NihalAlada-">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Nihal Alada?</foaf:name>
+	<foaf:givenName>Nihal</foaf:givenName>
+	<foaf:familyName>Alada?</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/nihal-aladag-hotmail-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/nihal-aladag-hotmail-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>nihal_aladag@hotmail.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/Ru-enTopall-">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Ru?en Topall?</foaf:name>
+	<foaf:givenName>Ru?en</foaf:givenName>
+	<foaf:familyName>Topall?</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/rtopalli-superonline-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/rtopalli-superonline-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>rtopalli@superonline.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/-zlemCi-erli">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Özlem Ci?erli</foaf:name>
+	<foaf:givenName>Özlem</foaf:givenName>
+	<foaf:familyName>Ci?erli</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/ozlemcigerli-superonline-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/ozlemcigerli-superonline-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>ozlemcigerli@superonline.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/S-leymanG-rpelio-lu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Süleyman Görpelio?lu</foaf:name>
+	<foaf:givenName>Süleyman</foaf:givenName>
+	<foaf:familyName>Görpelio?lu</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/sgorpelioglu-gmail-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/email/sgorpelioglu-gmail-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>sgorpelioglu@gmail.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/list/listAuthors">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/P-narTopsever"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/M-geFiliz"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/NihalAlada-"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/Ru-enTopall-"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/-zlemCi-erli"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/person/S-leymanG-rpelio-lu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/list/listAuthors"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Abstract">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Abstract"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Abstract">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<dcterms:title>Abstract</dcterms:title>
+	<cnt:chars>Background: Family planning counselling which covers knowledge transfer about contraceptive mode of action, by enabling informed choice, improves compliance to and efficiency of contraceptive methods. Methods: For this cross-sectional study, stratified (according to current modern contraceptive method in use) random sampling was performed from the registries of two primary health care centres. Main outcomes were; prevalence of family planning counselling, professional background of the counsellor and correct knowledge about mode of action. A semi-structured questionnaire developed by the researchers was applied via face-to-face interview. The answers about mode of action were categorized as correct vs. incorrect by consensus rating. Results: Prevalence of counselling and correct knowledge about mode of action was 49.0% and 39.3%, respectively. Higher educated women were significantly more likely to know the mode of action (p &lt; 0.001). Being counselled by a physician (54.1%, n = 120) was not associated with correct knowledge about mode of action (p = 0.79). Non-barrier method users were less educated (p = 0.001), more often counselled (60.8% vs. 8.0%) and less knowledgeable (p &lt; 0.001) about mode of action of their contraceptive method, compared to condom users. Nevertheless, counselled non-barrier method users were significantly more likely to know the correct mode of action of their chosen method (p = 0.021) than counselled condom users. Conclusion: The beneficial effect of counselling on knowledge about mode of action of the more complicated, medical (non-barrier) contraceptive methods suggests that the use of family planning counselling services in primary health care should be promoted; furthermore, counselling strategies and content should be re-structured for better efficacy. </cnt:chars>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:abstract>Background: Family planning counselling which covers knowledge transfer about contraceptive mode of action, by enabling informed choice, improves compliance to and efficiency of contraceptive methods. Methods: For this cross-sectional study, stratified (according to current modern contraceptive method in use) random sampling was performed from the registries of two primary health care centres. Main outcomes were; prevalence of family planning counselling, professional background of the counsellor and correct knowledge about mode of action. A semi-structured questionnaire developed by the researchers was applied via face-to-face interview. The answers about mode of action were categorized as correct vs. incorrect by consensus rating. Results: Prevalence of counselling and correct knowledge about mode of action was 49.0% and 39.3%, respectively. Higher educated women were significantly more likely to know the mode of action (p &lt; 0.001). Being counselled by a physician (54.1%, n = 120) was not associated with correct knowledge about mode of action (p = 0.79). Non-barrier method users were less educated (p = 0.001), more often counselled (60.8% vs. 8.0%) and less knowledgeable (p &lt; 0.001) about mode of action of their contraceptive method, compared to condom users. Nevertheless, counselled non-barrier method users were significantly more likely to know the correct mode of action of their chosen method (p = 0.021) than counselled condom users. Conclusion: The beneficial effect of counselling on knowledge about mode of action of the more complicated, medical (non-barrier) contraceptive methods suggests that the use of family planning counselling services in primary health care should be promoted; furthermore, counselling strategies and content should be re-structured for better efficacy. </bibo:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_ILete">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Lete</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Lete</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_RBermejo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Bermejo</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Bermejo</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_CColl">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C Coll</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>Coll</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JLDue-as">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JL Dueñas</foaf:name>
+	<foaf:givenName>JL</foaf:givenName>
+	<foaf:familyName>Dueñas</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JLDoval">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JL Doval</foaf:name>
+	<foaf:givenName>JL</foaf:givenName>
+	<foaf:familyName>Doval</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JMart-nez-Salme-n">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Martínez-Salmeán</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Martínez-Salmeán</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JMasset">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Masset</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Masset</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JJParrilla">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JJ Parrilla</foaf:name>
+	<foaf:givenName>JJ</foaf:givenName>
+	<foaf:familyName>Parrilla</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_ISerrano">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Serrano</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Serrano</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11376652</dcterms:identifier>
+	<bibo:pmid>11376652</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11376652"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11376652"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11376652"/>
+	<bibo:doi>10.1016/S0010-7824(01)00192-5</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0010-7824(01)00192-5</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0010-7824(01)00192-5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Contraception">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Contraception</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<dcterms:title>Use of contraceptive methods in Spain: results of a national survey</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Contraception"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Contraception">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>235</bibo:pageStart>
+	<bibo:pageEnd>238</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B1">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_ILete"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_RBermejo"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_CColl"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JLDue-as"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JLDoval"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JMart-nez-Salme-n"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JMasset"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_JJParrilla"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B1_ISerrano"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B2_RHvan-Lunsen">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RH van Lunsen</foaf:name>
+	<foaf:givenName>RH</foaf:givenName>
+	<foaf:familyName>van Lunsen</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B2_HTArnolds">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>HT Arnolds</foaf:name>
+	<foaf:givenName>HT</foaf:givenName>
+	<foaf:familyName>Arnolds</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B2_MGvan-Maris">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MG van Maris</foaf:name>
+	<foaf:givenName>MG</foaf:givenName>
+	<foaf:familyName>van Maris</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:7971548</dcterms:identifier>
+	<bibo:pmid>7971548</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/7971548"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/7971548"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:7971548"/>
+	<bibo:doi>10.1016/0738-3991(94)90035-3</bibo:doi>
+	<dcterms:identifier>doi:10.1016/0738-3991(94)90035-3</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/0738-3991(94)90035-3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_PatientEducCouns">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Patient Educ Couns</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<dcterms:title>Choices and changes in contraceptive behaviour; the role of information sources</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_PatientEducCouns_3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_PatientEducCouns_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_PatientEducCouns_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_PatientEducCouns"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_PatientEducCouns">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_PatientEducCouns_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<dcterms:issued>1994</dcterms:issued>
+	<bibo:pageStart>197</bibo:pageStart>
+	<bibo:pageEnd>202</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B2">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B2_RHvan-Lunsen"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B2_HTArnolds"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B2_MGvan-Maris"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_IVirjo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Virjo</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Virjo</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_ALKirkkola">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>AL Kirkkola</foaf:name>
+	<foaf:givenName>AL</foaf:givenName>
+	<foaf:familyName>Kirkkola</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_MIsokoski">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Isokoski</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Isokoski</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_KMattila">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>K Mattila</foaf:name>
+	<foaf:givenName>K</foaf:givenName>
+	<foaf:familyName>Mattila</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10457871</dcterms:identifier>
+	<bibo:pmid>10457871</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10457871"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10457871"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10457871"/>
+	<bibo:doi>10.1016/S0010-7824(99)00024-4</bibo:doi>
+	<dcterms:identifier>doi:10.1016/S0010-7824(99)00024-4</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/S0010-7824(99)00024-4"/>
+	<dcterms:title>Contraceptive methods: knowledge sources rated by women and men</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Contraception"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Contraception">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Contraception_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>257</bibo:pageStart>
+	<bibo:pageEnd>263</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B3">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_IVirjo"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_ALKirkkola"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_MIsokoski"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B3_KMattila"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B4_JIAdinma">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JI Adinma</foaf:name>
+	<foaf:givenName>JI</foaf:givenName>
+	<foaf:familyName>Adinma</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B4_AOAgbai">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>AO Agbai</foaf:name>
+	<foaf:givenName>AO</foaf:givenName>
+	<foaf:familyName>Agbai</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B4_BONwosu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>BO Nwosu</foaf:name>
+	<foaf:givenName>BO</foaf:givenName>
+	<foaf:familyName>Nwosu</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9820931</dcterms:identifier>
+	<bibo:pmid>9820931</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9820931"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9820931"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9820931"/>
+	<bibo:doi>10.1023/A:1006590717562</bibo:doi>
+	<dcterms:identifier>doi:10.1023/A:1006590717562</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1023/A:1006590717562"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Adv Contracept</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<dcterms:title>Contraceptive choices among Nigerian women attending an antenatal clinic</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>131</bibo:pageStart>
+	<bibo:pageEnd>145</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B4">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B4_JIAdinma"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B4_AOAgbai"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B4_BONwosu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_RKalda">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Kalda</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Kalda</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_HSarapuu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Sarapuu</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Sarapuu</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_APikk">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Pikk</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Pikk</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_MLember">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Lember</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Lember</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9820930</dcterms:identifier>
+	<bibo:pmid>9820930</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9820930"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9820930"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9820930"/>
+	<bibo:doi>10.1023/A:1006538700723</bibo:doi>
+	<dcterms:identifier>doi:10.1023/A:1006538700723</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1023/A:1006538700723"/>
+	<dcterms:title>Sex education and contraceptive methods: knowledge and sources of information among the Estonian population</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>121</bibo:pageStart>
+	<bibo:pageEnd>130</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B5">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_RKalda"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_HSarapuu"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_APikk"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B5_MLember"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_YTountas">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Y Tountas</foaf:name>
+	<foaf:givenName>Y</foaf:givenName>
+	<foaf:familyName>Tountas</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_GCreatsas">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>G Creatsas</foaf:name>
+	<foaf:givenName>G</foaf:givenName>
+	<foaf:familyName>Creatsas</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_CDimitrakaki">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>C Dimitrakaki</foaf:name>
+	<foaf:givenName>C</foaf:givenName>
+	<foaf:familyName>Dimitrakaki</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_AAntoniou">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Antoniou</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Antoniou</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_DBoulamatsis">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>D Boulamatsis</foaf:name>
+	<foaf:givenName>D</foaf:givenName>
+	<foaf:familyName>Boulamatsis</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:15352689</dcterms:identifier>
+	<bibo:pmid>15352689</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15352689"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/15352689"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:15352689"/>
+	<bibo:doi>10.1080/13625180410001696250</bibo:doi>
+	<dcterms:identifier>doi:10.1080/13625180410001696250</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1080/13625180410001696250"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_EurJContraceptReprodHealthCare">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Eur J Contracept Reprod Health Care</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<dcterms:title>Information sources and level of knowledge of contraception issues among Greek women and men in the reproductive age: a country-wide survey</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EurJContraceptReprodHealthCare_7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EurJContraceptReprodHealthCare_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EurJContraceptReprodHealthCare_7">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_EurJContraceptReprodHealthCare"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_EurJContraceptReprodHealthCare">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EurJContraceptReprodHealthCare_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<dcterms:issued>2004</dcterms:issued>
+	<bibo:pageStart>1</bibo:pageStart>
+	<bibo:pageEnd>10</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B6">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_YTountas"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_GCreatsas"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_CDimitrakaki"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_AAntoniou"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B6_DBoulamatsis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_BVural">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Vural</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Vural</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_FVural">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>F Vural</foaf:name>
+	<foaf:givenName>F</foaf:givenName>
+	<foaf:familyName>Vural</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_JDiker">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Diker</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Diker</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_IYucesoy">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Yucesoy</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Yucesoy</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:11145374</dcterms:identifier>
+	<bibo:pmid>11145374</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11145374"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11145374"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11145374"/>
+	<bibo:doi>10.1023/A:1006700726916</bibo:doi>
+	<dcterms:identifier>doi:10.1023/A:1006700726916</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1023/A:1006700726916"/>
+	<dcterms:title>Factors affecting contraceptive use and behavior in Kocaeli, Turkey</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_8">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_AdvContracept">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_AdvContracept_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>325</bibo:pageStart>
+	<bibo:pageEnd>336</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B7">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_BVural"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_FVural"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_JDiker"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B7_IYucesoy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_RAHatcher">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RA Hatcher</foaf:name>
+	<foaf:givenName>RA</foaf:givenName>
+	<foaf:familyName>Hatcher</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_WRinehart">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>W Rinehart</foaf:name>
+	<foaf:givenName>W</foaf:givenName>
+	<foaf:familyName>Rinehart</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_RBlackburn">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Blackburn</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Blackburn</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_JSGeller">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JS Geller</foaf:name>
+	<foaf:givenName>JS</foaf:givenName>
+	<foaf:familyName>Geller</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:publisher>Baltimore: Population Information Program Center for Communication Programs</dcterms:publisher>
+	<dcterms:issued>1977</dcterms:issued>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B8">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_RAHatcher"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_WRinehart"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_RBlackburn"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B8_JSGeller"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B9_BBarnett">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Barnett</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Barnett</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:12321858</dcterms:identifier>
+	<bibo:pmid>12321858</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/12321858"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/12321858"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:12321858"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Network">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Network</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<dcterms:title>Clients prefer method choices</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Network_9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Network_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Network_9">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Network"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Network">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Network_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>14</bibo:pageStart>
+	<bibo:pageEnd>18</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B9">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B9_BBarnett"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B10_TUnalan">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>T Unalan</foaf:name>
+	<foaf:givenName>T</foaf:givenName>
+	<foaf:familyName>Unalan</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B10_IKoc">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>I Koc</foaf:name>
+	<foaf:givenName>I</foaf:givenName>
+	<foaf:familyName>Koc</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B10_STezcan">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Tezcan</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Tezcan</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/BookSection"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:publisher>Hacettepe University Institute of Population Studies, Ministry of Health General Directorate of Mother and Child Health and Family Planning, State Planning Organization and European Union. Ankara, Turkey</dcterms:publisher>
+	<dcterms:issued>2003</dcterms:issued>
+	<bibo:pageStart>59</bibo:pageStart>
+	<bibo:pageEnd>77</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B10">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B10_TUnalan"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B10_IKoc"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B10_STezcan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_BVural">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Vural</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Vural</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_FVural">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>F Vural</foaf:name>
+	<foaf:givenName>F</foaf:givenName>
+	<foaf:familyName>Vural</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_AErk">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Erk</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Erk</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_OKarabacak">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>O Karabacak</foaf:name>
+	<foaf:givenName>O</foaf:givenName>
+	<foaf:familyName>Karabacak</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:10520366</dcterms:identifier>
+	<bibo:pmid>10520366</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/10520366"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/10520366"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:10520366"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_EastAfrMedJ">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>East Afr Med J</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<dcterms:title>Knowledge on lactational amenorrhoea and contraception in Kocaeli, Turkey</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EastAfrMedJ_10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EastAfrMedJ_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EastAfrMedJ_10">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_EastAfrMedJ"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_EastAfrMedJ">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_EastAfrMedJ_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<dcterms:issued>1999</dcterms:issued>
+	<bibo:pageStart>385</bibo:pageStart>
+	<bibo:pageEnd>389</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B11">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_BVural"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_FVural"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_AErk"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B11_OKarabacak"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B12_JGodley">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Godley</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Godley</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<bibo:doi>10.2307/2673799</bibo:doi>
+	<dcterms:identifier>doi:10.2307/2673799</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.2307/2673799"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_IntFamPlannPersp">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Int Fam Plann Persp</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<dcterms:title>Kinship networks and contraceptive choice in Nang Rong, Thailand</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_IntFamPlannPersp_11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_IntFamPlannPersp_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_IntFamPlannPersp_11">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_IntFamPlannPersp"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_IntFamPlannPersp">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_IntFamPlannPersp_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>4</bibo:pageStart>
+	<bibo:pageEnd>10</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B12">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B12_JGodley"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_BEntwisle">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>B Entwisle</foaf:name>
+	<foaf:givenName>B</foaf:givenName>
+	<foaf:familyName>Entwisle</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_RRRindfuss">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RR Rindfuss</foaf:name>
+	<foaf:givenName>RR</foaf:givenName>
+	<foaf:familyName>Rindfuss</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_DKGuilkey">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DK Guilkey</foaf:name>
+	<foaf:givenName>DK</foaf:givenName>
+	<foaf:familyName>Guilkey</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_AChamratrithirong">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Chamratrithirong</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Chamratrithirong</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_SRCurran">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>SR Curran</foaf:name>
+	<foaf:givenName>SR</foaf:givenName>
+	<foaf:familyName>Curran</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_YSawangdee">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Y Sawangdee</foaf:name>
+	<foaf:givenName>Y</foaf:givenName>
+	<foaf:familyName>Sawangdee</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:8690134</dcterms:identifier>
+	<bibo:pmid>8690134</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/8690134"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/8690134"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:8690134"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Demography">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Demography</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<dcterms:title>Community and contraceptive choice in rural Thailand: a case study of Nang Rong</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Demography_12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Demography_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Demography_12">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Demography"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_Demography">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_Demography_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<dcterms:issued>1996</dcterms:issued>
+	<bibo:pageStart>1</bibo:pageStart>
+	<bibo:pageEnd>11</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B13">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_BEntwisle"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_RRRindfuss"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_DKGuilkey"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_AChamratrithirong"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_SRCurran"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B13_YSawangdee"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_XEspejo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>X Espejo</foaf:name>
+	<foaf:givenName>X</foaf:givenName>
+	<foaf:familyName>Espejo</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_MATsunechiro">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MA Tsunechiro</foaf:name>
+	<foaf:givenName>MA</foaf:givenName>
+	<foaf:familyName>Tsunechiro</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_MJOsis">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MJ Osis</foaf:name>
+	<foaf:givenName>MJ</foaf:givenName>
+	<foaf:familyName>Osis</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_GADuarte">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>GA Duarte</foaf:name>
+	<foaf:givenName>GA</foaf:givenName>
+	<foaf:familyName>Duarte</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_LBahamondese">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Bahamondese</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Bahamondese</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_MHde-Sousa">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MH de Sousa</foaf:name>
+	<foaf:givenName>MH</foaf:givenName>
+	<foaf:familyName>de Sousa</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:14569333</dcterms:identifier>
+	<bibo:pmid>14569333</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/14569333"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/14569333"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:14569333"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_RevSaudePublica">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Rev Saude Publica</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<dcterms:title>Knowledge adequacy on contraceptives among women in Campinas, Brazil</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_RevSaudePublica_13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_RevSaudePublica_13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_RevSaudePublica_13">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_RevSaudePublica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/journal/name_RevSaudePublica">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/issue/journal_RevSaudePublica_13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<dcterms:issued>2003</dcterms:issued>
+	<bibo:pageStart>583</bibo:pageStart>
+	<bibo:pageEnd>590</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B14">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_XEspejo"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_MATsunechiro"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_MJOsis"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_GADuarte"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_LBahamondese"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/person/B14_MHde-Sousa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/list/listAuthors_B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B15">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Background</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Modern contraceptive methods, by improving reproductive health, have a positive impact on women's overall health and quality of life [[B1]]. To exert this beneficial effect, correct and consistent use of the contraceptive method chosen by the clients is necessary. This is achieved by promoting correct knowledge via good quality family planning counselling. One of the factors which might affect efficacy of family planning counselling, is the source of information or the counsellor. It has been reported that the most adequate source of information on family planning is the general practitioner [[B2]] but other sources of information on this topic have also been cited [[B3]-[B7]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The purpose of family planning counselling is to help the client make informed choices about reproductive health and family planning issues. Informed choice, which should-among other topics-cover knowledge transfer about the mode of action of the chosen method [[B8]], has been shown to improve efficiency and compliance to contraceptive method use [[B9]]. Thus, correct knowledge about the mode of action of the method chosen, can be considered an efficacy outcome for family planning counselling. In the current medical literature, there is a considerable lack of studies investigating level of knowledge on particular issues of reproductive health like the correct knowledge about mode of action of the preferred contraceptive method.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The hypothesis of this study was that among women using modern contraceptive methods, counselling and being counselled by a physician were significantly associated with correct knowledge about contraceptive mode of action.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The aim of this study was to investigate factors associated with correct knowledge about contraceptive mode of action among currently married women who are using a modern contraceptive method.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_5">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background/paragraph_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Background"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The first objective of this study was to assess the prevalence of being counselled and the proportion of women with correct knowledge on contraceptive mode of action. The second objective was to investigate associations of correct knowledge with counselling and professional background of the counsellor in the studied sample.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Methods</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Design and setting</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Design-and-setting/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Design-and-setting/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Design-and-setting/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Design-and-setting"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The study protocol was approved by the Ethical Committee of Kocaeli University Faculty of Medicine (AEK 238/4, project no: 179, 13.9.2002). A cross-sectional, population-based study was performed between November 2002 and February 2003 in the town of De?irmendere, which is situated 20 km southeast of Kocaeli city center. There are 10 certified reproductive health counsellors working in three primary health care centres, responsible for delivering health care to 7724 women of reproductive age in this town. A probabilistic, stratified random sampling was performed to select the women to be interviewed. The variable used to stratify the sample was the modern contraceptive method in use. As sampling was performed by randomly extracting registry cards, only two of the local primary health care centres could participate in this study because they work on a registry basis.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Participants</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Participants/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Participants/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Participants/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Participants"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Women of reproductive age, registered at one of the local primary health care centres as users of a modern contraceptive method were eligible for this study. Known pregnancy was an exclusion criterion.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Sample size</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Sample-size/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Sample-size/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Sample-size/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Sample-size"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Sample-size/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Sample-size/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Sample-size/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>An optimum sample size was calculated to represent 3243 locally registered women using modern contraceptive methods. According to this sample size estimation, 453 women were representative of the total of modern contraceptive users in the town with a confidence interval of 95% (? = 0.9, ? = 0.05). The distribution of women of reproductive age according to use of contraception is given in table [T1].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Data collection</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Data-collection/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Data-collection/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Data-collection/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Data-collection"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>An easy to use, 10-item questionnaire was developed by the research group and applied by the female researchers via face-to-face interviews to women upon verbal informed consent. Sociodemographic variables and obstetric history were assessed. Furthermore, contraceptive method issues like knowledge on mode of action of the current contraceptive method and the professional background of the counsellor were inquired in a qualitative manner by open-ended questions (What do you know about the contraceptive method you are currently using (its contents, application, mode of action)?, Have you been counselled by medical staff (nurse, midwife or physician) before deciding to use your current contraceptive method?). The results of a pilot survey of 30 interviews were utilized to make changes for better understanding of the questions and to eliminate redundancy. The answers to the question inquiring the mode of action of the contraceptive method in use ("How does your current contraceptive method protect you from becoming pregnant?") were rated by a committee featuring four researchers. The committee produced a consensus rating for each respondent's answer (dichotomized as correct vs. incorrect).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Statistics</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Descriptive results are presented as mean ± standard deviation, percentage, median (range) and mode.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Chi-Square test was used to compare proportions and Spearman correlation coefficient was computed for non-parametric data. Odds ratios (OR) are given with 95% confidence intervals (CI).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Statistics/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Methods/Statistics"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Educational level was dichotomised as "low" (below 5 years first level primary school education) and "high" (8 years second level primary school and higher). The counsellors were dichotomised according to profession as physicians and other health care professionals. For subgroup analyses, contraceptive method use was categorized as condom vs. non-barrier methods.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Results</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>General characteristics</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>A total of 453 women participated in the study. The participants were young (mode = 27 years, range 20 to 54 years), mostly had an educational level of second level primary school and higher and were all currently married. The contraceptive method of preference was the condom (41.9%, n = 190) (Table [T1]).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>General characteristics of the study population are displayed in table [T2].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/General-characteristics/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/General-characteristics"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In general, the proportion of being counselled was low (49.0%, n = 222), as was correct knowledge about mode of action of the preferred contraceptive method (39.3%, n = 178). Being counselled was negatively correlated with knowing the correct mode of action (r = -0.102, p = 0. 031, OR = 0.66, 95% CI: 0.45 to 0.96).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Education</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Education/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Education/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Education/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Seventy-six (41.9%) of low educated women and 146 (53.7%) of high educated women had received counselling for family planning. Higher educational level was correlated with being counselled (r = 0.115, p = 0.015).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Education/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Education/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Education/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Education"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>High educated women were significantly (p &lt; 0.001) more likely to know the mode of action of the modern contraceptive in use (OR = 3.02; 95% CI 1.99 to 4.58).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Counsellor</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counsellor/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counsellor/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counsellor/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Counsellor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counsellor/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counsellor/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counsellor/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Over half of the counselled women (n = 120, 54.1%) had been counselled by a physician but this fact was not significantly related to correct knowledge about mode of action of the contraceptive method in use (p = 0.79; OR = 1.08; 95% CI 0.62 to 1.88) (Table [T3]).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Condom versus non-barrier contraceptive methods</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Although, only 32.6% (n = 62) had been counselled, most condom users (80.0%, n = 152) had correct knowledge about its mode of action. The contrary was the fact among non-barrier method users who were more often counselled (60.8%, n = 160) but less likely to know the mode of action of their contraceptive choice (8.0%, n = 21). Condom users were significantly higher educated (p = 0.001) and significantly more likely to know the correct mode of action compared to non-barrier method users (OR = 36.46; 95% CI 21.27 to 62.49; p &lt; 0.001).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Among non-barrier method users, knowledge about mode of action of their current contraceptive method was low. However, counselled non-barrier method users were significantly more likely to know the correct mode of action of their chosen contraceptive method (OR = 2.9; 95% CI 1.08 to 8.12; p = 0.021).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Results/Condom-versus-non-barrier-contraceptive-methods"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Condom-versus-non-barrier-contraceptive-methods/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>As subgroups contained too few cases for analytic procedures, data on knowledge of condom users versus non-barrier method users by professional background of the counsellor (physician vs. other health care professionals) are descriptively displayed in table [T3].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Discussion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Good reproductive health depends largely on how well informed people are on contraception issues [[B6]]. This study, as an indicator of information level, investigated women's knowledge about mode of action of their current contraceptive method with respect to family planning counselling and counsellor.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Main results</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Main-results/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Main-results/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Main-results/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Main-results"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The present study revealed that in general the proportion of being counselled on family planning, as well as the proportion of correct knowledge about mode of action of the contraceptive method in use was low among currently married women in Degirmendere. The fact that being counselled was negatively correlated with knowing the correct mode of action might be a type I error, which is most likely to be attributable to the predominance of condom users in the population, who were less often counselled but more aware of the mode of action of the condom. Knowledge about mode of action of the current contraceptive method was independent of being counselled by a physician. Overall, non-barrier method users were less educated, more often counselled but less knowledgeable about mode of action of their current contraceptive method compared to condom users.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Contraceptive choice</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/T1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In our study, 41.9% of the women of reproductive age in De?irmendere were using a modern contraceptive method (Table [T1]). This figure is comparable to the average use of modern contraception in currently married Turkish women (42.5%) reported in the TDHS-2003 [[B10]], whereas it is lower than the figure in the province of Kocaeli, which is 53.4% [[B11]]. The condom method was favoured by most of participants of the present study (49.1%) which is considerably higher than the figure for current condom use in Turkey (10.8%) [[B10]] and the rate obtained by Vural et al., who reported a proportion of 16.5% for all barrier methods [[B11]]. This difference can be due to the fact that the present sample was extracted from a town in the province of Kocaeli, where a naval base is situated, which may explain the periodicity of contraceptive need. Another factor might be that many women tend to use the same family planning method as others in their social networks [[B12]]. Even when people are aware of the side effects or failures experienced by other users of a method, sometimes they still tend to prefer it because it is familiar [[B13]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Our results are also in accordance with the data of a national survey on contraceptive methods in Spain, which revealed the condom to be the preferred method of choice for women of nearly all age and educational groups. This was attributed to a certain degree of distrust in hormonal contraceptive methods and on health policy and organization of family planning services [[B1]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Tountas et al. have described a prevalent current use of condoms (33.9%) among Greek women, which they attributed to lack of early school based sexual education programmes and/or contraception counselling and the identification of Greek women with passive forms of sexuality [[B6]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Contraceptive-choice"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Contraceptive-choice/paragraph_4">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Another reason why the majority of women might prefer the condom could be the fact that contraceptive method use is usually influenced by health care professionals recommending them and physicians have been reported to be more prone to recommend the use of condom, surgical method and the pill [[B1],[B4]]</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Counselling</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counselling/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counselling/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counselling/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Counselling"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counselling/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Counselling/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In this study, 49.0% of all women using modern contraceptive methods had been counselled; this is higher than the rate of general counselling about modern contraceptive methods (39.9%) in the Eastern Marmara region and also higher than the country average (30.7%) [[B10]]. The relatively higher prevalence of counselled women in De?irmendere can be attributed to the certification programme on "Reproductive Health, Education and Communication" held by the Turkish Ministry of Health between 1997?1999 in the province of Kocaeli, which recommended counselling of all persons presenting with contraceptive need. However, the observed higher prevalence of counselling did not translate into correct knowledge about mode of action. This situation indicates a need to bridge possible communication gaps between counsellor and client by re-tailoring contraceptive information and counselling techniques via rephrasing the content into a more understandable "jargon" for the clients. Further research is needed to assess a possible "information overload" effect in family planning counselling sessions.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Knowledge (association with education, counselling and counsellor)</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Sixty-six percent of counselled women were ignorant about the correct mode of action of their current contraceptive method. These figures indicate that there is much scope for improving the quality of family planning services. Higher educated women were significantly more likely to know the mode of action of the contraceptive method used, which is supported by the results of many other studies on family planning.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In a population-based Turkish survey, 54% of modern contraceptive method users were informed about potential side effects of their method and 44% were told what to do if they experienced any side effects. In the mentioned study, women with second level primary school and higher education were better informed than women with little or no education [[B10]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B14">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B15">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Higher educational level and better socio-economical status have been shown to be associated with better knowledge about contraception in a study from Brazil [[B14]]. According to the results of an other study conducted in Bangladesh in 1988, despite knowing about modern methods, most women were not able to identify the advantages or disadvantages of these methods [[B15]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Discussion/Knowledge--association-with-education--counselling-and-counsellor-"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Knowledge--association-with-education--counselling-and-counsellor-/paragraph_4">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The participants of the present study were also asked to indicate the source of counselling with special respect to the professional background of the counsellor. All counselled women in the present study had been counselled by health care professionals. Being counselled by a physician did not produce any significant difference in the proportion of women with correct knowledge on mode of action about their contraceptive method. In their study conducted in 1998, Vural et al. have reported a universal wish for information about contraception via health care centers and media communications among females in the province of Kocaeli [[B11]]. In the interval between the study of Vural and colleagues and the present study, the demand in the region for family planning counselling by health care professionals seems to have been met to some extent. The similar effect of counselling, regardless of professional background of the counsellor, on knowledge about mode of action of the current contraceptive method, suggests a beneficial effect of the official certification programme on "Reproductive Health, Education and Communication".</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Conclusion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Conclusion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Counselling for medical contraceptive methods with "more complicated" mode of action than barrier methods should be promoted as it seems to be effective in terms of establishing the premises for the client's informed choice. Especially the fact that contraceptive counselling improved knowledge of less educated women is encouraging. Counsellors should tailor information to the situation, clients and their needs. Further studies are needed to investigate outcomes of new counselling strategies to generate data, which should be used to revise and update health care policies.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Competing interests</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Competing-interests"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The author(s) declare that they have no competing interests.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Authors' contributions</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>All authors read and approved the final manuscript.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Authors--contributions"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>P.T. and M.F. study design and coordination, data acquisition, statistical analysis and interpretation of results, drafting the manuscript and revising it critically for important intellectual content. N.A. and Ö.C. data acquisition and management carried out the face to face interviews. R.T. and S.G. interpretation of data and revision of the manuscript for intellectual content. All authors have read and approved the final version of the manuscript.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375"/>
+	<dcterms:title>Pre-publication history</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The pre-publication history for this paper can be accessed here:</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC1560375/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars></cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+</rdf:RDF>

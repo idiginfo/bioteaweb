@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:doco="http://purl.org/spar/doco/"
+	xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+	xmlns:cnt="http://www.w3.org/2011/content#"
+	xmlns:prov="http://www.w3.org/ns/prov#">
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<dcterms:description>research-article</dcterms:description>
+	<dcterms:identifier>pmc:33342</dcterms:identifier>
+	<dcterms:source rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33342"/>
+	<prov:wasDerivedFrom rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33342"/>
+	<dcterms:isFormatOf rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33342">
+	<dcterms:hasFormat rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:created>19-09-2012 15:55:09</dcterms:created>
+	<prov:generatedAtTime>19-09-2012 15:55:09</prov:generatedAtTime>
+	<dcterms:creator>http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/</dcterms:creator>
+	<prov:wasAttributedTo rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/"/>
+	<bibo:pmid>11415468</bibo:pmid>
+	<dcterms:identifier>pmid:11415468</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33342">
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/11415468"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:11415468"/>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/11415468"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:doi>10.1186/1472-6874-1-1</bibo:doi>
+	<dcterms:identifier>doi:10.1186/1472-6874-1-1</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33342">
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1186/1472-6874-1-1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/issn_1472-6874">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>BMC Women's Health</dcterms:title>
+	<bibo:issn>1472-6874</bibo:issn>
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+	<bibo:volume>1</bibo:volume>
+	<bibo:pageStart>1</bibo:pageStart>
+	<bibo:pageEnd>1</bibo:pageEnd>
+	<dcterms:title>Penis size: Survey of female perceptions of sexual satisfaction</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_1472-6874_1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_1472-6874_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/issn_1472-6874"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/issn_1472-6874">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/person/RussellEisenman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Russell Eisenman</foaf:name>
+	<foaf:givenName>Russell</foaf:givenName>
+	<foaf:familyName>Eisenman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/person/email/eisenman-panam-edu"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/person/email/eisenman-panam-edu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>eisenman@panam.edu</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/list/listAuthors">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/person/RussellEisenman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/list/listAuthors"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Abstract">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Abstract"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Abstract">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<dcterms:title>Abstract</dcterms:title>
+	<cnt:chars>Background: Does the size of the male penis, in terms of length or width, make a difference in female sexual satisfaction? Method: To study the effect of penis width vs. length on female sexual satisfaction, 50 sexually active female undergraduate students were asked which felt better, i. e., was penis width or length more important for their sexual satisfaction. Results: None reported they did not know, or that width and length were equally satisfying. A large majority, 45 of 50, reported width was more important (p &lt; .001). Conclusion: Implications are discussed, including the fact that the data seem to contradict Masters and Johnson about penis size having no physiological effect on female sexual satisfaction. </cnt:chars>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:abstract>Background: Does the size of the male penis, in terms of length or width, make a difference in female sexual satisfaction? Method: To study the effect of penis width vs. length on female sexual satisfaction, 50 sexually active female undergraduate students were asked which felt better, i. e., was penis width or length more important for their sexual satisfaction. Results: None reported they did not know, or that width and length were equally satisfying. A large majority, 45 of 50, reported width was more important (p &lt; .001). Conclusion: Implications are discussed, including the fact that the data seem to contradict Masters and Johnson about penis size having no physiological effect on female sexual satisfaction. </bibo:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B1_WHMasters">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WH Masters</foaf:name>
+	<foaf:givenName>WH</foaf:givenName>
+	<foaf:familyName>Masters</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B1_VEJohnson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>VE Johnson</foaf:name>
+	<foaf:givenName>VE</foaf:givenName>
+	<foaf:familyName>Johnson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B2_WHMasters">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WH Masters</foaf:name>
+	<foaf:givenName>WH</foaf:givenName>
+	<foaf:familyName>Masters</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B2_VEJohnson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>VE Johnson</foaf:name>
+	<foaf:givenName>VE</foaf:givenName>
+	<foaf:familyName>Johnson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B3_WHMasters">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WH Masters</foaf:name>
+	<foaf:givenName>WH</foaf:givenName>
+	<foaf:familyName>Masters</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B3_VEJohnson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>VE Johnson</foaf:name>
+	<foaf:givenName>VE</foaf:givenName>
+	<foaf:familyName>Johnson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B3_RKolodny">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Kolodny</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Kolodny</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B4_KDeaux">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>K Deaux</foaf:name>
+	<foaf:givenName>K</foaf:givenName>
+	<foaf:familyName>Deaux</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<bibo:doi>10.1037//0003-066X.39.2.105</bibo:doi>
+	<dcterms:identifier>doi:10.1037//0003-066X.39.2.105</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1037//0003-066X.39.2.105"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_AmerPsychol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Amer Psychol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<dcterms:title>From individual differences to social categories.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_AmerPsychol_2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_AmerPsychol_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_AmerPsychol_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_AmerPsychol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_AmerPsychol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_AmerPsychol_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<dcterms:issued>1984</dcterms:issued>
+	<bibo:pageStart>105</bibo:pageStart>
+	<bibo:pageEnd>116</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B4">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B4_KDeaux"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B5_WDeKeseredy">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>W DeKeseredy</foaf:name>
+	<foaf:givenName>W</foaf:givenName>
+	<foaf:familyName>DeKeseredy</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B6_REisenman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Eisenman</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Eisenman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B7_REisenman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Eisenman</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Eisenman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>J Sex Educ &amp; Ther</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<dcterms:title>Conservative sexual values: Effects of an abstinence program on student attitudes.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<dcterms:issued>1994</dcterms:issued>
+	<bibo:pageStart>75</bibo:pageStart>
+	<bibo:pageEnd>78</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B7">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B7_REisenman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B8_REisenman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Eisenman</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Eisenman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B9_REisenman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>R Eisenman</foaf:name>
+	<foaf:givenName>R</foaf:givenName>
+	<foaf:familyName>Eisenman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JEvolPsychol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>J Evol Psychol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<dcterms:title>Human sexuality: Answers from evolutionary psychology.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JEvolPsychol_4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JEvolPsychol_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JEvolPsychol_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JEvolPsychol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JEvolPsychol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JEvolPsychol_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<dcterms:issued>2001</dcterms:issued>
+	<bibo:pageStart>53</bibo:pageStart>
+	<bibo:pageEnd>55</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B9">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B9_REisenman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B10_LRFranzini">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>LR Franzini</foaf:name>
+	<foaf:givenName>LR</foaf:givenName>
+	<foaf:familyName>Franzini</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B10_LMSideman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>LM Sideman</foaf:name>
+	<foaf:givenName>LM</foaf:givenName>
+	<foaf:familyName>Sideman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:12345926</dcterms:identifier>
+	<bibo:pmid>12345926</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/12345926"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/12345926"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:12345926"/>
+	<dcterms:title>Personality characteristics of condom users.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10">
+	<dcterms:issued>1994</dcterms:issued>
+	<bibo:pageStart>110</bibo:pageStart>
+	<bibo:pageEnd>118</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B10">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B10_LRFranzini"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B10_LMSideman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B11_TLaquer">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>T Laquer</foaf:name>
+	<foaf:givenName>T</foaf:givenName>
+	<foaf:familyName>Laquer</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B12_JMRenisch">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JM Renisch</foaf:name>
+	<foaf:givenName>JM</foaf:givenName>
+	<foaf:familyName>Renisch</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B13_JShaw">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Shaw</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Shaw</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:title>Aging and sexual potential.</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/journal/name_JSexEduc-Ther">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/issue/journal_JSexEduc-Ther_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13">
+	<dcterms:issued>1994</dcterms:issued>
+	<bibo:pageStart>134</bibo:pageStart>
+	<bibo:pageEnd>139</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B13">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/person/B13_JShaw"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/list/listAuthors_B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Background</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>When people speak of penis size, they typically refer to length. Thus, a man with a short but wide penis would probably think of himself as having a small penis, and would be so thought of by others, too. However, width is part of size, although usually not acknowledged. Does width contribute to female sexual satisfaction? Is length more important? Or, perhaps size is unrelated to female sexual enjoyment.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The famous sex researchers Masters and Johnson [[B1],[B2]] have concluded that size of the male penis can have no true physiological effect on female sexual satisfaction. They base this conclusion on their physiological studies that show that the vagina adapts to fit the size of the penis. Because of this vaginal adaptation, they refer to the vagina as a potential space rather than an actual space. Thus, despite the worries of many males about the size of their penis, Masters and Johnson concluded that any size penis will fit and provide adequate sexual stimulation to the female. The present study was conducted to see if female college students would report their sexual satisfaction related to penis length, width, or neither.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Method</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Procedure</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Procedure/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Procedure/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Procedure/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Procedure"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>To test the notion of the possible importance of length vs. width and female sexual satisfaction, two male undergraduate college students - both popular athletes on campus - surveyed 50 female undergraduate college students, considered by the two males to be sexually active, based on the males' prior social experience and knowledge of the females.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Subjects</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Subjects/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Subjects/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Subjects/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Method/Subjects"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The female students ranged in age from 18 to 25 years old. In person or via telephone, the females were asked "In having sex, which feels better, length of penis or width of penis?" In half the cases, the word "width" was used before the word "length," but there were no order effects. There were also no effects for telephone vs. personal interview. All female participants answered the question, perhaps because they knew the student asking the question.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Results and Discussion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Of the 50 females surveyed, 45 reported that width felt better, with only 5 reporting length felt better (chi square = 32.00, df = 1, p &lt; .001). No females reported that they could not tell any difference. Some did report that sex in a relationship was better than sex without commitment.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Masters and Johnson [[B1],[B2]] have said that penis size should have no physiological effect on female sexual enjoyment, since the vagina adapts to fit the size of the penis. The current results call this conclusion into question, and point to the importance of penis width. However, Masters and Johnson could be correct if the present subjects are only reporting their psychological preference, and not showing a true physiological preference. In other words, the present study solely assessed females' perceived level of sexual satisfaction, which might differ from actual physiological arousal and satisfaction.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>It is not obvious why a wide penis would be preferred to a long penis, but speculation would suggest the following. Penis width may be important due to a penis thick at the base providing greater clitoral stimulation as the male thrusts into the female during sexual intercourse. That is, a wide penis would seem to offer a greater degree of contact with the outer part of the vagina, including the clitoral area. If this is correct, then Masters and Johnson are wrong about penis size being unrelated, physiologically, to female sexual satisfaction. Masters, Johnson, and Kolodny [[B3]] do not totally rule out penis size being relevant, but they suggest that it is likely of minor importance for female sexual satisfaction (see especially pages 509-510 in Masters, Johnson, and Kolodny [[B3]]). Another possibility is that a wider penis provides the woman with a greater feeling of fullness, which is psychologically, and perhaps physiologically, satisfying.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Results-and-Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Further research on sex is necessary to understand the various influences on sexual attitudes and behavior, including how attitudes influence behavior, if, in fact, they do [[B4],[B5],[B6],[B7],[B8],[B9],[B10],[B11],[B12],[B13]]. Different samples could be studied, as well as using different methods of investigation. One might have women rank order different aspects of sexual satisfaction, including such things as physical attractiveness of the partner, romantic feelings, love, and other things, as well as penis size. This would give an understanding of where the different attributes rank in women's stated preferences. But, width vs. length deserves study.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Conclusion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Conclusion/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Women reported that penis width was more important for their sexual satisfaction than penis length. The results were statistically significant. Penis width needs to be given more consideration, and taken into account when one discusses penis size. Also, it may be that Masters and Johnson [[B1],[B2],[B3]] were wrong about penis size having little or no physiological effect on women's sexual satisfaction. However, the current data cannot provide a final answer, since they are based on self reports of women surveyed about penis length vs. width, and their sexual satisfaction. The results reflect either a psychological preference or a true physiological reality, but we cannot say which, with the present method that was employed.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342"/>
+	<dcterms:title>Pre-publication history</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The pre-publication history for this paper can be accessed here:</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC33342/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars></cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+</rdf:RDF>

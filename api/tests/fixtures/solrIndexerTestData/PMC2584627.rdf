@@ -1,0 +1,2723 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:doco="http://purl.org/spar/doco/"
+	xmlns:sioc="http://rdfs.org/sioc/ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+	xmlns:cnt="http://www.w3.org/2011/content#"
+	xmlns:prov="http://www.w3.org/ns/prov#">
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<dcterms:description>research-article</dcterms:description>
+	<dcterms:identifier>pmc:2584627</dcterms:identifier>
+	<dcterms:source rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584627"/>
+	<prov:wasDerivedFrom rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584627"/>
+	<dcterms:isFormatOf rdf:resource="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584627">
+	<dcterms:hasFormat rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:created>19-09-2012 15:57:51</dcterms:created>
+	<prov:generatedAtTime>19-09-2012 15:57:51</prov:generatedAtTime>
+	<dcterms:creator>http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/</dcterms:creator>
+	<prov:wasAttributedTo rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf4pmc_agent/"/>
+	<bibo:pmid>18973697</bibo:pmid>
+	<dcterms:identifier>pmid:18973697</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584627">
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/18973697"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:18973697"/>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/18973697"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:doi>10.1186/1472-6874-8-19</bibo:doi>
+	<dcterms:identifier>doi:10.1186/1472-6874-8-19</dcterms:identifier>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584627">
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1186/1472-6874-8-19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/issn_1472-6874">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>BMC Women's Health</dcterms:title>
+	<bibo:issn>1472-6874</bibo:issn>
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:publisher>BMC Women's Health</dcterms:publisher>
+	<bibo:volume>8</bibo:volume>
+	<bibo:pageStart>19</bibo:pageStart>
+	<bibo:pageEnd>19</bibo:pageEnd>
+	<dcterms:title>Hormonal contraception, sexual behaviour and HIV prevalence among women in Cameroon</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_1472-6874_1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_1472-6874_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/issn_1472-6874"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/issn_1472-6874">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_1472-6874_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/Eugene-JKongnyuy">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Eugene J Kongnyuy</foaf:name>
+	<foaf:givenName>Eugene J</foaf:givenName>
+	<foaf:familyName>Kongnyuy</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/email/kongnyuy-gmail-com"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/email/kongnyuy-gmail-com">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>kongnyuy@gmail.com</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/VardaSoskolne">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Varda Soskolne</foaf:name>
+	<foaf:givenName>Varda</foaf:givenName>
+	<foaf:familyName>Soskolne</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/email/soskolv-mail-biu-ac-il"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/email/soskolv-mail-biu-ac-il">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>soskolv@mail.biu.ac.il</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/BellaAdler">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Bella Adler</foaf:name>
+	<foaf:givenName>Bella</foaf:givenName>
+	<foaf:familyName>Adler</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<foaf:account rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/email/bella-vms-huji-ac-il"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/email/bella-vms-huji-ac-il">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+	<foaf:accountName>bella@vms.huji.ac.il</foaf:accountName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/list/listAuthors">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/Eugene-JKongnyuy"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/VardaSoskolne"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/person/BellaAdler"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/list/listAuthors"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Abstract">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Abstract"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Abstract">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<dcterms:title>Abstract</dcterms:title>
+	<cnt:chars>Background: Data on the effect of contraceptive methods, other than the condom, on HIV acquisition is not clear. The aim of this study was to describe hormonal contraceptive use, sexual behaviour and HIV prevalence among women in Cameroon in order to provide baseline information for future analytical studies. Methods: This is a cross-sectional descriptive study based a nationally representative sample of 4486 sexually active women aged 15?49 years who participated in the 2004 Cameroon Demographic and Health Survey. Results: The overall HIV prevalence was 7.4% (332/4486). The HIV prevalence was higher in the 25?35 year age group (10.03%), urban residents (9.39%), and formerly married (18.48%), compared to their compatriots. The prevalence was lower in women with five or more living child (3.67%), women in the low wealth index category (3.79%) and women who had no formal education (3.37%). The HIV prevalence was higher among women who had two or more partners in the last 12 months (10.26%) and women who reported to have had four or more partners in their lifetime (12.40%). The prevalence of HIV was higher among current hormonal contraceptive users (6.63%) compared to the current non-users (3.06%), among ever users of hormonal contraception (13.27%) compared to the never users (7.11%). Conclusion: We conclude that the prevalence of HIV among sexually active women in Cameroon varies according to sociodemographic characteristics, sexual behaviour and hormonal contraceptive use. Our findings underscore the need to counsel women using hormonal contraception to be aware that hormonal methods do not protect against HIV infection. Given the biologic plausibility of the link between hormonal contraception and HIV infection, future research should focus on carefully designed prospective studies to establish the temporal relationship and estimate the incidence of HIV infection among women using and not using hormonal contraceptive methods. </cnt:chars>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:abstract>Background: Data on the effect of contraceptive methods, other than the condom, on HIV acquisition is not clear. The aim of this study was to describe hormonal contraceptive use, sexual behaviour and HIV prevalence among women in Cameroon in order to provide baseline information for future analytical studies. Methods: This is a cross-sectional descriptive study based a nationally representative sample of 4486 sexually active women aged 15?49 years who participated in the 2004 Cameroon Demographic and Health Survey. Results: The overall HIV prevalence was 7.4% (332/4486). The HIV prevalence was higher in the 25?35 year age group (10.03%), urban residents (9.39%), and formerly married (18.48%), compared to their compatriots. The prevalence was lower in women with five or more living child (3.67%), women in the low wealth index category (3.79%) and women who had no formal education (3.37%). The HIV prevalence was higher among women who had two or more partners in the last 12 months (10.26%) and women who reported to have had four or more partners in their lifetime (12.40%). The prevalence of HIV was higher among current hormonal contraceptive users (6.63%) compared to the current non-users (3.06%), among ever users of hormonal contraception (13.27%) compared to the never users (7.11%). Conclusion: We conclude that the prevalence of HIV among sexually active women in Cameroon varies according to sociodemographic characteristics, sexual behaviour and hormonal contraceptive use. Our findings underscore the need to counsel women using hormonal contraception to be aware that hormonal methods do not protect against HIV infection. Given the biologic plausibility of the link between hormonal contraception and HIV infection, future research should focus on carefully designed prospective studies to establish the temporal relationship and estimate the incidence of HIV infection among women using and not using hormonal contraceptive methods. </bibo:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:title>AIDS Epidemic update, December 2007</dcterms:title>
+	<dcterms:publisher>Geneva: WHO</dcterms:publisher>
+	<dcterms:issued>2007</dcterms:issued>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:title>Life Tables for 191 Countries</dcterms:title>
+	<dcterms:publisher>Geneva: WHO</dcterms:publisher>
+	<dcterms:issued>2001</dcterms:issued>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:title>Cameroon Demographic and Health Survey 2004</dcterms:title>
+	<dcterms:publisher>Calverton, Maryland USA: NIS and ORC Macro</dcterms:publisher>
+	<dcterms:issued>2004</dcterms:issued>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B4_MNyindo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Nyindo</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Nyindo</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:16122111</dcterms:identifier>
+	<bibo:pmid>16122111</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16122111"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16122111"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16122111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_EastAfrMedJ">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>East Afr Med J</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<dcterms:title>Complementary factors contributing to the rapid spread of HIV-I in sub-Saharan Africa: a review</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_EastAfrMedJ_2">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_EastAfrMedJ_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_EastAfrMedJ_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_EastAfrMedJ"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_EastAfrMedJ">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_EastAfrMedJ_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<dcterms:issued>2005</dcterms:issued>
+	<bibo:pageStart>40</bibo:pageStart>
+	<bibo:pageEnd>46</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B4">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B4_MNyindo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B5_KMcDavid">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>K McDavid</foaf:name>
+	<foaf:givenName>K</foaf:givenName>
+	<foaf:familyName>McDavid</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B5_MTMcKenna">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>MT McKenna</foaf:name>
+	<foaf:givenName>MT</foaf:givenName>
+	<foaf:familyName>McKenna</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:16623627</dcterms:identifier>
+	<bibo:pmid>16623627</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16623627"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16623627"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16623627"/>
+	<bibo:doi>10.1089/apc.2006.20.285</bibo:doi>
+	<dcterms:identifier>doi:10.1089/apc.2006.20.285</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1089/apc.2006.20.285"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSPatientCareSTDS">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>AIDS Patient Care STDS</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5">
+	<dcterms:title>HIV/AIDS Risk Factor Ascertainment: A Critical Challenge</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSPatientCareSTDS_3">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSPatientCareSTDS_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSPatientCareSTDS_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSPatientCareSTDS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSPatientCareSTDS">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSPatientCareSTDS_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5">
+	<dcterms:issued>2006</dcterms:issued>
+	<bibo:pageStart>285</bibo:pageStart>
+	<bibo:pageEnd>292</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B5">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B5_KMcDavid"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B5_MTMcKenna"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B5">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B6_YMekonnen">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>Y Mekonnen</foaf:name>
+	<foaf:givenName>Y</foaf:givenName>
+	<foaf:familyName>Mekonnen</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B6_ESanders">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Sanders</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Sanders</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B6_TMessele">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>T Messele</foaf:name>
+	<foaf:givenName>T</foaf:givenName>
+	<foaf:familyName>Messele</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:16599107</dcterms:identifier>
+	<bibo:pmid>16599107</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16599107"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16599107"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16599107"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JHealthPopulNutr">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>J Health Popul Nutr</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<dcterms:title>Prevalence and incidence of, and risk factors for, HIV-1 infection among factory workers in Ethiopia, 1997?2001</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JHealthPopulNutr_4">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JHealthPopulNutr_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JHealthPopulNutr_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JHealthPopulNutr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JHealthPopulNutr">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JHealthPopulNutr_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<bibo:pageStart>358</bibo:pageStart>
+	<bibo:pageEnd>368</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B6">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B6_YMekonnen"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B6_ESanders"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B6_TMessele"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B7_HLMartin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>HL Martin</foaf:name>
+	<foaf:givenName>HL</foaf:givenName>
+	<foaf:familyName>Martin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B7_BARichardson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>BA Richardson</foaf:name>
+	<foaf:givenName>BA</foaf:givenName>
+	<foaf:familyName>Richardson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B7_KMandaliya">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>K Mandaliya</foaf:name>
+	<foaf:givenName>K</foaf:givenName>
+	<foaf:familyName>Mandaliya</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:15867600</dcterms:identifier>
+	<bibo:pmid>15867600</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15867600"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/15867600"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:15867600"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JAIDS">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>JAIDS</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<dcterms:title>The Early Work on Hormonal Contraceptive Use and HIV Acquisition</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_5">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JAIDS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JAIDS">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<dcterms:issued>2005</dcterms:issued>
+	<bibo:pageStart>S12</bibo:pageStart>
+	<bibo:pageEnd>S14</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B7">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B7_HLMartin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B7_BARichardson"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B7_KMandaliya"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B8_WCates">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>W Cates</foaf:name>
+	<foaf:givenName>W</foaf:givenName>
+	<foaf:familyName>Cates</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:15867633</dcterms:identifier>
+	<bibo:pmid>15867633</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15867633"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/15867633"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:15867633"/>
+	<dcterms:title>Review of Non-hormonal Contraception (Condoms, Intrauterine Devices, Nonoxynol-9 and Combos) on HIV Acquisition</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_6">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JAIDS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_JAIDS">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_JAIDS_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8">
+	<dcterms:issued>2005</dcterms:issued>
+	<bibo:pageStart>S8</bibo:pageStart>
+	<bibo:pageEnd>S10</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B8">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B8_WCates"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B9_CSMorrison">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>CS Morrison</foaf:name>
+	<foaf:givenName>CS</foaf:givenName>
+	<foaf:familyName>Morrison</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B9_BARichardson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>BA Richardson</foaf:name>
+	<foaf:givenName>BA</foaf:givenName>
+	<foaf:familyName>Richardson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B9_FMmiro">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>F Mmiro</foaf:name>
+	<foaf:givenName>F</foaf:givenName>
+	<foaf:familyName>Mmiro</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:17148972</dcterms:identifier>
+	<bibo:pmid>17148972</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17148972"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/17148972"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:17148972"/>
+	<bibo:doi>10.1097/01.aids.0000279698.48191.5b</bibo:doi>
+	<dcterms:identifier>doi:10.1097/01.aids.0000279698.48191.5b</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1097/01.aids.0000279698.48191.5b"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDS">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>AIDS</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<dcterms:title>Hormonal contraception and the risk of HIV acquisition</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_7">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_7">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDS">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<dcterms:issued>2007</dcterms:issued>
+	<bibo:pageStart>85</bibo:pageStart>
+	<bibo:pageEnd>95</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B9">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B9_CSMorrison"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B9_BARichardson"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B9_FMmiro"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B10_BKPatterson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>BK Patterson</foaf:name>
+	<foaf:givenName>BK</foaf:givenName>
+	<foaf:familyName>Patterson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B10_ALanday">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>A Landay</foaf:name>
+	<foaf:givenName>A</foaf:givenName>
+	<foaf:familyName>Landay</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B10_JAndersson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Andersson</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Andersson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9708808</dcterms:identifier>
+	<bibo:pmid>9708808</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9708808"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9708808"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9708808"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AmJPathol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Am J Pathol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<dcterms:title>Repertoire of chemokine receptor expression in the female genital tract: implications for human immunodeficiency virus transmission</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJPathol_8">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJPathol_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJPathol_8">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AmJPathol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AmJPathol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJPathol_8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>481</bibo:pageStart>
+	<bibo:pageEnd>490</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B10">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B10_BKPatterson"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B10_ALanday"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B10_JAndersson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B11_SHild-Petito">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Hild-Petito</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Hild-Petito</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B11_RSVeazey">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RS Veazey</foaf:name>
+	<foaf:givenName>RS</foaf:givenName>
+	<foaf:familyName>Veazey</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B11_JMLamer">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JM Lamer</foaf:name>
+	<foaf:givenName>JM</foaf:givenName>
+	<foaf:familyName>Lamer</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:9581896</dcterms:identifier>
+	<bibo:pmid>9581896</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/9581896"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/9581896"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:9581896"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSResHumRetroviruses">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>AIDS Res Hum Retroviruses</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<dcterms:title>Effects of two progestin-only contraceptives, Depo Provera and Norplant II, on the vaginal epithelium of rhesus monkeys</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSResHumRetroviruses_9">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSResHumRetroviruses_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSResHumRetroviruses_9">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSResHumRetroviruses"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSResHumRetroviruses">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSResHumRetroviruses_9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<dcterms:issued>1998</dcterms:issued>
+	<bibo:pageStart>S125</bibo:pageStart>
+	<bibo:pageEnd>S130</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B11">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B11_SHild-Petito"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B11_RSVeazey"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B11_JMLamer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B12_WCLouv">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WC Louv</foaf:name>
+	<foaf:givenName>WC</foaf:givenName>
+	<foaf:familyName>Louv</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B12_HAustin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>H Austin</foaf:name>
+	<foaf:givenName>H</foaf:givenName>
+	<foaf:familyName>Austin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B12_JPerlman">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Perlman</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Perlman</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:2916625</dcterms:identifier>
+	<bibo:pmid>2916625</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/2916625"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/2916625"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:2916625"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AmJObstetGynecol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Am J Obstet Gynecol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<dcterms:title>Oral contraceptive use and the risk of chlamydial and gonococcal infections</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJObstetGynecol_10">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJObstetGynecol_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJObstetGynecol_10">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AmJObstetGynecol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AmJObstetGynecol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AmJObstetGynecol_10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<dcterms:issued>1989</dcterms:issued>
+	<bibo:pageStart>396</bibo:pageStart>
+	<bibo:pageEnd>402</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B12">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B12_WCLouv"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B12_HAustin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B12_JPerlman"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B13_DRGwatkin">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>DR Gwatkin</foaf:name>
+	<foaf:givenName>DR</foaf:givenName>
+	<foaf:familyName>Gwatkin</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B13_SRustein">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>S Rustein</foaf:name>
+	<foaf:givenName>S</foaf:givenName>
+	<foaf:familyName>Rustein</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B13_KJohnson">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>K Johnson</foaf:name>
+	<foaf:givenName>K</foaf:givenName>
+	<foaf:familyName>Johnson</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:issued>2000</dcterms:issued>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B13">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B13_DRGwatkin"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B13_SRustein"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B13_KJohnson"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B14">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdfs:comment>accessed on July 09, 2006</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B14">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B15">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<rdfs:comment>accessed on July 09, 2006</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B15">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B16_EAAdejuyigbe">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>EA Adejuyigbe</foaf:name>
+	<foaf:givenName>EA</foaf:givenName>
+	<foaf:familyName>Adejuyigbe</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B16_OBFasubaa">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>OB Fasubaa</foaf:name>
+	<foaf:givenName>OB</foaf:givenName>
+	<foaf:familyName>Fasubaa</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B16_AAOnayade">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>AA Onayade</foaf:name>
+	<foaf:givenName>AA</foaf:givenName>
+	<foaf:familyName>Onayade</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:15203421</dcterms:identifier>
+	<bibo:pmid>15203421</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15203421"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/15203421"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:15203421"/>
+	<bibo:doi>10.1080/09540120410001665286</bibo:doi>
+	<dcterms:identifier>doi:10.1080/09540120410001665286</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1080/09540120410001665286"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSCare">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>AIDS Care</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<dcterms:title>Sociodemographic characteristics of HIV-positive mother-child pairs in Ile-Ife, Nigeria</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSCare_11">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSCare_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSCare_11">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSCare"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDSCare">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDSCare_11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<dcterms:issued>2004</dcterms:issued>
+	<bibo:pageStart>275</bibo:pageStart>
+	<bibo:pageEnd>82</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B16">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B16_EAAdejuyigbe"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B16_OBFasubaa"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B16_AAOnayade"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B17_AJNunn">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>AJ Nunn</foaf:name>
+	<foaf:givenName>AJ</foaf:givenName>
+	<foaf:familyName>Nunn</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B17_JFKengeya-Kayondo">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JF Kengeya-Kayondo</foaf:name>
+	<foaf:givenName>JF</foaf:givenName>
+	<foaf:familyName>Kengeya-Kayondo</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B17_SSMalamba">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>SS Malamba</foaf:name>
+	<foaf:givenName>SS</foaf:givenName>
+	<foaf:familyName>Malamba</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:8011240</dcterms:identifier>
+	<bibo:pmid>8011240</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/8011240"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/8011240"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:8011240"/>
+	<bibo:doi>10.1097/00002030-199401000-00012</bibo:doi>
+	<dcterms:identifier>doi:10.1097/00002030-199401000-00012</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1097/00002030-199401000-00012"/>
+	<dcterms:title>Risk factors for HIV-1 infection in adults in a rural Ugandan community: a population study</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_12">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_12">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_AIDS">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_AIDS_12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17">
+	<dcterms:issued>1994</dcterms:issued>
+	<bibo:pageStart>81</bibo:pageStart>
+	<bibo:pageEnd>6</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B17">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B17_AJNunn"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B17_JFKengeya-Kayondo"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B17_SSMalamba"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B18_Dde-Walque">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>D de Walque</foaf:name>
+	<foaf:givenName>D</foaf:givenName>
+	<foaf:familyName>de Walque</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B18_JSNakiyingi-Miiro">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JS Nakiyingi-Miiro</foaf:name>
+	<foaf:givenName>JS</foaf:givenName>
+	<foaf:familyName>Nakiyingi-Miiro</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B18_JBusingye">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Busingye</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Busingye</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:16185233</dcterms:identifier>
+	<bibo:pmid>16185233</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16185233"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16185233"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16185233"/>
+	<bibo:doi>10.1111/j.1365-3156.2005.01475.x</bibo:doi>
+	<dcterms:identifier>doi:10.1111/j.1365-3156.2005.01475.x</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1111/j.1365-3156.2005.01475.x"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_TropMedIntHealth">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Trop Med Int Health</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<dcterms:title>Changing association between schooling levels and HIV-1 infection over 11 years in a rural population cohort in south-west Uganda</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_TropMedIntHealth_13">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_TropMedIntHealth_13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_TropMedIntHealth_13">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_TropMedIntHealth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_TropMedIntHealth">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_TropMedIntHealth_13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<dcterms:issued>2005</dcterms:issued>
+	<bibo:pageStart>993</bibo:pageStart>
+	<bibo:pageEnd>1001</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B18">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B18_Dde-Walque"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B18_JSNakiyingi-Miiro"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B18_JBusingye"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B19_WLKirungi">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>WL Kirungi</foaf:name>
+	<foaf:givenName>WL</foaf:givenName>
+	<foaf:familyName>Kirungi</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B19_JMusinguzi">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Musinguzi</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Musinguzi</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B19_EMadraa">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>E Madraa</foaf:name>
+	<foaf:givenName>E</foaf:givenName>
+	<foaf:familyName>Madraa</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:16581758</dcterms:identifier>
+	<bibo:pmid>16581758</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16581758"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16581758"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16581758"/>
+	<bibo:doi>10.1136/sti.2005.017111</bibo:doi>
+	<dcterms:identifier>doi:10.1136/sti.2005.017111</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1136/sti.2005.017111"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_SexTransmInfect">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Sex Transm Infect</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<dcterms:title>Trends in antenatal HIV prevalence in urban Uganda associated with uptake of preventive sexual behaviour</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_SexTransmInfect_14">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_SexTransmInfect_14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_SexTransmInfect_14">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_SexTransmInfect"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_SexTransmInfect">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_SexTransmInfect_14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<dcterms:issued>2006</dcterms:issued>
+	<bibo:pageStart>i36</bibo:pageStart>
+	<bibo:pageEnd>41</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B19">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B19_WLKirungi"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B19_JMusinguzi"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B19_EMadraa"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_EJKongnyuy">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>EJ Kongnyuy</foaf:name>
+	<foaf:givenName>EJ</foaf:givenName>
+	<foaf:familyName>Kongnyuy</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_CSWiysonge">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>CS Wiysonge</foaf:name>
+	<foaf:givenName>CS</foaf:givenName>
+	<foaf:familyName>Wiysonge</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_REMbu">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>RE Mbu</foaf:name>
+	<foaf:givenName>RE</foaf:givenName>
+	<foaf:familyName>Mbu</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_PNana">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>P Nana</foaf:name>
+	<foaf:givenName>P</foaf:givenName>
+	<foaf:familyName>Nana</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_LKouam">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Kouam</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Kouam</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:16965633</dcterms:identifier>
+	<bibo:pmid>16965633</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/16965633"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/16965633"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:16965633"/>
+	<bibo:doi>10.1186/1472-698X-6-11</bibo:doi>
+	<dcterms:identifier>doi:10.1186/1472-698X-6-11</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1186/1472-698X-6-11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_BMCIntHealthHumRights">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>BMC Int Health Hum Rights</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<dcterms:title>Wealth and sexual behaviour among men in Cameroon</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_BMCIntHealthHumRights_15">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_BMCIntHealthHumRights_15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_BMCIntHealthHumRights_15">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_BMCIntHealthHumRights"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_BMCIntHealthHumRights">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_BMCIntHealthHumRights_15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<dcterms:issued>2006</dcterms:issued>
+	<bibo:pageStart>11</bibo:pageStart>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B20">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_EJKongnyuy"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_CSWiysonge"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_REMbu"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_PNana"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B20_LKouam"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B21_PMLeclerc">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>PM Leclerc</foaf:name>
+	<foaf:givenName>PM</foaf:givenName>
+	<foaf:familyName>Leclerc</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B21_NDubois-Colas">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>N Dubois-Colas</foaf:name>
+	<foaf:givenName>N</foaf:givenName>
+	<foaf:familyName>Dubois-Colas</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B21_MGarenne">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>M Garenne</foaf:name>
+	<foaf:givenName>M</foaf:givenName>
+	<foaf:familyName>Garenne</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:18402855</dcterms:identifier>
+	<bibo:pmid>18402855</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/18402855"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/18402855"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:18402855"/>
+	<bibo:doi>10.1016/j.contraception.2008.01.012</bibo:doi>
+	<dcterms:identifier>doi:10.1016/j.contraception.2008.01.012</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1016/j.contraception.2008.01.012"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_Contraception">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Contraception</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<dcterms:title>Hormonal contraception and HIV prevalence in four African countries</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_Contraception_16">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_Contraception_16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_Contraception_16">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_Contraception"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_Contraception">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_Contraception_16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<dcterms:issued>2008</dcterms:issued>
+	<bibo:pageStart>371</bibo:pageStart>
+	<bibo:pageEnd>6</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B21">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B21_PMLeclerc"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B21_NDubois-Colas"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B21_MGarenne"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B21"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_LMyer">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Myer</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Myer</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_LDenny">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Denny</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Denny</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_TCWright">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>TC Wright</foaf:name>
+	<foaf:givenName>TC</foaf:givenName>
+	<foaf:familyName>Wright</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_LKuhn">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Kuhn</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Kuhn</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:17175547</dcterms:identifier>
+	<bibo:pmid>17175547</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17175547"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/17175547"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:17175547"/>
+	<bibo:doi>10.1093/ije/dyl251</bibo:doi>
+	<dcterms:identifier>doi:10.1093/ije/dyl251</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1093/ije/dyl251"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_IntJEpidemiol">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Int J Epidemiol</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<dcterms:title>Prospective study of hormonal contraception and women's risk of HIV infection in South Africa</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_IntJEpidemiol_17">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_IntJEpidemiol_17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_IntJEpidemiol_17">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_IntJEpidemiol"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_IntJEpidemiol">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_IntJEpidemiol_17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<dcterms:issued>2007</dcterms:issued>
+	<bibo:pageStart>166</bibo:pageStart>
+	<bibo:pageEnd>74</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B22">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_LMyer"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_LDenny"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_TCWright"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B22_LKuhn"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B23_JMBaeten">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>JM Baeten</foaf:name>
+	<foaf:givenName>JM</foaf:givenName>
+	<foaf:familyName>Baeten</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B23_LLavreys">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>L Lavreys</foaf:name>
+	<foaf:givenName>L</foaf:givenName>
+	<foaf:familyName>Lavreys</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B23_JOverbaugh">
+	<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<foaf:name>J Overbaugh</foaf:name>
+	<foaf:givenName>J</foaf:givenName>
+	<foaf:familyName>Overbaugh</foaf:familyName>
+	<foaf:publications rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+	<dcterms:identifier>pmid:17599316</dcterms:identifier>
+	<bibo:pmid>17599316</bibo:pmid>
+	<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/17599316"/>
+	<rdfs:seeAlso rdf:resource="http://identifiers.org/pubmed/17599316"/>
+	<rdfs:seeAlso rdf:resource="http://bio2rdf.org/pubmed:17599316"/>
+	<bibo:doi>10.1086/519432</bibo:doi>
+	<dcterms:identifier>doi:10.1086/519432</dcterms:identifier>
+	<owl:sameAs rdf:resource="http://dx.doi.org/10.1086/519432"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_ClinInfectDis">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Journal"/>
+	<dcterms:title>Clin Infect Dis</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<dcterms:title>The influence of hormonal contraceptive use on HIV-1 transmission and disease progression</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_ClinInfectDis_18">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Issue"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_ClinInfectDis_18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_ClinInfectDis_18">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23"/>
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_ClinInfectDis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/journal/name_ClinInfectDis">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/issue/journal_ClinInfectDis_18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<dcterms:issued>2007</dcterms:issued>
+	<bibo:pageStart>360</bibo:pageStart>
+	<bibo:pageEnd>9</bibo:pageEnd>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B23">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B23_JMBaeten"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B23_LLavreys"/>
+	<rdfs:member rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/person/B23_JOverbaugh"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<bibo:authorList rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/list/listAuthors_B23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Background</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Acquired Immunodeficiency Syndrome (AIDS) has claimed more than 25 million lives since its discovery in 1981 [[B1]]. Today, about 33.2 million people live with Human Immunodeficiency Virus (HIV) ? the virus that causes AIDS ? infections. Sub-Saharan Africa has just over 10% of the world's population, but 64% of people living with HIV, and 77% of all women with HIV worldwide live in this region [[B1],[B2]]. Cameroon is one of the hardest-hit countries in Sub-Saharan Africa with an overall adult prevalence of 5.5% [[B3]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B4">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B6">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The main mode of HIV transmission in Sub-Saharan Africa is via heterosexual sex. The major factors associated with HIV transmission include the presence of other sexually transmitted infections (STIs), and sexual risk behaviors, such as multiple sexual partnerships, commercial sex, and the non-use of condoms. These behaviors are affected by the individual lack of knowledge about HIV, ignorance of individual HIV status, beliefs about HIV/AIDS, cultural factors such as female circumcision, widow inheritance, as well as by societal structural factors such as poverty, migration, or gender inequalities [[B4]-[B6]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B7">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B12">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B8">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B10">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B11">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B2">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Less is known about the effect of various contraceptive methods on the risk of HIV acquisition. Recent evidence suggests that some contraceptive methods could be protective against HIV infection while others could increase the risk of HIV transmission [[B7]-[B12]]. However, apart from the condom which has demonstrated substantial protection against HIV infection, the effect of the other methods on HIV transmission remains largely unknown [[B8],[B9]]. Theoretically, hormonal contraceptives could predispose women to HIV infection by increasing vaginal HIV receptors [[B10]], causing thinning of the vaginal epithelium [[B11]], or increasing the risk of chlamydial infection [[B2]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Background"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The aim of the current study was to describe hormonal contraceptive use, sexual behaviour and HIV prevalence among women in Cameroon in order to provide baseline information for future analytical studies.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Methods</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Study Design</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Study-Design/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Study-Design/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Study-Design/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-Design"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>This cross-sectional descriptive study is based on data from the 2004 DHS. The survey was approved by the Ethics Committee of the ORC Macro at Calverton, Maryland, USA and by the National Ethics Committee in the Ministry of Health in Cameroon. All study participants gave informed consent before participation and all information was collected confidentially.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Sampling technique</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sampling-technique/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sampling-technique/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sampling-technique/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Sampling-technique"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sampling-technique/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sampling-technique/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Methods used in the Cameroon DHS have been published elsewhere [[B3]]. Briefly, the survey used a two-stage cluster sampling technique. The country was stratified into 12 domains (10 provinces and 2 major cities). Each domain is made up of enumeration areas (EAs) established by a General Census of Population and Housing in 2003. The sample frame was a list of all EAs (clusters). Within each domain, a two-stage sample was selected. The first stage involved selecting 466 clusters (EAs ? primary sampling units) with a probability proportional to the number of households in the cluster. The second stage involved the systematic sampling of households from the selected clusters. All women aged 15 to 49 years in the selected households were interviewed.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Study population</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Study-population/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Study-population/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Study-population/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Study-population"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Of the total 10656 women who participated in the survey, 4,538 sexually active women were also tested for HIV and all are included in the current study.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Data Collection</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Data-Collection/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Data-Collection/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Data-Collection/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Data-Collection"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>After obtaining an informed consent from the women, data were collected by face-to-face interviews at home using a structured questionnaire. Blood sample for HIV testing was drawn after the interview. For the current study we extracted information on sociodemographic characteristics, sexual behavior, contraceptive use and HIV status.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Variables</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B13">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>We used six characteristics to define socio-demographic characteristics: (a) age (15?24, 25?34 or 35?49 years), (b) place of residence (rural or urban), (c) marital status (never married, currently married, divorced/widowed), (d) number of children (0, 1?2, 3?4 or ? 5), (e) education (no schooling, primary and secondary/higher) and (f) wealth index (low, middle or high). Wealth index was defined based on the availability of some household amenities. A score was attributed to each household amenity and the total score constituted the wealth index score [[B13]]. We divided this score into three equal classes of wealth based percentiles, that is, less than 33.33th percentile (low, i.e. poorest), 33.33 to 66.66th percentile (medium, i.e. moderately rich), and more than 66.66th percentile (high, i.e. richest).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Sexual behavior was defined by three variables: (a) age at sexual debut (? 14, 15?17 or ? 18 years; (b) number of sexual partners in the last 12 months (0, 1 and ? 2 partners); and (c) life number of partners (1, 2?3 and ? 4 partners).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Two variables were used to define hormonal contraceptive use: (a) current use (current user or current non-user) and (b) ever use (ever user or never user). Current user referred to a woman was using the contraceptive at the time of interview, and ever user referred to a woman who had taken the contraceptive at any one point in time since sexual debut including the time when she was interviewed. Hormonal contraception was defined as the use of oral contraceptive pills, injectable contraceptives or implants.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Variables/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Variables"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>HIV status was determined by the positive or negative results of the HIV test, based on the presence of specific anti-HIV antibodies in the blood sample. Direct ELISA (Genscreen Plus version, BioRad Laboratories) was used to screen for both HIV1 and HIV2. Positive results were confirmed by competitive ELISA (Wellcozyme HIV-1 recombinant, ABBOTT) specific for HIV-1 and a rapid test (Determine, ABBOTT) specific for HIV-2. All positive and doubtful results were finally confirmed with the Western Blot test.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Statistical analyses</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>All cases in the DHS data were given weights to adjust for differences in probability of selection of subjects and to adjust for the non-response in order to produce a proper representation of the whole country [[B3]]. The weight is determined such that it is inversely proportional to the response rate as well as the probability of selection. Therefore, the use of weights corrects for the differential response rates and the unequal probability used to select subjects in the sample. We used individual weights data analysis in this study.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Statistical-analyses/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Methods/Statistical-analyses"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Data were entered and analyzed with the Statistical Package for Social Sciences (SPSS) software programme (version 15.0, Chicago, IL, USA). The prevalence of HIV was determined for different categories of socio-demographic variables, sexual behaviour and hormonal contraceptive use. The results were expressed in terms of proportions or percentages with their corresponding 95% Confidence Intervals (CI).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Results</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Of the 4486 women who participated in the study, 332 (7.4%) were HIV positive, 136 (3.0%) were current hormonal contraceptive users and 211 (4.7%) were ever users of hormonal contraception.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Socio-demographic characteristics</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Socio-demographic-characteristics/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Socio-demographic-characteristics/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Socio-demographic-characteristics/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Socio-demographic-characteristics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/T1">
+	<rdf:type rdf:resource="http://purl.org/ontology/bibo/Document"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Socio-demographic-characteristics/paragraph_1">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/T1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/T1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Socio-demographic-characteristics/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Socio-demographic-characteristics/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The prevalence of HIV was higher in the 25?35 year age group (10.03%, 95% Confidence Interval [CI] 8.59 to 11.63), compared to the 15?24 year age group (5.91%, 95%CI 4.88 to 7.10) and 35?49 year age group (6.38%, 95%CI 5.11 to 7.84). HIV prevalence was higher among women who lived in the urban area (9.39%, 95%CI 8.27 to 10.60%), compared to women who lived in the rural area (5.10%, 95%CI 4.22 to 6.11). HIV prevalence was 18.48% (95%CI 15.03 to 22.34) among formerly married (widowed and divorced) and this figure was 3-fold higher than the prevalence among never married and currently married women. The HIV prevalence was lower in women with five or more living child (3.67%, 95%CI 2.62 to 4.99), women in the low wealth index category (3.79%, 95%CI 2.92 to 4.83) and women who had no formal education (3.37%, 95%CI 2.41 to 4.59), compared to women with fewer children, middle and higher wealth index and women who had been to school respectively. Table [T1] presents the distribution of socio-demographic characteristics by HIV prevalence among women in Cameroon.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Sexual behavior</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sexual-behavior/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sexual-behavior/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sexual-behavior/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Sexual-behavior"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/T1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/T1">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sexual-behavior/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Sexual-behavior/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The HIV prevalence was higher among women who had two or more partners in the last 12 months (10.26%, 95%CI 7.24 to 14.00) compared to their compatriots with zero or one partner (Table [T1]). Similarly, the HIV prevalence was higher in women who had had four or more partners in their lifetime (12.40%, 95%CI 10.65 to 14.33) compared to women with fewer number of lifetime sexual partners. The HIV prevalence did not differ by age at sexual debut among women of reproductive age.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Hormonal contraceptive use</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Hormonal-contraceptive-use/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Hormonal-contraceptive-use/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Hormonal-contraceptive-use/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Results/Hormonal-contraceptive-use"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The prevalence of HIV was higher among current hormonal contraceptive users (6.63%, 95%CI 3.28 to 11.79) compared to the current non-users (3.06%, 9%CI 2.57 to 3.61). Similarly, the prevalence of HIV was higher among the ever users of hormonal contraception (13.27%, 95%CI 9.18 to 18.36%) compared to the never users (7.11%, 95%CI 6.37% to 7.91).</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Discussion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_1">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In this study we sought to describe the distribution of socio-demographic characteristics, sexual behaviour and hormonal contractive use by HIV status among women of reproductive age in Cameroon using data from a population-based nationally representative survey. The use of hormonal contraception among the women was low (3.0%) and HIV prevalence rate (7.4%) was higher than previously reported [[B3]], due in part that the current study included only sexually active women.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B3">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B14"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B14">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B15"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B15">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_2">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The low level of hormonal contraceptive use among Cameroonian women of reproductive age was expected, based on the known high fertility rate in Cameroon: 176 births per 1000 women aged 15 to 44 years [[B3]]. Similar low rates of contraceptive use have been reported in other sub-Saharan African countries, ranging from as low as 2.5% in Chad to 25.7% in Malawi [[B14],[B15]]. Therefore there is need for more easily accessible family planning services and education of women and men about family planning in Cameroon.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B16">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B17">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B18">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B19">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B20">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_3">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In the current study HIV prevalence was found to higher among formerly married women, women living in urban areas and 25?34 year age group. These findings are similar to findings of previous studies in other African countries [[B16],[B17]]. We found the HIV prevalence to be higher among educated women which is similar to the findings of one study [[B18]], but differed from the findings of another study [[B17]]. The findings of the current study affirm the known significant positive correlation between the number of wealth and sexual partners on the one hand and the risk of HIV infection of the other hand [[B19],[B20]].</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B21">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B9">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B22">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4">
+	<bibo:cites rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/reference/B23">
+	<bibo:citedBy rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_4">
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The current study found the HIV prevalence to be higher among current and ever users of hormonal contraceptives, compared to their compatriots. One cross-sectional study found a significantly higher HIV prevalence among women on depo-medroxyprogesterone acetate (DMPA) and oral contraceptives in four countries in Africa [[B21]]. However evidence from prospective cohort studies suggests that DMPA and oral contraceptives are not associated with increased risk of HIV infection [[B9],[B22]]. Current evidence suggests that there is no overall risk of HIV-1 acquisition among women taking hormonal contraception [[B23]]. To date no randomized controlled trials have been conducted because of arguments that randomizing women who desire hormonal contraceptive could be unethical [[B23]]. Therefore the potential for hormonal contraception to increase HIV acquisition remains unclear.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_5">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_5">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The methodology of the current study poses some limitations. Self-reported use of hormonal contraception and sexual behavior may be biased in ways that affect the prevalence of HIV among different groups. Furthermore, all hormonal contraceptives were put into one category although HIV prevalence may differ from one type of hormonal contraceptive to another.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_6">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion/paragraph_6">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Discussion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>Despite these limitations, this study has several strengths. Firstly, the study population is a national representative sample which allows generalization of the findings to all Cameroonian women of reproductive age. Lastly, many of the previous studies relied on rapid tests for HIV determination. Our study however used two ELISA tests followed by confirmation with Western Blot.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Conclusion</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Conclusion"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>In conclusion, we found that the prevalence of HIV in women of reproductive age was higher among urban residents, formerly married, wealthier women, educated women, women with 2 or more partners and current users of hormonal contraception, compared to their compatriots. The findings, however, have several important implications for practice and further research: (a) women in Cameroon using hormonal contraception should be well informed that the hormonal methods do not protect against HIV infection; (b) prevention efforts should be focused on skills training in proper use of condoms, consolidating consistent condom use and preventing relapse, not only raising awareness; (c) future research should focus on carefully designed prospective studies to establish the temporal relationship and estimate the incidence of HIV infection among women using different contraceptive methods.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Competing interests</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Competing-interests"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The authors declare that they have no competing interests.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Authors' contributions</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Authors--contributions"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>EJK conceived the study, extracted the data, did the analyses and interpretation, and wrote the first draft of the manuscript. VS participated in the interpretation and critically revised the manuscript for important intellectual content. BA helped in the analysis of data and interpretation. All authors read and approved the final manuscript.</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Section"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627"/>
+	<dcterms:title>Pre-publication history</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history/paragraph_1">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history/paragraph_1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history/paragraph_1">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars>The pre-publication history for this paper can be accessed here:</cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history/paragraph_2">
+	<rdf:type rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history">
+	<dcterms:hasPart rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history/paragraph_2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history/paragraph_2">
+	<dcterms:isPartOf rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC2584627/section/Pre-publication-history"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#Content"/>
+	<rdf:type rdf:resource="http://www.w3.org/2011/content#ContentAsText"/>
+	<cnt:chars></cnt:chars>
+	<cnt:characterEncoding>ISO-8859-1</cnt:characterEncoding>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,348 @@
+<rdf:RDF
+    xmlns:bio2rdf_mesh="http://bio2rdf.org/ns/mesh#"
+    xmlns:symptom="http://purl.org/obo/owl/SYMP#SYMP_"
+    xmlns:fma="http://purl.org/obo/owl/FMA#FMA_"
+    xmlns:snomed="http://purl.bioontology.org/ontology/SNOMEDCT/"
+    xmlns:medline="http://purl.bioontology.org/ontology/MEDLINEPLUS/"
+    xmlns:nddf="http://purl.bioontology.org/ontology/NDDF/"
+    xmlns:ncithesaurus="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+    xmlns:po="http://purl.bioontology.org/ontology/PO/"
+    xmlns:omim="http://purl.bioontology.org/ontology/OMIM/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:aoa="http://purl.org/ao/annotea/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:mesh="http://purl.bioontology.org/ontology/MSH/"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi="http://purl.obolibrary.org/obo/OBI_"
+    xmlns:icd9="http://purl.bioontology.org/ontology/ICD9-9/"
+    xmlns:bio2rdf_ns="http://bio2rdf.org/ns/bio2rdf#"
+    xmlns:umls="http://berkeleybop.org/obo/UMLS:"
+    xmlns:ao="http://purl.org/ao/core/"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:go="http://purl.org/obo/owl/GO#GO_"
+    xmlns:doco="http://purl.org/spar/doco/"
+    xmlns:aof="http://purl.org/ao/foaf/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:chebi="http://purl.obolibrary.org/obo/CHEBI_"
+    xmlns:mged="http://mged.sourceforge.net/ontologies/MGEDOntology.owl#"
+    xmlns:aold="http://biotea.ws/ontologies/aold/"
+    xmlns:pw="http://purl.org/obo/owl/PW#PW_"
+    xmlns:uniprot="http://purl.uniprot.org/core/"
+    xmlns:meddra="http://purl.bioontology.org/ontology/MDR/"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:ncbitaxon="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_"
+    xmlns:taxonomy="http://www.uniprot.org/taxonomy/"
+    xmlns:pav="http://purl.org/swan/pav/provenance/"
+    xmlns:aos="http://purl.org/ao/selectors/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:aot="http://purl.org/ao/types/"
+    xmlns:ldao="http://www.biotea.ws/ao/hypertag.owl#"
+    xmlns:mddb="http://purl.bioontology.org/ontology/MDDB/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3072918_whatizitUkPmcAll.rdf/d2166eab96596a7cf5c8f8e0ad8b4505_cancers">
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918/section/Background/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C1306459">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C1306459"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cancers</ao:body>
+    <sioc:num_items>2</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918/section/Methods/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:54:33.137Z</pav:createdOn>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://berkeleybop.org/obo/UMLS:C0006826">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Disease type is: Neoplastic Process</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.fpnotebook.com/asp3/cui.aspx?q=C0006826"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </ao:Annotation>
+  <aot:ExactQualifier rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3072918_whatizitUkPmcAll.rdf/95477bd82e183fa0fdb794f67b394d55_Rho">
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P0A295">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P0A295"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0A295"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P45835">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P45835"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P45835"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9ZD24">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9ZD24"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9ZD24"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q03222">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q03222"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q03222"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52155">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52155"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52155"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918/section/Results/paragraph_5"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Rho</ao:body>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P33561">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P33561"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P33561"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q06447">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q06447"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q06447"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52154">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52154"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52154"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918/section/Results/paragraph_2"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P56466">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P56466"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P56466"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/O67031">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:O67031"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/O67031"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P57652">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P57652"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P57652"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918/section/Methods/paragraph_4"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52152">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52152"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52152"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P66029">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P66029"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P66029"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:54:33.437Z</pav:createdOn>
+    <rdf:type rdf:resource="http://purl.org/ao/core/Annotation"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P15409">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P15409"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P15409"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52153">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52153"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52153"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <sioc:num_items>4</sioc:num_items>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P51489">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P51489"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P51489"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q9ZLS9">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q9ZLS9"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q9ZLS9"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/O83281">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:O83281"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/O83281"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P29403">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P29403"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P29403"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P35359">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P35359"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P35359"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/O51891">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:O51891"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/O51891"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P0AG32">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P0AG32"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0AG32"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52158">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52158"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52158"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P0AG33">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P0AG33"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0AG33"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/Q89A22">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:Q89A22"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/Q89A22"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P38527">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P38527"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P38527"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P20350">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P20350"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P20350"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P0AG30">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P0AG30"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0AG30"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52156">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52156"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52156"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P0AG31">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P0AG31"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0AG31"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P66028">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P66028"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P66028"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P52157">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P52157"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P52157"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P0A296">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P0A296"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P0A296"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P03304">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P03304"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P03304"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P17593">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P17593"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P17593"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P17594">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P17594"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P17594"/>
+      </rdf:Description>
+    </ao:hasTopic>
+    <ao:hasTopic>
+      <rdf:Description rdf:about="http://purl.uniprot.org/core/P44619">
+        <rdfs:seeAlso rdf:resource="http://bio2rdf.org/page/uniprot:P44619"/>
+        <rdfs:seeAlso rdf:resource="http://identifiers.org/uniprot/P44619"/>
+      </rdf:Description>
+    </ao:hasTopic>
+  </aot:ExactQualifier>
+  <ao:Annotation rdf:about="http://biotea.idiginfo.org/pubmedOpenAccess/rdf_ao/PMC3072918_whatizitUkPmcAll.rdf/54e3e6c4dacbc5f8a887ed2b88126e57_cancer">
+    <sioc:num_items>1</sioc:num_items>
+    <ao:context>
+      <aold:ElementSelector>
+        <rdfs:resource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918/section/Discussion/paragraph_1"/>
+        <ao:onResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+      </aold:ElementSelector>
+    </ao:context>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C1306459"/>
+    <pav:createdBy rdf:resource="http://www.ebi.ac.uk/webservices/whatizit#whatizitUkPmcAll"/>
+    <pav:createdOn rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2012-09-19T19:54:36.335Z</pav:createdOn>
+    <ao:hasTopic rdf:resource="http://berkeleybop.org/obo/UMLS:C0006826"/>
+    <ao:annotatesResource rdf:resource="http://biotea.idiginfo.org/pubmedOpenAccess/rdf/PMC3072918"/>
+    <ao:body rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cancer</ao:body>
+    <rdf:type rdf:resource="http://purl.org/ao/types/ExactQualifier"/>
+  </ao:Annotation>
+</rdf:RDF>
