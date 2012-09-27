@@ -63,9 +63,9 @@
    <field name="id"                     type="string" indexed="true"  stored="true" required="true" /> 
    <field name="rdfFilePath"            type="string" indexed="false" stored="true" />
    <field name="rdfAnnotationFilePaths" type="string" indexed="false" stored="true" multiValued="true" />
-   <field name="terms"                  type="text"   indexed="true" stored="false" multiValued="true" />
-   <field name="topics"                 type="text"   indexed="true" stored="false" multiValued="true" />
-   <field name="vocabularies"           type="text"   indexed="true" stored="false" multiValued="true" />
+   <field name="terms"                  type="text"   indexed="true"  stored="true" multiValued="true" />
+   <field name="topics"                 type="text"   indexed="true"  stored="true" multiValued="true" />
+   <field name="vocabularies"           type="text"   indexed="true"  stored="true" multiValued="true" />
  </fields>
 
  <uniqueKey>id</uniqueKey>

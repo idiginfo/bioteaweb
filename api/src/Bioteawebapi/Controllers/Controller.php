@@ -65,6 +65,7 @@ abstract class Controller
             'application/json' => 'json',
             'text/csv'         => 'csv',
             'text/html'        => 'html',
+            'application/xml'  => 'xml'
         );
 
         //Determine what formats are available for this URL
@@ -136,7 +137,59 @@ abstract class Controller
                 return new Response($e->getMessage(), $code, array('content-type' => 'text/plain'));
             break;
         }
+    }
 
+    // --------------------------------------------------------------
+
+    /**
+     * Get query parameter and perform optional validation
+     *
+     * @param  string              $paramName     The query parameter name
+     * @param  array|string|null   $allowedValues  Can be an array of values or regex string
+     * @return string|null         Returns null if no matching value found in query
+     */
+    protected function getQueryParam($paramName, $allowedValues = null)
+    {
+        //Will be null if nothing in there
+        $val = $this->app['request']->query->get($paramName);
+
+        //If there is a value, and validation, run the validation
+        if ($val && is_array($allowedValues)) {
+
+            if ( ! in_array($val, $allowedValues)) {
+
+                $msg = sprintf("%s is not an acceptable parameter for %s.  Allowed values are: %s",
+                    $val, $paramName, implode(", ", $allowedValues)
+                );
+
+                $this->app->abort(400, $msg);
+            }
+        }
+        elseif (is_string($allowedValues) && $allowedValues{0} = "/") {
+
+            if ( ! preg_match($allowedValues, $val)) {
+                $this->app->abort(400, "$val is not an acceptable parameter for $paramName.");
+            }
+        }
+
+        //Return val
+        return $val;
+    }    
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get Path Segment returns a path segment
+     *
+     * @param int $segment
+     * @return string|null
+     */
+    protected function getPathSegment($segment) 
+    {
+        $pathInfo = $this->app['request']->getPathInfo();
+        $pathSegs = array_filter(explode("/", $pathInfo));
+
+        return (isset($pathSegs[$segment])) ? $pathSegs[$segment] : null;
     }
 }
 

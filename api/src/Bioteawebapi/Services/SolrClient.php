@@ -44,7 +44,7 @@ class SolrClient
         $query->setQuery($queryString);
 
         $result = $this->client->select($query);
-        return ($countOnly) ? $result->getNumFound() : $result;
+        return $result;
     }
 
     // --------------------------------------------------------------
@@ -72,7 +72,7 @@ class SolrClient
         $queryString = (count($queryString) > 0)
             ? implode(" {$boolean} ", $queryString) : '*:*';
 
-        return $this->query($queryString, $countOnly);
+        return $this->query($queryString);
     }
 
     // --------------------------------------------------------------
@@ -133,6 +133,44 @@ class SolrClient
 
         return $count;
     }   
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get terms list
+     *
+     * @return array  Keys are terms, values are number of hits
+     */
+    public function getTerms($field, $limit = 100, $lower = null)
+    {
+        $termsQuery = $this->client->createTerms();
+        $termsQuery->setFields($field);
+        $termsQuery->setLimit($limit);
+        
+        if ($lower) {
+            $termsQuery->setLowerbound($lower);
+            $TermsQUery->setLowerboundinclude(false);
+        }
+
+        $result = $this->client->terms($termsQuery);
+        $result = $result->getData();
+        if (isset($result['terms'][1])) {
+            $termList = $result['terms'][1];
+
+            $outArr = array();
+
+            for ($i = 0; $i < count($termList); $i += 2) {
+                list($term, $count) = array($termList[$i], $termList[$i+1]);
+                $outArr[$term] = $count;
+            }
+
+            return $outArr;
+        }
+        else {
+            return array();
+        }
+
+    }
 
     // --------------------------------------------------------------
 

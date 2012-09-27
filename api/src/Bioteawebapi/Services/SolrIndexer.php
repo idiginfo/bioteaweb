@@ -1,7 +1,8 @@
 <?php
 
 namespace Bioteawebapi\Services;
-use \EasyRdf_Graph as RdfGraph;
+use EasyRdf_Graph as RdfGraph;
+use Bioteawebapi\Models\BioteaRdfDocSet;
 
 /**
  * Solr Indexer indexes RDF documents into SOLR
@@ -117,8 +118,14 @@ class SolrIndexer
                 continue;
             }
 
+            //Reached limit? Done.
+            if ($this->numIndexed + $this->numFailed > $this->limit) {
+                break;
+            }
+
+            //Do it
             if (is_dir($fullpath . '/' . $file)) {
-                echo "\nDIR: " . $file;
+                $this->runIndexer($file);
             }
             elseif (preg_match($this->filePattern, $file)) { 
             
@@ -137,14 +144,36 @@ class SolrIndexer
     protected function processFile($relativePath)
     {
         $fullPath = realpath($this->basepath . '/' . $relativePath);
+        $filename = basename($fullPath, '.rdf');
 
         //Try to read the RDF
         try {
 
+            //Main RDF
             $rdfGraph = new RdfGraph();
-            $graph = $rdfGraph->parseFile($fullPath);
+            $rdfGraph->parseFile($fullPath);
 
-            return true;
+            //Build object
+            $rdfObj = new BioteaRdfDocSet($rdfGraph, $relativePath);
+
+            //Add SubRDF Files
+            $subfiles = array(
+                'ncbo'     => $relativePath . '/AO_Annotations/' . $filename . '_ncboAnnotator.rdf',
+                'whatizit' => $relativePath . '/AO_Annotations/' . $filename . '_whatizitUkPmcAll.rdf'
+            );
+
+            foreach($subfiles as $name => $relPath) {
+                $fullSubPath = $this->basepath . $relPath;
+
+                if (file_exists($fullSubPath)) {
+                    $subGraph = new RdfGraph();
+                    $subGraph->parseFile($fullSubPath);
+                    $rdfObj->addAnnotationFile($subGraph, $name, $relPath);
+                }
+            }
+
+            //Test
+            var_dump($rdfObj);
         } 
         catch (\EasyRdf_Exception $e) {
             return false;

@@ -44,16 +44,29 @@ $app['fosrest'] = new FormatNegotiator();
 
 //Controllers
 $app['front_controller']  = new Bioteawebapi\Controllers\Front($app);
-$app['solrq_controller']  = new Bioteawebapi\Controllers\SolrQuery($app, $app['solr_client']);
+$app['terms_controller']  = new Bioteawebapi\Controllers\Terms($app, $app['solr_client']);
+$app['docs_controller']   = new Bioteawebapi\Controllers\Documents($app, $app['solr_client']);
 
 // ------------------------------------------------------------------
 
 /*
  * Routes
  */
+
+//Front
 $app->get('/',                array($app['front_controller'], 'run'));
-$app->get('/{field}',         array($app['solrq_controller'], 'run'));
-$app->get('/{field}/{value}', array($app['solrq_controller'], 'run'));
+
+//Terms
+$app->get('/terms',         array($app['terms_controller'], 'run'));
+$app->get('/terms/{value}', array($app['docs_controller'],  'run'));
+
+//Topics
+$app->get('/topics',         array($app['terms_controller'], 'run'));
+$app->get('/topics/{value}', array($app['docs_controller'],  'run'));
+
+//Vocabularies
+$app->get('/vocabularies',         array($app['terms_controller'], 'run'));
+$app->get('/vocabularies/{value}', array($app['docs_controller'],  'run'));
 
 // ------------------------------------------------------------------
 
