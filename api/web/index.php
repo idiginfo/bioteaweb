@@ -43,9 +43,9 @@ require(__DIR__ . '/../src/bootstrap.php');
 $app['fosrest'] = new FormatNegotiator();
 
 //Controllers
-$app['front_controller']  = new Bioteawebapi\Controllers\Front($app);
-$app['terms_controller']  = new Bioteawebapi\Controllers\Terms($app, $app['solr_client']);
-$app['docs_controller']   = new Bioteawebapi\Controllers\Documents($app, $app['solr_client']);
+$app['front_controller'] = new Bioteawebapi\Controllers\Front($app);
+$app['terms_controller'] = new Bioteawebapi\Controllers\Terms($app, $app['solr_client']);
+$app['docs_controller']  = new Bioteawebapi\Controllers\Documents($app, $app['solr_client']);
 
 // ------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ $app['docs_controller']   = new Bioteawebapi\Controllers\Documents($app, $app['s
  */
 
 //Front
-$app->get('/',                array($app['front_controller'], 'run'));
+$app->get('/', array($app['front_controller'], 'run'));
 
 //Terms
 $app->get('/terms',         array($app['terms_controller'], 'run'));

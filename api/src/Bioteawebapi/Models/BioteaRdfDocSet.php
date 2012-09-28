@@ -56,7 +56,17 @@ class BioteaRdfDocSet
     { 
         assert(is_string($filepath));
         $this->annotationFileNames[$annotationName] = $filepath;
-        $this->annotationRDFDocs[$filepath] = $rdf;
+        $this->annotationRDFDocs[$annotationName] = $rdf;
+    }
+
+    // --------------------------------------------------------------
+
+    //DELETE ME DELETE ME DELETE ME
+    public function test()
+    {
+        // var_dump($this->mainFilePath);
+        echo $this->annotationRDFDocs['whatizit']->serialise('json');
+        //echo $this->annotationRDFDocs['whatizit']->dump(false);
     }
 
     // --------------------------------------------------------------

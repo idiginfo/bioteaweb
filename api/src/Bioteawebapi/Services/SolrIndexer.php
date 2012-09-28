@@ -141,10 +141,11 @@ class SolrIndexer
 
     // --------------------------------------------------------------
 
-    protected function processFile($relativePath)
+    protected function processFile($relativeFilePath)
     {
-        $fullPath = realpath($this->basepath . '/' . $relativePath);
-        $filename = basename($fullPath, '.rdf');
+        $fullPath    = realpath($this->basepath . '/' . $relativeFilePath);
+        $relDirPath  = ltrim(dirname($relativeFilePath), '.');
+        $filename    = basename($fullPath, '.rdf');
 
         //Try to read the RDF
         try {
@@ -154,26 +155,28 @@ class SolrIndexer
             $rdfGraph->parseFile($fullPath);
 
             //Build object
-            $rdfObj = new BioteaRdfDocSet($rdfGraph, $relativePath);
+            $rdfObj = new BioteaRdfDocSet($rdfGraph, $relativeFilePath);
 
             //Add SubRDF Files
             $subfiles = array(
-                'ncbo'     => $relativePath . '/AO_Annotations/' . $filename . '_ncboAnnotator.rdf',
-                'whatizit' => $relativePath . '/AO_Annotations/' . $filename . '_whatizitUkPmcAll.rdf'
+                'ncbo'     => $relDirPath . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
+                'whatizit' => $relDirPath . '/AO_annotations/' . $filename . '_whatizitUkPmcAll.rdf'
             );
 
-            foreach($subfiles as $name => $relPath) {
-                $fullSubPath = $this->basepath . $relPath;
+            foreach($subfiles as $name => $relSubPath) {
+
+                $relSubPath = ltrim($relSubPath, '/');
+                $fullSubPath = $this->basepath . '/' . $relSubPath;
 
                 if (file_exists($fullSubPath)) {
                     $subGraph = new RdfGraph();
                     $subGraph->parseFile($fullSubPath);
-                    $rdfObj->addAnnotationFile($subGraph, $name, $relPath);
+                    $rdfObj->addAnnotationFile($subGraph, $name, $relSubPath);
                 }
             }
 
-            //Test
-            var_dump($rdfObj);
+            //RDFObj
+            $rdfObj->test();
         } 
         catch (\EasyRdf_Exception $e) {
             return false;

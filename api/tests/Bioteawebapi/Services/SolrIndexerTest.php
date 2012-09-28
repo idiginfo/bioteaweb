@@ -40,7 +40,7 @@ class SolrIndexerTest extends \PHPUnit_Framework_TestCase
     public function testIndex()
     {
         $obj = $this->getObj();
-        $obj->index(2);     
+        $obj->index(1);     
     }
 
     // --------------------------------------------------------------
