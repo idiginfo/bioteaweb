@@ -64,8 +64,13 @@ class BioteaRdfDocSet
     //DELETE ME DELETE ME DELETE ME
     public function test()
     {
+        $result = $this->annotationRDFDocs['whatizit']->all('http://purl.org/ao/core/hasTopic', '.');
+        var_dump($result);
+
         // var_dump($this->mainFilePath);
-        echo $this->annotationRDFDocs['whatizit']->serialise('json');
+        // file_put_contents('/home/casey/Desktop/main.txt', $this->mainRdf->serialise('json'));
+        // file_put_contents('/home/casey/Desktop/whatizit.txt', $this->annotationRDFDocs['whatizit']->serialise('json'));
+        // file_put_contents('/home/casey/Desktop/ncbo.txt', $this->annotationRDFDocs['ncbo']->serialise('json'));
         //echo $this->annotationRDFDocs['whatizit']->dump(false);
     }
 

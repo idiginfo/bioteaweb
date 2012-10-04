@@ -8,6 +8,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Bioteawebapi\Models\SolrIndexDocument;
 use Bioteawebapi\Services\SolrClient;
 
+/**
+ * Dummy Command class loads dummy data into SOLR for testing
+ *
+ * This should only be used for development purposes
+ */
 class Dummy extends Command
 {
     /**
