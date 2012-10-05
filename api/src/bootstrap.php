@@ -20,6 +20,7 @@
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 use Bioteawebapi\Services\SolrClient;
+use Bioteawebapi\Services\MySQLClient;
 use Silex\Application;
 
 // ------------------------------------------------------------------
@@ -64,8 +65,20 @@ $app = new Application();
 $app['config'] = new Configula\Config(BASEPATH . '/config/');
 
 //SOLR Client
-$app['solr_config'] = array('adapteroptions' => $app['config']->solr['document']);
+$app['solr_config'] = array('adapteroptions' => $app['config']->solr['terms']);
 $app['solr_client'] = new SolrClient(new Solarium_Client($app['solr_config']));
+
+//MySQL Client ($app['db'])
+$app->register(new Silex\Provider\DoctrineServiceProvider(), array(
+    'db.options' => array (
+        'driver'    => 'pdo_mysql',
+        'host'      => $app['config']->mysql['host'],
+        'dbname'    => $app['config']->mysql['name'],
+        'user'      => $app['config']->mysql['user'],
+        'password'  => $app['config']->mysql['pass'],
+    )
+));
+$app['mysql_client'] = new MySQLClient($app['db']);
 
 // ------------------------------------------------------------------
 

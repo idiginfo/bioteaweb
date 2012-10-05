@@ -10,11 +10,14 @@
 
 # SOLR Cores
 solr:
-    document:
+    terms:
         host: 127.0.0.1
         port: 8080
         path: /solr/
-    topic: #not yet implemented. change the path
-        host: 127.0.0.1
-        port: 8080
-        path: /solr/
+
+# MySQL config
+mysql:
+    host: 127.0.0.1
+    user: root
+    pass: 
+    name: bioteaweb
