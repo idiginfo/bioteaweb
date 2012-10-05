@@ -60,13 +60,11 @@ $app = new Application();
  * Common Libraries
  */
 
-//RDF SPARQL Client
-// $app['sparql_url']        = 'http://biotea.idiginfo.org/sparql';
-// $app['sparql_client']     = new EasyRdf_Sparql_Client($app['sparql_url']);
-
+//Configuration
+$app['config'] = new Configula\Config(BASEPATH . '/config/');
 
 //SOLR Client
-$app['solr_config'] = array('adapteroptions' => array('host' => '127.0.0.1', 'port' => 8080, 'path' => '/solr/'));
+$app['solr_config'] = array('adapteroptions' => $app['config']->solr['document']);
 $app['solr_client'] = new SolrClient(new Solarium_Client($app['solr_config']));
 
 // ------------------------------------------------------------------

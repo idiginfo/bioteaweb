@@ -37,7 +37,6 @@ require(__DIR__ . '/../src/bootstrap.php');
 $app['consoleapp'] = new Application();
 
 //Commands
-$app['consoleapp']->add(new Bioteawebapi\Commands\Test($app));
 $app['consoleapp']->add(new Bioteawebapi\Commands\Dummy($app));
 
 // ------------------------------------------------------------------
