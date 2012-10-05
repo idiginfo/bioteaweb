@@ -1,0 +1,21 @@
+This document is for reference only.  It describes the ERD for the MySQL Schema
+(view with word-wrap off)
+
+        +---------------+        +-------------------+        +-----------------+
+        | vocabularies  |        |       topics      |        | topic_for_terms |
+        +---------------+  1:n   +-------------------+   1:n  +-----------------+
+        | id         PK | <--\   | id             PK | <--\   | id           PK |
+        | uri        UI |    |   | uri            UI |    \-- | topics_id    FK |
+        | shortName   I |    |   | shortName       I |        | term         FK | --\
+        +---------------+    \-- | vocabulary_id  FK |        +-----------------+   | 
+                                 +-------------------+                              |
+                                                                                    | n
+                                                                                    | :
+                                                                                    | 1
+  +-----------------+            +------------------+          +------------+       |
+  |    documents    |            |   annotations    |          |   terms    |       |
+  +-----------------+     1:n    +------------------+    n:1   +------------+       |
+  | ID           PK | <---\      | ID            PK |     /--> | term    PK | <-----/
+  | path            |      \---- | documents_id  FK |     |    +------------+
+  | annotationPaths |            | term          FK | ----/
+  +-----------------+            +------------------+
