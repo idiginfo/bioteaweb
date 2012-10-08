@@ -4,16 +4,13 @@ namespace Bioteawebapi\Services;
 
 class IndexerTest extends \PHPUnit_Framework_TestCase
 {
-
-    // --------------------------------------------------------------
-
     public function testTestPathIsReadable()
     {
         $this->assertTrue(is_readable($this->getTestPath()));
     }
-
+    
     // --------------------------------------------------------------
-
+   
     public function testInstantiateAsObjectSucceeds()
     {
         $this->assertInstanceOf('\Bioteawebapi\Services\Indexer', $this->getObj());
@@ -21,30 +18,33 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
 
     // --------------------------------------------------------------
 
-    public function testInvalidPathThrowsInvalidArgumentException()
+    public function testGetNumProcessedReturnsZeroBeforeExecution()
+    {
+        $obj = $this->getObj();
+        $this->assertEquals(0, $obj->getNumProcessed());
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Here we use a limit so as to not take a million years for the
+     * test to run
+     */
+    public function testIndexWorksForValidPath()
+    {
+        $obj = $this->getObj();
+        $obj->index($this->getTestPath(), 3);
+        $this->assertEquals(3, $obj->getNumProcessed());
+    }
+
+    // --------------------------------------------------------------
+
+    public function testIndexThrowsExceptionForNonExistentPath()
     {
         $this->setExpectedException("\InvalidArgumentException");
-        $obj = $this->getObj('/does/not/exist');
-    }
-
-    // --------------------------------------------------------------
-
-    public function testGetNumIndexedReturnsZeroBeforeExecution()
-    {
-        $obj = $this->getObj();
-        $this->assertEquals(0, $obj->getNumIndexed());
-    }
-
-    // --------------------------------------------------------------
-
-    //Playing with this!!
-    public function testIndex()
-    {
-        include(__DIR__ . '/../../fixtures/vocabularies.php');
 
         $obj = $this->getObj();
-        $obj->setVocabularies($vocabs);
-        $obj->index(1);     
+        $obj->index('/really/doesnt/exist/again/asdfa/a' . time(), 3);
     }
 
     // --------------------------------------------------------------
@@ -56,23 +56,11 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
      */
     protected function getObj($path = null, $solrClient = null)
     {
-        $path  = $path ?: $this->getTestPath();
-        $solr  = $solrClient ?: $this->getSolrClientMock();
-        $mysql = $this->getMySQLClientMock();
+        $builder = new DocSetBuilder();
+        $solr    = $solrClient ?: $this->getSolrClientMock();
+        $mysql   = $this->getMySQLClientMock();
 
-        return new Indexer($path, $solr, $mysql);
-    }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Get the path to the test data
-     *
-     * @return string
-     */
-    protected function getTestPath()
-    {
-        return __DIR__ . '/../../fixtures/solrIndexerTestData';
+        return new Indexer($builder, $solr, $mysql);
     }
 
     // --------------------------------------------------------------
@@ -96,7 +84,19 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
     {
         $mock = $this->getMock('\Bioteawebapi\services\MySQLClient', array(), array(), '', false);
         return $mock;
-    }    
+    }   
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get the path to the test data
+     *
+     * @return string
+     */
+    protected function getTestPath()
+    {
+        return __DIR__ . '/../../fixtures/solrIndexerTestData';
+    }
 }
 
 /* EOF: SolrIndexerTest.php */

@@ -31,7 +31,7 @@ class BioteaDocSet
     /**
      * @var array  Keys are shortnames, values are full URIs
      */
-    private $allVocabularies = array();
+    private $vocabularies = array();
 
     // --------------------------------------------------------------
 
@@ -46,15 +46,15 @@ class BioteaDocSet
      */
     public function __construct($filepath, Array $vocabularies = array())
     {
-        assert(is_string($filepath));
-
+        //Set path
         $this->mainFilePath = $filepath;
-
+     
         //Sort the vocabularies based on strlen
         uasort($vocabularies, function($a, $b) {
             return strlen($b) - strlen($a);
         });
 
+        //Set optional vocabularies
         $this->vocabularies = $vocabularies;
     }
 
@@ -83,6 +83,11 @@ class BioteaDocSet
      */
     protected function extractItems(SimpleXMLElement $xml)
     {
+        //Register namespaces
+        $xml->registerXPathNamespace('ao', 'http://purl.org/ao/core/');
+        $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
+        $xml->registerXPathNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
+
         // Terms are at XPATH  //ao:annotation//ao:body
         // Topics are at XPATH //ao:annotation//ao:hasTopic//rdf:description
         //               and   //ao:annotation//ao:hasTopic//rdfs:seeAlso
@@ -165,7 +170,7 @@ class BioteaDocSet
      */
     public function getAnnotationFilePaths()
     {
-        return array_values($this->annotationFilePaths);
+        return array_values($this->annotationFileNames);
     }
 
     // --------------------------------------------------------------

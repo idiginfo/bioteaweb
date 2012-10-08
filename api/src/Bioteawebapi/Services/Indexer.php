@@ -61,7 +61,7 @@ class Indexer
     // --------------------------------------------------------------
 
     /**
-     * Get the number of items indexed
+     * Get the number of items indexed for the last run
      *
      * @return int 
      */
@@ -73,13 +73,25 @@ class Indexer
     // --------------------------------------------------------------
 
     /** 
-     * Get the number of items where indexing failed
+     * Get the number of items where indexing failed for the last run
      *
      * @return int
      */
     public function getNumFailed()
     {
-        return $this->getNumFailed;
+        return $this->numFailed;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Return the number of items skipped for the last run
+     *
+     * return int
+     */
+    public function getNumSkipped()
+    {
+        return $this->numSkipped;
     }
 
     // --------------------------------------------------------------
@@ -91,7 +103,7 @@ class Indexer
      */
     public function getNumProcessed()
     {
-        return $this->numIndexed + $this->numFailed + $this->numSkipped;
+        return $this->getNumFailed() + $this->getNumIndexed() + $this->getNumSkipped();
     }
 
     // --------------------------------------------------------------
@@ -113,7 +125,13 @@ class Indexer
         $traverser = $this->builder->getTraverser($path);
         while ($obj = $traverser->getNextDocument()) {
 
-            $result = $this->process($obj);
+            //If passed limit, get out
+            if ($this->getNumProcessed() >= $limit) {
+                return;
+            }
+
+            //Process it
+            $result = $this->processItem($obj);
 
             switch($result) {
                 case self::FAILED:  $this->numFailed++; break;
@@ -134,20 +152,11 @@ class Indexer
      *
      * Builds a docSetObj from it and then attempts to index it
      *
-     * @param string $fullpath
-     * @param string $relpath
-     * @return int   Skipped, Indexed, or Failed (see class constants)
+     * @param Models\BioteaDocSet $docset
+     * @return int  Skipped, Indexed, or Failed
      */
-    protected function process($fullpath, $relpath)
+    public function processItem($docset)
     {
-        //Build a docset object
-        $docSetObj = $this->builder->process($fullpath, $relpath);
-
-        //If that doesn't work, fail out
-        if ( ! $docSetObj) {
-            return false;
-        }
-
         //LEFT OFF HERE!
         //@TODO: Implement the indexing part of this class!
 

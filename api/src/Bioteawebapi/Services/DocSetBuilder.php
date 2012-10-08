@@ -2,7 +2,9 @@
 
 namespace Bioteawebapi\Services;
 use Bioteawebapi\Models\BioteaDocSet;
-use RecursiveDirectoryIterator, RecursiveIteratorIterator;
+use Bioteawebapi\Exceptions\DocSetBuilderException;
+use RecursiveDirectoryIterator as RDI;
+use RecursiveIteratorIterator;
 use SimpleXMLElement;
 
 /**
@@ -21,7 +23,7 @@ class DocSetBuilder
     private $filePattern = "/^PMC[\d]+\.rdf$/";
 
     /**
-     * @var \DirectoryIterator
+     * @var \RecurisveIteratorIterator
      */
     private $traverser;
 
@@ -68,7 +70,7 @@ class DocSetBuilder
         //Clone this, add traversal capabilities, and return it
         $that = clone $this;
         $that->traverserBasePath = realpath($path) . DIRECTORY_SEPARATOR;
-        $that->traverser = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($that->traverserBasePath));
+        $that->traverser = new RecursiveIteratorIterator(new RDI($that->traverserBasePath));
         return $that;
     }
 
@@ -86,7 +88,7 @@ class DocSetBuilder
     {
         //If this object is not set for traversing...
         if ( ! $this->traverserBasePath) {
-            throw new \RuntimeException("Traverser Not Available.  Use DocSetBuilder::getTraverser()!");
+            throw new \Exception("Traverser Not Available.  Use DocSetBuilder::getTraverser()!");
         }
 
         //Do it..
@@ -105,7 +107,7 @@ class DocSetBuilder
                 $fullPath = $fullPath . DIRECTORY_SEPARATOR . $fileName;
 
                 //Build the object
-                $obj = $this->process($fullPath, $relPath);
+                $obj = $this->buildDocSet($fullPath, $relPath);
             }
 
             //Next item
@@ -124,8 +126,13 @@ class DocSetBuilder
      * @param string $relativeFilePath  A relative file path to the file to parse
      * @return Bioteawebapi\Models\BioteaDocSet
      */
-    public function process($fullPath, $relativeFilePath)
+    public function buildDocSet($fullPath, $relativeFilePath)
     {
+        //Check path
+        if ( ! is_readable($fullPath)) {
+            throw new DocSetBuilderException("The filepath does not exist: " . $fullPath);
+        }
+
         //Paths
         $relDirPath  = ltrim(dirname($relativeFilePath), '.');
         $filename    = basename($fullPath, '.rdf');
@@ -147,10 +154,6 @@ class DocSetBuilder
 
             if (file_exists($fullSubPath)) {
                 $xml = new SimpleXMLElement($fullSubPath, 0, true);
-                $xml->registerXPathNamespace('ao', 'http://purl.org/ao/core/');
-                $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
-                $xml->registerXPathNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
-
                 $docSetObj->addAnnotationFile($xml, $name, $relSubPath);
             }
         }
