@@ -157,9 +157,13 @@ class Indexer
      */
     public function processItem($docset)
     {
-        //LEFT OFF HERE!
-        //@TODO: Implement the indexing part of this class!
+        //See if the item has already been indexed
 
+        //If not, index it in MySQL
+
+        //If SOLR enabled, index terms in SOLR as well
+
+        //Replace this... Return index, error, or skipped
         return self::SKIPPED;
     }
 }

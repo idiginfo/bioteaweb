@@ -83,7 +83,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 
 //MySQL Client for Docs
 $app['mysql_client'] = $app->share(function($app) { 
-    new MySQLClient($app['db']);
+    return new MySQLClient($app['db']);
 });
 
 //Doc Builder
