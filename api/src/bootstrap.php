@@ -64,11 +64,13 @@ $app = new Application();
 //Configuration
 $app['config'] = new Configula\Config(BASEPATH . '/config/');
 
-//SOLR Client
+//SOLR Client for Docs
 $app['solr_config'] = array('adapteroptions' => $app['config']->solr['terms']);
-$app['solr_client'] = new SolrClient(new Solarium_Client($app['solr_config']));
+$app['solr_client'] = $app->share(function($app) {
+    return new SolrClient(new Solarium_Client($app['solr_config']));
+});
 
-//MySQL Client ($app['db'])
+//MySQL ($app['db'])
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array (
         'driver'    => 'pdo_mysql',
@@ -78,7 +80,21 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
         'password'  => $app['config']->mysql['pass'],
     )
 ));
-$app['mysql_client'] = new MySQLClient($app['db']);
+
+//MySQL Client for Docs
+$app['mysql_client'] = $app->share(function($app) { 
+    new MySQLClient($app['db']);
+});
+
+//Doc Builder
+$app['builder'] = $app->share(function($app) {
+    return new Bioteawebapi\Services\DocSetBuilder($app['config']->vocabularies);
+});
+
+//Doc Indexer
+$app['indexer'] = $app->share(function($app) {
+    return new Bioteawebapi\Services\DocSetBuilder($app['builder'], $app['solr_client'], $app['mysql_client']);
+});
 
 // ------------------------------------------------------------------
 

@@ -8,6 +8,11 @@ use SimpleXMLElement;
  */
 class BioteaDocSet
 {
+    //Constants for return values
+    const OBJ  = 1;
+    const NAME = 2;
+    const URI  = 3;
+
     /**
      * @param string
      */
@@ -130,11 +135,19 @@ class BioteaDocSet
     /**
      * Get the terms
      *
-     * @return array
+     * @return array  Array of BioteaTerm objects or term strings
      */
-    public function getTerms()
+    public function getTerms($mode = self::OBJ)
     {
-        return array_values($this->terms);
+        switch ($mode) {
+
+            case self::OBJ:
+                return array_values($this->terms);
+            case self::NAME:
+                return array_keys($this->terms);
+            default:
+                throw new \InvalidArgumentException("Invalid mode for terms");
+        }
     }
 
     // --------------------------------------------------------------
@@ -142,11 +155,52 @@ class BioteaDocSet
     /**
      * Get the topics
      *
-     * @return array
+     * @return array  Array of BioteaTopic objects, shortname strings, or URI strings
      */
-    public function getTopics()
+    public function getTopics($mode = self::OBJ)
     {
-        return array_values($this->topics);
+        switch ($mode) {
+
+            case self::OBJ:
+                return array_values($this->topics);
+            case self::NAME:
+                return array_map(function($v) { return $v->getTopicShortName(); }, $this->topics);
+            case self::URI:
+                return array_keys($this->topics);
+            default:
+                throw new \InvalidArgumentException("Invalid mode for topics");            
+        }
+    }
+
+    // --------------------------------------------------------------
+    
+    /**
+     * Get the vocabularies
+     *
+     * @return array  Array of URIS or shortname strings
+     */
+    public function getVocabularies($mode = self::URI)
+    {
+        $names = array_unique(array_map(
+            function($v) { 
+                return $v->getVocabularyShortName(); 
+            }, $this->topics)
+        );
+
+        $uris = array_unique(array_map(
+            function($v) { 
+                return $v->getVocbaularyUri(); 
+            }, $this->topics)
+        );
+
+        switch ($mode) {
+            case self::NAME:
+                return array_filter(array_combine($uris, $names));
+            case self::URI:
+                return array_filter(array_combine($names, $uris));
+            default:
+                throw new \InvalidArgumentException("Invalid mode for vocabularies");            
+        }
     }
 
     // --------------------------------------------------------------
@@ -164,13 +218,13 @@ class BioteaDocSet
     // --------------------------------------------------------------
 
     /**
-     * Get the annotation file paths as incremental array
+     * Get the annotation file paths as an array
      *
      * @return array
      */
     public function getAnnotationFilePaths()
     {
-        return array_values($this->annotationFileNames);
+        return $this->annotationFileNames;
     }
 
     // --------------------------------------------------------------
