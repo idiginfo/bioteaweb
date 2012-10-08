@@ -1,23 +1,24 @@
 <?php
 
 namespace Bioteawebapi\Services;
-use EasyRdf_Graph as RdfGraph;
-use EasyRdf_Namespace;
-use Bioteawebapi\Models\BioteaRdfDocSet;
-use SimpleXMLElement;
+use Bioteawebapi\Models\BioteaDocSet;
 
 /**
  * Indexer indexes RDF documents into SOLR and MySQL
  */
 class Indexer
 {
-    /**
-     * @var string  Path to use
-     */
-    private $basepath;
+    const INDEXED = 1;
+    const FAILED  = 0;
+    const SKIPPED = -1;
 
     /**
-     * @var DocumentManager
+     * @var DocSetBuidler
+     */
+    private $builder;
+
+    /**
+     * @var SolrClient
      */
     private $solr;
 
@@ -34,53 +35,27 @@ class Indexer
     /**
      * @var int
      */
+    private $numSkipped;
+
+    /**
+     * @var int
+     */
     private $numFailed;
-
-    /**
-     * @var string
-     */
-    private $filePattern = "/^PMC[\d]+\.rdf$/";
-
-    /**
-     * @var array
-     */
-    private $vocabularies = array();
 
     // --------------------------------------------------------------
 
     /**
      * Constructor
      *
-     * @param string  $path         Realpath to RDF files
-     * @param Indexer $solrMgr      SOLR Client object
+     * @param DocSetBuilder  $builder     Biotea Doc Builder
+     * @param SolrClient     $solrClient  SOLR Client object
+     * @param MySQLClient    $db          MySQL Client object
      */
-    public function __construct($path, SolrClient $solr, MySQLClient $db)
+    public function __construct(DocSetBuilder $builder, SolrClient $solr, MySQLClient $db)
     {
-        //Path check
-        if ( ! is_readable($path) OR ! is_dir($path)) {
-            throw new \InvalidArgumentException("The RDF file path is invalid: " . $path);
-        }
-
-        //Set properties
-        $this->basepath = rtrim($path, DIRECTORY_SEPARATOR);
+        $this->builder  = $builder;
         $this->solr     = $solr;
         $this->db       = $db;
-
-        //Reset count
-        $this->numIndexed = 0;
-        $this->numFailed  = 0;
-    }
-
-    // --------------------------------------------------------------
-
-    /**
-     * If indexing predefined vocabularies, set those here
-     *
-     * @param array  Keys are short names, values are long names
-     */
-    public function setVocabularies(Array $vocabularies)
-    {
-        $this->vocabularies = $vocabularies;
     }
 
     // --------------------------------------------------------------
@@ -98,6 +73,8 @@ class Indexer
     // --------------------------------------------------------------
 
     /** 
+     * Get the number of items where indexing failed
+     *
      * @return int
      */
     public function getNumFailed()
@@ -108,106 +85,75 @@ class Indexer
     // --------------------------------------------------------------
 
     /**
-     * Run the indexer on the basepath
+     * Get the number of items processed (skipped, failed, and indexed)
      *
-     * @param int $limit    0 for no limit
+     * @return int
      */
-    public function index($limit = 0)
+    public function getNumProcessed()
     {
-        $this->limit = $limit;
-
-        $this->runIndexer();
-
-        $this->limit = null;
-        return $this->numIndexed;
+        return $this->numIndexed + $this->numFailed + $this->numSkipped;
     }
 
     // --------------------------------------------------------------
 
     /**
-     * Run the indexer does the actual work
+     * Run the indexer on the basepath
      *
-     * Recursive method
-     *
-     * @param string $path  Subpath
+     * @param string $path  Path to index
+     * @param int    $limit  0 for no limit
+     * @return int   The number processed (skipped, failed, and indexed)
      */
-    protected function runIndexer($path = '')
+    public function index($path, $limit = 0)
     {
-        //Set fullpath
-        $fullpath = realpath($this->basepath . '/' . $path);
+        //Reset counts
+        $this->numIndexed = 0;
+        $this->numFailed  = 0;
+        $this->numSkipped = 0;
 
-        foreach (scandir($fullpath) as $file) {
+        $traverser = $this->builder->getTraverser($path);
+        while ($obj = $traverser->getNextDocument()) {
 
-            //Skip hidden
-            if ($file{0} == '.') {
-                continue;
-            }
+            $result = $this->process($obj);
 
-            //Reached limit? Done.
-            if ($this->numIndexed + $this->numFailed >= $this->limit) {
-                break;
-            }
-
-            //Do it
-            if (is_dir($fullpath . '/' . $file)) {
-                $this->runIndexer($file);
-            }
-            elseif (preg_match($this->filePattern, $file)) { 
-            
-                if ($this->processFile($file)) {
-                    $this->numIndexed++;
-                }  
-                else {
-                    $this->numFailed++;
-                }
+            switch($result) {
+                case self::FAILED:  $this->numFailed++; break;
+                case self::SKIPPED: $this->numSkipped++; break;
+                case self::INDEXED: $this->numIndexed++; break;
+                default:
+                    throw new \Exception("Invalid returned value from Indexer::process");
             }
         }
+
+        return $this->getNumProcessed();
     }
 
     // --------------------------------------------------------------
 
-    protected function processFile($relativeFilePath)
+    /**
+     * Process a file
+     *
+     * Builds a docSetObj from it and then attempts to index it
+     *
+     * @param string $fullpath
+     * @param string $relpath
+     * @return int   Skipped, Indexed, or Failed (see class constants)
+     */
+    protected function process($fullpath, $relpath)
     {
-        $fullPath    = realpath($this->basepath . '/' . $relativeFilePath);
-        $relDirPath  = ltrim(dirname($relativeFilePath), '.');
-        $filename    = basename($fullPath, '.rdf');
+        //Build a docset object
+        $docSetObj = $this->builder->process($fullpath, $relpath);
 
-        //Try to read the RDF-XML
-        try {
-
-            //Build object
-            $rdfObj = new BioteaRdfDocSet($relativeFilePath, $this->vocabularies);
-
-            //Add SubRDF Files
-            $subfiles = array(
-                'ncbo'     => $relDirPath . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
-                'whatizit' => $relDirPath . '/AO_annotations/' . $filename . '_whatizitUkPmcAll.rdf'
-            );
-
-            foreach($subfiles as $name => $relSubPath) {
-
-                $relSubPath = ltrim($relSubPath, '/');
-                $fullSubPath = $this->basepath . '/' . $relSubPath;
-
-                if (file_exists($fullSubPath)) {
-                    $xml = new SimpleXMLElement($fullSubPath, 0, true);
-                    $xml->registerXPathNamespace('ao', 'http://purl.org/ao/core/');
-                    $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
-                    $xml->registerXPathNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
-
-                    $rdfObj->addAnnotationFile($xml, $name, $relSubPath);
-                }
-            }
-
-            //LEFT OFF HERE
-            //Get topics, vocabs, and terms, and index them in the appropriate places
-
-        } 
-        catch (\EasyRdf_Exception $e) {
+        //If that doesn't work, fail out
+        if ( ! $docSetObj) {
             return false;
         }
+
+        //LEFT OFF HERE!
+        //@TODO: Implement the indexing part of this class!
+
+        return self::SKIPPED;
     }
 }
 
 
-/* EOF: SolrIndexer.php */
+/* EOF: Indexer.php */

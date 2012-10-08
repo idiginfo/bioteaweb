@@ -34,7 +34,6 @@ class BuildSchema extends Command
     {
         $this->setName('buildschema')->setDescription('Build MySQL Schema for MySQL indicies.  Only changes out-of-date schemas.');
         $this->addOption('dry-run', 'd', InputOption::VALUE_NONE, 'This option allows you to see the queries that would be run.');
-
     }
 
     // --------------------------------------------------------------

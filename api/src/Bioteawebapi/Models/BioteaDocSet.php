@@ -4,9 +4,9 @@ namespace Bioteawebapi\Models;
 use SimpleXMLElement;
 
 /**
- * Represents a BioteaRdfDocSet
+ * Represents a Biotea Document Set (main file + annotations)
  */
-class BioteaRdfDocSet
+class BioteaDocSet
 {
     /**
      * @param string
