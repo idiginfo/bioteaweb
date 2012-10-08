@@ -1,18 +1,13 @@
 <?php
 
 namespace Bioteawebapi\Models;
-use \EasyRdf_Graph as RdfGraph;
+use SimpleXMLElement;
 
 /**
  * Represents a BioteaRdfDocSet
  */
 class BioteaRdfDocSet
 {
-    /**
-     * @param \EasyRdf_Graph
-     */
-    private $mainRdf;
-
     /**
      * @param string
      */
@@ -24,23 +19,43 @@ class BioteaRdfDocSet
     private $annotationFileNames = array();
 
     /**
-     * @var array  Array of RDFGraphs (filename => RDFGraph)
+     * @var array  Keys are term strings, values are term objects
      */
-    private $annotationRDFDocs = array();
+    private $terms = array();
+
+    /**
+     * @var array  Keys are topic URIs, values are topic objects
+     */
+    private $topics = array();
+
+    /**
+     * @var array  Keys are shortnames, values are full URIs
+     */
+    private $allVocabularies = array();
 
     // --------------------------------------------------------------
 
     /**
      * Constructor
+     *
+     * Currently does nothing with the main RDf graph, but it is there
+     * for future use
      * 
-     * @param \EasyRdf_Graph $mainfile
-     * @param string         $filepath  Relative to document basepath
+     * @param string  $filepath      Relative to document basepath
+     * @param array   $vocabularies  An array of all avialable vocabularies
      */
-    public function __construct(RDFGraph $rdf, $filepath)
+    public function __construct($filepath, Array $vocabularies = array())
     {
         assert(is_string($filepath));
-        $this->mainRdf      = $rdf;
+
         $this->mainFilePath = $filepath;
+
+        //Sort the vocabularies based on strlen
+        uasort($vocabularies, function($a, $b) {
+            return strlen($b) - strlen($a);
+        });
+
+        $this->vocabularies = $vocabularies;
     }
 
     // --------------------------------------------------------------
@@ -52,26 +67,57 @@ class BioteaRdfDocSet
      * @param string         $annotationName    Name for the Annotation file
      * @param string         $filepath          Relative to document basepath
      */
-    public function addAnnotationFile(RDFGraph $rdf, $annotationName, $filepath)
+    public function addAnnotationFile(SimpleXMLElement $xml, $annotationName, $filepath)
     { 
         assert(is_string($filepath));
         $this->annotationFileNames[$annotationName] = $filepath;
-        $this->annotationRDFDocs[$annotationName] = $rdf;
+        $this->extractItems($xml, $annotationName);
     }
 
     // --------------------------------------------------------------
 
-    //DELETE ME DELETE ME DELETE ME
-    public function test()
+    /**
+     * Extract terms and topics from the RDF XML
+     *
+     * @param \EasyRdf_Graph $rdf
+     */
+    protected function extractItems(SimpleXMLElement $xml)
     {
-        $result = $this->annotationRDFDocs['whatizit']->all('http://purl.org/ao/core/hasTopic', '.');
-        var_dump($result);
+        // Terms are at XPATH  //ao:annotation//ao:body
+        // Topics are at XPATH //ao:annotation//ao:hasTopic//rdf:description
+        //               and   //ao:annotation//ao:hasTopic//rdfs:seeAlso
 
-        // var_dump($this->mainFilePath);
-        // file_put_contents('/home/casey/Desktop/main.txt', $this->mainRdf->serialise('json'));
-        // file_put_contents('/home/casey/Desktop/whatizit.txt', $this->annotationRDFDocs['whatizit']->serialise('json'));
-        // file_put_contents('/home/casey/Desktop/ncbo.txt', $this->annotationRDFDocs['ncbo']->serialise('json'));
-        //echo $this->annotationRDFDocs['whatizit']->dump(false);
+        foreach ($xml->xpath("//ao:Annotation") as $annot) {
+
+            //Extract Term
+            $term = (string) array_shift($annot->xpath('ao:body'));
+
+            //Extract Topics
+            $topics = array();
+            foreach($annot->xpath('ao:hasTopic') as $topic) {
+                $topicUri = (string) $topic[0]->attributes('rdf', true)->resource;
+
+                if (empty($topicUri)) {
+                    $desc = $topic[0]->children('rdf', true)->Description;
+                    $topics[] = (string) $desc[0]->attributes('rdf', true)->about; 
+                    foreach($desc[0]->children('rdfs', true)->seeAlso as $seeAlso) {
+                        $topics[] = (string) $seeAlso[0]->attributes('rdf', true)->resource;
+                    }
+                }
+                else {
+                    $topics[] = $topicUri;
+                }
+            }
+
+            //Build the term
+            $this->terms[$term] = new BioteaTerm($term);
+
+            //Build the topics arrays
+            foreach($topics as $topic) {
+                $this->topics[$topic] = $this->buildTopicObj($topic);
+                $this->terms[$term]->addTopic($this->topics[$topic]);
+            }
+        }
     }
 
     // --------------------------------------------------------------
@@ -83,23 +129,7 @@ class BioteaRdfDocSet
      */
     public function getTerms()
     {
-        $termList = array();
-
-        return $termList;
-    }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Get the vocabularies
-     *
-     * @return array
-     */
-    public function getVocabularies()
-    {
-        $vocabList = array();
-
-        return $vocabList;
+        return array_values($this->terms);
     }
 
     // --------------------------------------------------------------
@@ -111,9 +141,7 @@ class BioteaRdfDocSet
      */
     public function getTopics()
     {
-        $topicList = array();
-
-        return $topicList;
+        return array_values($this->topics);
     }
 
     // --------------------------------------------------------------
@@ -138,6 +166,40 @@ class BioteaRdfDocSet
     public function getAnnotationFilePaths()
     {
         return array_values($this->annotationFilePaths);
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Build topic object from topic URI based on vocabularies
+     *
+     * @param string $topicUri
+     * @return BioteaTopic      Returns a topic object
+     */
+    protected function buildTopicObj($topicUri)
+    {
+        $topicObj = new BioteaTopic($topicUri);
+
+        //Attempt to determine which vocabulary is in use
+        foreach($this->vocabularies as $shortName => $uri)
+        {
+            if (
+                strlen($topicUri) > strlen($uri)
+                && strcasecmp(substr($topicUri, 0, strlen($uri)), $uri) == 0
+            ) {
+                
+                $topicObj->setVocabularyUri($uri);
+                $topicObj->setVocabularyShortName($shortName);
+
+                //break up the string to get the topicShortname
+                $topicShortName = substr($topicUri, strlen($uri));
+                $topicObj->setTopicShortName($topicShortName); 
+
+                break;
+            }
+        }
+
+        return $topicObj;
     }
 }
 

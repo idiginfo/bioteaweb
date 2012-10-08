@@ -21,3 +21,27 @@ mysql:
     user: root
     pass: 
     name: bioteaweb
+
+#Vocabularies
+vocabularies:
+    symptom:        http://purl.org/obo/owl/SYMP#SYMP_ 
+    fma:            http://purl.org/obo/owl/FMA#FMA_ 
+    snomed:         http://purl.bioontology.org/ontology/SNOMEDCT/ 
+    medline:        http://purl.bioontology.org/ontology/MEDLINEPLUS/ 
+    nddf:           http://purl.bioontology.org/ontology/NDDF/ 
+    ncithesaurus:   http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl# 
+    po:             http://purl.bioontology.org/ontology/PO/ 
+    omim:           http://purl.bioontology.org/ontology/OMIM/ 
+    mesh:           http://purl.bioontology.org/ontology/MSH/ 
+    obi:            http://purl.obolibrary.org/obo/OBI_ 
+    icd9:           http://purl.bioontology.org/ontology/ICD9-9/ 
+    umls:           http://berkeleybop.org/obo/UMLS: 
+    go:             http://purl.org/obo/owl/GO#GO_ 
+    chebi:          http://purl.obolibrary.org/obo/CHEBI_ 
+    mged:           http://mged.sourceforge.net/ontologies/MGEDOntology.owl# 
+    pw:             http://purl.org/obo/owl/PW#PW_ 
+    uniprot:        http://purl.uniprot.org/core/ 
+    meddra:         http://purl.bioontology.org/ontology/MDR/ 
+    ncbitaxon:      http://purl.org/obo/owl/NCBITaxon#NCBITaxon_ 
+    taxonomy:       http://www.uniprot.org/taxonomy/ 
+    mddb:           http://purl.bioontology.org/ontology/MDDB/ 
