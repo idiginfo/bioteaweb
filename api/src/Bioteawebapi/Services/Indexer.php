@@ -2,9 +2,11 @@
 
 namespace Bioteawebapi\Services;
 use Bioteawebapi\Models\BioteaDocSet;
+use Bioteawebapi\Exceptions\MySQLClientException;
+use TaskTracker\Tracker;
 
 /**
- * Indexer indexes RDF documents into SOLR and MySQL
+ * Indexer indexes RDF documents into MySQL and optionally SOLR
  */
 class Indexer
 {
@@ -42,20 +44,48 @@ class Indexer
      */
     private $numFailed;
 
+    /**
+     * @var \TaskTracker\Tracker
+     */
+    private $taskTracker;
+
     // --------------------------------------------------------------
 
     /**
      * Constructor
      *
      * @param DocSetBuilder  $builder     Biotea Doc Builder
-     * @param SolrClient     $solrClient  SOLR Client object
      * @param MySQLClient    $db          MySQL Client object
      */
-    public function __construct(DocSetBuilder $builder, SolrClient $solr, MySQLClient $db)
+    public function __construct(DocSetBuilder $builder, MySQLClient $db)
     {
         $this->builder  = $builder;
-        $this->solr     = $solr;
         $this->db       = $db;
+        $this->solr     = null;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Set an optional taskTracker
+     *
+     * @param \TaskTracker\Tracker
+     */
+    public function setTraskTracker(Tracker $taskTracker)
+    {
+        $this->taskTracker = $taskTracker;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * SOLR Client is an optional dependency
+     *
+     * @param SolrClient $solr  SOLR Client object
+     */
+    public function setSolrClient(SolrClient $solr)
+    {
+        $this->solr = $solr;
     }
 
     // --------------------------------------------------------------
@@ -126,7 +156,7 @@ class Indexer
         while ($obj = $traverser->getNextDocument()) {
 
             //If passed limit, get out
-            if ($this->getNumProcessed() >= $limit) {
+            if ($limit && $this->getNumProcessed() >= $limit) {
                 return;
             }
 
@@ -148,23 +178,31 @@ class Indexer
     // --------------------------------------------------------------
 
     /**
-     * Process a file
+     * Indexes a single docSetObj
      *
-     * Builds a docSetObj from it and then attempts to index it
+     * @TODO: Also deal with SOLR exceptions?
      *
      * @param Models\BioteaDocSet $docset
      * @return int  Skipped, Indexed, or Failed
      */
     public function processItem($docset)
     {
-        //See if the item has already been indexed
+        try {
+            //Try to index the document in MySQL.
+            $numIndexed = $this->db->indexDocument($docset);
 
-        //If not, index it in MySQL
+            //If new, also index it in SOLR (if SOLR enabled)
+            if ($numIndexed > 0 && $this->solr)
+            {
+                //@TODO: This
+            }
 
-        //If SOLR enabled, index terms in SOLR as well
-
-        //Replace this... Return index, error, or skipped
-        return self::SKIPPED;
+            //Return indexed
+            return ($numIndexed > 0) ? self::INDEXED : self::SKIPPED;
+        }
+        catch (MySQLClientException $e) {
+            return self::FAILED;
+        }
     }
 }
 

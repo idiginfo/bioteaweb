@@ -67,7 +67,7 @@ class BioteaTopic
 
     // --------------------------------------------------------------
 
-    public function getVocbaularyUri()
+    public function getVocabularyUri()
     {
         return $this->vocabularyUri;
     }

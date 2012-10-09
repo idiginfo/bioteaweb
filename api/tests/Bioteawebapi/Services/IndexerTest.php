@@ -60,7 +60,7 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
         $solr    = $solrClient ?: $this->getSolrClientMock();
         $mysql   = $this->getMySQLClientMock();
 
-        return new Indexer($builder, $solr, $mysql);
+        return new Indexer($builder, $mysql);
     }
 
     // --------------------------------------------------------------

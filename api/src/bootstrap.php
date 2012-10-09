@@ -93,7 +93,7 @@ $app['builder'] = $app->share(function($app) {
 
 //Doc Indexer
 $app['indexer'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\DocSetBuilder($app['builder'], $app['solr_client'], $app['mysql_client']);
+    return new Bioteawebapi\Services\Indexer($app['builder'], $app['mysql_client']);
 });
 
 // ------------------------------------------------------------------

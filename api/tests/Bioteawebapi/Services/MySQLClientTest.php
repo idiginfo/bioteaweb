@@ -40,7 +40,20 @@ class MySQLClientTest extends \PHPUnit_Framework_TestCase
     public function testStuff()
     {
         $obj = $this->getObj();
-        $obj->upsert('vocabularies', 'id', array('col1' => 'abc', 'cols2' => 'def'));
+
+        //Include vocabularies
+        include(__DIR__ . '/../../fixtures/vocabularies.php');
+
+        //Get a builder
+        $builder = new \Bioteawebapi\Services\DocSetBuilder($vocabs);
+
+        //Build a docset record
+        $fullPath = realpath(__DIR__ . '/../../fixtures/solrIndexerTestData/PMC1134665.rdf');
+        $relPath  = basename($fullPath);
+        $record   = $builder->buildDocSet($fullPath, $relPath);
+
+        //Attempt to index it
+        var_dump($obj->indexDocument($record));
     }
 
     // --------------------------------------------------------------
