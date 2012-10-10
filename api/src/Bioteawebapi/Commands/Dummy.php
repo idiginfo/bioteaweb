@@ -69,8 +69,8 @@ class Dummy extends Command
         $vocabs  = file($this->fixturesPath . '/solrDummyData/vocabularies.txt', FILE_IGNORE_NEW_LINES);
 
         //Files
-        $mainFiles = scandir($this->fixturesPath . '/solrIndexerTestData');
-        $aoFiles   = scandir($this->fixturesPath . '/solrIndexerTestData/AO_annotations');
+        $mainFiles = scandir($this->fixturesPath . '/rdfSampleFolder');
+        $aoFiles   = scandir($this->fixturesPath . '/rdfSampleFolder/AO_annotations');
 
         //Foreach mainFiles as mainFile, build a dummy record for insertion
         foreach($mainFiles as $fileName) {

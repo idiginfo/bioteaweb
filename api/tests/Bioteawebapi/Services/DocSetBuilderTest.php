@@ -32,7 +32,11 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($relPath, $docset->getMainFilePath());
 
         //Check annotation filepaths
-        $aoArray = array('AO_annotations/PMC1134665_ncboAnnotator.rdf', 'AO_annotations/PMC1134665_whatizitUkPmcAll.rdf');
+        $aoArray = array(
+            'ncbo'     => 'AO_annotations/PMC1134665_ncboAnnotator.rdf', 
+            'whatizit' => 'Bio2RDF/PMC1134665_whatizitUkPmcAll.rdf'
+        );
+
         $this->assertEquals($aoArray, $docset->getAnnotationFilePaths());
     }
 
@@ -101,7 +105,7 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
      */
     protected function getTestPath()
     {
-        return __DIR__ . '/../../fixtures/solrIndexerTestData';
+        return __DIR__ . '/../../fixtures/rdfSampleFolder';
     }
 
     // --------------------------------------------------------------

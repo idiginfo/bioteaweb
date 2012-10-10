@@ -95,7 +95,7 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
      */
     protected function getTestPath()
     {
-        return __DIR__ . '/../../fixtures/solrIndexerTestData';
+        return __DIR__ . '/../../fixtures/rdfSampleFolder';
     }
 }
 
