@@ -5,7 +5,13 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use TaskTracker\Tracker;
+use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
+use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 
+/**
+ * Runs the indexer against documents and reports output to logs and console
+ */
 class Index extends Command
 {
     const NO_LIMIT = 0;
@@ -32,13 +38,19 @@ class Index extends Command
             throw new \Exception("Path is not readable:" . $path);
         }
 
-        //Build TaskTracker object
-            //if no -q, set output to Symfony output object
-            //if -l set, use a limited TaskTracker
+        //Output to log
+        $trackerHandlers = array(new TrackerMonologHandler($this->app['logger'], 60));
 
-        //Send the taskTracker object to the indexer
+        //Also output to console unless quiet is set
+        if ( ! $input->getOption('quiet')) {
+            $trackerHandlers[] = new TrackerConsoleHandler($output);
+        }
 
-        //Run the indexer...
+        //Setup a task tracker
+        $tracker = new Tracker($trackerHandlers);
+
+        //Add the task tracker and run the indexer
+        $this->app['indexer']->setTraskTracker($tracker);
         $this->app['indexer']->index($path, $limit);
     }
 }

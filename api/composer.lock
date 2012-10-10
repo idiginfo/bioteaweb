@@ -1,5 +1,5 @@
 {
-    "hash": "0ed98e8e17ef4729eb0d29cc90ee8bc6",
+    "hash": "f42e5548a9e15cdae5c293f74105b3e2",
     "packages": [
         {
             "name": "caseyamcl/Configula",
@@ -49,6 +49,61 @@
                 "configuration",
                 "config"
             ]
+        },
+        {
+            "name": "caseyamcl/tasktracker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/caseyamcl/tasktracker",
+                "reference": "d7e08817558dc42f4f23cae57fac931e37100fcb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/caseyamcl/tasktracker/zipball/d7e08817558dc42f4f23cae57fac931e37100fcb",
+                "reference": "d7e08817558dc42f4f23cae57fac931e37100fcb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "symfony/console": ">=2.1.0",
+                "monolog/monolog": ">=1.3.x-dev"
+            },
+            "time": "1349895199",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "TaskTracker": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Casey McLaughlin",
+                    "email": "caseyamcl@gmail.com",
+                    "homepage": "http://caseymclaughlin.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP library for keeping track of progress and stats for long running tasks",
+            "homepage": "http://github.com/caseyamcl/tasktracker",
+            "keywords": [
+                "task",
+                "asynchronous",
+                "negotiation",
+                "progress",
+                "report",
+                "cli"
+            ],
+            "support": {
+                "source": "https://github.com/caseyamcl/tasktracker/tree/master",
+                "issues": "https://github.com/caseyamcl/tasktracker/issues"
+            }
         },
         {
             "name": "doctrine/common",
@@ -288,18 +343,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/njh/easyrdf.git",
-                "reference": "b29cbb1bb0a104442f909d0f565c602c3043a42f"
+                "reference": "b6453671e96526449f415e9d3ddf74584d23e412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/njh/easyrdf/zipball/b29cbb1bb0a104442f909d0f565c602c3043a42f",
-                "reference": "b29cbb1bb0a104442f909d0f565c602c3043a42f",
+                "url": "https://github.com/njh/easyrdf/zipball/b6453671e96526449f415e9d3ddf74584d23e412",
+                "reference": "b6453671e96526449f415e9d3ddf74584d23e412",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.8"
             },
-            "time": "1348524796",
+            "time": "1349734406",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -697,18 +752,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation",
-                "reference": "64fe72c44346dc6ee0a51075e7722ee0af1388ca"
+                "reference": "5803400b1ddc7115cf9c960f83e0b50029ce768e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpFoundation/zipball/64fe72c44346dc6ee0a51075e7722ee0af1388ca",
-                "reference": "64fe72c44346dc6ee0a51075e7722ee0af1388ca",
+                "url": "https://github.com/symfony/HttpFoundation/zipball/5803400b1ddc7115cf9c960f83e0b50029ce768e",
+                "reference": "5803400b1ddc7115cf9c960f83e0b50029ce768e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1349363877",
+            "time": "1349773267",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -745,12 +800,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "970a66bcaca90d160b3cc920c87c275147a7142b"
+                "reference": "676a7bb2c6c4d5669ca073cceae3ac393748752a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/zipball/970a66bcaca90d160b3cc920c87c275147a7142b",
-                "reference": "970a66bcaca90d160b3cc920c87c275147a7142b",
+                "url": "https://github.com/symfony/HttpKernel/zipball/676a7bb2c6c4d5669ca073cceae3ac393748752a",
+                "reference": "676a7bb2c6c4d5669ca073cceae3ac393748752a",
                 "shasum": ""
             },
             "require": {
@@ -776,7 +831,7 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "1349363877",
+            "time": "1349553277",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -911,12 +966,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "0443e2f9a10f49cac77128eb7f11d055fcf4db9d"
+                "reference": "893590dbf4e60786d21cc475695a8c3aa5529f7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/zipball/0443e2f9a10f49cac77128eb7f11d055fcf4db9d",
-                "reference": "0443e2f9a10f49cac77128eb7f11d055fcf4db9d",
+                "url": "https://github.com/symfony/Routing/zipball/893590dbf4e60786d21cc475695a8c3aa5529f7d",
+                "reference": "893590dbf4e60786d21cc475695a8c3aa5529f7d",
                 "shasum": ""
             },
             "require": {
@@ -933,7 +988,7 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1349363877",
+            "time": "1349714394",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1081,12 +1136,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation",
-                "reference": "0331425c5c237664f4abc167f81e6acf540829a5"
+                "reference": "5467d51dafa4409fe9ed0f7256d9a5d2d8077dbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Translation/zipball/0331425c5c237664f4abc167f81e6acf540829a5",
-                "reference": "0331425c5c237664f4abc167f81e6acf540829a5",
+                "url": "https://github.com/symfony/Translation/zipball/5467d51dafa4409fe9ed0f7256d9a5d2d8077dbd",
+                "reference": "5467d51dafa4409fe9ed0f7256d9a5d2d8077dbd",
                 "shasum": ""
             },
             "require": {
@@ -1100,7 +1155,7 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1349363877",
+            "time": "1349553277",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1193,18 +1248,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml",
-                "reference": "f965c71d0edb97cef36c556f2bda25298fce7e69"
+                "reference": "1f7ba14c4b263dbf701e25705b0b2175a850a784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Yaml/zipball/f965c71d0edb97cef36c556f2bda25298fce7e69",
-                "reference": "f965c71d0edb97cef36c556f2bda25298fce7e69",
+                "url": "https://github.com/symfony/Yaml/zipball/1f7ba14c4b263dbf701e25705b0b2175a850a784",
+                "reference": "1f7ba14c4b263dbf701e25705b0b2175a850a784",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1348817656",
+            "time": "1349553479",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1242,6 +1297,7 @@
     "stability-flags": {
         "friendsofsymfony/rest": 20,
         "njh/easyrdf": 20,
-        "caseyamcl/configula": 20
+        "caseyamcl/configula": 20,
+        "caseyamcl/tasktracker": 20
     }
 }

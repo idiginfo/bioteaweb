@@ -45,3 +45,12 @@ vocabularies:
     ncbitaxon:      http://purl.org/obo/owl/NCBITaxon#NCBITaxon_ 
     taxonomy:       http://www.uniprot.org/taxonomy/ 
     mddb:           http://purl.bioontology.org/ontology/MDDB/ 
+
+#Logs (via Monolog)
+logs:
+    file:
+        path:  /tmp/bioteawebapi
+        level: info
+    email:
+        to:    root@localhost
+        level: error

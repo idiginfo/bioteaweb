@@ -163,6 +163,11 @@ class Indexer
             //Process it
             $result = $this->processItem($obj);
 
+            //Inform task tracker
+            if ($this->taskTracker) {
+                $this->taskTracker->tick(1, null, $result);
+            }
+
             switch($result) {
                 case self::FAILED:  $this->numFailed++; break;
                 case self::SKIPPED: $this->numSkipped++; break;

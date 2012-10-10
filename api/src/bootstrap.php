@@ -64,6 +64,31 @@ $app = new Application();
 //Configuration
 $app['config'] = new Configula\Config(BASEPATH . '/config/');
 
+//Logger (more complex than the default logger)
+$app['logger'] = $app->share(function($app) {
+    
+    $logger = new Monolog\Logger('biotealog');
+
+    //Register handlers
+    if ($app['config']->logs['file']) {
+        $level = constant('Monolog\Logger::' . strtoupper($app['config']->logs['file']['level']));
+        $path  = $app['config']->logs['file']['path'] . DIRECTORY_SEPARATOR . 'biotea.log';
+        $logger->pushHandler(new Monolog\Handler\StreamHandler($path, $level));
+    }
+
+    if ($app['config']->logs['email']) {
+        $level   = constant('Monolog\Logger::' . strtoupper($app['config']->logs['email']['level']));
+        $from    = 'bioteaapi@' . (gethostname() ?: 'bioteaserver');
+        $to      = $app['config']->logs['email']['to'];
+        $subject = "Biotea Message from " . (gethostname() ?: 'bioteaserver');
+        $logger->pushHandler(new Monolog\Handler\NativeMailerHandler($to, $subject, $from, $level));
+    }
+
+    return $logger;
+});
+
+
+
 //SOLR Client for Docs
 $app['solr_config'] = array('adapteroptions' => $app['config']->solr['terms']);
 $app['solr_client'] = $app->share(function($app) {
