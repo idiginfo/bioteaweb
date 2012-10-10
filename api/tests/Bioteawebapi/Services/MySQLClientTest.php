@@ -48,7 +48,7 @@ class MySQLClientTest extends \PHPUnit_Framework_TestCase
         $builder = new \Bioteawebapi\Services\DocSetBuilder($vocabs);
 
         //Build a docset record
-        $fullPath = realpath(__DIR__ . '/../../fixtures/solrIndexerTestData/PMC1134665.rdf');
+        $fullPath = realpath(__DIR__ . '/../../fixtures/rdfSampleFolder/PMC1134665.rdf');
         $relPath  = basename($fullPath);
         $record   = $builder->buildDocSet($fullPath, $relPath);
 

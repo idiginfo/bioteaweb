@@ -143,7 +143,7 @@ class DocSetBuilder
         //See if we have associated annotation files
         $subfiles = array(
             'ncbo'     => $relDirPath . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
-            'whatizit' => $relDirPath . '/AO_annotations/' . $filename . '_whatizitUkPmcAll.rdf'
+            'whatizit' => $relDirPath . '/Bio2RDF/' . $filename . '_whatizitUkPmcAll.rdf'
         );
 
         //If so, add them to the object
