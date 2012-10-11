@@ -95,7 +95,7 @@ $app['solr_client'] = $app->share(function($app) {
     return new SolrClient(new Solarium_Client($app['solr_config']));
 });
 
-//MySQL ($app['db'])
+//MySQL DBAL Connection ($app['db'])
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array (
         'driver'    => 'pdo_mysql',
