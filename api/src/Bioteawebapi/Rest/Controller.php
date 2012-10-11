@@ -97,8 +97,7 @@ abstract class Controller
         //Check the parameters and the formats
         $this->check();
 
-        $args = func_get_args();
-        return call_user_method('execute', $this, $args);
+        return call_user_func(array($this, 'execute'));
     }
 
     // --------------------------------------------------------------
@@ -187,6 +186,18 @@ abstract class Controller
     // --------------------------------------------------------------
 
     /**
+     * Set the description
+     *
+     * @param string $description
+     */
+    protected function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Set routes that this controller corresponds to
      *
      * @param string $route
@@ -196,18 +207,6 @@ abstract class Controller
     protected function addRoute($route, $methods = null, $description = null)
     {
         $this->routes[$route] = new Route($route, $methods, $description);
-    }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Set the description
-     *
-     * @param string $description
-     */
-    protected function setDescription($description)
-    {
-        $this->description = $description;
     }
 
     // --------------------------------------------------------------
@@ -253,6 +252,18 @@ abstract class Controller
         }
 
         $this->acceptableFormats[] = new Format($mimeTypes, $shortName, $description);
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Shortcut to get the request path
+     *
+     * @return string
+     */
+    protected function getPath()
+    {
+        return $this->app['request']->getPathInfo();
     }
 
     // --------------------------------------------------------------
