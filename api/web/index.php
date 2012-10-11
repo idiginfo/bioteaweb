@@ -46,7 +46,8 @@ $app['fosrest'] = new FormatNegotiator();
 //Controllers
 $app['webapp'] = new RestApp($app);
 $app['webapp']->add(new Bioteawebapi\Controllers\Front($app));
-$app['webapp']->add(new Bioteawebapi\Controllers\Terms($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\TermsList($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\TermsSingle($app));
 
 // ------------------------------------------------------------------
 

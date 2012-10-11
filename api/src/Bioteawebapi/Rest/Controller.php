@@ -29,6 +29,11 @@ abstract class Controller
     private $routes;
 
     /**
+     * @var string  Array of key/values for parameters passed in
+     */
+    private $parameters;
+
+    /**
      * @var Silex\Application
      */
     protected $app;
@@ -110,6 +115,21 @@ abstract class Controller
     // --------------------------------------------------------------
 
     /**
+     * Returns a parameter, if set
+     *
+     * @param string $parameter
+     * @return string
+     */
+    public function getParameter($parameter)
+    {
+        return (isset($this->parameters[$parameter]))
+            ? $this->parameters[$parameter]
+            : null;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Configure method is called when the controller is instantiated
      */
     abstract protected function configure();
@@ -129,7 +149,10 @@ abstract class Controller
         foreach($this->app['request']->query as $key => $val) {
             if (isset($this->acceptableParameters[$key])) {
                 try {
+
                     $this->acceptableParameters[$key]->checkValue($val);
+                    $this->parameters[$key] = $val;
+
                 } catch (\InvalidArgumentException $e) {
                     $this->app->abort(400, $e->getMessage());
                 }
