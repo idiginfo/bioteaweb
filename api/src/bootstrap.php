@@ -64,8 +64,8 @@ $app = new Application();
 //Configuration
 $app['config'] = new Configula\Config(BASEPATH . '/config/');
 
-//Logger (more complex than the default logger)
-$app['logger'] = $app->share(function($app) {
+//Monolog Logger (more complex than the default logger)
+$app['monolog'] = $app->share(function($app) {
     
     $logger = new Monolog\Logger('biotealog');
 

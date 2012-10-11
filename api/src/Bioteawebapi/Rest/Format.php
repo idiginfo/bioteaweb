@@ -1,5 +1,7 @@
 <?php
 
+namespace Bioteawebapi\Rest;
+
 /**
  * MIME Format
  */
@@ -37,7 +39,7 @@ class Format
         }
 
         $this->mimeTypes = $mimeTypes;
-        $this->shortname = $shortName;
+        $this->shortName = $shortName;
         $this->description = $description;
     }
 
@@ -61,6 +63,19 @@ class Format
     public function getMimeTypes()
     {
         return $this->mimeTypes;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * The first mime-type is the one used by default
+     *
+     * @return string
+     */
+    public function getFirstMimeType()
+    {
+        $types = $this->mimeTypes;
+        return array_shift($types);
     }
 
     // --------------------------------------------------------------

@@ -25,7 +25,7 @@ class Application
         $this->silexApp = $app;
 
         //Register error controller
-        $this->silexApp->error(array($this, 'handleError'));        
+        $this->silexApp->error(array($this, 'handleError'));
     }
 
     // --------------------------------------------------------------
@@ -37,20 +37,16 @@ class Application
      */
     public function add(Controller $controller)
     {
-        //Inject the SilexApp into the controller
-        $controller->configure();
-
         //Register routes with Silex
         foreach($controller->getRoutes() as $route) {
 
-            $this->silexApp->match(
-                $route->getRoute(), array($controller, 'run')
-            )->method($route->getMethods(true));
+            //Register the routes
+            $this->silexApp->match($route->getRoute(), array($controller, 'run'))
+            ->method($route->getMethods(true));
         }     
 
         //Add the controller
         $this->controllers[] = $controller;
-
     }
 
     // --------------------------------------------------------------
@@ -60,9 +56,8 @@ class Application
      */
     public function run()
     {
-        //Determine route
-
-        //Run that controller's execute method
+        //Just run it...
+        $this->silexApp->run();
     }
 
     // --------------------------------------------------------------

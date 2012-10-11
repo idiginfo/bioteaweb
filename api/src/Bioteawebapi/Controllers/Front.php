@@ -1,40 +1,30 @@
 <?php
 
 namespace Bioteawebapi\Controllers;
+use Bioteawebapi\Rest\Controller;
 
 /**
  * Front Controller
  */
 class Front extends Controller
 {
-    // --------------------------------------------------------------
-
-    /**
-     * Run the front controller
-     */
-    public function run()
+    protected function configure()
     {
-        //For now, we'll just be a-testin
-        return $this->test();
+        $this->addRoute('/');
+        $this->addFormat('text/html', 'html', "HTML page showing information about the API");
+        $this->addFormat('application/json', 'json', "JSON document containing information about the API");
     }
 
-
-    // --------------------------------------------------------------
-
-    /** @inheritdoc */
-    public function getAllowedFormats()
+    protected function execute()
     {
-        return array('json', 'html');
-    }
+        switch($this->format) {
 
-    // --------------------------------------------------------------
-
-    /**
-     * Test method - delete me
-     */
-    public function test()
-    {
-        echo "Oh Hai";
+            case 'application/json':
+                return $this->app->json($this->getSummary());
+            case 'text/html': default:
+                return 'HAI';
+            break;
+        }
     }
 
 }

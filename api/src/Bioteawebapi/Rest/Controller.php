@@ -14,37 +14,29 @@ abstract class Controller
     // --------------------------------------------------------------
 
     /**
-     * @var Silex\Application
-     */
-    private $app;
-
-    // --------------------------------------------------------------
-
-    /**
-     * @var Symfony\Component\HttpFoundation\Request
-     */
-    private $request;
-
-    // --------------------------------------------------------------
-
-    /**
      * @var array  Array of Format objects
      */
     private $acceptableFormats = array();
-
-    // --------------------------------------------------------------
 
     /**
      * @var array  Array of Parameter objects (keys are parameter names) 
      */
     private $acceptableParameters = array();
 
-    // --------------------------------------------------------------
-
     /**
      * @var array  Array of strings composed of available route names
      */
     private $routes;
+
+    /**
+     * @var Silex\Application
+     */
+    protected $app;
+
+    /**
+     * @var string  The negotiated format
+     */
+    protected $format;
 
     // --------------------------------------------------------------
 
@@ -53,8 +45,7 @@ abstract class Controller
      */
     public function __construct(SilexApp $app)
     {
-        $this->app     = $app;
-        $this->request = $app['request'];
+        $this->app = $app;
 
         //Run the configuration
         $this->configure();
@@ -70,53 +61,127 @@ abstract class Controller
     public function getSummary()
     {
         $summary = array();
-        $summary['route'] = 'GETROUTEPATHUSEDFROMREQUEST';
+
+        //Route
+        $summary['route'] = $this->app['request']->getPathInfo();
 
         //If there is a description...
-        if ($routes[$summary['route']]) {
-            $summary['description'] = $routes[$summary['route']];
+        if (isset($this->routes[$summary['route']])) {
+            $summary['description'] = $this->routes[$summary['route']];
         }
         else {
             $summary['description'] = 'No Description';
         }
 
-        $summary['formats']     = array_map(function($v) { return $v->toArray(); }, $this->formats);
-        $summary['parameters']  = array_map(function($v) { return $v->toArray(); }, $this->parameters);
+        //Get formats
+        $summary['formats'] = array_map(function($v) { 
+            return $v->toArray();
+        }, $this->acceptableFormats);
+
+        //Get parameters
+        $summary['parameters'] = array_map(function($v) {
+            return $v->toArray();
+        }, $this->acceptableParameters);
+
+        //Return it
         return (object) $summary;
     }
 
     // --------------------------------------------------------------
 
+    /**
+     * Run it
+     */
     public function run()
     {
-        //LEFT OFF HERE LEFT OFF HERE!!!
-        $args = func_get_args();
+        //Check the parameters and the formats
+        $this->check();
 
-        $this->execute();
+        $args = func_get_args();
+        return call_user_method('execute', $this, $args);
     }
 
     // --------------------------------------------------------------
 
     public function getRoutes()
     {
-        return array_keys($this->routes);
+        return $this->routes;
     }
 
     // --------------------------------------------------------------
 
     /**
-     * Configure method is called when the controller is run
+     * Configure method is called when the controller is instantiated
      */
     abstract protected function configure();
+
+    // --------------------------------------------------------------
+
+    /**
+     * Execute method is called when the controller is run
+     */
+    abstract protected function execute();
 
     // --------------------------------------------------------------
 
     protected function check()
     {
         //Get all of the parmeters and check them against known parameters
+        foreach($this->app['request']->query as $key => $val) {
+            if (isset($this->acceptableParameters[$key])) {
+                try {
+                    $this->acceptableParameters[$key]->checkValue($val);
+                } catch (\InvalidArgumentException $e) {
+                    $this->app->abort(400, $e->getMessage());
+                }
+            }
+        }
 
-        //Determine format
-        $val = $this->request->query->get($paramName);
+        //Acceptable formats
+        if (count($this->acceptableFormats) == 0) {
+            $this->app->abort(415, "No known formats available.");
+        }
+
+        //Negotiate using ?format=xx in query string if set
+        if ($reqFormat = $this->app['request']->query->get('format')) {
+
+            $shortNames = array();
+            foreach($this->acceptableFormats as $fmt) {
+                $shortNames[$fmt->getShortName()] = $fmt;
+            }
+
+            if (in_array(strtolower($reqFormat), array_keys($shortNames))) {
+                $this->format = $shortNames[$reqFormat]->getFirstMimeType();
+            }
+            else {
+                $this->app->abort(415, sprintf(
+                    "Format %s is invalid.  Available formats are: %s",
+                    $reqFormat, implode(', ', array_keys($shortNames))
+                ));
+            }
+        }
+        else { //else, negotiate using FOSREST (content-type)
+
+            $availMimeTypes = array();
+            foreach($this->acceptableFormats as $fmt) {
+                $availMimeTypes = array_merge($availMimeTypes, $fmt->getMimeTypes());
+            }
+
+            $result = $this->app['fosrest']->getBestFormat($this->app['request'], $availMimeTypes);
+
+            if ($result) {
+                $this->format = $result;
+            }
+            else {
+                $this->app->abort(415, sprintf(
+                    "Could not negotiate format!  Available formats are: %s",
+                    implode("; ", $availMimeTypes)
+                ));
+            }
+        }
+
+        //Also inform the App for use outside the controller
+        $this->app['format'] = $this->format;
     }
 
     // --------------------------------------------------------------
@@ -156,7 +221,11 @@ abstract class Controller
      */
     protected function addParameter($name, $allowedValues, $description = null)
     {
-        $this->parameters[$name] = new Parmeter($name, $allowedValues, $description);
+        if ($name == 'format') {
+            throw new \InvalidArgumentException("'format' is a reserved parameter name");
+        }
+
+        $this->acceptableParameters[$name] = new Parameter($name, $allowedValues, $description);
     }
 
     // --------------------------------------------------------------
@@ -170,17 +239,20 @@ abstract class Controller
      */
     protected function addFormat($mimeTypes, $shortName, $description = null)
     {
+        //Set to array
+        $mimeTypes = (is_array($mimeTypes)) ? $mimeTypes : array($mimeTypes);
+
         //Check to see if the mimeType isn't already in-use
         $usedMimeTypes = array();
-        foreach($this->formats as $fmt) {
+        foreach($this->acceptableFormats as $fmt) {
             $usedMimeTypes = array_merge($usedMimeTypes, $fmt->getMimeTypes());
         }
 
-        if (in_array($usedMimeTypes, $mimeTypes)) {
+        if (count(array_diff($mimeTypes, $usedMimeTypes)) < 1) {
             throw new \Exception("Mime-type conflict.  You cannot assign a single mime type to two formats");
         }
 
-        $this->formats[] = new Format($mimeTypes, $shortName, $description);
+        $this->acceptableFormats[] = new Format($mimeTypes, $shortName, $description);
     }
 
     // --------------------------------------------------------------
@@ -193,7 +265,7 @@ abstract class Controller
      */
     protected function getPathSegment($segment) 
     {
-        $pathInfo = $this->request->getPathInfo();
+        $pathInfo = $this->app['request']->getPathInfo();
         $pathSegs = array_filter(explode("/", $pathInfo));
 
         return (isset($pathSegs[$segment])) ? $pathSegs[$segment] : null;

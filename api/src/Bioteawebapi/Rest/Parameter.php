@@ -93,14 +93,17 @@ class Parameter
             if ( ! in_array($value, $allowedValues)) {
 
                 $fail = sprintf("%s is not an acceptable parameter for %s.  Allowed values are: %s",
-                    $value, $paramName, implode(", ", $allowedValues)
+                    $value, $this->getName(), implode(", ", $allowedValues)
                 );
             }
         }
         elseif (is_string($allowedValues) && $allowedValues{0} = "/") {
 
             if ( ! preg_match($allowedValues, $value)) {
-                $fail = "$value is not an acceptable parameter for $paramName.";
+                $fail = sprintf(
+                    "%s is not an acceptable parameter for %s.",
+                    $value, $this->getName()
+                );
             }
         }
 
@@ -108,7 +111,7 @@ class Parameter
             throw new \InvalidArgumentException($fail);
         }   
         else {
-            return (isset($fail)) false : true;
+            return (isset($fail)) ? false : true;
         }   
     }
 

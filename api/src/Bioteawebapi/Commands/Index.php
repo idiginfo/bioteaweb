@@ -39,7 +39,7 @@ class Index extends Command
         }
 
         //Output to log
-        $trackerHandlers = array(new TrackerMonologHandler($this->app['logger'], 60));
+        $trackerHandlers = array(new TrackerMonologHandler($this->app['monolog'], 60));
 
         //Also output to console unless quiet is set
         if ( ! $input->getOption('quiet')) {

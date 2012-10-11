@@ -36,7 +36,7 @@ class Route
         }
 
         //Check for invalid methods
-        $diff = array_diff(array_map('strtolower', $this->methods), $availMethods));
+        $diff = array_diff(array_map('strtolower', $this->methods), $availMethods);
         if (count($diff) > 0) {
             throw new \Exception("Invalid methods configured in Controller: " . implode(', ', $diff));
         }
