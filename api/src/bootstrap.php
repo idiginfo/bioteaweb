@@ -87,8 +87,6 @@ $app['monolog'] = $app->share(function($app) {
     return $logger;
 });
 
-
-
 //SOLR Client for Docs
 $app['solr_config'] = array('adapteroptions' => $app['config']->solr['terms']);
 $app['solr_client'] = $app->share(function($app) {
@@ -106,7 +104,21 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     )
 ));
 
-//MySQL Client for Docs
+//MySQL ORM ($app['db.orm'])
+$app->register(new Nutwerk\Provider\DoctrineORMServiceProvider(), array(
+    'db.orm.proxies_dir' => ($app['config']->mysql['cachedir'] == 'AUTO')
+        ? sys_get_temp_dir()
+        : $app['config']->mysql['cachedir'],
+    'db.orm.proxies_namespace'     => 'DoctrineProxy',
+    'db.orm.auto_generate_proxies' => true,
+    'db.orm.entities'              => array(array(
+        'type'      => 'annotation',
+        'path'      => BASEPATH .'/src/Bioteawebapi/Entities',
+        'namespace' => 'Bioteawebapi\Entities',
+    ))
+));
+
+//MySQL Client for Docs -- @TODO: Remove when ORM is working!
 $app['mysql_client'] = $app->share(function($app) { 
     return new MySQLClient($app['db']);
 });

@@ -1,6 +1,7 @@
 <?php
 
-namespace Bioteaweb\Entities;
+namespace Bioteawebapi\Entities;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Annotation Entity represents Indexes for a Biotea Annotation
@@ -17,10 +18,34 @@ class Annotation
 
     /**
      * @var Term
-     * @OneToOne(targetEntity="Term")
-     * @JoinColumn(name="term_id", referencedColumnName="id")
+     * @ManyToOne(targetEntity="Term", inversedBy="annotations")
      **/
     protected $term;
+
+    /**
+     * @var Document
+     * @ManyToOne(targetEntity="Document", inversedBy="annotations")
+     */
+    protected $document;
+
+    // --------------------------------------------------------------
+
+    /**
+     * Constructor
+     *
+     * @param Term $term
+     */
+    public function __construct(Term $term)
+    {
+        $this->term = $term;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getTerm()
+    {
+        return $this->term;
+    }
 }
 
 /* EOF: Document.php */

@@ -17,10 +17,11 @@ solr:
 
 # MySQL config
 mysql:
-    host: 127.0.0.1
-    user: root
-    pass: 
-    name: bioteaweb
+    host:     127.0.0.1
+    user:     root
+    pass:     
+    name:     bioteaweb
+    cachedir: AUTO
 
 #Vocabularies
 vocabularies:

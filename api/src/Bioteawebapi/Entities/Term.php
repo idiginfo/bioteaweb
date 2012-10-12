@@ -1,6 +1,7 @@
 <?php
 
-namespace Bioteaweb\Entities;
+namespace Bioteawebapi\Entities;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Annotation Entity represents Indexes for a Biotea Annotation
@@ -15,7 +16,33 @@ class Term
     /** @Column(type="string") **/
     protected $term;
 
-    protected $topics;
+    /**
+     * @ManyToMany(targetEntity="Topic", mappedBy="terms")
+     **/
+    private $topics;
+
+    /**
+     * @OneToMany(targetEntity="Annotation", mappedBy="term")
+     **/    
+    private $annotations;
+
+    public function __construct($term, $topics)
+    {
+        $this->annotations = new ArrayCollection();
+        $this->topics = new ArrayCollection();
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Add a topic to this term
+     *
+     * @param Topic $topic
+     */
+    public function addTopic(Topic $topic)
+    {
+        $this->topics[] = $topic;
+    }
 }
 
 

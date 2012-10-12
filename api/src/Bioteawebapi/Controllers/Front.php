@@ -19,6 +19,20 @@ class Front extends Controller
 
     protected function execute()
     {
+
+        $tool = new \Doctrine\ORM\Tools\SchemaTool($db);
+        $classes = array(
+            $db->getClassMetadata('Bioteawebapi\Entities\Annotation'),
+            $db->getClassMetadata('Bioteawebapi\Entities\Document'),
+            $db->getClassMetadata('Bioteawebapi\Entities\Term'),
+            $db->getClassMetadata('Bioteawebapi\Entities\Topic'),
+            $db->getClassMetadata('Bioteawebapi\Entities\Vocabulary'),
+        );
+ 
+        $schemaObj = $tool->getSchemaFromMetadata($classes);
+
+
+
         switch($this->format) {
 
             case 'application/json':

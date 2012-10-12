@@ -19,7 +19,7 @@
         "solarium/solarium"            : "2.4.0",
         "caseyamcl/configula"          : "dev-master",
         "symfony/yaml"                 : ">=2.1.0",
-        "doctrine/orm"                 : "2.3.*",
+        "taluu/doctrine-orm-provider"  : "dev-master",
         "caseyamcl/tasktracker"        : "dev-master"
     },
     "repositories": [
