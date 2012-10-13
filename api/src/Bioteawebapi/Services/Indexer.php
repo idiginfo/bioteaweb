@@ -196,6 +196,9 @@ class Indexer
             //@TODO: Do something with the document to persist it
             $numIndexed = 0;
 
+            $this->em->persist($document);
+            $this->em->flush();
+
             //Return indexed
             return ($numIndexed > 0) ? self::INDEXED : self::SKIPPED;
         }

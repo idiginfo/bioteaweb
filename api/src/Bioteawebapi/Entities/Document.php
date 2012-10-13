@@ -47,7 +47,7 @@ class Document
     /** @PrePersist */
     public function serializeAnnotationPaths()
     {
-        $this->annotationFileNames = json_encode($this->annotationFileNames);
+        $this->rdfAnnotationPaths = json_encode($this->rdfAnnotationPaths);
     }    
 
     // --------------------------------------------------------------
@@ -55,7 +55,7 @@ class Document
     /** @PostLoad */
     public function doStuffOnPostLoad()
     {
-        $this->annotationFileNames = json_decode($this->annotationFileNames, true);
+        $this->rdfAnnotationPaths = json_decode($this->rdfAnnotationPaths, true);
     }   
 
     // --------------------------------------------------------------
