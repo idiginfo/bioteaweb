@@ -46,6 +46,14 @@ class Annotation
     {
         return $this->term;
     }
+
+    // --------------------------------------------------------------
+
+    public function getDocument()
+    {
+        return $this->document;
+    }
+
 }
 
 /* EOF: Document.php */

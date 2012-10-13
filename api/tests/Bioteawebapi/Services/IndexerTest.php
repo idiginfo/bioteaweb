@@ -56,11 +56,11 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
      */
     protected function getObj($path = null, $solrClient = null)
     {
-        $builder = new DocSetBuilder();
+        $builder = new IndexBuilder();
         $solr    = $solrClient ?: $this->getSolrClientMock();
-        $mysql   = $this->getMySQLClientMock();
+        $em      = $this->getEntityManagerMock();
 
-        return new Indexer($builder, $mysql);
+        return new Indexer($builder, $em);
     }
 
     // --------------------------------------------------------------
@@ -80,11 +80,16 @@ class IndexerTest extends \PHPUnit_Framework_TestCase
 
     // --------------------------------------------------------------
 
-    protected function getMySQLClientMock()
+    /**
+     * Get Entity Manager Mock (Doctrine Entity Manager)
+     *
+     * @return Doctrine\ORM\EntityManager
+     */
+    protected function getEntityManagerMock()
     {
-        $mock = $this->getMock('\Bioteawebapi\services\MySQLClient', array(), array(), '', false);
+        $mock = $this->getMock('\Doctrine\ORM\EntityManager', array(), array(), '', false);
         return $mock;
-    }   
+    }
 
     // --------------------------------------------------------------
 

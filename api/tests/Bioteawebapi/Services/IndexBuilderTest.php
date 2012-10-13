@@ -2,7 +2,7 @@
 
 namespace Bioteawebapi\Services;
 
-class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
+class IndexBuilderTest extends \PHPUnit_Framework_TestCase
 {
     public function testTestPathIsReadable()
     {
@@ -14,22 +14,22 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
     public function testInstantiateAsObjectSucceeds()
     {
         $obj = $this->getObj();
-        $this->assertInstanceOf('\Bioteawebapi\Services\DocSetBuilder', $obj);
+        $this->assertInstanceOf('\Bioteawebapi\Services\IndexBuilder', $obj);
     }
 
     // --------------------------------------------------------------
 
-    public function testBuildDocSetBuildsAValidObjectForValidPath()
+    public function testBuildIndexBuildsAValidObjectForValidPath()
     {
         //Get a file from the fixtures
         $fullPath = realpath($this->getTestPath() . '/PMC1134665.rdf');
         $relPath  = basename($fullPath);
 
         //Ensure result works
-        $docset = $this->getObj()->buildDocSet($fullPath, $relPath);
+        $document = $this->getObj()->buildDocument($fullPath, $relPath);
 
-        $this->assertInstanceOf('\Bioteawebapi\Models\BioteaDocSet', $docset);
-        $this->assertEquals($relPath, $docset->getMainFilePath());
+        $this->assertInstanceOf('\Bioteawebapi\Entities\Document', $document);
+        $this->assertEquals($relPath, $document->getRdfFilePath());
 
         //Check annotation filepaths
         $aoArray = array(
@@ -37,20 +37,20 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
             'whatizit' => 'Bio2RDF/PMC1134665_whatizitUkPmcAll.rdf'
         );
 
-        $this->assertEquals($aoArray, $docset->getAnnotationFilePaths());
+        $this->assertEquals($aoArray, $document->getRDFAnnotationPaths());
     }
 
     // --------------------------------------------------------------
 
-    public function testBuildDocSetThrowsExceptionForInvalidPath()
+    public function testBuildDocumentThrowsExceptionForInvalidPath()
     {
-        $this->setExpectedException('\Bioteawebapi\Exceptions\DocSetBuilderException');
+        $this->setExpectedException('\Bioteawebapi\Exceptions\IndexBuilderException');
 
         //Get non-existent filepath in fixtures
         $fullPath = realpath($this->getTestPath() . '/PMC999999998888888887654321.rdf');
         $relPath  = basename($fullPath);   
 
-        $docset = $this->getObj()->buildDocSet($fullPath, $relPath);
+        $docset = $this->getObj()->buildDocument($fullPath, $relPath);
     }
 
     // --------------------------------------------------------------
@@ -59,7 +59,7 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
     {
         $obj = $this->getObj();
         $tr = $obj->getTraverser($this->getTestPath());
-        $this->assertInstanceOf('\Bioteawebapi\Services\DocSetBuilder', $tr);
+        $this->assertInstanceOf('\Bioteawebapi\Services\IndexBuilder', $tr);
     }
 
     // --------------------------------------------------------------
@@ -70,7 +70,7 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
 
         $obj = $this->getObj();
         $tr = $obj->getTraverser("/really/does/not/exist/yo");
-        $this->assertInstanceOf('\Bioteawebapi\Services\DocSetBuilder', $tr);        
+        $this->assertInstanceOf('\Bioteawebapi\Services\Index', $tr);        
     }
 
     // --------------------------------------------------------------
@@ -82,7 +82,7 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
 
         for ($i = 0; $i < 3; $i++) {
             $item = $tr->getNextDocument();
-            $this->assertGreaterThan(0, strlen($item->getMainFilePath()));
+            $this->assertGreaterThan(0, strlen($item->getRdfFilePath()));
         }
     }
 
@@ -111,12 +111,12 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
     // --------------------------------------------------------------
 
     /**
-     * Get a DocSetBuilder object for testing
+     * Get a Index object for testing
      *
      * @param boolean|array $vocabs  If true, read the vocabs from the fixture file
      *                               If array, use the supplied vocabs
      *                               If false, don't use vocabs
-     * @return DocSetBuilder
+     * @return Index
      */
     protected function getObj($vocabs = true)
     {
@@ -127,9 +127,9 @@ class DocSetBuilderTest extends \PHPUnit_Framework_TestCase
             $vocabs = array();
         }
 
-        return new DocSetBuilder($vocabs);
+        return new IndexBuilder($vocabs);
     }
 
 }
 
-/* EOF: DocSetBuilderTest.php */
+/* EOF: IndexTest.php */

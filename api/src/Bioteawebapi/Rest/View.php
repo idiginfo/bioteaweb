@@ -41,7 +41,8 @@ abstract class View
      */
     public function __get($val)
     {
-        return $this->$val;
+        $arr = $this->toArray();
+        return $arr[$val];
     }
 
     // --------------------------------------------------------------

@@ -2,15 +2,22 @@
 
 namespace Bioteawebapi\Services;
 use Bioteawebapi\Entities\Document;
-use Bioteawebapi\Exceptions\DocSetBuilderException;
+use Bioteawebapi\Entities\Annotation;
+use Bioteawebapi\Entities\Term;
+use Bioteawebapi\Entities\Topic;
+use Bioteawebapi\Entities\Vocabulary;
+use Bioteawebapi\Exceptions\IndexBuilderException;
 use RecursiveDirectoryIterator as RDI;
 use RecursiveIteratorIterator;
 use SimpleXMLElement;
 
 /**
- * Document builds Entities\Documents from files and optional traverses folders
+ * Document builds Indexable Entities from RDF files
+ *
+ * This class can also traverse folders and build from RDF files with a
+ * specific path
  */
-class DocumentBuilder
+class IndexBuilder
 {
     /**
      * @var array
@@ -90,7 +97,7 @@ class DocumentBuilder
      * Uses the directory iterator to find the next file, and if no more
      * files with the correct regex, return false
      *
-     * @return BioteaDocSet|boolean  Returns false if no more files
+     * @return Bioteawebapi\Entities\Document|boolean  Returns false if no more files
      */
     public function getNextDocument()
     {
@@ -138,7 +145,7 @@ class DocumentBuilder
     {
         //Check path
         if ( ! is_readable($fullPath)) {
-            throw new DocSetBuilderException("The filepath does not exist: " . $fullPath);
+            throw new IndexBuilderException("The filepath does not exist: " . $fullPath);
         }
 
         //Paths
@@ -146,7 +153,7 @@ class DocumentBuilder
         $filename    = basename($fullPath, '.rdf');
 
         //Build object
-        $docSetObj = new Document($relativeFilePath, $this->vocabularies);
+        $documentObj = new Document($relativeFilePath);
 
         //See if we have associated annotation files
         $subfiles = array(
@@ -157,16 +164,116 @@ class DocumentBuilder
         //If so, add them to the object
         foreach($subfiles as $name => $relSubPath) {
 
-            $relSubPath = ltrim($relSubPath, '/');
+            $relSubPath  = ltrim($relSubPath, '/');
             $fullSubPath = dirname($fullPath) . '/' . $relSubPath;
 
             if (file_exists($fullSubPath)) {
+
                 $xml = new SimpleXMLElement($fullSubPath, 0, true);
-                $docSetObj->addAnnotationFile($xml, $name, $relSubPath);
+                $annotations = $this->parseRdfAnnotationFile($xml);
+
+                //Add the annotations and the path to the file the came from?
+                $documentObj->addAnnotations($annotations);
+                $documentObj->addAnnotationFilepath($name, $relSubPath);
             }
         }
 
-        return $docSetObj;
+        return $documentObj;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Parse the RDF Annotation XML and build a document
+     *
+     * @param \SimpleXMLElement $xml
+     * @return array  Array of Entities\Annotation objects
+     */
+    protected function parseRdfAnnotationFile(SimpleXMLElement $xml)
+    {
+        //Setup an array
+        $annotations = array();
+
+        //Register namespaces
+        $xml->registerXPathNamespace('ao', 'http://purl.org/ao/core/');
+        $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
+        $xml->registerXPathNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
+
+        //Foreach annotation XML node, try to build an annotation
+        foreach ($xml->xpath("//ao:Annotation") as $annot) {
+
+            //Extract Term and build a Term object
+            $termString = (string) array_shift($annot->xpath('ao:body'));
+            $termObj = new Term($termString);
+
+            //Extract Topics
+            foreach($annot->xpath('ao:hasTopic') as $topic) {
+
+                //Attempt to get it from the hasTopic['rdf:resource'] attribute
+                $topicUri = (string) $topic[0]->attributes('rdf', true)->resource;
+
+                //If topicUri didn't work that way..
+                if (empty($topicUri)) {
+
+                    //Get the topic from the rdf:Description child
+                    $desc = $topic[0]->children('rdf', true)->Description;
+                    $topicUri = (string) $desc[0]->attributes('rdf', true)->about; 
+                    $termObj->addTopic($this->buildTopicObj($topicUri));
+
+                    //Also get the seeAlso's...
+                    foreach($desc[0]->children('rdfs', true)->seeAlso as $seeAlso) {
+                        $seeAlsoUri = (string) $seeAlso[0]->attributes('rdf', true)->resource;
+                        $termObj->addTopic($this->buildTopicObj($seeAlsoUri));
+                    }
+                }
+                else {
+                    $termObj->addTopic($this->buildTopicObj($topicUri));
+                }
+            }
+
+            //Build an annotation object and return it
+            $annotations[] = new Annotation($termObj);
+        }
+
+        return $annotations;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Build topic object from topic URI based on vocabularies
+     *
+     * Also builds vocabulary object and relates it to the topic if
+     * possible
+     *
+     * @param string $topicUri
+     * @return Topic Returns a topic object
+     */
+    protected function buildTopicObj($topicUri)
+    {
+        $topicObj = new Topic($topicUri);
+
+        //Attempt to determine which vocabulary is in use
+        foreach($this->vocabularies as $shortName => $uri)
+        {
+            if (
+                strlen($topicUri) > strlen($uri)
+                && strcasecmp(substr($topicUri, 0, strlen($uri)), $uri) == 0
+            ) {       
+                //Build the vocabulary object
+                $vocabObj = new Vocabulary($uri, $shortName);
+                $topicObj->setVocabulary($vocabObj);
+
+                //break up the string to get the topicShortname
+                $topicShortName = substr($topicUri, strlen($uri));
+                $topicObj->setShortName($topicShortName); 
+                
+                //get out of the loop
+                break;
+            }
+        }
+
+        return $topicObj;
     }
 }
 

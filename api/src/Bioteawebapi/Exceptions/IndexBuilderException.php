@@ -3,7 +3,7 @@
 namespace Bioteawebapi\Exceptions;
 use RuntimeException;
 
-class DocsetBuilderException extends RuntimeException
+class IndexBuilderException extends RuntimeException
 {
     /* pass */
 }

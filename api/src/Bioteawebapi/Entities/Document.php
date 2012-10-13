@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * Document Entity represents Indexes for a BioteaDocument
  * 
  * @Entity
+ * @HasLifecycleCallbacks
  */
 class Document
 {
@@ -14,7 +15,7 @@ class Document
     protected $id;
 
     /** @Column(type="string") **/
-    protected $rdfPath;
+    protected $rdfFilePath;
 
     /** @Column(type="text", nullable=true) **/
     protected $rdfAnnotationPaths;
@@ -31,74 +32,31 @@ class Document
      *
      * @var string $rdfFilePath  Relative path to RDF file
      */
-    public function __construct($rdfFilePath)
+    public function __construct($rdfFilePath, $annotationFilePaths = array())
     {
-        $this->setRdfFilePath($rdfFilePath);
         $this->annotations = new ArrayCollection();
-    }
 
-    // --------------------------------------------------------------
-
-    /**
-     * Add Annotation File
-     * 
-     * @param \SimpleXMLELement $xml             XML from the annotation file
-     * @param string            $annotationName  Name for the Annotation file
-     * @param string            $filepath        Relative to document basepath
-     */
-    public function addAnnotationFile(SimpleXMLElement $xml, $annotationName, $filepath)
-    { 
-        assert(is_string($filepath));
-        $this->annotationFileNames[$annotationName] = $filepath;
-        $this->extractItems($xml, $annotationName);
-    }
-
-    // --------------------------------------------------------------
-    /**
-     * Extract terms and topics from the RDF XML
-     *
-     * @param \EasyRdf_Graph $rdf
-     */
-    protected function extractItems(SimpleXMLElement $xml)
-    {
-        //Register namespaces
-        $xml->registerXPathNamespace('ao', 'http://purl.org/ao/core/');
-        $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
-        $xml->registerXPathNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
-
-        //Foreach annotation, do something..
-        foreach ($xml->xpath("//ao:Annotation") as $annot) {
-
-            //Extract Term
-            $term = (string) array_shift($annot->xpath('ao:body'));
-
-            //Extract Topics
-            $topics = array();
-            foreach($annot->xpath('ao:hasTopic') as $topic) {
-                $topicUri = (string) $topic[0]->attributes('rdf', true)->resource;
-
-                if (empty($topicUri)) {
-                    $desc = $topic[0]->children('rdf', true)->Description;
-                    $topics[] = (string) $desc[0]->attributes('rdf', true)->about; 
-                    foreach($desc[0]->children('rdfs', true)->seeAlso as $seeAlso) {
-                        $topics[] = (string) $seeAlso[0]->attributes('rdf', true)->resource;
-                    }
-                }
-                else {
-                    $topics[] = $topicUri;
-                }
-            }
-
-            //Build the term
-            $this->terms[$term] = new Term($term);
-
-            //Build the topics arrays
-            foreach($topics as $topic) {
-                $this->topics[$topic] = $this->buildTopicObj($topic);
-                $this->terms[$term]->addTopic($this->topics[$topic]);
-            }
+        $this->setRdfFilePath($rdfFilePath);
+        foreach($annotationFilePaths as $name => $path) {
+            $this->addAnnotationFilepath($name, $path);
         }
     }
+
+    // --------------------------------------------------------------
+
+    /** @PrePersist */
+    public function serializeAnnotationPaths()
+    {
+        $this->annotationFileNames = json_encode($this->annotationFileNames);
+    }    
+
+    // --------------------------------------------------------------
+
+    /** @PostLoad */
+    public function doStuffOnPostLoad()
+    {
+        $this->annotationFileNames = json_decode($this->annotationFileNames, true);
+    }   
 
     // --------------------------------------------------------------
 
@@ -110,6 +68,46 @@ class Document
     public function setRdfFilePath($path)
     {
         $this->rdfPath = $path;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Add Annotation File Path
+     * 
+     * @param string $annotationName
+     * @param string $filepath
+     */
+    public function addAnnotationFilepath($annotationName, $filepath)
+    { 
+        assert(is_string($filepath));
+        $this->rdfAnnotationPaths[$annotationName] = $filepath;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Add Annotation
+     *
+     * @param Annotation
+     */
+    public function addAnnotation(Annotation $annotation)
+    {
+        $this->annotations[] = $annotation;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Add Annotations
+     *
+     * @param array  Array of Annotation objects
+     */
+    public function addAnnotations(Array $annotations)
+    {
+        foreach($annotations as $annot) {
+            $this->addAnnotation($annot);
+        }
     }
 
     // --------------------------------------------------------------
@@ -138,9 +136,9 @@ class Document
 
     // --------------------------------------------------------------
   
-    public function getRDFPath()
+    public function getRDFFilePath()
     {
-
+        return $this->rdfPath;
     }
 
     // --------------------------------------------------------------
@@ -148,8 +146,8 @@ class Document
     /** @return array */
     public function getRDFAnnotationPaths()
     {
-        
-    }
+       return $this->rdfAnnotationPaths; 
+    } 
 }
 
 /* EOF: Document.php */

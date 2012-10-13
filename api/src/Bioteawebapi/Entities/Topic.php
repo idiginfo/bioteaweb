@@ -32,20 +32,64 @@ class Topic
 
     // --------------------------------------------------------------
 
-    public function __construct($uri, $shortName = null, $vocabularyUri = null, $vocabularyShortname = null)
+    public function __construct($uri, $shortName = null)
     {
         $this->terms = new ArrayCollection();
 
-        //Vocabulary URI
-        //LEFT OFF HERE -- Moving form Vocabs to Documents,
-        //and then fixing up the Document and the builder and finally the indexer!
-        //Try not to change the indexer and builder APIs too much.
-        //Everything else is fair game
-        if ($vocabularyUri && $vocabularyShortname) {
-            $this->vocabulary = new Vocabulary($vocabularyUri, $vocabularyShortname);
-        }
+        $this->uri = $uri;
+        $this->setShortName($shortName);
     }
 
+    // --------------------------------------------------------------
+
+    public function __toString()
+    {
+        return $this->getUri();
+    }
+
+    // --------------------------------------------------------------
+
+    public function getUri()
+    {
+        return $this->uri;
+    }
+
+    // --------------------------------------------------------------
+
+    public function setShortName($name)
+    {
+        $this->shortName = $name;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getShortName()
+    {
+        return $this->shortName;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getVocabulary()
+    {
+        return $this->vocabulary();
+    }
+
+    // --------------------------------------------------------------
+
+    public function setVocabulary(Vocabulary $vocabulary)
+    {
+        $this->vocabulary = $vocabulary;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getTerms()
+    {
+        return $this->terms;
+    }
+    
+    // --------------------------------------------------------------
 }
 
 /* EOF: Topic.php */

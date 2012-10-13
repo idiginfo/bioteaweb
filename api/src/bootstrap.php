@@ -125,12 +125,12 @@ $app['mysql_client'] = $app->share(function($app) {
 
 //Doc Builder
 $app['builder'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\DocSetBuilder($app['config']->vocabularies);
+    return new Bioteawebapi\Services\IndexBuilder($app['config']->vocabularies);
 });
 
 //Doc Indexer
 $app['indexer'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\Indexer($app['builder'], $app['mysql_client']);
+    return new Bioteawebapi\Services\Indexer($app['builder'], $app['db.orm.em']);
 });
 
 // ------------------------------------------------------------------

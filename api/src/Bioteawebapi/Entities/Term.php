@@ -26,10 +26,54 @@ class Term
      **/    
     private $annotations;
 
-    public function __construct($term, $topics)
+    // --------------------------------------------------------------
+
+    /**
+     * Constructor
+     *
+     * @param string $term
+     * @param array $topics  Array of topic objects
+     */
+    public function __construct($term, Array $topics = array())
     {
         $this->annotations = new ArrayCollection();
         $this->topics = new ArrayCollection();
+
+        //Set the term
+        $this->term = $term;
+
+        //Set the topics
+        foreach($topics as $topic) {
+            $this->addTopic($topic);
+        }
+    }
+
+    // --------------------------------------------------------------
+
+    public function __toString()
+    {
+        return $this->getTerm();
+    }
+
+    // --------------------------------------------------------------
+
+    public function getTerm()
+    {
+        return $this->term;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getAnnotations()
+    {
+        return $this->annotations;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getTopics()
+    {
+        return $this->topics;
     }
 
     // --------------------------------------------------------------

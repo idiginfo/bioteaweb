@@ -1,8 +1,9 @@
 <?php
 
 namespace Bioteawebapi\Services;
-use Bioteawebapi\Models\BioteaDocSet;
 use Bioteawebapi\Exceptions\MySQLClientException;
+use Bioteawebapi\Entities\Document;
+use Doctrine\ORM\EntityManager;
 use TaskTracker\Tracker;
 
 /**
@@ -15,19 +16,19 @@ class Indexer
     const SKIPPED = -1;
 
     /**
-     * @var DocSetBuidler
+     * @var IndexBuilder
      */
     private $builder;
+
+    /**
+     * @var \Doctrine\ORM\EntityManager
+     */
+    private $em;
 
     /**
      * @var SolrClient
      */
     private $solr;
-
-    /**
-     * @var MySQLClient
-     */
-    private $db;
 
     /**
      * @var int
@@ -54,14 +55,13 @@ class Indexer
     /**
      * Constructor
      *
-     * @param DocSetBuilder  $builder     Biotea Doc Builder
-     * @param MySQLClient    $db          MySQL Client object
+     * @param IndexBuilder   $builder  Biotea Doc Builder
+     * @param EntityManager  $em       Doctrine ORM Entity Manager
      */
-    public function __construct(DocSetBuilder $builder, MySQLClient $db)
+    public function __construct(IndexBuilder $builder, EntityManager $em)
     {
         $this->builder  = $builder;
-        $this->db       = $db;
-        $this->solr     = null;
+        $this->em       = $em;
     }
 
     // --------------------------------------------------------------
@@ -153,7 +153,7 @@ class Indexer
         $this->numSkipped = 0;
 
         $traverser = $this->builder->getTraverser($path);
-        while ($obj = $traverser->getNextDocument()) {
+        while ($doc = $traverser->getNextDocument()) {
 
             //If passed limit, get out
             if ($limit && $this->getNumProcessed() >= $limit) {
@@ -161,7 +161,7 @@ class Indexer
             }
 
             //Process it
-            $result = $this->processItem($obj);
+            $result = $this->processItem($doc);
 
             //Inform task tracker
             if ($this->taskTracker) {
@@ -187,20 +187,14 @@ class Indexer
      *
      * @TODO: Also deal with SOLR exceptions?
      *
-     * @param Models\BioteaDocSet $docset
+     * @param Entities\Document $document
      * @return int  Skipped, Indexed, or Failed
      */
-    public function processItem($docset)
+    public function processItem(Document $document)
     {
         try {
-            //Try to index the document in MySQL.
-            $numIndexed = $this->db->indexDocument($docset);
-
-            //If new, also index it in SOLR (if SOLR enabled)
-            if ($numIndexed > 0 && $this->solr)
-            {
-                //@TODO: This
-            }
+            //@TODO: Do something with the document to persist it
+            $numIndexed = 0;
 
             //Return indexed
             return ($numIndexed > 0) ? self::INDEXED : self::SKIPPED;

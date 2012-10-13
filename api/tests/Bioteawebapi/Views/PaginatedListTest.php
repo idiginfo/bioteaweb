@@ -6,7 +6,7 @@ class PaginatedListTest extends \PHPUnit_Framework_TestCase
 {
     public function testInstantiateAsObjectSucceeds()
     {
-        $obj = new PaginatedList(100);
+        $obj = new PaginatedList(100, 20);
         $this->assertInstanceOf("\Bioteawebapi\Views\PaginatedList", $obj);
     }
 
@@ -22,7 +22,7 @@ class PaginatedListTest extends \PHPUnit_Framework_TestCase
      */
     public function testCalculateVariables($numItems, $itemsPerPage, $offset, $expected)
     {
-        $obj = new PaginatedList($numItems);
+        $obj = new PaginatedList($numItems, $itemsPerPage);
         $obj->setItems(range($offset, ($offset-1) + $itemsPerPage));
         $obj->setOffset($offset);
 
