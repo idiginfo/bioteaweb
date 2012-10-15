@@ -2,11 +2,15 @@
 
 namespace Bioteawebapi\Entities;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\EntityManager;
 
 /**
  * Annotation Entity represents Indexes for a Biotea Annotation
  * 
  * @Entity
+ * @Table(uniqueConstraints={
+ *   @UniqueConstraint(name="term", columns={"term"})
+ * }) 
  */
 class Term
 {
@@ -53,6 +57,22 @@ class Term
     public function __toString()
     {
         return $this->getTerm();
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Persist this item to the database
+     *
+     * @param Doctrine\ORM\EntityManager $em
+     */
+    public function persist(EntityManager $em)
+    {
+        foreach($this->topics as $topic) {
+            $topic->persist($em);
+        }
+
+        $em->persist($this);
     }
 
     // --------------------------------------------------------------

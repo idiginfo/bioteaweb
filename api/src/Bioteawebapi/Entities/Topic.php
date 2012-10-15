@@ -2,11 +2,16 @@
 
 namespace Bioteawebapi\Entities;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\EntityManager;
 
 /**
  * Topic Entity
  * 
  * @Entity
+ * @Table(uniqueConstraints={
+ *   @UniqueConstraint(name="uri", columns={"uri"}),
+ *   @UniqueConstraint(name="shortName", columns={"shortName"})
+ * })
  */
 class Topic
 {
@@ -49,10 +54,27 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * Persist this item to the database
+     *
+     * @param Doctrine\ORM\EntityManager $em
+     */
+    public function persist(EntityManager $em)
+    {
+        if ($this->vocabulary instanceOf Vocabulary) {
+            $this->vocabulary->persist($em);
+        }
+
+        $em->persist($this);
+    }
+
+    // --------------------------------------------------------------
+
     public function getUri()
     {
         return $this->uri;
     }
+
 
     // --------------------------------------------------------------
 

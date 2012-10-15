@@ -2,6 +2,7 @@
 
 namespace Bioteawebapi\Entities;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\EntityManager;
 
 /**
  * Annotation Entity represents Indexes for a Biotea Annotation
@@ -42,6 +43,19 @@ class Annotation
 
     // --------------------------------------------------------------
 
+    /**
+     * Persist this item to the database
+     *
+     * @param Doctrine\ORM\EntityManager $em
+     */
+    public function persist(EntityManager $em)
+    {
+        $this->term->persist($em);
+        $em->persist($this);
+    }
+
+    // --------------------------------------------------------------
+
     public function getTerm()
     {
         return $this->term;
@@ -53,7 +67,6 @@ class Annotation
     {
         return $this->document;
     }
-
 }
 
 /* EOF: Document.php */

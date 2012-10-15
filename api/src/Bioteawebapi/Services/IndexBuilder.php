@@ -171,7 +171,7 @@ class IndexBuilder
 
                 $xml = new SimpleXMLElement($fullSubPath, 0, true);
                 $annotations = $this->parseRdfAnnotationFile($xml);
-
+                
                 //Add the annotations and the path to the file the came from?
                 $documentObj->addAnnotations($annotations);
                 $documentObj->addAnnotationFilepath($name, $relSubPath);

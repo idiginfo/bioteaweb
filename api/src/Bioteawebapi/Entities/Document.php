@@ -2,12 +2,16 @@
 
 namespace Bioteawebapi\Entities;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\EntityManager;
 
 /**
  * Document Entity represents Indexes for a BioteaDocument
  * 
  * @Entity
  * @HasLifecycleCallbacks
+ * @Table(uniqueConstraints={
+ *   @UniqueConstraint(name="rdfFilePath", columns={"rdfFilePath"})
+ * })
  */
 class Document
 {
@@ -44,6 +48,22 @@ class Document
 
     // --------------------------------------------------------------
 
+    /**
+     * Persist this item to the database
+     *
+     * @param Doctrine\ORM\EntityManager $em
+     */
+    public function persist(EntityManager $em)
+    {
+        foreach($this->annotations as $annot) {
+            $annot->persist($em);
+        }
+
+        $em->persist($this);
+    }
+
+    // --------------------------------------------------------------
+
     /** @PrePersist */
     public function serializeAnnotationPaths()
     {
@@ -67,7 +87,7 @@ class Document
      */
     public function setRdfFilePath($path)
     {
-        $this->rdfPath = $path;
+        $this->rdfFilePath = $path;
     }
 
     // --------------------------------------------------------------

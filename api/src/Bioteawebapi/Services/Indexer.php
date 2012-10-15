@@ -183,7 +183,7 @@ class Indexer
     // --------------------------------------------------------------
 
     /**
-     * Indexes a single docSetObj
+     * Indexes a single document object
      *
      * @TODO: Also deal with SOLR exceptions?
      *
@@ -193,11 +193,11 @@ class Indexer
     public function processItem(Document $document)
     {
         try {
-            //@TODO: Do something with the document to persist it
-            $numIndexed = 0;
+            
+            //Persist the document
+            $numIndexed = $this->persistItem($document);
 
-            $this->em->persist($document);
-            $this->em->flush();
+            //@TODO: ALSO INDEX w/SOLR HERE!
 
             //Return indexed
             return ($numIndexed > 0) ? self::INDEXED : self::SKIPPED;
@@ -206,6 +206,31 @@ class Indexer
             return self::FAILED;
         }
     }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Persist a document object
+     *
+     * @param Entities\Document $document
+     * @return int  Number of INSERTs performed
+     */
+    protected function persistItem(Document $document)
+    {
+        //Start with the vocabularies and work backards.
+        $document->persist($this->em);
+
+        //Determine number of changes
+        $uow = $this->em->getUnitOfWork();
+        $num = count($uow->getScheduledEntityInsertions());
+
+        //Do it
+        $this->em->flush();
+
+        //Return the number of insertions
+        return $num;
+    }
+
 }
 
 
