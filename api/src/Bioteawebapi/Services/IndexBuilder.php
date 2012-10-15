@@ -9,6 +9,7 @@ use Bioteawebapi\Entities\Vocabulary;
 use Bioteawebapi\Exceptions\IndexBuilderException;
 use RecursiveDirectoryIterator as RDI;
 use RecursiveIteratorIterator;
+use Doctrine\ORM\EntityManager;
 use SimpleXMLElement;
 
 /**
@@ -39,6 +40,11 @@ class IndexBuilder
      */
     private $traverserBasePath;
 
+    /**
+     * @var Doctrine\ORM\EntityManager
+     */
+    private $em;
+
     // --------------------------------------------------------------
 
     /**
@@ -47,10 +53,14 @@ class IndexBuilder
      * Optionally accepts an array of vocabularies
      * (keys are shortnameses, values are URIs)
      *
+     * @param Doctrine\ORM\EntityManager $em
      * @param array $vocabularies
      */
-    public function __construct(Array $vocabularies = array())
+    public function __construct(EntityManager $em, Array $vocabularies = array())
     {
+        //Set EntityManager and Unit of Work Object
+        $this->em  = $em;
+
         //Set vocabularies
         $this->setVocabularies($vocabularies);
     }
@@ -135,11 +145,12 @@ class IndexBuilder
     // --------------------------------------------------------------
 
     /**
-     * Build the BioteaDocSet Object from an Annotation file
+     * Build the BioteaDocSet Object from an Annotation file, or pulls an
+     * existing one out of the database
      *
      * @param string $fullPath          The full system path to the file to parse
      * @param string $relativeFilePath  A relative file path to the file to parse
-     * @return Bioteawebapi\Models\BioteaDocSet
+     * @return Bioteawebapi\Entities\Document
      */
     public function buildDocument($fullPath, $relativeFilePath)
     {
@@ -151,6 +162,14 @@ class IndexBuilder
         //Paths
         $relDirPath  = ltrim(dirname($relativeFilePath), '.');
         $filename    = basename($fullPath, '.rdf');
+
+        //Does the document already exist?
+        $doc = $this->em->getRepository('Bioteawebapi\Entities\Document')->findOneBy(array('rdfFilePath' => $relativeFilePath));
+
+        //If so, return it
+        if ($doc) {
+            return $doc;
+        }
 
         //Build object
         $documentObj = new Document($relativeFilePath);
@@ -184,7 +203,7 @@ class IndexBuilder
     // --------------------------------------------------------------
 
     /**
-     * Parse the RDF Annotation XML and build a document
+     * Parse the RDF Annotation XML and build a document object graph
      *
      * @param \SimpleXMLElement $xml
      * @return array  Array of Entities\Annotation objects
@@ -204,7 +223,7 @@ class IndexBuilder
 
             //Extract Term and build a Term object
             $termString = (string) array_shift($annot->xpath('ao:body'));
-            $termObj = new Term($termString);
+            $termObj = $this->buildTermObj($termString);
 
             //Extract Topics
             foreach($annot->xpath('ao:hasTopic') as $topic) {
@@ -212,7 +231,7 @@ class IndexBuilder
                 //Attempt to get it from the hasTopic['rdf:resource'] attribute
                 $topicUri = (string) $topic[0]->attributes('rdf', true)->resource;
 
-                //If topicUri didn't work that way..
+                //If topicUri didn't work that way, then it is in the rdf:Description child node..
                 if (empty($topicUri)) {
 
                     //Get the topic from the rdf:Description child
@@ -251,30 +270,83 @@ class IndexBuilder
      */
     protected function buildTopicObj($topicUri)
     {
-        $topicObj = new Topic($topicUri);
+        //See if the topic already exists in the database, or create a new one
+        $topicObj = $this->em->getRepository('Bioteawebapi\Entities\Topic')->findOneBy(array('uri' => $topicUri));
 
-        //Attempt to determine which vocabulary is in use
-        foreach($this->vocabularies as $shortName => $uri)
-        {
-            if (
-                strlen($topicUri) > strlen($uri)
-                && strcasecmp(substr($topicUri, 0, strlen($uri)), $uri) == 0
-            ) {       
-                //Build the vocabulary object
-                $vocabObj = new Vocabulary($uri, $shortName);
+        if ( ! $topicObj) {
+            $topicObj = new Topic($topicUri);
+        }
+
+        //If vocbaulary not already set, attempt to set it
+        if ( ! $topicObj->getVocabulary()) {
+
+            $vocabObj = $this->buildVocabularyObj($topicUri);
+
+            if ($vocabObj) {
+
+                //Set the shortname
+                $topicShortName = substr($topicUri, strlen($vocabObj->getUri()));
+                $topicObj->setShortName($topicShortName);                
+
+                //Set the vocabulary
                 $topicObj->setVocabulary($vocabObj);
-
-                //break up the string to get the topicShortname
-                $topicShortName = substr($topicUri, strlen($uri));
-                $topicObj->setShortName($topicShortName); 
-                
-                //get out of the loop
-                break;
             }
         }
 
         return $topicObj;
     }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Build a term object
+     *
+     * Checks if existing term exists in the database.  Returns a
+     * reference to that, or a new term
+     *
+     * @param string $term
+     * @return Entities\Term
+     */
+    protected function buildTermObj($term)
+    {
+        $termObj = $this->em->getRepository('Bioteawebapi\Entities\Term')->findOneBy(array('term' => $term));        
+        return $termObj ?: new Term($term);
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Build a vocabulary object
+     *
+     * Checks if existing vocabulary object exists in the database or builds
+     * a new one.
+     *
+     * If vocabulary object cannot be built, returns null
+     *
+     * @param @string $uri  A topic URI
+     * @return Entities\Vocabulary|null
+     */
+    protected function buildVocabularyObj($uri)
+    {
+        foreach($this->vocabularies as $shortName => $vocabUri) {        
+
+            //Matching URI for Topic URI?
+            if (
+                strlen($uri) > strlen($vocabUri)
+                && strcasecmp(substr($uri, 0, strlen($vocabUri)), $vocabUri) == 0
+            ) {       
+                //One exists in the database?
+                $vocabObj = $this->em->getRepository('Bioteawebapi\Entities\Vocabulary')->findOneBy(array('uri' => $uri));
+
+                //Build the vocabulary object
+                return $vocabObj ?: new Vocabulary($vocabUri, $shortName); 
+            }
+        }
+
+        //If made it here, no matching vocabulary was found
+        return null;
+    }    
+
 }
 
 /* EOF: BitoeaDocSetBuilder.php */

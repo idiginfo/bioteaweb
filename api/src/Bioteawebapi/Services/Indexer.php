@@ -223,7 +223,7 @@ class Indexer
         //Determine number of changes
         $uow = $this->em->getUnitOfWork();
         $num = count($uow->getScheduledEntityInsertions());
-
+        
         //Do it
         $this->em->flush();
 

@@ -94,7 +94,7 @@ class Topic
 
     public function getVocabulary()
     {
-        return $this->vocabulary();
+        return $this->vocabulary;
     }
 
     // --------------------------------------------------------------

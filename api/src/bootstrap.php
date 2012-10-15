@@ -125,7 +125,7 @@ $app['mysql_client'] = $app->share(function($app) {
 
 //Doc Builder
 $app['builder'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\IndexBuilder($app['config']->vocabularies);
+    return new Bioteawebapi\Services\IndexBuilder($app['db.orm.em'], $app['config']->vocabularies);
 });
 
 //Doc Indexer
