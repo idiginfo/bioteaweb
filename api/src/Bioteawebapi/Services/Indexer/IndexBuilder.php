@@ -53,9 +53,6 @@ class IndexBuilder
      */
     public function __construct(Array $vocabularies = array())
     {
-        //Set EntityManager and Unit of Work Object
-        $this->em  = $em;
-
         //Set vocabularies
         $this->setVocabularies($vocabularies);
     }

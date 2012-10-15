@@ -7,6 +7,8 @@ Copyright (c) FSU 2012
 
 TODO:
 -------------------------------------------------------------------------------
-* Need the DocumentBuilder to get smarter about building Entity Objects:
-  - Check for existing vocabularies/topics/terms before building new ones
-  - Return existing if possible; otherwise build new
+* Need to finish refactoring the indexer so that it actually works...
+  - Will manually add items to the database instead of relying on the EntityManager->persist()
+    to do it for us, since that causes so many problems.
+  - The EntityManager can still handle retrieval and schema definition, since that works well, just
+    not insertions for now.

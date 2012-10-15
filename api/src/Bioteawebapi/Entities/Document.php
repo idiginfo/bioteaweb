@@ -117,6 +117,20 @@ class Document
 
     // --------------------------------------------------------------
 
+    public function __get($val)
+    {
+        return $this->$val;
+    }
+
+    // --------------------------------------------------------------
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    // --------------------------------------------------------------
+
     /**
      * Get annotations
      *
@@ -132,7 +146,11 @@ class Document
     /** @return array Array of Vocabularies */
     public function getVocabularies()
     {
+        $vocabs = array_map(function($entity) {
+            return $entity->getVocabulary();
+        }, $this->getTopics());
 
+        return array_filter($vocabs);
     }
 
     // --------------------------------------------------------------
@@ -140,7 +158,13 @@ class Document
     /** @return array Array of Topics */
     public function getTopics()
     {
+        $topics = array();
 
+        foreach($this->getTerms() as $termObj) {
+            $topics = array_merge($topics, $termObj->getTopics()->toArray());
+        }
+
+        return $topics;
     }
 
     // --------------------------------------------------------------
@@ -148,7 +172,9 @@ class Document
     /** @return array  Array of Terms */
     public function getTerms()
     {
-
+        return array_map(function($entity) {
+            return $entity->getTerm();
+        }, $this->getAnnotations()->toArray());
     }
 
     // --------------------------------------------------------------

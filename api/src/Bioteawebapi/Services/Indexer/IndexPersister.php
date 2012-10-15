@@ -2,6 +2,7 @@
 
 namespace Bioteawebapi\Services\Indexer;
 use Doctrine\ORM\EntityManager;
+use Bioteawebapi\Entities\Document;
 
 /**
  * Index Persister class persists non-database-aware entity graphs
@@ -18,6 +19,15 @@ class IndexPersister
      */
     private $em;
 
+    /**
+     * @var array  Pending inserts
+     */
+
+    /**
+     * @var array  Cached table info
+     */
+    private $cachedTableInfo;
+
     // --------------------------------------------------------------
 
     /**
@@ -27,7 +37,11 @@ class IndexPersister
      */
     public function __construct(EntityManager $em)
     {
+        //Setup entityManager and unitOfWork
         $this->em = $em;
+
+        //Setup cached table info
+        $ths->cachedTableInfo = array();
     }
 
     // --------------------------------------------------------------
@@ -41,17 +55,19 @@ class IndexPersister
      */
     public function persistDocument(Document $document)
     {
+        //Reset pending inserts
+        $this->pendingInserts = array();
+
+        //Set Entity Manager to clean state
+        $this->em->clear();
+
         //If the document already exists, just return false
         if ($this->checkItemExists($document)) {
             return false;
         }
 
-        //Else, go through an index the whole thing
+        //LEFT OFF HERE -- NOW I SEE HOW HARD THIS IS.. NOW WHAT?!
     }
-
-    // --------------------------------------------------------------
-
-
 
     // --------------------------------------------------------------
 
@@ -64,17 +80,63 @@ class IndexPersister
     protected function checkItemExists($entity)
     {
         //If an ID exists, just return that
+        if ($entity->getId()) {
+            return $entity->getId();
+        }
+
+        //Set itemId to null unless we find something
+        $itemId = null;
+
+        //Entity name
+        $entityName = get_class($entity);
 
         //Get db metadata about the item through Doctrine method calls on it
         //what table?  What are the unique indexes that are set?
+        $indexColumns = $this->getUniqueFieldsForEntity($entityName);
 
-        //Query the collection to see if this exists.  If so, return the unique ID
-        //for that item
+        //Build query parameters based off unique index columns
+        $queryParams = array();
+        foreach($indexColumns as $fieldName) {
+            $fieldVal = $entity->$fieldName;
 
-        //ELse return null
+            if ($fieldVal) {
+                $queryParams[$fieldName] = $fieldVal;
+            }
+        }
 
-        //This is just for reference; delete it
-        reuturn null OR $itemId;
+        //Does the query if we have anything to base it off of
+        if (count($queryParams) > 0) {
+            $rec = $this->em->getRepository($entityName)->findOneBy($queryParams);
+        }
+
+        //Return result
+        return ($rec) ? $rec->id : $itemId;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get indexed fields for an entity
+     *
+     * @param string $entityName   Fully qualfieid namespaced classname
+     * @return array   Keys are column names, values are field names
+     */
+    private function getUniqueFieldsForEntity($entityName)
+    {
+        //Have cached data?
+        if (isset($this->cachedTableInfo[$entityName])) {
+            return $this->cachedTableInfo[$entityName];
+        }
+
+        $indexColumns = array();
+        $metadata = $this->em->getClassMetadata($entityName);
+        foreach ($metadata->table['uniqueConstraints'] as $idxName => $idxInfo) {
+            foreach ($idxInfo['columns'] as $col) {
+                $indexColumns[$col] = $metadata->fieldNames[$col];
+            }
+        }
+        $this->cachedTableInfo[$entityName] = $indexColumns;
+        return $indexColumns;
     }    
 }
 

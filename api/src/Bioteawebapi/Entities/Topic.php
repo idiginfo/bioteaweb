@@ -8,9 +8,14 @@ use Doctrine\ORM\EntityManager;
  * Topic Entity
  * 
  * @Entity
- * @Table(uniqueConstraints={
- *   @UniqueConstraint(name="uri", columns={"uri"})
- * })
+ * @Table(
+ *   uniqueConstraints={
+ *     @UniqueConstraint(name="uri", columns={"uri"})
+ *   },
+ *   indexes={
+ *     @index(name="shortName", columns={"shortName"})
+ *   }
+ * )
  */
 class Topic
 {
@@ -46,11 +51,25 @@ class Topic
 
     // --------------------------------------------------------------
 
+    public function __get($val)
+    {
+        return $this->$val;
+    }
+    
+    // --------------------------------------------------------------
+
     public function __toString()
     {
         return $this->getUri();
     }
 
+    // --------------------------------------------------------------
+
+    public function getId()
+    {
+        return $this->id;
+    }
+    
     // --------------------------------------------------------------
 
     public function getUri()
