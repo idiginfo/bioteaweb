@@ -243,12 +243,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "e8412b85df7fd60ca2a96ce57a5b8c3a947d68d2"
+                "reference": "6bad0109599348c5216df35f62b80a20ba16c507"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/zipball/e8412b85df7fd60ca2a96ce57a5b8c3a947d68d2",
-                "reference": "e8412b85df7fd60ca2a96ce57a5b8c3a947d68d2",
+                "url": "https://github.com/doctrine/doctrine2/zipball/6bad0109599348c5216df35f62b80a20ba16c507",
+                "reference": "6bad0109599348c5216df35f62b80a20ba16c507",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "1350066989",
+            "time": "1350071385",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
@@ -870,12 +870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "676a7bb2c6c4d5669ca073cceae3ac393748752a"
+                "reference": "607aae40607abf459ab6be074258ec41323c4fa6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/zipball/676a7bb2c6c4d5669ca073cceae3ac393748752a",
-                "reference": "676a7bb2c6c4d5669ca073cceae3ac393748752a",
+                "url": "https://github.com/symfony/HttpKernel/zipball/607aae40607abf459ab6be074258ec41323c4fa6",
+                "reference": "607aae40607abf459ab6be074258ec41323c4fa6",
                 "shasum": ""
             },
             "require": {
@@ -901,7 +901,7 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "1349553277",
+            "time": "1350122670",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1036,12 +1036,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "893590dbf4e60786d21cc475695a8c3aa5529f7d"
+                "reference": "6392f89975bd2b3ef4facbb5ef48143d035a9ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/zipball/893590dbf4e60786d21cc475695a8c3aa5529f7d",
-                "reference": "893590dbf4e60786d21cc475695a8c3aa5529f7d",
+                "url": "https://github.com/symfony/Routing/zipball/6392f89975bd2b3ef4facbb5ef48143d035a9ff2",
+                "reference": "6392f89975bd2b3ef4facbb5ef48143d035a9ff2",
                 "shasum": ""
             },
             "require": {
@@ -1058,7 +1058,7 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1349714394",
+            "time": "1350203264",
             "type": "library",
             "extra": {
                 "branch-alias": {

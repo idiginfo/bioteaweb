@@ -29,6 +29,7 @@ class Document
      **/    
     private $annotations;
 
+
     // --------------------------------------------------------------
 
     /**
@@ -57,7 +58,7 @@ class Document
     // --------------------------------------------------------------
 
     /** @PostLoad */
-    public function doStuffOnPostLoad()
+    public function unserializeAnnotationPaths()
     {
         $this->rdfAnnotationPaths = json_decode($this->rdfAnnotationPaths, true);
     }   
@@ -112,6 +113,18 @@ class Document
         foreach($annotations as $annot) {
             $this->addAnnotation($annot);
         }
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get annotations
+     *
+     * @return array  Array of Annotation objects
+     */
+    public function getAnnotations()
+    {
+        return $this->annotations;
     }
 
     // --------------------------------------------------------------

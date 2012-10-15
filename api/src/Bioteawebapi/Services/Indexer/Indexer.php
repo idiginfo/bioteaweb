@@ -1,13 +1,14 @@
 <?php
 
-namespace Bioteawebapi\Services;
+namespace Bioteawebapi\Services\Indexer;
 use Bioteawebapi\Exceptions\MySQLClientException;
 use Bioteawebapi\Entities\Document;
-use Doctrine\ORM\EntityManager;
 use TaskTracker\Tracker;
 
 /**
  * Indexer indexes RDF documents into MySQL and optionally SOLR
+ *
+ * This is a trackable class (able to be used by the TaskTracker)
  */
 class Indexer
 {
@@ -21,9 +22,9 @@ class Indexer
     private $builder;
 
     /**
-     * @var \Doctrine\ORM\EntityManager
+     * @var IndexPersister
      */
-    private $em;
+    private $persister;
 
     /**
      * @var SolrClient
@@ -58,10 +59,10 @@ class Indexer
      * @param IndexBuilder   $builder  Biotea Doc Builder
      * @param EntityManager  $em       Doctrine ORM Entity Manager
      */
-    public function __construct(IndexBuilder $builder, EntityManager $em)
+    public function __construct(IndexBuilder $builder, IndexPersister $persister)
     {
-        $this->builder  = $builder;
-        $this->em       = $em;
+        $this->builder   = $builder;
+        $this->persister = $persister;
     }
 
     // --------------------------------------------------------------
@@ -152,7 +153,10 @@ class Indexer
         $this->numFailed  = 0;
         $this->numSkipped = 0;
 
+        //Get a traverser to traverse the directory of items
         $traverser = $this->builder->getTraverser($path);
+
+        //Get document graphs until we run out of files
         while ($doc = $traverser->getNextDocument()) {
 
             //If passed limit, get out
@@ -185,52 +189,23 @@ class Indexer
     /**
      * Indexes a single document object
      *
-     * @TODO: Also deal with SOLR exceptions?
-     *
      * @param Entities\Document $document
+     * @param Array $insertions
      * @return int  Skipped, Indexed, or Failed
      */
     public function processItem(Document $document)
     {
-        try {
-            
-            //Persist the document
-            $numIndexed = $this->persistItem($document);
+        //MySQL Index
+        $mySQLResult = $this->persister->persistDocument($document);
 
-            //@TODO: ALSO INDEX w/SOLR HERE!
+        //SOLR Index for Terms - Optional
+        $solrResult = ($this->solr)
+            ? $this->solr->persistDocument($document)
+            : false;
 
-            //Return indexed
-            return ($numIndexed > 0) ? self::INDEXED : self::SKIPPED;
-        }
-        catch (MySQLClientException $e) {
-            return self::FAILED;
-        }
+        //Return indexed
+        return ($mySQLResult OR $solrResult) ? self::INDEXED : self::SKIPPED;
     }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Persist a document object
-     *
-     * @param Entities\Document $document
-     * @return int  Number of INSERTs performed
-     */
-    protected function persistItem(Document $document)
-    {
-        //Start with the vocabularies and work backards.
-        $document->persist($this->em);
-
-        //Determine number of changes
-        $uow = $this->em->getUnitOfWork();
-        $num = count($uow->getScheduledEntityInsertions());
-        
-        //Do it
-        $this->em->flush();
-
-        //Return the number of insertions
-        return $num;
-    }
-
 }
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bioteawebapi\Services;
+namespace Bioteawebapi\Services\Indexer;
 use Bioteawebapi\Entities\Document;
 use Bioteawebapi\Entities\Annotation;
 use Bioteawebapi\Entities\Term;
@@ -13,7 +13,7 @@ use Doctrine\ORM\EntityManager;
 use SimpleXMLElement;
 
 /**
- * Document builds Indexable Entities from RDF files
+ * Document builds non-database aware Indexable Entities from RDF files
  *
  * This class can also traverse folders and build from RDF files with a
  * specific path
@@ -40,11 +40,6 @@ class IndexBuilder
      */
     private $traverserBasePath;
 
-    /**
-     * @var Doctrine\ORM\EntityManager
-     */
-    private $em;
-
     // --------------------------------------------------------------
 
     /**
@@ -56,7 +51,7 @@ class IndexBuilder
      * @param Doctrine\ORM\EntityManager $em
      * @param array $vocabularies
      */
-    public function __construct(EntityManager $em, Array $vocabularies = array())
+    public function __construct(Array $vocabularies = array())
     {
         //Set EntityManager and Unit of Work Object
         $this->em  = $em;
@@ -163,14 +158,6 @@ class IndexBuilder
         $relDirPath  = ltrim(dirname($relativeFilePath), '.');
         $filename    = basename($fullPath, '.rdf');
 
-        //Does the document already exist?
-        $doc = $this->em->getRepository('Bioteawebapi\Entities\Document')->findOneBy(array('rdfFilePath' => $relativeFilePath));
-
-        //If so, return it
-        if ($doc) {
-            return $doc;
-        }
-
         //Build object
         $documentObj = new Document($relativeFilePath);
 
@@ -197,6 +184,7 @@ class IndexBuilder
             }
         }
 
+        //Add a little information to new documentObj
         return $documentObj;
     }
 
@@ -270,12 +258,8 @@ class IndexBuilder
      */
     protected function buildTopicObj($topicUri)
     {
-        //See if the topic already exists in the database, or create a new one
-        $topicObj = $this->em->getRepository('Bioteawebapi\Entities\Topic')->findOneBy(array('uri' => $topicUri));
-
-        if ( ! $topicObj) {
-            $topicObj = new Topic($topicUri);
-        }
+        //Build the new topicObj
+        $topicObj = new Topic($topicUri);
 
         //If vocbaulary not already set, attempt to set it
         if ( ! $topicObj->getVocabulary()) {
@@ -309,8 +293,8 @@ class IndexBuilder
      */
     protected function buildTermObj($term)
     {
-        $termObj = $this->em->getRepository('Bioteawebapi\Entities\Term')->findOneBy(array('term' => $term));        
-        return $termObj ?: new Term($term);
+        $termObj = new Term($term);
+        return $termObj;
     }
 
     // --------------------------------------------------------------
@@ -335,11 +319,8 @@ class IndexBuilder
                 strlen($uri) > strlen($vocabUri)
                 && strcasecmp(substr($uri, 0, strlen($vocabUri)), $vocabUri) == 0
             ) {       
-                //One exists in the database?
-                $vocabObj = $this->em->getRepository('Bioteawebapi\Entities\Vocabulary')->findOneBy(array('uri' => $uri));
-
                 //Build the vocabulary object
-                return $vocabObj ?: new Vocabulary($vocabUri, $shortName); 
+                return new Vocabulary($vocabUri, $shortName);
             }
         }
 

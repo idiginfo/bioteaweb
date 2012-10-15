@@ -118,19 +118,13 @@ $app->register(new Nutwerk\Provider\DoctrineORMServiceProvider(), array(
     ))
 ));
 
-//MySQL Client for Docs -- @TODO: Remove when ORM is working!
-$app['mysql_client'] = $app->share(function($app) { 
-    return new MySQLClient($app['db']);
-});
-
-//Doc Builder
-$app['builder'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\IndexBuilder($app['db.orm.em'], $app['config']->vocabularies);
-});
-
 //Doc Indexer
 $app['indexer'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\Indexer($app['builder'], $app['db.orm.em']);
+
+    $builder   = new Bioteawebapi\Services\Indexer\IndexBuilder($app['config']->vocabularies);
+    $persister = new Bioteawebapi\Services\Indexer\IndexPersister($app['db.orm.em']);
+
+    return new Bioteawebapi\Services\Indexer\Indexer($builder, $persister);
 });
 
 // ------------------------------------------------------------------

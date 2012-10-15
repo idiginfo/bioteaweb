@@ -9,8 +9,7 @@ use Doctrine\ORM\EntityManager;
  * 
  * @Entity
  * @Table(uniqueConstraints={
- *   @UniqueConstraint(name="uri", columns={"uri"}),
- *   @UniqueConstraint(name="shortName", columns={"shortName"})
+ *   @UniqueConstraint(name="uri", columns={"uri"})
  * })
  */
 class Topic
@@ -30,7 +29,7 @@ class Topic
     private $vocabulary;
 
     /**
-     * @ManyToMany(targetEntity="Term", inversedBy="topics")
+     * @ManyToMany(targetEntity="Term", mappedBy="topics")
      * @JoinTable(name="JoinTermsTopics")
      **/
     private $terms;

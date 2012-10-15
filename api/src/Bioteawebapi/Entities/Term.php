@@ -21,7 +21,7 @@ class Term
     protected $term;
 
     /**
-     * @ManyToMany(targetEntity="Topic", mappedBy="terms")
+     * @ManyToMany(targetEntity="Topic", inversedBy="terms")
      **/
     private $topics;
 
@@ -44,7 +44,7 @@ class Term
         $this->topics = new ArrayCollection();
 
         //Set the term
-        $this->term = $term;
+        $this->term = strtolower($term);
 
         //Set the topics
         foreach($topics as $topic) {
