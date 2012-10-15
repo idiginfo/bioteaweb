@@ -56,18 +56,6 @@ class Vocabulary
     // --------------------------------------------------------------
 
     /**
-     * Persist this item to the database
-     *
-     * @param Doctrine\ORM\EntityManager $em
-     */
-    public function persist(EntityManager $em)
-    {
-        return $em->persist($this);
-    }
-
-    // --------------------------------------------------------------
-
-    /**
      * @return string
      */
     public function getUri()

@@ -48,22 +48,6 @@ class Document
 
     // --------------------------------------------------------------
 
-    /**
-     * Persist this item to the database
-     *
-     * @param Doctrine\ORM\EntityManager $em
-     */
-    public function persist(EntityManager $em)
-    {
-        foreach($this->annotations as $annot) {
-            $annot->persist($em);
-        }
-
-        $em->persist($this);
-    }
-
-    // --------------------------------------------------------------
-
     /** @PrePersist */
     public function serializeAnnotationPaths()
     {

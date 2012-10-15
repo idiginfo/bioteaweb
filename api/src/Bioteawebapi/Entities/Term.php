@@ -61,22 +61,6 @@ class Term
 
     // --------------------------------------------------------------
 
-    /**
-     * Persist this item to the database
-     *
-     * @param Doctrine\ORM\EntityManager $em
-     */
-    public function persist(EntityManager $em)
-    {
-        foreach($this->topics as $topic) {
-            $topic->persist($em);
-        }
-
-        $em->persist($this);
-    }
-
-    // --------------------------------------------------------------
-
     public function getTerm()
     {
         return $this->term;

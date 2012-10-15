@@ -43,19 +43,6 @@ class Annotation
 
     // --------------------------------------------------------------
 
-    /**
-     * Persist this item to the database
-     *
-     * @param Doctrine\ORM\EntityManager $em
-     */
-    public function persist(EntityManager $em)
-    {
-        $this->term->persist($em);
-        $em->persist($this);
-    }
-
-    // --------------------------------------------------------------
-
     public function getTerm()
     {
         return $this->term;

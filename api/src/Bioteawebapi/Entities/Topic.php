@@ -54,27 +54,10 @@ class Topic
 
     // --------------------------------------------------------------
 
-    /**
-     * Persist this item to the database
-     *
-     * @param Doctrine\ORM\EntityManager $em
-     */
-    public function persist(EntityManager $em)
-    {
-        if ($this->vocabulary instanceOf Vocabulary) {
-            $this->vocabulary->persist($em);
-        }
-
-        $em->persist($this);
-    }
-
-    // --------------------------------------------------------------
-
     public function getUri()
     {
         return $this->uri;
     }
-
 
     // --------------------------------------------------------------
 
