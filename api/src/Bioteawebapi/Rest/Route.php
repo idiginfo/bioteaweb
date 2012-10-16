@@ -40,6 +40,8 @@ class Route
         if (count($diff) > 0) {
             throw new \Exception("Invalid methods configured in Controller: " . implode(', ', $diff));
         }
+
+        $this->description = $description;
     }
 
     // --------------------------------------------------------------

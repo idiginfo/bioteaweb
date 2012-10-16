@@ -3,6 +3,7 @@
 namespace Bioteawebapi\Rest;
 use Silex\Application as SilexApp;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Controller class handles negotiation, self describing, etc
@@ -39,7 +40,7 @@ abstract class Controller
     protected $app;
 
     /**
-     * @var string  The negotiated format
+     * @var string  The negotiated format Mime-Type
      */
     protected $format;
 
@@ -102,7 +103,21 @@ abstract class Controller
         //Check the parameters and the formats
         $this->check();
 
+        //Override the format
+        $format = $this->format;
+        $this->app->after(function (Request $request, Response $response) use ($format) {
+            $response->headers->set('Content-Type', $format);
+        });
+
+        //Execute
         return call_user_func(array($this, 'execute'));
+    }
+
+    // --------------------------------------------------------------
+
+    public function getFormat()
+    {
+        return $this->format;
     }
 
     // --------------------------------------------------------------
