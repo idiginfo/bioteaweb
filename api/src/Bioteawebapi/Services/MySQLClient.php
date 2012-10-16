@@ -84,7 +84,7 @@ class MySQLClient
     public function getTerms($prefix = null, $offset = 0, $limit = 0)
     {
         if ($prefix) {
-            $qb = $em->createQueryBuilder();
+            $qb = $this->em->createQueryBuilder();
             $where = $qb->expr()->like('e.term', $qb->expr()->literal($prefix . '%'));
         }
         else {
@@ -179,7 +179,7 @@ class MySQLClient
 
         //Return query
         $query = $qb->getQuery();
-        return ($this->countOnly) ? $query->getSingleScalarResult() : $query->getArrayResult();
+        return ($this->countOnly) ? $query->getSingleScalarResult() : $query->getResult();
     }
 
 }

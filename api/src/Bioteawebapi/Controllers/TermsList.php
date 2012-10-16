@@ -1,74 +1,92 @@
 <?php
 
 namespace Bioteawebapi\Controllers;
-use Bioteawebapi\Rest\Controller;
-use Bioteawebapi\Rest\Format;
-use Bioteawebapi\Rest\Route;
 use Bioteawebapi\Rest\Parameter;
-use Bioteawebapi\Views\PaginatedList; //  - Can be abstracted
-use Doctrine\ORM\EntityManager; // - Can be abstracted
 
 /**
  * Terms list controller
  */
-class TermsList extends Controller
+class TermsList extends Abstracts\ListController
 {
-    /**
-     * @var int  Hardcoded items per page - - Can be abstracted
-     */
-    private $itemsPerPage = 100;
-    
-    // --------------------------------------------------------------
-
+    /** @inherit */
     protected function configure()
     {
-        $this->add(new Route('/terms'));
-        $this->add(new Format('text/html', 'html', "HTML page showing information about the API"));
-        $this->add(new Format('application/json', 'json', "JSON document containing information about the API"));
-        $this->add(new Parameter('page', '/^[\d]+$/', "Which page to retrieve for records that span multiple pages"));
+        parent::configure();
+        $this->add(new Parameter('prefix', '/^[\p{L}\d \-_]+$/i', "An optional prefix to limit query results"));
+        $this->add(new Parameter('topics', array(0, 1), "An optional prefix to include topic information about each term"));
     }
 
     // --------------------------------------------------------------
 
     /** @inherit */
-    protected function execute()
+    protected function assignRoutes()
     {
-        //Call to itemCount - Can be abstracted
-        $termCount = $this->getItemCount();
-
-        $page   = $this->getParameter('page') ?: 1;
-        $offset = ($page == 1) ? 0 : ($page - 1) * $this->itemsPerPage;
-        $limit  = $this->itemsPerPage;
-
-        //Call to getItems - Can be asbstracted
-        $items = $this->getItems($offset, $limit);
-
-        //Setup output view
-        $output = new PaginatedList($termCount, $this->itemsPerPage);
-        $output->setItems($items);
-        $output->setOffset($offset);
-
-        //Output it!
-        switch($this->format) {
-            case 'text/html':
-                return $output->toHtml();
-            case 'application/json':
-                return $output->toJson();
-        }
+        return array('/terms' => "Get a list of terms");
     }
 
     // --------------------------------------------------------------
 
-    protected function getItemCount($prefix = null)
+    /** @inherit */
+    protected function assignJsonDesc()
     {
+        return "List terms in JSON format";
+    }
+
+    // --------------------------------------------------------------
+
+    /** @inherit */
+    protected function assignHtmlDesc()
+    {
+        return "List terms in HTML format";
+    }
+
+    // --------------------------------------------------------------
+
+    /** @inherit */
+    protected function getItemCount()
+    {
+        $prefix = strtolower($this->getParameter('prefix'));
         return $this->app['dbclient']->count('getTerms', $prefix);
     }
 
     // --------------------------------------------------------------
 
-    protected function getItems($offset, $limit, $prefix = null)
+    /** @inherit */
+    protected function getItems($offset, $limit)
     {
+        $prefix = strtolower($this->getParameter('prefix'));
         return $this->app['dbclient']->getTerms($prefix, $offset, $limit);
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @inherit
+     */
+    protected function prepareResults(Array $items)
+    {
+        $outItems = array();
+
+        $includeTopics = (boolean) $this->getParameter('topics');
+
+        foreach ($items as $termObj) {
+            $outArr = array('term' => $termObj->getTerm());
+
+            if ($includeTopics) {
+
+                foreach($termObj->getTopics() as $topic) {
+                    $outArr['topics'][] = array(
+                        'uri' => $topic->getUri(),
+                        'shortName' => $topic->getShortName()
+                    );
+                }
+            }
+
+
+            $outItems[] = $outArr;
+        }
+
+        return $outItems;
     }
 }
 

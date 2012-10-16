@@ -19,7 +19,7 @@ class Index extends Command
     protected function configure()
     {
         $this->setName('index')->setDescription('Index documents into MySQL (and SOLR, if app is configuerd to do so)');
-        $this->addArgument('path', InputArgument::REQUIRED, 'Folder path to index');
+        $this->addArgument('path', InputArgument::OPTIONAL, 'Folder path to index. If not specified, path in config is used');
         $this->addOption('quiet', 'q', InputOption::VALUE_NONE, 'Quiet mode');
         $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed documents (excluding skipped)');
     }
@@ -29,7 +29,14 @@ class Index extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $limit = (int) $input->getOption('limit') ?: self::NO_LIMIT;
-        $path  = $input->getArgument('path');
+
+        //Get the path if it is specified
+        if ($input->getArgument('path')) {
+            $path  = $input->getArgument('path');
+        }
+        else {
+            $path = $this->app['config.rdfpath'];
+        }
 
         if (is_readable($path)) {
             $path = realpath($path);
