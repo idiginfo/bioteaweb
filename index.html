@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>bioteà - biomedical annotation</title>
+	<meta name="description" content="">
+	<meta name="author" content="iDigInfo at Florida State University">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+	
+	<script type="text/javascript">
+    /*<![CDATA[*/
+	var last_format = 1;
+	function format_select(query_obg)
+	{
+		var query = query_obg.value; 
+		var format = query_obg.form.format;
+
+		if ((query.match(/\bconstruct\b/i) || query.match(/\bdescribe\b/i)) && last_format == 1) {
+			for(var i = format.options.length; i > 0; i--)
+				format.options[i] = null;
+			format.options[1] = new Option('N3/Turtle','text/rdf+n3');
+			format.options[2] = new Option('RDF/JSON','application/rdf+json');
+			format.options[3] = new Option('RDF/XML','application/rdf+xml');
+			format.options[4] = new Option('N-Triples','text/plain');
+			format.options[5] = new Option('XHTML+RDFa','application/xhtml+xml');
+			format.options[6] = new Option('ATOM+XML','application/atom+xml');
+			format.options[7] = new Option('ODATA/JSON','application/odata+json');
+			format.options[8] = new Option('JSON-LD','application/x-json+ld');
+			format.options[9] = new Option('HTML+Microdata','text/html');
+			format.options[10] = new Option('Microdata/JSON','application/microdata+json');
+			format.options[11] = new Option('CSV','text/csv');
+			format.selectedIndex = 1;
+			last_format = 2;
+		}
+
+		if (!(query.match(/\bconstruct\b/i) || query.match(/\bdescribe\b/i)) && last_format == 2) {
+			for(var i = format.options.length; i > 0; i--)
+				format.options[i] = null;
+			format.options[1] = new Option('HTML','text/html');
+			format.options[2] = new Option('Spreadsheet','application/vnd.ms-excel');
+			format.options[3] = new Option('XML','application/sparql-results+xml');
+			format.options[4] = new Option('JSON','application/sparql-results+json');
+			format.options[5] = new Option('Javascript','application/javascript');
+			format.options[6] = new Option('N3/Turtle','text/rdf+n3');
+			format.options[7] = new Option('RDF/XML','application/rdf+xml');
+			format.options[8] = new Option('N-Triples','text/plain');
+			format.options[9] = new Option('CSV','text/csv');
+			format.selectedIndex = 1;
+			last_format = 1;
+		}
+	}
+
+function format_change(e)
+{
+var format = e.value;
+var cxml = document.getElementById("cxml");
+if (!cxml) return;
+if ((format.match (/\bCXML\b/i)))
+{
+cxml.style.display="block";
+} else {
+cxml.style.display="none";
+}
+}
+function savedav_change(e)
+{
+var savefs = document.getElementById("savefs");
+if (!savefs) return;
+if (e.checked)
+{
+savefs.style.display = "block";
+}
+else
+{
+savefs.style.display = "none";
+}
+}
+function sparql_endpoint_init()
+{
+var cxml = document.getElementById("cxml");
+if (cxml) cxml.style.display="none";
+var savefs = document.getElementById("savefs");
+if (savefs) savefs.style.display="none";
+}
+    /*]]>*/
+    </script>
+    
+
+</head>
+<body onload="sparql_endpoint_init()">
+
+
+
+	<div id="header">
+	<div class="container">
+		<div class="sixteen columns">
+		<ul>
+			<li><a class="first" href="index.html">Run a Query</a></li>
+			<li><a class="second" href="mirror.php">Create a Mirror</a></li>
+			<li><a class="third" href="graph_loading.php">Load Graphs</a></li>
+			<li><a class="first" href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+		<div class="two-thirds column space">&nbsp;</div>
+		<div class="one-third column logo">
+		<a href="/"><img src="images/biotea_logo.png" alt="bioteà" border="0" /></a>
+		</div>
+	</div>
+	</div>
+
+	<div class="container main">
+		<div class="two-thirds column">
+			<h3>SPARQL Query Editor</h3>
+			<form action="http://biotea.idiginfo.org/sparql" method="get">
+	<fieldset>
+		<label for="default-graph-uri">Default Data Set Name (Graph IRI)</label>
+		<input type="text" name="default-graph-uri" id="default-graph-uri" value="" />
+		<label for="query">Query Text</label>
+		<textarea rows="6" name="query" id="query" onchange="format_select(this)" onkeyup="format_select(this)">select distinct ?Concept where {[] a ?Concept} LIMIT 100</textarea>
+		<span class="info"><em>(Security restrictions of this server do not allow you to retrieve remote RDF data, see <a href="/sparql?help=enable_sponge">details</a>.)</em></span>
+		<label for="format" class="n">Results Format</label>
+		<select name="format" id="format" onchange="format_change(this)">
+<option value="auto" >Auto</option>
+<option value="text/html" selected="selected">HTML</option>
+<option value="application/vnd.ms-excel" >Spreadsheet</option>
+<option value="application/sparql-results+xml" >XML</option>
+<option value="application/sparql-results+json" >JSON</option>
+<option value="application/javascript" >Javascript</option>
+<option value="text/plain" >NTriples</option>
+<option value="application/rdf+xml" >RDF/XML</option>
+			    <option value="text/csv">CSV</option>
+		</select>
+		<label for="timeout" class="n">Execution timeout</label>
+		<input name="timeout" id="timeout" type="text" value="0" /> milliseconds
+		<span class="info"><em>(values less than 1000 are ignored)</em></span>
+		<fieldset id="options">
+		<input name="debug" id="debug" type="checkbox" checked="checked"/>
+		<label for="debug" class="ckb">Strict checking of void variables</label>
+		</fieldset>
+		<span class="info"><em>(The result can only be sent back to browser, not saved on the server, see <a href="/sparql?help=enable_det">details</a>)</em></span>
+		<br /><input type="submit" value="Run Query"/>
+		<input type="reset" value="Reset"/>
+	</fieldset>
+	</form>
+	
+			</div>
+		<div class="one-third column">
+			<h3 class="about">About biote&agrave;</h3>
+			<p>The Web has succeeded as a dissemination platform for scientific and non-scientific papers, news, and communication in general. However, most of that information remains locked up in discrete documents, which are poorly interconnected to one another and to the Web itself. The connectivity tissue provided by RDF technology and the Social Web have barely made an impact on scientific communication. </p>
+
+			<p>Our RDF model makes extensive reuse of existing ontologies and semantic enrichment services. We expose the model over our SPARQL endpoint, which you can query from using the tools on this page.</p>
+
+<!--
+<div id="download">
+	<a href="docs/rdf-pubmedcentral.pdf" class="pdf">RDFising PubMed Central 
+	<br /><br /><em>Alexander Garcia, Leyla Jael Garcia,<br />Casey McLaughlin and Stephen Flager</em></a>
+</div>
+-->
+
+
+
+			<p>In our upcoming paper, we present our approach to scholarly communication; it entails understanding of the research paper as an interface to the web of data.</p>
+		</div>
+
+	</div><!-- container -->
+
+	<div id="footer">
+	<div class="container">
+		<a href="https://www.idiginfo.org" target="_blank"><img src="images/idiginfo.png" alt="iDigInfo" border="0" /></a>
+	</div>
+	</div>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
