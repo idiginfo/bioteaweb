@@ -5,15 +5,19 @@ use Bioteawebapi\Rest\Controller;
 use Bioteawebapi\Rest\Format;
 use Bioteawebapi\Rest\Route;
 use Bioteawebapi\Rest\Parameter;
-use Bioteawebapi\Views\PaginatedList;
+use Bioteawebapi\Views\PaginatedList; //  - Can be abstracted
+use Doctrine\ORM\EntityManager; // - Can be abstracted
 
 /**
  * Terms list controller
  */
 class TermsList extends Controller
 {
+    /**
+     * @var int  Hardcoded items per page - - Can be abstracted
+     */
     private $itemsPerPage = 100;
-
+    
     // --------------------------------------------------------------
 
     protected function configure()
@@ -29,15 +33,15 @@ class TermsList extends Controller
     /** @inherit */
     protected function execute()
     {
-        //@TODO: FIX THIS! Abstract it or something - It's terrible code
-        $termCount = (int) $this->app['db']->query("SELECT count(`id`) FROM `terms`")->fetchColumn(0);
-        
+        //Call to itemCount - Can be abstracted
+        $termCount = $this->getItemCount();
+
         $page   = $this->getParameter('page') ?: 1;
         $offset = ($page == 1) ? 0 : ($page - 1) * $this->itemsPerPage;
         $limit  = $this->itemsPerPage;
 
-        //@TODO: FIX THIS! Abstract it or something - It's terrible code
-        $items  = $this->app['db']->query("SELECT * FROM `terms` LIMIT $limit OFFSET $offset")->fetchAll();
+        //Call to getItems - Can be asbstracted
+        $items = $this->getItems($offset, $limit);
 
         //Setup output view
         $output = new PaginatedList($termCount, $this->itemsPerPage);
@@ -51,6 +55,20 @@ class TermsList extends Controller
             case 'application/json':
                 return $output->toJson();
         }
+    }
+
+    // --------------------------------------------------------------
+
+    protected function getItemCount($prefix = null)
+    {
+        return $this->app['dbclient']->count('getTerms', $prefix);
+    }
+
+    // --------------------------------------------------------------
+
+    protected function getItems($offset, $limit, $prefix = null)
+    {
+        return $this->app['dbclient']->getTerms($prefix, $offset, $limit);
     }
 }
 

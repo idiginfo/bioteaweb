@@ -6,12 +6,15 @@ use Bioteawebapi\Rest\Format;
 use Bioteawebapi\Rest\Route;
 use Bioteawebapi\Rest\Parameter;
 use Bioteawebapi\Views\BasicView;
+use Doctrine\ORM\EntityManager;
 
 /**
  * Front Controller
  */
 class Front extends Controller
 {
+    // --------------------------------------------------------------
+   
     protected function configure()
     {
         $this->add(new Route('/', null, "Get information about the API"));

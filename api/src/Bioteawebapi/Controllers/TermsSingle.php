@@ -6,12 +6,20 @@ use Bioteawebapi\Rest\Format;
 use Bioteawebapi\Rest\Route;
 use Bioteawebapi\Rest\Parameter;
 use Bioteawebapi\Views\PaginatedList;
+use Doctrine\ORM\EntityManager;
 
 /**
  * Single term info Controller
  */
 class TermsSingle extends Controller
 {
+    /**
+     * @var Doctrine\ORM\EntityManager
+     */
+    private $em;
+
+    // --------------------------------------------------------------
+
     protected function configure()
     {
         $this->add(new Route('/terms/{term}'));
@@ -25,12 +33,6 @@ class TermsSingle extends Controller
     {
         //Get information about a specific term
         $term = urldecode($this->getPathSegment(2));
-
-
-        //Do a DB Query -- @TODO: Abstract this out!
-        //TRY 'cancer'
-        $result = $this->app['db']->executeQuery("SELECT * FROM terms WHERE term = '$term';");
-        var_dump($result->fetch());
     }
 }
 
