@@ -64,6 +64,18 @@ $app = new Application();
 //Configuration
 $app['config'] = new Configula\Config(BASEPATH . '/config/');
 
+//RDFPath
+$app['config.rdfpath'] = $app->share(function($app) {
+    $path = $app['config']->rdfpath;
+
+    //Fix the path
+    if (substr($path, 0, 2) == './') {
+      $path = BASEPATH . substr($path, 1);
+    }
+
+    return $path;
+});
+
 //Monolog Logger (more complex than the default logger)
 $app['monolog'] = $app->share(function($app) {
     

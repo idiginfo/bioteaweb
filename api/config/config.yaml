@@ -8,6 +8,9 @@
 #
 # -------------------------------------------------------------------
 
+# Path to data (./ for relative to basepath -- one up from src/)
+rdfpath: ./tests/fixtures/rdfSampleFolder
+
 # SOLR Cores
 solr:
     terms:
