@@ -98,21 +98,45 @@ class MySQLClient
 
     public function getTopics($prefix = null, $offset = 0, $limit = 0)
     {
+        if ($prefix) {
+            $qb = $this->em->createQueryBuilder();
+            $where = $qb->expr()->like('e.uri', $qb->expr()->literal($prefix . '%'));
+        }
+        else {
+            $where = null;
+        }
 
+        return $this->buildGetQuery("Bioteawebapi\Entities\Topic", $where, $offset, $limit);
     }
 
     // --------------------------------------------------------------
 
     public function getVocabularies($prefix = null, $offset = 0, $limit = 0)
     {
+        if ($prefix) {
+            $qb = $this->em->createQueryBuilder();
+            $where = $qb->expr()->like('e.uri', $qb->expr()->literal($prefix . '%'));
+        }
+        else {
+            $where = null;
+        }
 
+        return $this->buildGetQuery("Bioteawebapi\Entities\Vocabulary", $where, $offset, $limit, 'shortName');
     }
 
     // --------------------------------------------------------------
 
     public function getDocuments($path = null, $offset = 0, $limit = 0)
     {
+        if ($path) {
+            $qb = $this->em->createQueryBuilder();
+            $where = $qb->expr()->eq('e.rdfFilePath', $qb->expr()->literal($path));
+        }
+        else {
+            $where = null;
+        }
 
+        return $this->buildGetQuery("Bioteawebapi\Entities\Document", $where, $offset, $limit, 'rdfFilePath');
     }
 
     // --------------------------------------------------------------
