@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Rest;
 
 /**
@@ -7,10 +19,19 @@ namespace Bioteawebapi\Rest;
  */
 class Route
 {
+    /**
+     * @var string  Route (usually begins with "/")
+     */
     private $route;
 
+    /**
+     * @var array  (get, post, put, delete) or any subset thereof
+     */
     private $methods;
 
+    /**
+     * @var string  A description of this route
+     */
     private $description;
 
     // --------------------------------------------------------------
@@ -58,6 +79,9 @@ class Route
 
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
     public function getRoute()
     {
         return $this->route;

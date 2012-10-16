@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Services\Indexer;
 use Doctrine\ORM\EntityManager;
 use Bioteawebapi\Entities\Document;
@@ -17,7 +29,9 @@ use ReflectionObject;
  * it in a way where the relationships aren't cascaded, but instead handled
  * manually.  This too causes problems when I try to do it (2012-oct 16 Doctrine 2.3dev),
  * because the ORM attempts to insert multiple joins for the same records on
- * many-to-many bidirectional relationships
+ * many-to-many bidirectional relationships.
+ *
+ * In the meantime, this works pretty well, but is tightly coupled with Entities
  */
 class IndexPersister
 {

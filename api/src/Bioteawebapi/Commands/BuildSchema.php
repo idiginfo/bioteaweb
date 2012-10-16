@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Commands;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -10,7 +22,7 @@ use Bioteawebapi\Services\MySQLClient;
 /**
  * Build MySQL Schema for MySQL indicies
  *
- * A very simple class to ensure that MySQL schema is correct
+ * A very simple class to update the MySQL Schema
  */
 class BuildSchema extends Command
 {

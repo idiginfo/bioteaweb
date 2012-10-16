@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Controllers;
 use Bioteawebapi\Rest\Controller;
 use Bioteawebapi\Rest\Format;
@@ -14,6 +26,7 @@ class Front extends Controller
 {
     // --------------------------------------------------------------
    
+    /** @inherit */
     protected function configure()
     {
         $this->add(new Route('/', null, "Get information about the API"));
@@ -24,6 +37,9 @@ class Front extends Controller
 
     // --------------------------------------------------------------
 
+    /**
+     * Execute does some basic routing for simple things
+     */
     protected function execute()
     {
         switch($this->getPathSegment(1)) {
@@ -50,6 +66,11 @@ class Front extends Controller
 
     // --------------------------------------------------------------
 
+    /**
+     * Get statistics
+     *
+     * Generates a list of statistics (for now only counts)
+     */
     protected function getStats()
     {   
         //Get stats

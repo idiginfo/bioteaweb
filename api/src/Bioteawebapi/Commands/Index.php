@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Commands;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -10,7 +22,7 @@ use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
 use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 
 /**
- * Runs the indexer against documents and reports output to logs and console
+ * Recursively index RDF file and report output to logs and to the console
  */
 class Index extends Command
 {

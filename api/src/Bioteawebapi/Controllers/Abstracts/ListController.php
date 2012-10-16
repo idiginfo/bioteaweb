@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Controllers\Abstracts;
 use Bioteawebapi\Rest\Controller;
 use Bioteawebapi\Rest\Format;
@@ -7,6 +19,9 @@ use Bioteawebapi\Rest\Route;
 use Bioteawebapi\Rest\Parameter;
 use Bioteawebapi\Views\PaginatedList;
 
+/**
+ * List Controller is for getting lists of entities in various ways
+ */
 abstract class ListController extends Controller
 {
     /**

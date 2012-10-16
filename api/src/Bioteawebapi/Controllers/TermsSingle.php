@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Controllers;
 use Bioteawebapi\Rest\Controller;
 use Bioteawebapi\Rest\Format;
@@ -20,6 +32,7 @@ class TermsSingle extends Controller
 
     // --------------------------------------------------------------
 
+    /** @inherit */
     protected function configure()
     {
         $this->add(new Route('/terms/{term}'));
@@ -29,6 +42,7 @@ class TermsSingle extends Controller
 
     // --------------------------------------------------------------
 
+    /** @inherit */
     protected function execute()
     {
         //Get information about a specific term

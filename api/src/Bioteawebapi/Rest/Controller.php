@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Rest;
 use Silex\Application as SilexApp;
 use Symfony\Component\HttpFoundation\Request;
@@ -48,6 +60,8 @@ abstract class Controller
 
     /**
      * Constructor
+     *
+     * @param Silex\Application $app
      */
     public function __construct(SilexApp $app)
     {
@@ -115,6 +129,11 @@ abstract class Controller
 
     // --------------------------------------------------------------
 
+    /**
+     * Returns negotiated format mime-type
+     *
+     * @return string
+     */
     public function getFormat()
     {
         return $this->format;
@@ -122,6 +141,11 @@ abstract class Controller
 
     // --------------------------------------------------------------
 
+    /**
+     * Return routes associated with this controller
+     *
+     * @return array
+     */
     public function getRoutes()
     {
         return $this->routes;
@@ -130,7 +154,7 @@ abstract class Controller
     // --------------------------------------------------------------
 
     /**
-     * Returns a parameter, if set
+     * Returns a parameter, if configured
      *
      * @param string $parameter
      * @return string
@@ -146,6 +170,12 @@ abstract class Controller
 
     /**
      * Configure method is called when the controller is instantiated
+     *
+     * In sub-classes, we use configure() to run the $this->add() methods:
+     * * $this->add()
+     * * $this->addParameter()
+     * * $this->addFunction()
+     * * $this->addRoute()
      */
     abstract protected function configure();
 
@@ -158,6 +188,12 @@ abstract class Controller
 
     // --------------------------------------------------------------
 
+    /**
+     * Verify what the client sent complies to our settings
+     *
+     * Checks any parameters sent in request for valid values,
+     * and negotiates format
+     */
     protected function check()
     {
         //Get all of the parmeters and check them against known parameters

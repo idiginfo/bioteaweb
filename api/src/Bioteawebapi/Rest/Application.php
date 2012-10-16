@@ -1,9 +1,24 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Rest;
 use Silex\Application as SilexApp;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * Wrapper class for Silex to automate certain RESTful things
+ */
 class Application
 {
     /**
@@ -20,6 +35,11 @@ class Application
 
     // --------------------------------------------------------------
 
+    /**
+     * Constructor
+     *
+     * @param Silex\Application $app
+     */ 
     public function __construct(SilexApp $app)
     {
         $this->silexApp = $app;

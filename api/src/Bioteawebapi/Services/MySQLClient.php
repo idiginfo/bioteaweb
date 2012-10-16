@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Bioteaweb API
+ *
+ * A rest API frontend and indexer for the Biotea RDF project
+ *
+ * @link    http://biotea.idiginfo.org/api
+ * @author  Casey McLaughlin <caseyamcl@gmail.com>
+ * @license Copyright (c) Florida State University - All Rights Reserved
+ */
+
+// ------------------------------------------------------------------
+
 namespace Bioteawebapi\Services;
 use Doctrine\DBAL\Schema\Comparator;
 use Doctrine\ORM\Tools\SchemaTool;
@@ -53,6 +65,9 @@ class MySQLClient
     /**
      * Count results from a query
      *
+     * Wraps around any of the other public "get" methods from this class.
+     * Will return a count of results rather than the actual results themselves.
+     *
      * @param string    The method name to count results for
      * @param array|id  The first parameter you'd normally to send to the method
      * @param int       Offset
@@ -81,6 +96,13 @@ class MySQLClient
 
     // --------------------------------------------------------------
 
+    /**
+     * Get Terms
+     *
+     * @param string $prefix  Optional prefix (generates LIKE="prefix%")
+     * @param int $offset     Optional offset
+     * @param int $limit      Optional limit
+     */
     public function getTerms($prefix = null, $offset = 0, $limit = 0)
     {
         if ($prefix) {
@@ -91,11 +113,18 @@ class MySQLClient
             $where = null;
         }
 
-        return $this->buildGetQuery("Bioteawebapi\Entities\Term", $where, $offset, $limit, 'term');
+        return $this->runQuery("Bioteawebapi\Entities\Term", $where, $offset, $limit, 'term');
     }
 
     // --------------------------------------------------------------
 
+    /**
+     * Get Topics
+     *
+     * @param string $prefix  Optional prefix (generates LIKE="prefix%")
+     * @param int $offset     Optional offset
+     * @param int $limit      Optional limit
+     */
     public function getTopics($prefix = null, $offset = 0, $limit = 0)
     {
         if ($prefix) {
@@ -106,11 +135,18 @@ class MySQLClient
             $where = null;
         }
 
-        return $this->buildGetQuery("Bioteawebapi\Entities\Topic", $where, $offset, $limit);
+        return $this->runQuery("Bioteawebapi\Entities\Topic", $where, $offset, $limit);
     }
 
     // --------------------------------------------------------------
 
+    /**
+     * Get Vocabularies
+     *
+     * @param string $prefix  Optional prefix (generates LIKE="prefix%")
+     * @param int $offset     Optional offset
+     * @param int $limit      Optional limit
+     */
     public function getVocabularies($prefix = null, $offset = 0, $limit = 0)
     {
         if ($prefix) {
@@ -121,11 +157,18 @@ class MySQLClient
             $where = null;
         }
 
-        return $this->buildGetQuery("Bioteawebapi\Entities\Vocabulary", $where, $offset, $limit, 'shortName');
+        return $this->runQuery("Bioteawebapi\Entities\Vocabulary", $where, $offset, $limit, 'shortName');
     }
 
     // --------------------------------------------------------------
 
+    /**
+     * Get Documents
+     *
+     * @param string $path  Optional relative path
+     * @param int $offset   Optional offset
+     * @param int $limit    Optional limit
+     */
     public function getDocuments($path = null, $offset = 0, $limit = 0)
     {
         if ($path) {
@@ -136,7 +179,7 @@ class MySQLClient
             $where = null;
         }
 
-        return $this->buildGetQuery("Bioteawebapi\Entities\Document", $where, $offset, $limit, 'rdfFilePath');
+        return $this->runQuery("Bioteawebapi\Entities\Document", $where, $offset, $limit, 'rdfFilePath');
     }
 
     // --------------------------------------------------------------
@@ -174,7 +217,14 @@ class MySQLClient
 
     // --------------------------------------------------------------
 
-    protected function buildGetQuery($entityName, $where = null, $offset = 0, $limit = 0, $orderBy = 'id')
+    /**
+     * Get Documents
+     *
+     * @param string $path  Optional relative path
+     * @param int $offset   Optional offset
+     * @param int $limit    Optional limit
+     */
+    protected function runQuery($entityName, $where = null, $offset = 0, $limit = 0, $orderBy = 'id')
     {
         //Basic query builder
         $qb = $this->em->createQueryBuilder();
