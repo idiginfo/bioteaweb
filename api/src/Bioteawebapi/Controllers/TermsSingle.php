@@ -2,6 +2,10 @@
 
 namespace Bioteawebapi\Controllers;
 use Bioteawebapi\Rest\Controller;
+use Bioteawebapi\Rest\Format;
+use Bioteawebapi\Rest\Route;
+use Bioteawebapi\Rest\Parameter;
+use Bioteawebapi\Views\PaginatedList;
 
 /**
  * Single term info Controller
@@ -10,9 +14,9 @@ class TermsSingle extends Controller
 {
     protected function configure()
     {
-        $this->addRoute('/terms/{term}');
-        $this->addFormat('text/html', 'html', "Returns information about a single term in HTML");
-        $this->addFormat('application/json', 'json', "Returns information about a single term in JSON");
+        $this->add(new Route('/terms/{term}'));
+        $this->add(new Format('text/html', 'html', "Returns information about a single term in HTML"));
+        $this->add(new Format('application/json', 'json', "Returns information about a single term in JSON"));
     }
 
     // --------------------------------------------------------------

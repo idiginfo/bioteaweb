@@ -71,8 +71,8 @@ abstract class Controller
         $summary['route'] = $this->app['request']->getPathInfo();
 
         //If there is a description...
-        if (isset($this->routes[$summary['route']])) {
-            $summary['description'] = $this->routes[$summary['route']];
+        if ($this->routes[$summary['route']]->getDescription()) {
+            $summary['description'] = $this->routes[$summary['route']]->getDescription();
         }
         else {
             $summary['description'] = 'No Description';
@@ -207,15 +207,27 @@ abstract class Controller
     }
 
     // --------------------------------------------------------------
-
+    
     /**
-     * Set the description
+     * Add a route, parameter, or format
      *
-     * @param string $description
+     * @param Route|Parameter|Format $param
+     * @throws \InvalidArgumentException If invalid $param
      */
-    protected function setDescription($description)
+    protected function add($param)
     {
-        $this->description = $description;
+        if ($param instanceOf Route) {
+            $this->addRoute($param);
+        }
+        elseif ($param instanceOf Format) {
+            $this->addFormat($param);
+        }
+        elseif ($param instanceOf Parameter) {
+            $this->addParameter($param);
+        }
+        else {
+            throw new \InvalidArgumentException("The value sent must be an instance of Route, Parameter, or Format");
+        }
     }
 
     // --------------------------------------------------------------
@@ -223,13 +235,11 @@ abstract class Controller
     /**
      * Set routes that this controller corresponds to
      *
-     * @param string $route
-     * @param array|string|null    Array of methods, or string for single, or null for all
-     * @param string $description  Optional description
+     * @param Route $route
      */
-    protected function addRoute($route, $methods = null, $description = null)
+    protected function addRoute(Route $route)
     {
-        $this->routes[$route] = new Route($route, $methods, $description);
+        $this->routes[$route->getRoute()] = $route;
     }
 
     // --------------------------------------------------------------
@@ -237,17 +247,11 @@ abstract class Controller
     /**
      * Add an acceptable parameter
      *
-     * @param string $name                 Parameter name corresponds to query string key
-     * @param array|string $allowedValues  Can be an array of values or valid REGEX
-     * @param string $description          Optional description
+     * @param Parameter $parameter
      */
-    protected function addParameter($name, $allowedValues, $description = null)
+    protected function addParameter(Parameter $parameter)
     {
-        if ($name == 'format') {
-            throw new \InvalidArgumentException("'format' is a reserved parameter name");
-        }
-
-        $this->acceptableParameters[$name] = new Parameter($name, $allowedValues, $description);
+        $this->acceptableParameters[$parameter->getName()] = $parameter;
     }
 
     // --------------------------------------------------------------
@@ -255,14 +259,11 @@ abstract class Controller
     /**
      * Add an acceptable format
      *
-     * @param array|string $mimeTypes    String for single, array for multiple
-     * @param string       $shortName    Leave null to disallow query string override
-     * @param string       $description  Optional description
+     * @param Format $format
      */
-    protected function addFormat($mimeTypes, $shortName, $description = null)
+    protected function addFormat($format)
     {
-        //Set to array
-        $mimeTypes = (is_array($mimeTypes)) ? $mimeTypes : array($mimeTypes);
+        $mimeTypes = $format->getMimeTypes();
 
         //Check to see if the mimeType isn't already in-use
         $usedMimeTypes = array();
@@ -274,7 +275,7 @@ abstract class Controller
             throw new \Exception("Mime-type conflict.  You cannot assign a single mime type to two formats");
         }
 
-        $this->acceptableFormats[] = new Format($mimeTypes, $shortName, $description);
+        $this->acceptableFormats[] = $format;
     }
 
     // --------------------------------------------------------------

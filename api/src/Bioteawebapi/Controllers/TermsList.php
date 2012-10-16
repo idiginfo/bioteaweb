@@ -2,6 +2,9 @@
 
 namespace Bioteawebapi\Controllers;
 use Bioteawebapi\Rest\Controller;
+use Bioteawebapi\Rest\Format;
+use Bioteawebapi\Rest\Route;
+use Bioteawebapi\Rest\Parameter;
 use Bioteawebapi\Views\PaginatedList;
 
 /**
@@ -15,10 +18,10 @@ class TermsList extends Controller
 
     protected function configure()
     {
-        $this->addRoute('/terms');
-        $this->addFormat('text/html', 'html', "HTML page showing information about the API");
-        $this->addFormat('application/json', 'json', "JSON document containing information about the API");
-        $this->addParameter('page', '/^[\d]+$/', "Which page to retrieve for records that span multiple pages");
+        $this->add(new Route('/terms'));
+        $this->add(new Format('text/html', 'html', "HTML page showing information about the API"));
+        $this->add(new Format('application/json', 'json', "JSON document containing information about the API"));
+        $this->add(new Parameter('page', '/^[\d]+$/', "Which page to retrieve for records that span multiple pages"));
     }
 
     // --------------------------------------------------------------

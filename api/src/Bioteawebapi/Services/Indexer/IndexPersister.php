@@ -12,6 +12,12 @@ use ReflectionObject;
  * the graph without errors all over the place, and because Doctrine
  * doesn't support UPSERT or REPLACE INTO.  Perhaps in D2.3 (final) or 2.4,
  * this functionality will exist, and we can remove this class.
+ *
+ * Another possibility is to use Doctrine to persist the objects, but do
+ * it in a way where the relationships aren't cascaded, but instead handled
+ * manually.  This too causes problems when I try to do it (2012-oct 16 Doctrine 2.3dev),
+ * because the ORM attempts to insert multiple joins for the same records on
+ * many-to-many bidirectional relationships
  */
 class IndexPersister
 {

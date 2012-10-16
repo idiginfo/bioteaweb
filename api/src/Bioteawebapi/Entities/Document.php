@@ -102,13 +102,6 @@ class Document
 
     // --------------------------------------------------------------
 
-    public function __get($val)
-    {
-        return $this->$val;
-    }
-
-    // --------------------------------------------------------------
-
     public function getId()
     {
         return $this->id;

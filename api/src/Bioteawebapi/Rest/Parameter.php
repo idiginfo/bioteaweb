@@ -33,6 +33,10 @@ class Parameter
      */
     public function __construct($name, $allowedValues, $description = null)
     {
+        if ($name == 'format') {
+            throw new \InvalidArgumentException("'format' is a reserved parameter name");
+        }
+        
         $this->name = $name;
         $this->allowedValues = $allowedValues;
         $this->description = $description;
