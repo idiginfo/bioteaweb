@@ -19,7 +19,7 @@ class Annotation
 
     /**
      * @var Term
-     * @ManyToOne(targetEntity="Term", inversedBy="annotations")
+     * @ManyToOne(targetEntity="Term", inversedBy="annotations", cascade={"persist", "merge"})
      **/
     protected $term;
 
@@ -39,13 +39,6 @@ class Annotation
     public function __construct(Term $term)
     {
         $this->term = $term;
-    }
-
-    // --------------------------------------------------------------
-
-    public function __get($val)
-    {
-        return $this->$val;
     }
 
     // --------------------------------------------------------------

@@ -8,7 +8,6 @@ use Doctrine\ORM\EntityManager;
  * Document Entity represents Indexes for a BioteaDocument
  * 
  * @Entity
- * @HasLifecycleCallbacks
  * @Table(uniqueConstraints={
  *   @UniqueConstraint(name="rdfFilePath", columns={"rdfFilePath"})
  * })
@@ -25,7 +24,7 @@ class Document
     protected $rdfAnnotationPaths;
 
     /**
-     * @OneToMany(targetEntity="Annotation", mappedBy="document")
+     * @OneToMany(targetEntity="Annotation", mappedBy="document", cascade={"persist", "merge"})
      **/    
     private $annotations;
 
@@ -49,22 +48,6 @@ class Document
 
     // --------------------------------------------------------------
 
-    /** @PrePersist */
-    public function serializeAnnotationPaths()
-    {
-        $this->rdfAnnotationPaths = json_encode($this->rdfAnnotationPaths);
-    }    
-
-    // --------------------------------------------------------------
-
-    /** @PostLoad */
-    public function unserializeAnnotationPaths()
-    {
-        $this->rdfAnnotationPaths = json_decode($this->rdfAnnotationPaths, true);
-    }   
-
-    // --------------------------------------------------------------
-
     /**
      * Set RDF File Path
      *
@@ -85,8 +68,10 @@ class Document
      */
     public function addAnnotationFilepath($annotationName, $filepath)
     { 
-        assert(is_string($filepath));
-        $this->rdfAnnotationPaths[$annotationName] = $filepath;
+        $apaths = $this->getRDFAnnotationPaths();
+        $apaths[$annotationName] = $filepath;
+
+        $this->rdfAnnotationPaths = json_encode($apaths);
     }
 
     // --------------------------------------------------------------
@@ -179,6 +164,7 @@ class Document
 
     // --------------------------------------------------------------
   
+    /** @return string */
     public function getRDFFilePath()
     {
         return $this->rdfPath;
@@ -189,7 +175,7 @@ class Document
     /** @return array */
     public function getRDFAnnotationPaths()
     {
-       return $this->rdfAnnotationPaths; 
+       return json_decode($this->rdfAnnotationPaths, true) ?: array();
     } 
 }
 

@@ -29,7 +29,7 @@ class Topic
     protected $shortName; 
 
     /**
-     * @ManyToOne(targetEntity="Vocabulary", inversedBy="topics")
+     * @ManyToOne(targetEntity="Vocabulary", inversedBy="topics", cascade={"persist", "merge"})
      **/
     private $vocabulary;
 
@@ -47,13 +47,6 @@ class Topic
 
         $this->uri = $uri;
         $this->setShortName($shortName);
-    }
-
-    // --------------------------------------------------------------
-
-    public function __get($val)
-    {
-        return $this->$val;
     }
     
     // --------------------------------------------------------------

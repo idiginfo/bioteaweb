@@ -48,13 +48,6 @@ class Vocabulary
 
     // --------------------------------------------------------------
 
-    public function __get($val)
-    {
-        return $this->$val;
-    }
-    
-    // --------------------------------------------------------------
-
     public function __toString()
     {
         return $this->getUri();

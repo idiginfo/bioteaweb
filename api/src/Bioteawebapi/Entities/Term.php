@@ -21,7 +21,7 @@ class Term
     protected $term;
 
     /**
-     * @ManyToMany(targetEntity="Topic", inversedBy="terms")
+     * @ManyToMany(targetEntity="Topic", inversedBy="terms", cascade={"persist", "merge"})
      **/
     private $topics;
 
@@ -52,13 +52,6 @@ class Term
         }
     }
 
-    // --------------------------------------------------------------
-
-    public function __get($val)
-    {
-        return $this->$val;
-    }
-    
     // --------------------------------------------------------------
 
     public function __toString()
