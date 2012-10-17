@@ -44,17 +44,7 @@ class Index extends Command
 
         //Get the path if it is specified
         if ($input->getArgument('path')) {
-            $path  = $input->getArgument('path');
-        }
-        else {
-            $path = $this->app['config.rdfpath'];
-        }
-
-        if (is_readable($path)) {
-            $path = realpath($path);
-        }
-        else {
-            throw new \Exception("Path is not readable:" . $path);
+            $this->app['fileclient']->setBasePath($input->getArgument('path'));
         }
 
         //Output to log
@@ -70,8 +60,8 @@ class Index extends Command
         $tracker = new Tracker($trackerHandlers);
 
         //Add the task tracker and run the indexer
-        $this->app['indexer']->setTraskTracker($tracker);
-        $this->app['indexer']->index($path, $limit);
+        $this->app['indexer']->setTaskTracker($tracker);
+        $this->app['indexer']->index($limit);
     }
 }
 /* EOF: Index.php */

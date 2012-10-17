@@ -13,6 +13,7 @@
 // ------------------------------------------------------------------
 
 namespace Bioteawebapi\Entities;
+use Bioteawebapi\Services\RDFFileClient;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\EntityManager;
 
@@ -194,6 +195,37 @@ class Document extends Entity
     public function getRDFFilePath()
     {
         return $this->rdfPath;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Returns an array of RDF Annotation URLs
+     *
+     * @param Biotaewebapi\Services\RDFFIleClient $resolver
+     * @return string
+     */
+    public function getRDFFileUrl(RDFFileClient $resolver)
+    {
+        return $resolver->resolveUrl($this->getRdfFilePath());
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Returns an array of RDF Annotation URLs
+     *
+     * @param Biotaewebapi\Services\RDFFIleClient $resolver
+     * @return array
+     */
+    public function getRDFAnnotationUrls(RDFFileClient $resolver)
+    {
+        $annots = $this->getRDFAnnotationPaths();
+        foreach($annots as $name => &$path) {
+            $path = $resolver->resolveUrl($path);
+        }
+
+        return $annots;
     }
 
     // --------------------------------------------------------------

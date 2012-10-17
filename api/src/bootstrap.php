@@ -81,6 +81,11 @@ $app['config.rdfpath'] = $app->share(function($app) {
     return $path;
 });
 
+//RDF File Client
+$app['fileclient'] = $app->share(function($app) {
+    return new Bioteawebapi\Services\RDFFileClient($app['config.rdfpath'], $app['config']->rdfurl);
+});
+
 //Monolog Logger (more complex than the default logger)
 $app['monolog'] = $app->share(function($app) {
     
@@ -105,10 +110,10 @@ $app['monolog'] = $app->share(function($app) {
 });
 
 //SOLR Client for Docs
-$app['solr_config'] = array('adapteroptions' => $app['config']->solr['terms']);
-$app['solr_client'] = $app->share(function($app) {
-    return new SolrClient(new Solarium_Client($app['solr_config']));
-});
+// $app['solr_config'] = array('adapteroptions' => $app['config']->solr['terms']);
+// $app['solr_client'] = $app->share(function($app) {
+//     return new SolrClient(new Solarium_Client($app['solr_config']));
+// });
 
 //MySQL DBAL Connection ($app['db'])
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
@@ -137,16 +142,15 @@ $app->register(new Nutwerk\Provider\DoctrineORMServiceProvider(), array(
 
 //MySQL Client
 $app['dbclient'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\MySQLClient($app['db.orm.em']);
+    return new Bioteawebapi\Services\DbClient($app['db.orm.em']);
 });
 
 //Doc Indexer
 $app['indexer'] = $app->share(function($app) {
-
     $builder   = new Bioteawebapi\Services\Indexer\IndexBuilder($app['config']->vocabularies);
     $persister = new Bioteawebapi\Services\Indexer\IndexPersister($app['db.orm.em']);
 
-    return new Bioteawebapi\Services\Indexer\Indexer($builder, $persister);
+    return new Bioteawebapi\Services\Indexer\Indexer($app['fileclient'], $builder, $persister);
 });
 
 // ------------------------------------------------------------------

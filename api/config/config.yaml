@@ -11,6 +11,9 @@
 # Path to data (./ for relative to basepath -- one up from src/)
 rdfpath: ./tests/fixtures/rdfSampleFolder
 
+#URL to RDF documents (full URL)
+rdfurl: http://localhost:8850/bioteaweb/api/tests/fixtures/rdfSampleFolder
+
 # SOLR Cores
 solr:
     terms:
