@@ -142,7 +142,7 @@ $app->register(new Nutwerk\Provider\DoctrineORMServiceProvider(), array(
 
 //MySQL Client
 $app['dbclient'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\DbClient($app['db.orm.em']);
+    return new Bioteawebapi\Services\MySQLClient($app['db.orm.em']);
 });
 
 //Doc Indexer

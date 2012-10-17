@@ -102,7 +102,7 @@ class Application
                 return new Response($e->getMessage(), $code, array('content-type' => 'text/html'));
             break;
             case 'application/json':
-                return $this->app->json(array('error' => $e->getMessage()), $code);
+                return $this->silexApp->json(array('error' => $e->getMessage()), $code);
             break;
             case 'text/csv': default:
                 return new Response($e->getMessage(), $code, array('content-type' => 'text/plain'));

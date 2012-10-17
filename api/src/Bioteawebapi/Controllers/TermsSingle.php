@@ -50,6 +50,10 @@ class TermsSingle extends Controller
         $termStr = urldecode($this->getPathSegment(2));
         $termObj = array_shift($this->app['dbclient']->getTerms($termStr));
 
+        if ( ! $termObj) {
+            $this->app->abort(404, "Term Not Found");
+        }
+
         //View Parameters
         $viewParams = array();
         $viewParams['term'] = $termObj->toArray();
