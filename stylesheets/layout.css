@@ -204,6 +204,29 @@ body.sample10 #sample10 {
 	font-size: 120%;
 	}
 	
+.api-fixed {
+    width: 350px;
+    display: block; float: left;
+    background: #cee8f3;
+    margin: 0 10px 0 0;
+    font-family: courier, monospaced;
+    font-size: 12px;
+    }
+    
+li.options { margin-left: 20px; margin-top: -10px; font-size: 12px; font-style: italic; }
+li.options ul { margin: 0; font-style: normal; font-size: 14px; }
+    
+.api-code {
+    width: 200px;
+    display: block; float: left;
+    background: #cee8f3;
+    margin: 0 40px 0 0;
+    font-family: courier, monospaced;
+    font-size: 12px;
+    }
+    
+.options .api-code { background: #e4f0d4; width: 180px; }
+	
 
 /* #Page Styles
 ================================================== */

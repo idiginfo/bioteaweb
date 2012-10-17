@@ -1,2 +1,3 @@
 api/vendor
-config/config.local.yml
+api/config/config.local.yml
+api/composer.phar

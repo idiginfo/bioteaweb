@@ -29,69 +29,12 @@ function _format_bytes($a_bytes)
 
 ?>
 
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+<?php
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>bioteà - biomedical annotation : Create a bioteà mirror</title>
-	<meta name="description" content="">
-	<meta name="author" content="iDigInfo at Florida State University">
+include_once('_controller.php');
+doHeader();
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-  ================================================== -->
-	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	
-	
-	
-    
-
-</head>
-<body>
-
-
-
-	<div id="header">
-	<div class="container">
-		<div class="sixteen columns">
-		<ul>
-			<li><a class="first" href="index.html">Run a Query</a></li>
-			<li><a class="second" href="mirror.php">Create a Mirror</a></li>
-			<li><a class="third" href="graph_loading.php">Load Graphs</a></li>
-			<li><a class="first" href="contact.html">Contact</a></li>
-		</ul>
-		</div>
-		<div class="two-thirds column space">&nbsp;</div>
-		<div class="one-third column logo">
-		<a href="/"><img src="images/biotea_logo.png" alt="bioteà" border="0" /></a>
-		</div>
-	</div>
-	</div>
+?>
 
 	<div class="container main">
 		<div class="two-thirds column">
@@ -297,14 +240,4 @@ virtuoso.passwd=.........</pre>
 
 	</div><!-- container -->
 
-	<div id="footer">
-	<div class="container">
-		<a href="https://www.idiginfo.org" target="_blank"><img src="images/idiginfo.png" alt="iDigInfo" border="0" /></a>
-	</div>
-	</div>
-
-
-<!-- End Document
-================================================== -->
-</body>
-</html>
+<?php doFooter(); ?>
