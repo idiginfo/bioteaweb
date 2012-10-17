@@ -29,7 +29,7 @@ use Doctrine\ORM\EntityManager;
  *   }
  * )
  */
-class Topic
+class Topic extends Entity
 {
     /** @Id @GeneratedValue @Column(type="integer") **/
     protected $id;
@@ -53,6 +53,12 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * Constructor
+     *
+     * @param string $uri
+     * @param string $shortName  Optional
+     */
     public function __construct($uri, $shortName = null)
     {
         $this->terms = new ArrayCollection();
@@ -63,6 +69,9 @@ class Topic
     
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return $this->getUri();
@@ -70,6 +79,9 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -77,6 +89,9 @@ class Topic
     
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
     public function getUri()
     {
         return $this->uri;
@@ -84,6 +99,9 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * @param string
+     */
     public function setShortName($name)
     {
         $this->shortName = $name;
@@ -91,6 +109,9 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
     public function getShortName()
     {
         return $this->shortName;
@@ -98,6 +119,9 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * @return Vocbabulary|null
+     */
     public function getVocabulary()
     {
         return $this->vocabulary;
@@ -105,6 +129,9 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * @param Vocabulary
+     */
     public function setVocabulary(Vocabulary $vocabulary)
     {
         $this->vocabulary = $vocabulary;
@@ -112,6 +139,9 @@ class Topic
 
     // --------------------------------------------------------------
 
+    /**
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
     public function getTerms()
     {
         return $this->terms;

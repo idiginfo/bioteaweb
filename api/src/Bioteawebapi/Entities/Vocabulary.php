@@ -25,7 +25,7 @@ use Doctrine\ORM\EntityManager;
  *   @UniqueConstraint(name="shortName", columns={"shortName"})
  * })
  */
-class Vocabulary
+class Vocabulary extends Entity
 {
     /** @Id @GeneratedValue @Column(type="integer") **/
     protected $id;
@@ -60,6 +60,9 @@ class Vocabulary
 
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return $this->getUri();
@@ -67,6 +70,9 @@ class Vocabulary
 
     // --------------------------------------------------------------
 
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -91,6 +97,16 @@ class Vocabulary
     {
         return (string) $shortName;
     }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getTopics()
+    {
+        return $this->topics;
+    }    
 }
 
 /* EOF: Vocabulary.php */

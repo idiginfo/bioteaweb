@@ -21,7 +21,7 @@ use Doctrine\ORM\EntityManager;
  * 
  * @Entity
  */
-class Annotation
+class Annotation extends Entity
 {
     /** 
      * @var int
@@ -55,6 +55,9 @@ class Annotation
 
     // --------------------------------------------------------------
 
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -62,6 +65,19 @@ class Annotation
 
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return (string) $this->getTerm();
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @return string
+     */
     public function getTerm()
     {
         return $this->term;
@@ -69,6 +85,9 @@ class Annotation
 
     // --------------------------------------------------------------
 
+    /**
+     * @return Document
+     */
     public function getDocument()
     {
         return $this->document;

@@ -24,7 +24,7 @@ use Doctrine\ORM\EntityManager;
  *   @UniqueConstraint(name="term", columns={"term"})
  * }) 
  */
-class Term
+class Term extends Entity
 {
      /** @Id @GeneratedValue @Column(type="integer") */
     protected $id;
@@ -66,6 +66,9 @@ class Term
 
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return $this->getTerm();
@@ -73,6 +76,9 @@ class Term
 
     // --------------------------------------------------------------
 
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -80,6 +86,9 @@ class Term
     
     // --------------------------------------------------------------
 
+    /**
+     * @return Term
+     */
     public function getTerm()
     {
         return $this->term;
@@ -87,6 +96,9 @@ class Term
 
     // --------------------------------------------------------------
 
+    /**
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
     public function getAnnotations()
     {
         return $this->annotations;
@@ -94,6 +106,9 @@ class Term
 
     // --------------------------------------------------------------
 
+    /**
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
     public function getTopics()
     {
         return $this->topics;

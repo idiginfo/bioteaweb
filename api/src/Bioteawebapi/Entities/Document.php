@@ -24,7 +24,7 @@ use Doctrine\ORM\EntityManager;
  *   @UniqueConstraint(name="rdfFilePath", columns={"rdfFilePath"})
  * })
  */
-class Document
+class Document extends Entity
 {
     /** @Id @GeneratedValue @Column(type="integer") **/
     protected $id;
@@ -114,6 +114,19 @@ class Document
 
     // --------------------------------------------------------------
 
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getRDFFilePath();
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -133,7 +146,9 @@ class Document
 
     // --------------------------------------------------------------
 
-    /** @return array Array of Vocabularies */
+    /** 
+     * @return array Array of Vocabularies 
+     */
     public function getVocabularies()
     {
         $vocabs = array_map(function($entity) {
@@ -145,7 +160,9 @@ class Document
 
     // --------------------------------------------------------------
 
-    /** @return array Array of Topics */
+    /** 
+     * @return array Array of Topics 
+     */
     public function getTopics()
     {
         $topics = array();
@@ -159,7 +176,9 @@ class Document
 
     // --------------------------------------------------------------
 
-    /** @return array  Array of Terms */
+    /** 
+     * @return array  Array of Terms 
+     */
     public function getTerms()
     {
         return array_map(function($entity) {
@@ -169,7 +188,9 @@ class Document
 
     // --------------------------------------------------------------
   
-    /** @return string */
+    /** 
+     * @return string 
+     */
     public function getRDFFilePath()
     {
         return $this->rdfPath;
@@ -177,7 +198,9 @@ class Document
 
     // --------------------------------------------------------------
 
-    /** @return array */
+    /**
+     * @return array 
+     */
     public function getRDFAnnotationPaths()
     {
        return json_decode($this->rdfAnnotationPaths, true) ?: array();
