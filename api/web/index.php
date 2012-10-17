@@ -48,6 +48,10 @@ require(__DIR__ . '/../src/bootstrap.php');
 //Libraries
 $app['fosrest'] = new FormatNegotiator();
 
+//Set JSON pretty printer
+Bioteawebapi\Rest\View::setJsonFormatter(new webignition\JsonPrettyPrinter\JsonPrettyPrinter());
+Bioteawebapi\Rest\View::setDefaultTemplate(file_get_contents(BASEPATH . '/src/Bioteawebapi/Files/html_template.html'));
+
 //Controllers
 $app['webapp'] = new RestApp($app);
 $app['webapp']->add(new Bioteawebapi\Controllers\Front($app, $app['db.orm.em']));

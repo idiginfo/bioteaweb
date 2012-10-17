@@ -13,22 +13,87 @@
 // ------------------------------------------------------------------
 
 namespace Bioteawebapi\Rest;
+use webignition\JsonPrettyPrinter\JsonPrettyPrinter;
 
 /**
  * A View Object can display itself a number of ways
  */
 abstract class View
 {
+    private static $jsonFormatter = null;
+
+    private static $defaultTemplate = "<html><head><meta charset='utf-8'/>
+                                       <title>API Interface</title></head>
+                                       <body><h1>API Output</h1>%content%</body>
+                                       </html>";
+
+    // --------------------------------------------------------------
+
     /**
      * Convert the object to HTML
      *
      * For now, it just pretty-prints the JSON in <pre>...</pre> tags
      *
+     * @param string $template  Optionally override the default template.
+     *                          Use %content% for content placeholder.
+     * @param string $content   Optioanlly, override the default content.
      * @return string
      */
-    public function toHtml()
+    public function toHtml($template = null, $content = null)
     {
-        return sprintf("<pre class='item'>%s</pre>", $this->toJson());
+        if ( ! $template) {
+            $template = self::getDefaultTemplate();
+        }
+
+        if ( ! $content) {
+
+            $jsonContent = self::$jsonFormatter
+                ? self::$jsonFormatter->format($this->toJson())
+                : $this->toJson();
+
+            $content = sprintf("<pre class='item'>%s</pre>", $jsonContent);
+        }
+
+        //Replace the %content% placeholder with content
+        $template = str_replace("%content%", $content, $template);
+
+        return $template;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Set JSON Formatter (optional)
+     *
+     * @param webignition\JsonPrettyPrinter\JsonPrettyPrinter
+     */
+    public static function setJsonFormatter(JsonPrettyPrinter $formatter)
+    {
+        self::$jsonFormatter = $formatter;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get the default template
+     *
+     * @return string
+     */
+    public static function getDefaultTemplate()
+    {
+        return self::$defaultTemplate;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Set the default template
+     *
+     * @param string $template  Include %content% placeholder somewhere in the string
+     */
+    public static function setDefaultTemplate($template)
+    {
+        self::$defaultTemplate = $template;
     }
 
     // --------------------------------------------------------------
