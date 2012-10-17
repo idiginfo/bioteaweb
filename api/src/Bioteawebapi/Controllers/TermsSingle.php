@@ -24,7 +24,7 @@ use Bioteawebapi\Views\BasicView;
 /**
  * Single term info Controller
  */
-class TermsSingle extends Controller
+class TermsSingle extends Abstracts\SingleEntityController
 {
     /**
      * @var Doctrine\ORM\EntityManager
@@ -69,7 +69,8 @@ class TermsSingle extends Controller
 
         //Include documents related to this term
         foreach($termObj->getAnnotations() as $annotObj) {
-            $docArr = $annotObj->getDocument()->toArray();
+            $docObj = $annotObj->getDocument();
+            $docArr = $this->buildDocumentDetails($docObj);
 
             if ( ! isset($viewParams['documents']) OR ! in_array($docArr, $viewParams['documents'])) {
                 $viewParams['documents'][] = $docArr;
