@@ -42,9 +42,9 @@ require(__DIR__ . '/../src/bootstrap.php');
 $app['consoleapp'] = new Application();
 
 //Commands
-$app['consoleapp']->add(new Bioteawebapi\Commands\Dummy($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\BuildZipFiles($app));
 $app['consoleapp']->add(new Bioteawebapi\Commands\BuildSchema($app));
-$app['consoleapp']->add(new Bioteawebapi\Commands\DumpDocSets($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\DumpDocument($app));
 $app['consoleapp']->add(new Bioteawebapi\Commands\Index($app));
 
 // ------------------------------------------------------------------

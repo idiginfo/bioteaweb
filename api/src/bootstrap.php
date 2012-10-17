@@ -145,12 +145,15 @@ $app['dbclient'] = $app->share(function($app) {
     return new Bioteawebapi\Services\MySQLClient($app['db.orm.em']);
 });
 
+//Doc Builder
+$app['builder'] = $app->share(function($app) {
+    return new Bioteawebapi\Services\Indexer\IndexBuilder($app['config']->vocabularies);    
+});
+
 //Doc Indexer
 $app['indexer'] = $app->share(function($app) {
-    $builder   = new Bioteawebapi\Services\Indexer\IndexBuilder($app['config']->vocabularies);
     $persister = new Bioteawebapi\Services\Indexer\IndexPersister($app['db.orm.em']);
-
-    return new Bioteawebapi\Services\Indexer\Indexer($app['fileclient'], $builder, $persister);
+    return new Bioteawebapi\Services\Indexer\Indexer($app['fileclient'], $app['builder'], $persister);
 });
 
 // ------------------------------------------------------------------

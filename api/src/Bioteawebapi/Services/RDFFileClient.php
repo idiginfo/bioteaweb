@@ -172,12 +172,19 @@ class RDFFileClient
     /**
      * Get the next file using the interator
      *
+     * @param  boolean $fullpath  If true, returns the fullpath to the file
      * @return boolean|string  Path to file, relative to basepath,
      *                         or false if no more files
      */
-    public function getNextFile()
+    public function getNextFile($fullPath = false)
     {
-        return $this->doGetNextFile($this->iterator);
+        $filename = $this->doGetNextFile($this->iterator);
+
+        if ($filename && $fullPath) {
+            $filename = $this->resolvePath($filename);
+        }
+
+        return $filename;
     }
 
     // --------------------------------------------------------------
