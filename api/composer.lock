@@ -1,5 +1,5 @@
 {
-    "hash": "c94ce1e3b387ba96bb3b512bea6fb19c",
+    "hash": "3a78be51c260ec391e8497155ae9836f",
     "packages": [
         {
             "name": "caseyamcl/Configula",
@@ -180,19 +180,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal",
-                "reference": "219d96a1592e9e23087eb6861b4f8233d06c6463"
+                "reference": "9395ca33971c0ff875d71a0271e6c0d5b0f01508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/zipball/219d96a1592e9e23087eb6861b4f8233d06c6463",
-                "reference": "219d96a1592e9e23087eb6861b4f8233d06c6463",
+                "url": "https://github.com/doctrine/dbal/zipball/9395ca33971c0ff875d71a0271e6c0d5b0f01508",
+                "reference": "9395ca33971c0ff875d71a0271e6c0d5b0f01508",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "doctrine/common": "2.3.*"
             },
-            "time": "1349518912",
+            "time": "1350419590",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -674,18 +674,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console",
-                "reference": "79b6ad67caee9ff7bac1be620a58e9164d317c58"
+                "reference": "7daac278f160073afccfcbf928ddb39282a8539d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/zipball/79b6ad67caee9ff7bac1be620a58e9164d317c58",
-                "reference": "79b6ad67caee9ff7bac1be620a58e9164d317c58",
+                "url": "https://github.com/symfony/Console/zipball/7daac278f160073afccfcbf928ddb39282a8539d",
+                "reference": "7daac278f160073afccfcbf928ddb39282a8539d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1349963062",
+            "time": "1350313602",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1094,12 +1094,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Security",
-                "reference": "8a9136a560d3af7c3f61093ec45d47c61eb41978"
+                "reference": "811f0d2d71571ac24fb55b97c9177515cbb862cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Security/zipball/8a9136a560d3af7c3f61093ec45d47c61eb41978",
-                "reference": "8a9136a560d3af7c3f61093ec45d47c61eb41978",
+                "url": "https://github.com/symfony/Security/zipball/811f0d2d71571ac24fb55b97c9177515cbb862cb",
+                "reference": "811f0d2d71571ac24fb55b97c9177515cbb862cb",
                 "shasum": ""
             },
             "require": {
@@ -1123,7 +1123,7 @@
                 "symfony/validator": "2.1.*",
                 "symfony/routing": "2.1.*"
             },
-            "time": "1349363877",
+            "time": "1350378959",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1261,12 +1261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Validator",
-                "reference": "7c43f650486ab5ef0369d34505d65f3a0bdd91c9"
+                "reference": "8093907ea1138e056797235bf8e66af2629c3ae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Validator/zipball/7c43f650486ab5ef0369d34505d65f3a0bdd91c9",
-                "reference": "7c43f650486ab5ef0369d34505d65f3a0bdd91c9",
+                "url": "https://github.com/symfony/Validator/zipball/8093907ea1138e056797235bf8e66af2629c3ae7",
+                "reference": "8093907ea1138e056797235bf8e66af2629c3ae7",
                 "shasum": ""
             },
             "require": {
@@ -1282,7 +1282,7 @@
                 "symfony/http-foundation": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1349381694",
+            "time": "1350396939",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1418,6 +1418,48 @@
                 "extension",
                 "provider"
             ]
+        },
+        {
+            "name": "webignition/json-pretty-print",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webignition/json-pretty-print.git",
+                "reference": "72831627c3264374766f100145ca11fee3581729"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/webignition/json-pretty-print/zipball/72831627c3264374766f100145ca11fee3581729",
+                "reference": "72831627c3264374766f100145ca11fee3581729",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "1343085751",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Cram",
+                    "email": "jon@webignition.net"
+                }
+            ],
+            "description": "Prettifies a JSON string for human readability",
+            "homepage": "https://github.com/webignition/json-pretty-print",
+            "keywords": [
+                "json",
+                "formatter",
+                "pretty-print"
+            ]
         }
     ],
     "packages-dev": null,
@@ -1430,6 +1472,7 @@
         "njh/easyrdf": 20,
         "caseyamcl/configula": 20,
         "taluu/doctrine-orm-provider": 20,
-        "caseyamcl/tasktracker": 20
+        "caseyamcl/tasktracker": 20,
+        "webignition/json-pretty-print": 20
     }
 }
