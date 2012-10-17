@@ -13,6 +13,7 @@
 // ------------------------------------------------------------------
 
 namespace Bioteawebapi\Entities;
+use Bioteawebapi\Services\RDFFileClient;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\EntityManager;
 
@@ -193,7 +194,7 @@ class Document extends Entity
      */
     public function getRDFFilePath()
     {
-        return $this->rdfPath;
+        return $this->rdfFilePath;
     }
 
     // --------------------------------------------------------------

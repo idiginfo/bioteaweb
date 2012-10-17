@@ -13,6 +13,7 @@
 // ------------------------------------------------------------------
 
 namespace Bioteawebapi\Services\Indexer;
+use Bioteawebapi\Services\RDFFileClient;
 use Bioteawebapi\Exceptions\MySQLClientException;
 use Bioteawebapi\Entities\Document;
 use TaskTracker\Tracker;
@@ -37,6 +38,11 @@ class Indexer
      * @var IndexPersister
      */
     private $persister;
+
+    /**
+     * @var RDFFileClient
+     */
+    private $files;
 
     /**
      * @var SolrClient
@@ -71,8 +77,9 @@ class Indexer
      * @param IndexBuilder   $builder  Biotea Doc Builder
      * @param EntityManager  $em       Doctrine ORM Entity Manager
      */
-    public function __construct(IndexBuilder $builder, IndexPersister $persister)
+    public function __construct(RDFFileClient $files, IndexBuilder $builder, IndexPersister $persister)
     {
+        $this->files     = $files;
         $this->builder   = $builder;
         $this->persister = $persister;
     }
@@ -84,7 +91,7 @@ class Indexer
      *
      * @param \TaskTracker\Tracker
      */
-    public function setTraskTracker(Tracker $taskTracker)
+    public function setTaskTracker(Tracker $taskTracker)
     {
         $this->taskTracker = $taskTracker;
     }
@@ -154,22 +161,26 @@ class Indexer
     /**
      * Run the indexer on the basepath
      *
-     * @param string $path  Path to index
-     * @param int    $limit  0 for no limit
-     * @return int   The number processed (skipped, failed, and indexed)
+     * @param  string|null  $path  Path to index
+     * @param  int          $limit  0 for no limit
+     * @return int          The number processed (skipped, failed, and indexed)
      */
-    public function index($path, $limit = 0)
+    public function index($limit = 0)
     {
         //Reset counts
         $this->numIndexed = 0;
         $this->numFailed  = 0;
         $this->numSkipped = 0;
 
-        //Get a traverser to traverse the directory of items
-        $traverser = $this->builder->getTraverser($path);
+        //Reset the directory iterator in the file client
+        $this->files->resetFileIterator();
 
         //Get document graphs until we run out of files
-        while ($doc = $traverser->getNextDocument()) {
+        while ($relPath = $this->files->getNextFile()) {
+
+            //Build the document
+            $fullPath = $this->files->resolvePath($relPath);
+            $doc = $this->builder->buildDocument($fullPath, $relPath);
 
             //If passed limit, get out
             if ($limit && $this->getNumProcessed() >= $limit) {
@@ -192,6 +203,10 @@ class Indexer
                     throw new \Exception("Invalid returned value from Indexer::process");
             }
         }
+
+        $this->taskTracker->finish(
+            sprintf("Finished indexing %s documents.", number_format($this->getNumProcessed(), 0))
+        );
 
         return $this->getNumProcessed();
     }

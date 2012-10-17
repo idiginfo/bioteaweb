@@ -37,21 +37,6 @@ class IndexBuilder
      */
     private $vocabularies = array();
 
-    /**
-     * @var string  Hardcoded filePatern to look for
-     */
-    private $filePattern = "/^PMC[\d]+\.rdf$/";
-
-    /**
-     * @var \RecurisveIteratorIterator
-     */
-    private $traverser;
-
-    /**
-     * @var string
-     */
-    private $traverserBasePath;
-
     // --------------------------------------------------------------
 
     /**
@@ -84,71 +69,6 @@ class IndexBuilder
     // --------------------------------------------------------------
 
     /**
-     * Get a version of this object that can traverse directories
-     *
-     * @param  string $path  A full path
-     * @return DocSetBuilder
-     */
-    public function getTraverser($path)
-    {
-        //Path check
-        if ( ! is_readable($path) OR ! is_dir($path)) {
-            throw new \InvalidArgumentException("The RDF file path is invalid: " . $path);
-        }
-
-        //Clone this, add traversal capabilities, and return it
-        $that = clone $this;
-        $that->traverserBasePath = realpath($path) . DIRECTORY_SEPARATOR;
-        $that->traverser = new RecursiveIteratorIterator(new RDI($that->traverserBasePath));
-        return $that;
-    }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Interface to iterator for traverser
-     *
-     * Uses the directory iterator to find the next file, and if no more
-     * files with the correct regex, return false
-     *
-     * @return Bioteawebapi\Entities\Document|boolean  Returns false if no more files
-     */
-    public function getNextDocument()
-    {
-        //If this object is not set for traversing...
-        if ( ! $this->traverserBasePath) {
-            throw new \Exception("Traverser Not Available.  Use DocSetBuilder::getTraverser()!");
-        }
-
-        //Do it..
-        $obj = false;
-
-        //Get the next file, and see if it matches the regex pattern
-        //otherwise, do it again until false or a valid regex
-        while ($this->traverser->valid() && $obj === false) {
-            $fileName = $this->traverser->getFileName();
-
-            if (preg_match($this->filePattern, $fileName)) {
-                
-                //Get the full and relative paths
-                $fullPath = dirname($this->traverser->getPathName());
-                $relPath  = substr($fullPath, strlen($this->traverserBasePath)) . $fileName;
-                $fullPath = $fullPath . DIRECTORY_SEPARATOR . $fileName;
-
-                //Build the object
-                $obj = $this->buildDocument($fullPath, $relPath);
-            }
-
-            //Next item
-            $this->traverser->next();            
-        }
-
-        return $obj;
-    }
-
-    // --------------------------------------------------------------
-
-    /**
      * Build the BioteaDocSet Object from an Annotation file, or pulls an
      * existing one out of the database
      *
@@ -170,7 +90,7 @@ class IndexBuilder
         //Build object
         $documentObj = new Document($relativeFilePath);
 
-        //See if we have associated annotation files
+        //See if we have associated annotation files (hardcoded for now - perhaps send in as parameters)
         $subfiles = array(
             'ncbo'     => $relDirPath . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
             'whatizit' => $relDirPath . '/Bio2RDF/' . $filename . '_whatizitUkPmcAll.rdf'
