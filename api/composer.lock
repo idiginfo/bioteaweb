@@ -56,12 +56,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/caseyamcl/tasktracker",
-                "reference": "b092f4014e54babd7c4a451f5b8a59fe54fb6960"
+                "reference": "c5748ba1b17de45c4aa099bb6eb5b00aeb3dad1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/caseyamcl/tasktracker/zipball/b092f4014e54babd7c4a451f5b8a59fe54fb6960",
-                "reference": "b092f4014e54babd7c4a451f5b8a59fe54fb6960",
+                "url": "https://github.com/caseyamcl/tasktracker/zipball/c5748ba1b17de45c4aa099bb6eb5b00aeb3dad1d",
+                "reference": "c5748ba1b17de45c4aa099bb6eb5b00aeb3dad1d",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "symfony/console": ">=2.1.0",
                 "monolog/monolog": ">=1.3.x-dev"
             },
-            "time": "1349969425",
+            "time": "1350584042",
             "type": "library",
             "installation-source": "source",
             "autoload": {

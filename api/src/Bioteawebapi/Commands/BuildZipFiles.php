@@ -94,8 +94,18 @@ class BuildZipFiles extends Command
         //Setup the output filename
         $this->outFilePathPrefix = $outPath . $input->getOption('prefix');
 
-        //Get the total number of files...
-        $totalNumFiles = $this->app['fileclient']->countRdfFiles();
+        //Reset the file iterator...
+        $this->app['fileclient']->resetFileIterator();
+
+        //Manual count RDF files so we can display a progress bar
+        $totalNumFiles = 0;
+        while($file = $this->app['fileclient']->getNextFile()) {
+            $totalNumFiles++;
+            $this->tracker->tick(1, sprintf("Counting files (%s)", number_format($totalNumFiles)));
+        }
+
+        //Reset the task tracker
+        $this->setupTaskTracker($limit, $quiet, $output, $totalNumFiles);
 
         //Reset the file iterator...
         $this->app['fileclient']->resetFileIterator();
@@ -126,19 +136,26 @@ class BuildZipFiles extends Command
             //Build an archive
             if (count($batch) % $batchSize == 0) {
 
-                $this->tracker->tick(1, "Building ZIP file");
+                $msg = sprintf("Building ZIP file (%s of %s)", 
+                                number_format($i), number_format($totalNumFiles, 0));
+                $this->tracker->tick(1, $msg);
 
                 $this->buildArchive($batch);
                 $batch = array();
             }
             else {
-                $this->tracker->tick(1, "Preparing files");
+                $msg = sprintf("Adding files to batch (%s of %s)", 
+                                number_format($i), number_format($totalNumFiles, 0));
+                $this->tracker->tick(1, $msg);
             }
 
         }
 
         //If leftovers after loop
         if (count($batch) > 0) {
+            $msg = sprintf("Building ZIP file (%s of %s)", 
+                            number_format($i), number_format($totalNumFiles, 0));
+            $this->tracker->tick(1, $msg);            
             $this->buildArchive($batch);
         }
 
@@ -146,7 +163,11 @@ class BuildZipFiles extends Command
         $numDeleted = $this->deleteOldFiles();
 
         $this->tracker->finish(
-            sprintf('Created %s ZIP files', number_format($this->numOutputFiles, 0))
+            sprintf(
+                'Created %s ZIP files from %s RDF sets', 
+                number_format($this->numOutputFiles, 0),
+                number_format($totalNumFiles, 0)
+            )
         );
     }
 
@@ -155,9 +176,12 @@ class BuildZipFiles extends Command
     /**
      * Setup Task Tracker
      *
-     * @param int $limit
+     * @param int                              $limit
+     * @param boolean                          $quiet
+     * @param Symfony\Console\OutputInterface  $output
+     * @param int                              $totalNumFiles  No limit by default
      */
-    private function setupTaskTracker($limit, $quiet, $output)
+    private function setupTaskTracker($limit, $quiet, $output, $totalNumFiles = Tracker::INFINITE)
     {
         //Output to log
         //$trackerHandlers = array(new TrackerMonologHandler($this->app['monolog'], 60));
@@ -169,7 +193,7 @@ class BuildZipFiles extends Command
         }
 
         //Setup a task tracker
-        $this->tracker = new Tracker($trackerHandlers);
+        $this->tracker = new Tracker($trackerHandlers, $totalNumFiles);
     }
 
     // --------------------------------------------------------------
