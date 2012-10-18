@@ -40,37 +40,32 @@ doHeader();
 
 	<div class="container main">
 		<div class="two-thirds column">
-			<h3>Build a mirror site for Virtuoso and RDF of PubMedCentral</h3>
+			<h3>Get the RDF Collection</h3>
 			
 			<br />
-			<p><strong>1: Host Physical Configuration</strong>
-			<br />Construct computational resources to support storage of and access to the graphs stored in the Virtuoso database (i.e. cpu cycles and disk storage space).</p>
+			<p>The entire collection of RDF documents is available for download.  You can either download via FTP or HTTP.</p>
 			
-			<p><strong>2: Install and configure the Virtuoso server</strong>
-			<br />Be sure to add the Graphs storage directory name in the the <em>[Parameters]DirsAllowed</em> entry in the virtuoso.ini file</p>
-			<p>&rarr; <a href="graph_loading.php">Virtuoso Database Creation from RDF</a></p>
+            <p><strong>FTP</strong>
+            <br />The FTP address is <a href="ftp://biotea.idiginfo.org">ftp://biotea.idiginfo.org</a>.  There is no login</p>
+            
+            <p><strong>HTTP</strong>
+            <br />The HTTP address is: <a href="http://biotea.idiginfo.org/files">http://biotea.idiginfo.org/files</a>.</p>
+            
+            
+			<div style="height: 300px;"></div>
 			
-			<p><strong>3: Configure access with the web</strong>
-			<br />For the Virtuoso server, SPARQL Endpoint, and RDF storage directories.</p>
-			
-			<p><strong>4: Download the archive files</strong>
-			<br />These files are updated weekly. The newest files are available from the download boxes on this page.</p>
-			
-			<p><strong>5: Unpack rdf_files.tar.gz into the RDF storage directory.</strong></p>
-			
-			<p><strong>6: Unpack virtuoso_graphs.tar.gz into the Graphs storage directory.</strong></p>
-			
-			<p><em>Notes</em></p>
-			<ul style="margin: 0 0 0 20px; list-style: disc">
-				<li>The current virtuoso verison (06.01.3127) requires the Bulk Loader Procedures be manually loaded via the isql command line - save the source from the VirtBulkRDFLoaderScript page as <em>rdfloader.sql</em> (<a href="http://www.openlinksw.com/dataspace/dav/wiki/Main/VirtBulkRDFLoader" target="_blank">OpenLink reference</a>)</li>
-				<li>Start the isql process and enter at the SQL&gt; prompt: <em>load rdfloader.sql</em> (<a href="http://www.openlinksw.com/dataspace/dav/wiki/Main/VirtBulkRDFLoaderScript" target="_blank">OpenLink Reference</a>)</li>
-			</ul>
 	
 			</div>
 		<div class="one-third column">
 			
-			<h3 class="space"><br />&nbsp;</h3>
+			<h3 class="space">&nbsp;</h3>
 			<br />
+			<h5>Build a Virtuoso RDF/SPARQL database with our Collection</h5>
+            
+            <p>Follow <a href="graph_loading.php">these instructions</a> for creating a Virtuoso database.</p>
+			
+			<?php 
+			/* 
 			<div id="download">
 			<a class="file" href="http://biotea.idiginfo.org/pubmedOpenAccess/mirror/rdf_files.tar.gz">rdf_files.tar.gz
 			<br /><br /><em><?php echo _format_bytes(filesize($filename1)); ?> 
@@ -82,6 +77,8 @@ doHeader();
 			<br /><br /><em><?php echo _format_bytes(filesize($filename2)); ?> 
 			<br /><?php echo "Updated: " . date ("F d Y H:i:s", filemtime($filename2)); ?> </em></a>
 			</div>
+			*/
+			?>
 
 		</div>
 
