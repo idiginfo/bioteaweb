@@ -5,13 +5,12 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
+use TaskTracker\Tracker;
 use ZipArchive;
 
 /**
- * Class to build ZIP Files
- *
- * @TODO: Urgent: Also archive Annotation files!
- * @TOOD: Implement task tracker.  Each file is a tick
+ * Class to build ZIP Files from RDF directory
  */
 class BuildZipFiles extends Command
 {
@@ -45,9 +44,9 @@ class BuildZipFiles extends Command
     protected function configure()
     {
         $this->setName('buildzips')->setDescription('Build ZIP files and deposit them on the filesystem');
-        $this->addArgument('path',  InputArgument::REQUIRED, 'Output path to place ZIP files');
-        $this->addOption('quiet',  'q', InputOption::VALUE_NONE, 'Quiet supresses output to the console');
-        $this->addOption('limit',  'l', InputOption::VALUE_REQUIRED, 'Optional limit', 0);
+        $this->addArgument('path', InputArgument::REQUIRED, 'Output path to place ZIP files');
+        $this->addOption('quiet', 'q', InputOption::VALUE_NONE, 'Quiet supresses output to the console');
+        $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Optional limit', 0);
 
         $this->addOption(
             'prefix', 'p',
@@ -62,7 +61,6 @@ class BuildZipFiles extends Command
             sprintf("The number of rdf files per ZIP (default %s)", number_format($this->defaultBatchSize, 0)),
             $this->defaultBatchSize
         );
-
     }        
 
     // --------------------------------------------------------------
@@ -85,9 +83,13 @@ class BuildZipFiles extends Command
             $outPath .= DIRECTORY_SEPARATOR;
         } 
 
-        //Get the limit, prefix, and batch size
+        //Get the limit and batch size
         $limit     = (int) $input->getOption('limit');
         $batchSize = (int) $input->getOption('batchsize');
+        $quiet     = (boolean) $input->getOption('quiet');
+
+        //Setup task tracker
+        $this->setupTaskTracker($limit, $quiet, $output);
 
         //Setup the output filename
         $this->outFilePathPrefix = $outPath . $input->getOption('prefix');
@@ -99,21 +101,40 @@ class BuildZipFiles extends Command
         $this->app['fileclient']->resetFileIterator();
         
         //Main loop
-        for ($i = 0, $batch = array(); $i < $totalNumFiles; $i++) {
+        for ($batch = array(), $i = 0; $i < $totalNumFiles; $i++) {
 
-            $filename     = $this->app['fileclient']->getNextFile();
-            $fullFilename = $this->app['fileclient']->resolvePath($filename);
+            //Filename and full filename
+            $filename = $this->app['fileclient']->getNextFile();
 
+            //If we're over the limit or there is no filename
             if ( ! $filename OR ($limit && $i > $limit)) {
                 break;
             }
 
-            $batch[$filename] = $fullFilename;
+            //Build a batchset
+            $batchset = array_merge(
+                array($filename => $this->app['fileclient']->resolvePath($filename)),
+                array_combine(
+                    $this->app['fileclient']->getAnnotationFiles($filename, false),
+                    $this->app['fileclient']->getAnnotationFiles($filename, true)
+                )
+            );
 
+            //Add it to the batch
+            $batch[$filename] = $batchset;
+
+            //Build an archive
             if (count($batch) % $batchSize == 0) {
+
+                $this->tracker->tick(1, "Building ZIP file");
+
                 $this->buildArchive($batch);
                 $batch = array();
             }
+            else {
+                $this->tracker->tick(1, "Preparing files");
+            }
+
         }
 
         //If leftovers after loop
@@ -124,7 +145,31 @@ class BuildZipFiles extends Command
         //Delete any leftover files from old runs
         $numDeleted = $this->deleteOldFiles();
 
-        echo "DONE...";
+        $this->tracker->finish(
+            sprintf('Created %s ZIP files', number_format($this->numOutputFiles, 0))
+        );
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Setup Task Tracker
+     *
+     * @param int $limit
+     */
+    private function setupTaskTracker($limit, $quiet, $output)
+    {
+        //Output to log
+        //$trackerHandlers = array(new TrackerMonologHandler($this->app['monolog'], 60));
+        $trackerHandlers = array();
+
+        //Also output to console unless quiet is set
+        if ( ! $quiet) {
+            $trackerHandlers[] = new TrackerConsoleHandler($output);
+        }
+
+        //Setup a task tracker
+        $this->tracker = new Tracker($trackerHandlers);
     }
 
     // --------------------------------------------------------------
@@ -163,7 +208,7 @@ class BuildZipFiles extends Command
      * @param  array  $fileList         Full paths
      * @return int    Filesize in bytes of new file
      */
-    private function buildArchive(Array $fileList)
+    private function buildArchive(Array $batch)
     {  
         //Increment to the next output file
         $this->numOutputFiles++;
@@ -182,9 +227,13 @@ class BuildZipFiles extends Command
         }
 
         //Add the files
-        foreach($fileList as $filePath => $fullPath) {
-            if  ( ! $zipFile->addFile($fullPath, $filePath)) {
-                throw new \Exception("Error adding %s to ZIPfile %s", $filePath, $outFilePath);
+        foreach($batch as $set) {
+
+            //Foreach file in the set
+            foreach($set as $filePath => $fullPath) {
+                if  ( ! $zipFile->addFile($fullPath, $filePath)) {
+                    throw new \Exception("Error adding %s to ZIPfile %s", $filePath, $outFilePath);
+                }    
             }
         }
 

@@ -72,11 +72,12 @@ class IndexBuilder
      * Build the BioteaDocSet Object from an Annotation file, or pulls an
      * existing one out of the database
      *
-     * @param string $fullPath          The full system path to the file to parse
-     * @param string $relativeFilePath  A relative file path to the file to parse
+     * @param string $fullPath            The full system path to the file to parse
+     * @param string $relativeFilePath    A relative file path to the file to parse
+     * @param array $annotationFilePaths  Array (keys are names, values are paths)
      * @return Bioteawebapi\Entities\Document
      */
-    public function buildDocument($fullPath, $relativeFilePath)
+    public function buildDocument($fullPath, $relativeFilePath, $annotationFilePaths)
     {
         //Check path
         if ( ! is_readable($fullPath)) {
@@ -90,14 +91,8 @@ class IndexBuilder
         //Build object
         $documentObj = new Document($relativeFilePath);
 
-        //See if we have associated annotation files (hardcoded for now - perhaps send in as parameters)
-        $subfiles = array(
-            'ncbo'     => $relDirPath . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
-            'whatizit' => $relDirPath . '/Bio2RDF/' . $filename . '_whatizitUkPmcAll.rdf'
-        );
-
         //If so, add them to the object
-        foreach($subfiles as $name => $relSubPath) {
+        foreach($annotationFilePaths as $name => $relSubPath) {
 
             $relSubPath  = ltrim($relSubPath, '/');
             $fullSubPath = dirname($fullPath) . '/' . $relSubPath;

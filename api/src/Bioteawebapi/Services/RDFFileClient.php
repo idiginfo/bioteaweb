@@ -135,6 +135,41 @@ class RDFFileClient
     // --------------------------------------------------------------
 
     /**
+     * Get annotation files for a RDF path
+     *
+     * Does not do any checks to see if the files actually exist
+     *
+     * @param string $path        Relative path to RDF file
+     * @param boolean $fullPaths  If true, will send fullpaths, else relative paths
+     * @return array
+     */
+    public function getAnnotationFiles($path, $fullPaths = true)
+    {
+        $path = $this->resolvePath($path);
+
+        $filename = basename($path, '.' . pathinfo($path, PATHINFO_EXTENSION)); 
+        $dirname  = dirname($path);
+
+        //See if we have associated annotation files
+        //(hardcoded for now - perhaps send in as parameters)
+        $arr = array(
+            'ncbo'     => $dirname . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
+            'whatizit' => $dirname . '/Bio2RDF/' . $filename . '_whatizitUkPmcAll.rdf'
+        );
+
+        if ( ! $fullPaths) {
+            foreach ($arr as &$item) {
+                $item = substr($item, strlen($this->getBasePath()));
+            }
+        }
+
+        //Return
+        return $arr;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Recursively scans directories starting at basepath, and returns
      * count of files matching pattern
      *

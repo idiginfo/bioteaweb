@@ -180,7 +180,8 @@ class Indexer
 
             //Build the document
             $fullPath = $this->files->resolvePath($relPath);
-            $doc = $this->builder->buildDocument($fullPath, $relPath);
+            $aPaths   = $this->files->getAnnotationFiles($relPath);
+            $doc = $this->builder->buildDocument($fullPath, $relPath, $aPaths);
 
             //If passed limit, get out
             if ($limit && $this->getNumProcessed() >= $limit) {

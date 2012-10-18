@@ -86,6 +86,36 @@ class RDFFIleClientTest extends \PHPUnit_Framework_TestCase
         $this->assertContains('PMC2763859.rdf', $arr);
     }
 
+    // --------------------------------------------------------------
+
+    public function testGetAnnotationPathsSucceeds()
+    {
+        $obj = new RDFFileClient($this->rdfPath, $this->baseUrl);    
+
+        $realFile = 'subFolder/PMC534113.rdf';
+        $apaths = $obj->getAnnotationFiles($realFile);
+
+        foreach ($apaths as $file) {
+            $this->assertFileExists($file);
+        }
+    }
+
+    // --------------------------------------------------------------
+
+    public function testGetRelativeAnnotationPathsSucceeds()
+    {
+        $obj = new RDFFileClient($this->rdfPath, $this->baseUrl);    
+
+        $realFile = 'subFolder/PMC534113.rdf';
+        $apaths = $obj->getAnnotationFiles($realFile, false);
+
+        $expectedArray = array(
+            'ncbo' => 'subFolder/AO_annotations/PMC534113_ncboAnnotator.rdf',
+            'whatizit' => 'subFolder/Bio2RDF/PMC534113_whatizitUkPmcAll.rdf'
+        );
+
+        $this->assertEquals($expectedArray, $apaths);
+    }
 }
 
 /* EOF: RDFFileClientTest.php */
