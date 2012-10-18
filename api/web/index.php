@@ -57,6 +57,10 @@ $app['webapp'] = new RestApp($app);
 $app['webapp']->add(new Bioteawebapi\Controllers\Front($app, $app['db.orm.em']));
 $app['webapp']->add(new Bioteawebapi\Controllers\TermsList($app, $app['db.orm.em']));
 $app['webapp']->add(new Bioteawebapi\Controllers\TermsSingle($app, $app['db.orm.em']));
+$app['webapp']->add(new Bioteawebapi\Controllers\TopicsList($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\TopicsSingle($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\DocumentsList($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\DocumentsSingle($app));
 
 // ------------------------------------------------------------------
 

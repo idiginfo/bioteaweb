@@ -125,11 +125,11 @@ class MySQLClient
      * @param int $offset     Optional offset
      * @param int $limit      Optional limit
      */
-    public function getTopics($prefix = null, $offset = 0, $limit = 0)
+    public function getTopics($id = null, $offset = 0, $limit = 0)
     {
-        if ($prefix) {
+        if ($id) {
             $qb = $this->em->createQueryBuilder();
-            $where = $qb->expr()->like('e.uri', $qb->expr()->literal($prefix . '%'));
+            $where = $qb->expr()->eq('e.id', $qb->expr()->literal($id));
         }
         else {
             $where = null;

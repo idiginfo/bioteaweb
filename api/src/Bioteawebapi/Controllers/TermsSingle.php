@@ -26,13 +26,6 @@ use Bioteawebapi\Views\BasicView;
  */
 class TermsSingle extends Abstracts\SingleEntityController
 {
-    /**
-     * @var Doctrine\ORM\EntityManager
-     */
-    private $em;
-
-    // --------------------------------------------------------------
-
     /** @inherit */
     protected function configure()
     {

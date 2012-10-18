@@ -16,16 +16,15 @@ namespace Bioteawebapi\Controllers;
 use Bioteawebapi\Rest\Parameter;
 
 /**
- * Terms list controller
+ * Topics list controller
  */
-class TermsList extends Abstracts\ListController
+class TopicsList extends Abstracts\ListController
 {
     /** @inherit */
     protected function configure()
     {
         parent::configure();
-        $this->add(new Parameter('prefix', '/^[\p{L}\d \-_]+$/i', "An optional prefix to limit query results"));
-        $this->add(new Parameter('topics', array(0, 1), "An optional prefix to include topic information about each term"));
+        $this->add(new Parameter('terms', array(0, 1), "An optional prefix to include terms associated with this topic"));
     }
 
     // --------------------------------------------------------------
@@ -33,7 +32,7 @@ class TermsList extends Abstracts\ListController
     /** @inherit */
     protected function assignRoutes()
     {
-        return array('/terms' => "Get a list of terms");
+        return array('/topics' => "Get a list of topics");
     }
 
     // --------------------------------------------------------------
@@ -41,7 +40,7 @@ class TermsList extends Abstracts\ListController
     /** @inherit */
     protected function assignJsonDesc()
     {
-        return "List terms in JSON format";
+        return "List topics in JSON format";
     }
 
     // --------------------------------------------------------------
@@ -49,7 +48,7 @@ class TermsList extends Abstracts\ListController
     /** @inherit */
     protected function assignHtmlDesc()
     {
-        return "List terms in HTML format";
+        return "List topics in HTML format";
     }
 
     // --------------------------------------------------------------
@@ -57,8 +56,7 @@ class TermsList extends Abstracts\ListController
     /** @inherit */
     protected function getItemCount()
     {
-        $prefix = strtolower($this->getParameter('prefix'));
-        return $this->app['dbclient']->count('getTerms', $prefix);
+        return $this->app['dbclient']->count('getTopics');
     }
 
     // --------------------------------------------------------------
@@ -66,8 +64,7 @@ class TermsList extends Abstracts\ListController
     /** @inherit */
     protected function getItems($offset, $limit)
     {
-        $prefix = strtolower($this->getParameter('prefix'));
-        return $this->app['dbclient']->getTerms($prefix, $offset, $limit);
+        return $this->app['dbclient']->getTopics(null, $offset, $limit);
     }
 
     // --------------------------------------------------------------
@@ -79,27 +76,30 @@ class TermsList extends Abstracts\ListController
     {
         $outItems = array();
 
-        $includeTopics = (boolean) $this->getParameter('topics');
+        $includeTerms = (boolean) $this->getParameter('terms');
 
-        foreach ($items as $termObj) {
-            $outArr = array('term' => $termObj->getTerm());
+        foreach ($items as $topicObj) {
 
-            if ($includeTopics) {
+            //Topic Array
+            $outArr = array(
+                'id'        => $topicObj->getId(),
+                'uri'       => $topicObj->getUri(),
+                'shortName' => $topicObj->getShortName()
+            );
 
-                foreach($termObj->getTopics() as $topic) {
-                    $outArr['topics'][] = array(
-                        'id'        => $topicObj->getId(),
-                        'uri'       => $topic->getUri(),
-                        'shortName' => $topic->getShortName()
-                    );
+            if ($includeTerms) {
+
+                foreach($topicObj->getTerms() as $term) {
+                    $outArr['terms'][] = $term->getTerm();
                 }
             }
+
 
             $outItems[] = $outArr;
         }
 
         return $outItems;
-    }
+    }    
 }
 
-/* EOF: TermsList.php */
+/* EOF: TopicsList.php */
