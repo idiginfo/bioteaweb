@@ -181,12 +181,10 @@ class Indexer
         }
 
         //Get document graphs until we run out of files
-        while ($relPath = $this->files->getNextFile()) {
+        while ($docPath = $this->files->getNextFile()) {
 
             //Build the document
-            $fullPath = $this->files->resolvePath($relPath);
-            $aPaths   = $this->files->getAnnotationFiles($relPath, false);
-            $doc = $this->builder->buildDocument($fullPath, $relPath, $aPaths);
+            $doc = $this->builder->buildDocument($docPath);
 
             //If passed limit, get out
             if ($limit && $this->getNumProcessed() >= $limit) {

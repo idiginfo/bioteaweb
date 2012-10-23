@@ -89,60 +89,51 @@ class IndexPersister
             return false;
         }
 
+        //Index a single document in the database
         $this->dbal->beginTransaction();
         try {
-
-            //Insert or assign ids for all vocabularies associated with this document
-            foreach($document->getVocabularies() as $vocab) {
-                $this->conditionalInsertEntity($vocab, $this->getInsertDataForEntity($vocab));
-            }
-
-            //Insert or assign ids for all topics associated with this document
-            foreach($document->getTopics() as $topic) {
-
-                $cols = $this->getInsertDataForEntity($topic);
-
-                //Add the foreign key if there is one
-                if ($topic->getVocabulary()) {
-                    $cols['vocabulary_id'] = $topic->getVocabulary()->getId();
-                }
-
-                $this->conditionalInsertEntity($topic, $cols);
-            }
-
-            //Insert or assign ids for all terms associated with this document
-            foreach($document->getTerms() as $term) {
-
-                //Add the term or assign its ID
-                $cols = $this->getInsertDataForEntity($term);
-                $this->conditionalInsertEntity($term, $cols);
-
-                //Add associations with topics
-                foreach($term->getTopics() as $topic) {
-
-                    $term_id = $term->getId();
-                    $topic_id = $topic->getId();
-
-                    $q = "SELECT * FROM term_topic WHERE term_id = ? AND topic_id = ?";
-                    if ( ! $this->dbal->fetchArray($q, array($term_id, $topic_id))) {
-                        $this->dbal->insert('term_topic', array('term_id' => $term_id, 'topic_id' => $topic_id));
-                    }
-                }
-            }
 
             //Insert the document itself into the documents table
             $docCols = $this->getInsertDataForEntity($document);
             $this->conditionalInsertEntity($document, $docCols);
 
-            //Insert all annotations associated with this document
+            //Do each annotations
             foreach($document->getAnnotations() as $annot) {
-                $cols = $this->getInsertDataForEntity($annot);
 
-                //Get the term ID
-                $cols['term_id']     = $annot->getTerm()->getId();
-                $cols['document_id'] = $document->getId();
+                //Get the term
+                $term = $annot->getTerm();
 
-                $this->conditionalInsertEntity($annot, $cols);
+                //Add the term or assign its ID
+                $termCols = $this->getInsertDataForEntity($term);
+                $this->conditionalInsertEntity($term, $termCols);
+
+                //Insert the topic for the term
+                foreach($term->getTopics() as $topic) {
+
+                    $topicCols = $this->getInsertDataForEntity($topic);
+
+                    //And the vocabulary, if it exists
+                    if ($topic->getVocabulary()) {
+                        $vocab = $topic->getVocabulary();
+                        $this->conditionalInsertEntity($vocab, $this->getInsertDataForEntity($vocab));
+                        $topicCols['vocabulary_id'] = $vocab->getId();
+                    }
+
+                    $this->conditionalInsertEntity($topic, $topicCols);
+
+                    //Do the relationship between the term and the topic
+                    $term_id = $term->getId();
+                    $topic_id = $topic->getId();
+                    $q = "SELECT * FROM term_topic WHERE term_id = ? AND topic_id = ?";
+                    if ( ! $this->dbal->fetchArray($q, array($term_id, $topic_id))) {
+                        $this->dbal->insert('term_topic', array('term_id' => $term_id, 'topic_id' => $topic_id));
+                    }                        
+                }
+
+                //Add the annotation
+                $annotCols['document_id'] = $document->getId();
+                $annotCols['term_id']     = $annot->getTerm()->getId();
+                $this->conditionalInsertEntity($annot, $annotCols);
             }
 
             //Transaction commit!

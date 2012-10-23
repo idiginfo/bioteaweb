@@ -147,7 +147,7 @@ $app['dbclient'] = $app->share(function($app) {
 
 //Doc Builder
 $app['builder'] = $app->share(function($app) {
-    return new Bioteawebapi\Services\Indexer\IndexBuilder($app['config']->vocabularies);    
+    return new Bioteawebapi\Services\Indexer\IndexBuilder($app['fileclient'], $app['config']->vocabularies);    
 });
 
 //Doc Indexer

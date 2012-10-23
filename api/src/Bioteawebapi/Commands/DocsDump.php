@@ -51,10 +51,8 @@ class DocsDump extends Command
             }
         }
 
-        //Get annotation files
-        $aFiles = $this->app['fileclient']->getAnnotationFiles($relPath);
-
-        $document = $this->app['builder']->buildDocument($fullPath, $relPath, $aFiles);
+        //Build document
+        $document = $this->app['builder']->buildDocument($relPath);
 
         //Generate Report
         $output->writeln($this->generateReport($document));

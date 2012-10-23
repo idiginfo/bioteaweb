@@ -19,6 +19,7 @@ use Bioteawebapi\Entities\Term;
 use Bioteawebapi\Entities\Topic;
 use Bioteawebapi\Entities\Vocabulary;
 use Bioteawebapi\Exceptions\IndexBuilderException;
+use Bioteawebapi\Services\RDFFileClient;
 use RecursiveDirectoryIterator as RDI;
 use RecursiveIteratorIterator;
 use Doctrine\ORM\EntityManager;
@@ -33,6 +34,11 @@ use SimpleXMLElement;
 class IndexBuilder
 {
     /**
+     * @var Bioteawebapi\Services\RDFFileClient
+     */
+    private $files;
+
+    /**
      * @var array
      */
     private $vocabularies = array();
@@ -45,11 +51,14 @@ class IndexBuilder
      * Optionally accepts an array of vocabularies
      * (keys are shortnameses, values are URIs)
      *
-     * @param Doctrine\ORM\EntityManager $em
+     * @param Bioteawebapi\Services\RDFFileClient $files
      * @param array $vocabularies
      */
-    public function __construct(Array $vocabularies = array())
+    public function __construct(RDFFileClient $files, Array $vocabularies = array())
     {
+        //Set File client
+        $this->files = $files;
+
         //Set vocabularies
         $this->setVocabularies($vocabularies);
     }
@@ -72,39 +81,37 @@ class IndexBuilder
      * Build the BioteaDocSet Object from an Annotation file, or pulls an
      * existing one out of the database
      *
-     * @param string $fullPath            The full system path to the file to parse
-     * @param string $relativeFilePath    A relative file path to the file to parse
-     * @param array $annotationFilePaths  Array (keys are names, values are paths)
+     * @param string $relativePath    A relative file path to the file to parse
      * @return Bioteawebapi\Entities\Document
      */
-    public function buildDocument($fullPath, $relativeFilePath, $annotationFilePaths)
+    public function buildDocument($relativePath)
     {
-        //Check path
+        //Get full path
+        $fullPath = $this->files->resolvePath($relativePath);
+
+        //Check file exists
         if ( ! is_readable($fullPath)) {
             throw new IndexBuilderException("The filepath does not exist: " . $fullPath);
         }
 
-        //Paths
-        $relDirPath  = ltrim(dirname($relativeFilePath), '.');
-        $filename    = basename($fullPath, '.rdf');
-
         //Build object
-        $documentObj = new Document($relativeFilePath);
+        $documentObj = new Document($relativePath);
 
         //If so, add them to the object
-        foreach($annotationFilePaths as $name => $relSubPath) {
+        foreach($this->files->getAnnotationFiles($relativePath) as $name => $relAnnotPath) {
 
-            $relSubPath  = ltrim($relSubPath, '/');
-            $fullSubPath = dirname($fullPath) . '/' . $relSubPath;
+            $fullAnnotPath = $this->files->resolvePath($relAnnotPath);
 
-            if (file_exists($fullSubPath)) {
+            //If file exists
+            if (is_readable($fullAnnotPath)) {
 
-                $xml = new SimpleXMLElement($fullSubPath, 0, true);
+                //Get the XML and build the Annotations
+                $xml = new SimpleXMLElement($fullAnnotPath, 0, true);
                 $annotations = $this->parseRdfAnnotationFile($xml);
                 
                 //Add the annotations and the path to the file the came from?
                 $documentObj->addAnnotations($annotations);
-                $documentObj->addAnnotationFilepath($name, $relSubPath);
+                $documentObj->addAnnotationFilepath($name, $relAnnotPath);
             }
         }
 
