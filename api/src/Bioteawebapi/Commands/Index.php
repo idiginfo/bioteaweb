@@ -48,7 +48,7 @@ class Index extends Command
         }
 
         //Output to log
-        //$trackerHandlers = array(new TrackerMonologHandler($this->app['monolog'], 60));
+        $trackerHandlers = array(new TrackerMonologHandler($this->app['monolog'], 60));
         $trackerHandlers = array();
 
         //Also output to console unless quiet is set
@@ -57,7 +57,7 @@ class Index extends Command
         }
 
         //Setup a task tracker
-        $tracker = new Tracker($trackerHandlers);
+        $tracker = new Tracker($trackerHandlers, $limit ?: Tracker::Unknown);
 
         //Add the task tracker and run the indexer
         $this->app['indexer']->setTaskTracker($tracker);
