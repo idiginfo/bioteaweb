@@ -39,6 +39,12 @@ class DocsIndex extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        //Check db
+        if ( ! $this->app['dbclient']->checkSchema()) {
+            throw new \RuntimeException("Schema not up-to-date.  Run schema:build to fix this.");
+        }
+
+        //Set limit
         $limit = (int) $input->getOption('limit') ?: self::NO_LIMIT;
 
         //Get the path if it is specified
@@ -56,7 +62,7 @@ class DocsIndex extends Command
         }
 
         //Setup a task tracker
-        $tracker = new Tracker($trackerHandlers, $limit ?: Tracker::Unknown);
+        $tracker = new Tracker($trackerHandlers, $limit ?: Tracker::UNKNOWN);
 
         //Add the task tracker and run the indexer
         $this->app['indexer']->setTaskTracker($tracker);

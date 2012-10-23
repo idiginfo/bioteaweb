@@ -63,6 +63,8 @@ class RDFFileClient
     /**
      * Set the RDF File base URL
      *
+     * Trailing slash will be auto-appended if not present
+     *
      * @param string
      */
     public function setRdfFileBaseUrl($rdfFileBaseUrl)
@@ -78,6 +80,8 @@ class RDFFileClient
 
     /**
      * Set the RDF File base Path
+     *
+     * Trailing slash will be auto-appended if not present
      *
      * @param string
      */
@@ -145,19 +149,21 @@ class RDFFileClient
      */
     public function getAnnotationFiles($path, $fullPaths = false)
     {
+        //Get the fullpath to the file
         $path = $this->resolvePath($path);
 
-        $filename = basename($path, '.' . pathinfo($path, PATHINFO_EXTENSION)); 
+        //Resolve the basename and the directory name
+        $basename = basename($path, '.' . pathinfo($path, PATHINFO_EXTENSION)); 
         $dirname  = dirname($path);
 
-        //See if we have associated annotation files
+        //Get the full paths for any annotation files
         //(hardcoded for now - perhaps send in as parameters)
         $arr = array(
-            'ncbo'     => $dirname . '/AO_annotations/' . $filename . '_ncboAnnotator.rdf',
-            'whatizit' => $dirname . '/Bio2RDF/' . $filename . '_whatizitUkPmcAll.rdf'
+            'ncbo'     => $dirname . '/AO_annotations/' . $basename . '_ncboAnnotator.rdf',
+            'whatizit' => $dirname . '/Bio2RDF/' . $basename . '_whatizitUkPmcAll.rdf'
         );
 
-        //Do relative paths
+        //Change full paths to relative paths if we want that info
         if ( ! $fullPaths) {
             foreach ($arr as $k => $item) {
                 $arr[$k] = substr($item, strlen($this->getBasePath()));

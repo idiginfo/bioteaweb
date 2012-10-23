@@ -156,7 +156,7 @@ class Document extends Entity
             return $entity->getVocabulary();
         }, $this->getTopics());
 
-        return array_filter($vocabs);
+        return array_unique(array_filter($vocabs));
     }
 
     // --------------------------------------------------------------
@@ -172,7 +172,7 @@ class Document extends Entity
             $topics = array_merge($topics, $termObj->getTopics()->toArray());
         }
 
-        return $topics;
+        return array_unique($topics);
     }
 
     // --------------------------------------------------------------
@@ -182,9 +182,11 @@ class Document extends Entity
      */
     public function getTerms()
     {
-        return array_map(function($entity) {
+        $terms = array_map(function($entity) {
             return $entity->getTerm();
         }, $this->getAnnotations()->toArray());
+
+        return array_unique($terms);
     }
 
     // --------------------------------------------------------------

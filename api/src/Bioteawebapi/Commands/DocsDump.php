@@ -43,16 +43,18 @@ class DocsDump extends Command
         }
         else {
             $fullPath = $this->app['fileclient']->resolvePath($path);
-            $relPath  = basename($path);
+            $relPath  = $path;
 
             if ( ! is_readable($fullPath)) {
                 throw new \InvalidArgumentException("Invalid Path specified. Cannot read from "
                                                     . $this->getArgument('path'));
-
             }
         }
 
-        $document = $this->app['builder']->buildDocument($fullPath, $relPath);
+        //Get annotation files
+        $aFiles = $this->app['fileclient']->getAnnotationFiles($relPath);
+
+        $document = $this->app['builder']->buildDocument($fullPath, $relPath, $aFiles);
 
         //Generate Report
         $output->writeln($this->generateReport($document));
@@ -71,15 +73,15 @@ class DocsDump extends Command
         $output  = "\n";
         $output .= "Filepath: " . $document->getRDFFilePath() . "\n";
 
-        foreach($document->getAnnotationFilePaths() as $name => $path) {
+        foreach($document->getRDFAnnotationPaths() as $name => $path) {
             $output .= sprintf("Annotation File %s: %s\n", $name, $path);
         }
 
         $output .= "\n-- Terms -----------------------------------\n";
 
         foreach($document->getTerms() as $term) {
-            $output .= "\nTerm: " . (string) $term . " (topics below)";
-            $output .= "\n\t" . implode("\n\t", array_map(function($t) { return $t->getTopicUri(); }, $term->getTopics()));
+            $output .= "\nTerm: " . (string) $term;
+            $output .= "\n\t" . implode("\n\t", array_map(function($t) { return $t->getUri(); }, $term->getTopics()->toArray()));
         }
 
         $output .= "\n\n";
@@ -93,9 +95,7 @@ class DocsDump extends Command
 
         $output .= "\n-- Vocabularies ----------------------------\n";
         foreach($document->getVocabularies() as $vocab) {
-
             $output .= sprintf("\nVocabulary: %s, URI: %s" , $vocab->getShortName(), $vocab->getUri());
-
         }
 
         return $output;

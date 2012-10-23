@@ -95,7 +95,7 @@ class Vocabulary extends Entity
      */
     public function getShortName()
     {
-        return (string) $shortName;
+        return (string) $this->shortName;
     }
 
     // --------------------------------------------------------------
