@@ -42,7 +42,7 @@ function doHeader($vars='') {
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	
 	<?php
-	if ($vars['sparql']) {
+	if (isset($vars['sparql']) && $vars['sparql']) {
 	?>
 
 	<script type="text/javascript">
