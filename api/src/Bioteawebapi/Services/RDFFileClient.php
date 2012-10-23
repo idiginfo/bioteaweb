@@ -143,7 +143,7 @@ class RDFFileClient
      * @param boolean $fullPaths  If true, will send fullpaths, else relative paths
      * @return array
      */
-    public function getAnnotationFiles($path, $fullPaths = true)
+    public function getAnnotationFiles($path, $fullPaths = false)
     {
         $path = $this->resolvePath($path);
 
@@ -157,9 +157,10 @@ class RDFFileClient
             'whatizit' => $dirname . '/Bio2RDF/' . $filename . '_whatizitUkPmcAll.rdf'
         );
 
+        //Do relative paths
         if ( ! $fullPaths) {
-            foreach ($arr as &$item) {
-                $item = substr($item, strlen($this->getBasePath()));
+            foreach ($arr as $k => $item) {
+                $arr[$k] = substr($item, strlen($this->getBasePath()));
             }
         }
 

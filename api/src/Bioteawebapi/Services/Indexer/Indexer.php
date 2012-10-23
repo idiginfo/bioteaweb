@@ -175,12 +175,17 @@ class Indexer
         //Reset the directory iterator in the file client
         $this->files->resetFileIterator();
 
+        //Inform task tracker we're starting
+        if ($this->taskTracker) {
+            $this->taskTracker->start();
+        }
+
         //Get document graphs until we run out of files
         while ($relPath = $this->files->getNextFile()) {
 
             //Build the document
             $fullPath = $this->files->resolvePath($relPath);
-            $aPaths   = $this->files->getAnnotationFiles($relPath);
+            $aPaths   = $this->files->getAnnotationFiles($relPath, false);
             $doc = $this->builder->buildDocument($fullPath, $relPath, $aPaths);
 
             //If passed limit, get out
@@ -193,7 +198,7 @@ class Indexer
 
             //Inform task tracker
             if ($this->taskTracker) {
-                $this->taskTracker->tick(1, null, $result);
+                $this->taskTracker->tick("Indexing", $result);
             }
 
             switch($result) {
