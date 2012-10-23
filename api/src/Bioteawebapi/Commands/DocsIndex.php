@@ -24,15 +24,14 @@ use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 /**
  * Recursively index RDF file and report output to logs and to the console
  */
-class Index extends Command
+class DocsIndex extends Command
 {
     const NO_LIMIT = 0;
 
     protected function configure()
     {
-        $this->setName('index')->setDescription('Index documents into MySQL (and SOLR, if app is configuerd to do so)');
+        $this->setName('docs:index')->setDescription('Index documents into MySQL (and SOLR, if app is configuerd to do so)');
         $this->addArgument('path', InputArgument::OPTIONAL, 'Folder path to index. If not specified, path in config is used');
-        $this->addOption('quiet', 'q', InputOption::VALUE_NONE, 'Quiet mode');
         $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed documents (excluding skipped)');
     }
 

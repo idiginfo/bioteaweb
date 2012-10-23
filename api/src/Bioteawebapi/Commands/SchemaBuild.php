@@ -24,13 +24,13 @@ use Bioteawebapi\Services\MySQLClient;
  *
  * A very simple class to update the MySQL Schema
  */
-class BuildSchema extends Command
+class SchemaBuild extends Command
 {
     // --------------------------------------------------------------
     
     protected function configure()
     {
-        $this->setName('buildschema')->setDescription('Build MySQL Schema for MySQL indicies.  Only changes out-of-date schemas.');
+        $this->setName('schema:build')->setDescription('Build MySQL Schema for MySQL indicies.  Only changes out-of-date schemas.');
         $this->addOption('dry-run', 'd', InputOption::VALUE_NONE, 'This option allows you to see the queries that would be run.');
     }
 

@@ -12,7 +12,7 @@ use ZipArchive;
 /**
  * Class to build ZIP Files from RDF directory
  */
-class BuildZipFiles extends Command
+class DocsBuildZips extends Command
 {
     /**
      * @var int  Default batch size
@@ -43,9 +43,8 @@ class BuildZipFiles extends Command
 
     protected function configure()
     {
-        $this->setName('buildzips')->setDescription('Build ZIP files and deposit them on the filesystem');
+        $this->setName('docs:buildzips')->setDescription('Build ZIP files and deposit them on the filesystem');
         $this->addArgument('path', InputArgument::REQUIRED, 'Output path to place ZIP files');
-        $this->addOption('quiet', 'q', InputOption::VALUE_NONE, 'Quiet supresses output to the console');
         $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Optional limit', 0);
 
         $this->addOption(

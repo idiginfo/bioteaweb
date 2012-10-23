@@ -39,13 +39,14 @@ require(__DIR__ . '/../src/bootstrap.php');
  */
 
 //Libraries
-$app['consoleapp'] = new Application();
+$app['consoleapp'] = new Application('Biotea API Console Utilities');
 
 //Commands
-$app['consoleapp']->add(new Bioteawebapi\Commands\BuildZipFiles($app));
-$app['consoleapp']->add(new Bioteawebapi\Commands\BuildSchema($app));
-$app['consoleapp']->add(new Bioteawebapi\Commands\DumpDocument($app));
-$app['consoleapp']->add(new Bioteawebapi\Commands\Index($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\SchemaBuild($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\DocsBuildZips($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\DocsDump($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\DocsIndex($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\DocsClear($app));
 
 // ------------------------------------------------------------------
 

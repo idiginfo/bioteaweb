@@ -22,11 +22,11 @@ use Symfony\Component\Console\Output\OutputInterface;
 /**
  * A tool to dump information about docsets to the CLI
  */
-class DumpDocument extends Command
+class DocsDump extends Command
 {
     protected function configure()
     {
-        $this->setName('dump')->setDescription('Build and dump a RDF docset (terms, vocabularies, and topics)');
+        $this->setName('docs:dump')->setDescription('Build and dump a RDF docset (terms, vocabularies, and topics)');
         $this->addArgument('path',  InputArgument::REQUIRED, 'Path to the single RDF XML file to dump.  Can be relative or absolute');
     }    
 
