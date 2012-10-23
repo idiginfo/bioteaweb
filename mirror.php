@@ -43,10 +43,39 @@ doHeader();
 			<h3>Get the RDF Collection</h3>
 			
 			<br />
-			<p>The entire collection of RDF documents is available for download.  You can either download via FTP or HTTP.</p>
+			<p>
+                The entire collection of RDF documents is available for download
+                as a collection of ZIP files.  Each document consists of three
+                RDF files serialised as XML:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>The main RDF file - </strong> Contains RDF representation
+                    of the PMC document.
+                    <em>(e.g. PMC15342.rdf)</em>
+                </li>
+                <li>
+                    <strong>NCBO Annotator file - </strong> Contains NCBO annotations
+                    for the document.
+                    <em>(e.g. AO_annotations/PMC15342_ncboAnnotator.rdf)</em>
+                </li>
+                <li>
+                    <strong>WhatIzIt Annotator file - </strong> Contains WhatIzIt annotations
+                    for the document.
+                    <em>(e.g. Bio2RDF/MC15342_whatizitUkPmcAll.rdf)</em>
+                </li>
+            </ul>
 			
-            <p><strong>FTP</strong>
-            <br />The FTP address is <a href="ftp://biotea.idiginfo.org">ftp://biotea.idiginfo.org</a>.  There is no login</p>
+            <h4>How to Download</h4>
+
+            <p>
+                <strong>FTP Access</strong>
+                <br />
+                Connect your FTP client to
+                <a href="ftp://biotea.idiginfo.org">ftp://biotea.idiginfo.org</a>.  
+                There is no login.
+            </p>
             
             <p><strong>HTTP</strong>
             <br />The HTTP address is: <a href="http://biotea.idiginfo.org/files">http://biotea.idiginfo.org/files</a>.</p>
