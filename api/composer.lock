@@ -413,18 +413,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/njh/easyrdf.git",
-                "reference": "56d7ccb3bf9115139fa6685cf2603bb66a9a895e"
+                "reference": "883a51ecaa3217f3a9dbd5c7753cce87a777b364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/njh/easyrdf/zipball/56d7ccb3bf9115139fa6685cf2603bb66a9a895e",
-                "reference": "56d7ccb3bf9115139fa6685cf2603bb66a9a895e",
+                "url": "https://github.com/njh/easyrdf/zipball/883a51ecaa3217f3a9dbd5c7753cce87a777b364",
+                "reference": "883a51ecaa3217f3a9dbd5c7753cce87a777b364",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.8"
             },
-            "time": "1350943120",
+            "time": "1350979142",
             "type": "library",
             "installation-source": "source",
             "autoload": {
