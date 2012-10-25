@@ -183,16 +183,21 @@ class Indexer
         //Get document graphs until we run out of files
         while ($docPath = $this->files->getNextFile()) {
 
-            //Build the document
-            $doc = $this->builder->buildDocument($docPath);
-
             //If passed limit, get out
             if ($limit && $this->getNumProcessed() >= $limit) {
                 return;
             }
 
-            //Process it
-            $result = $this->processItem($doc);
+            try {
+                //Build the document
+                $doc = $this->builder->buildDocument($docPath);
+
+                //Process it
+                $result = $this->processItem($doc);
+
+            } catch (\Exception $e) {
+                $result = self::FAILED;
+            }
 
             //Inform task tracker
             if ($this->taskTracker) {
