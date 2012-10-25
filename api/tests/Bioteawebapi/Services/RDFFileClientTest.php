@@ -88,7 +88,21 @@ class RDFFIleClientTest extends \PHPUnit_Framework_TestCase
 
     // --------------------------------------------------------------
 
-    public function testGetAnnotationPathsSucceeds()
+    public function testGetFullAnnotationPathsSucceeds()
+    {
+        $obj = new RDFFileClient($this->rdfPath, $this->baseUrl);    
+
+        $realFile = 'subFolder/PMC534113.rdf';
+        $apaths = $obj->getAnnotationFiles($realFile, true);
+
+        foreach ($apaths as $file) {
+            $this->assertFileExists($file);
+        }
+    }
+
+    // --------------------------------------------------------------
+
+    public function testGetRelAnnotationPathsSucceeds()
     {
         $obj = new RDFFileClient($this->rdfPath, $this->baseUrl);    
 
@@ -96,8 +110,8 @@ class RDFFIleClientTest extends \PHPUnit_Framework_TestCase
         $apaths = $obj->getAnnotationFiles($realFile);
 
         foreach ($apaths as $file) {
-            $this->assertFileExists($file);
-        }
+            $this->assertFileExists($obj->resolvePath($file));
+        }        
     }
 
     // --------------------------------------------------------------
@@ -116,6 +130,17 @@ class RDFFIleClientTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals($expectedArray, $apaths);
     }
+
+    // --------------------------------------------------------------
+
+    public function testResolvePathReturnsBasePathForEmptyParameter()
+    {
+        $obj = new RDFFileClient($this->rdfPath, $this->baseUrl);
+
+        $this->assertEquals($this->rdfPath . DIRECTORY_SEPARATOR, $obj->resolvePath(''));
+        $this->assertEquals($this->baseUrl . '/', $obj->resolveUrl(''));
+    }
+
 }
 
 /* EOF: RDFFileClientTest.php */

@@ -113,7 +113,7 @@ class RDFFileClient
      */
     public function resolvePath($path)
     {
-        if ($path{0} == '/') {
+        if (strlen($path) > 0 && $path{0} == '/') {
             $path = substr($path, 1);
         }
 
@@ -129,7 +129,7 @@ class RDFFileClient
      */
     public function resolveUrl($path)
     {
-        if ($path{0} == '/') {
+        if (strlen($path) > 0 && $path{0} == '/') {
             $path = substr($path, 1);
         }
 

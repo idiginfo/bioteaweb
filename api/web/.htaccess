@@ -1,3 +1,6 @@
+#
+# Biotea API .htaccess File
+#
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteCond $1 !^(index\.php|humans\.txt|robots\.txt)
