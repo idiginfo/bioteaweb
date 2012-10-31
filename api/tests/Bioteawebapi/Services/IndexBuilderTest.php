@@ -55,49 +55,6 @@ class IndexBuilderTest extends \PHPUnit_Framework_TestCase
 
     // --------------------------------------------------------------
 
-    // public function testGetTraverserReturnsATraverserForAValidFilePath()
-    // {
-    //     $obj = $this->getObj();
-    //     $tr = $obj->getTraverser($this->getTestPath());
-    //     $this->assertInstanceOf('\Bioteawebapi\Services\IndexBuilder', $tr);
-    // }
-
-    // // --------------------------------------------------------------
-
-    // public function testGetTraverserThrowsExceptionForInvalidFilePath()
-    // {
-    //     $this->setExpectedException('\InvalidArgumentException');
-
-    //     $obj = $this->getObj();
-    //     $tr = $obj->getTraverser("/really/does/not/exist/yo");
-    //     $this->assertInstanceOf('\Bioteawebapi\Services\Index', $tr);        
-    // }
-
-    // // --------------------------------------------------------------
-
-    // public function testTraverserReturnsObjects()
-    // {
-    //     $obj = $this->getObj();
-    //     $tr = $obj->getTraverser($this->getTestPath());
-
-    //     for ($i = 0; $i < 3; $i++) {
-    //         $item = $tr->getNextDocument();
-    //         $this->assertGreaterThan(0, strlen($item->getRdfFilePath()));
-    //     }
-    // }
-
-    // // --------------------------------------------------------------
-
-    // public function testTraverserNotAvailableThruInstantiatedObject()
-    // {
-    //     $this->setExpectedException("\Exception");
-
-    //     $obj = $this->getObj();
-    //     $obj->getNextDocument();
-    // }
-
-    // --------------------------------------------------------------
-
     /**
      * Get the path to the test data
      *

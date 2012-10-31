@@ -70,6 +70,27 @@ class IndexPersister
     // --------------------------------------------------------------
 
     /**
+     * Performs a quick and dirty query against the database for document path
+     *
+     * @param string $path  Relative document path to main RDF file, as stored in databse
+     * @return boolean      True if exists, false if doesn't exist
+     */
+    public function checkDocumentExistsByPath($path)
+    {
+        $stmt = $this->dbal->prepare("SELECT * FROM Document WHERE rdfFilePath = ?");
+        $stmt->bindvalue(1, $path);
+        if ($stmt->execute()) {
+            return ($stmt->rowCount() > 0);
+        }
+        else {
+            return false;
+        }
+        
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Manually persist a document entity and all of its graphed objects into the database,
      * since Doctrine seems to have major issues with this
      *

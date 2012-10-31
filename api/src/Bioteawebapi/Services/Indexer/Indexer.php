@@ -189,11 +189,20 @@ class Indexer
             }
 
             try {
-                //Build the document
-                $doc = $this->builder->buildDocument($docPath);
 
-                //Process it
-                $result = $this->processItem($doc);
+                //Check to see if the path is already in the database
+                //before building the document (this is for performance)
+                if ($this->persister->checkDocumentExistsByPath($docPath)) {
+                    $result = self::SKIPPED;
+                }
+                else {
+
+                    //Build the document
+                    $doc = $this->builder->buildDocument($docPath);
+
+                    //Process it
+                    $result = $this->processItem($doc);
+                }
 
             } catch (\Exception $e) {
                 $result = self::FAILED;
