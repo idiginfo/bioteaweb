@@ -28,8 +28,6 @@ class DocsClear extends Command
     protected function configure()
     {
         $this->setName('docs:clear')->setDescription('Clear all documents in the system');
-        $this->addArgument('path', InputArgument::OPTIONAL, 'Folder path to index. If not specified, path in config is used');
-        $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed documents (excluding skipped)');
     }
 
     // --------------------------------------------------------------
@@ -37,6 +35,15 @@ class DocsClear extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         //If not non-interactive, prompt "are you sure?"
+        if ( ! $input->getOption('no-interaction')) {
+
+            $dialog = $this->getHelperSet()->get('dialog');
+            if ( ! $dialog->askConfirmation($output,
+                    '<error>WARNING: This will DESTROY all data.</error> Are you sure you want to do this? [y/n]: ', false
+                )) {
+                return;
+            }
+        }
 
         //Get schema manager and database clients
         $db = $this->app['db'];
