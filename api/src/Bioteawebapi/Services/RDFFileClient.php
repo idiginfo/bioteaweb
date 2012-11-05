@@ -139,6 +139,38 @@ class RDFFileClient
     // --------------------------------------------------------------
 
     /**
+     * Get a MD5 Hash of the RDF file and its associated Annotation files
+     *
+     * Takes a file checksum of each file, then smashes that string
+     * together and takes a checksum of that
+     *
+     * @param  string $path  Relative path to the main RDF file
+     * @return string
+     */
+    public function getFilesMD5($path)
+    {
+        $files = array();
+        $md5s = array();
+
+        //Get full filepaths
+        $files[] = $this->resolvePath($path);
+        foreach($this->getAnnotationFiles($path, true) as $apath) {
+            $files[] = $apath;
+        }
+
+        //Get MD5 checksums
+        foreach($files as $file) {
+            if ($val = @md5_file($file)) {
+                $md5s[] = $val;
+            }
+        }
+
+        return md5(implode('', $md5s));
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Get annotation files for a RDF path
      *
      * Does not do any checks to see if the files actually exist

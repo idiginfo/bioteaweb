@@ -36,6 +36,9 @@ class Document extends Entity
     /** @Column(type="text", nullable=true) **/
     protected $rdfAnnotationPaths;
 
+    /** @Column(type="text", nullable=true) **/
+    protected $md5;
+
     /**
      * @OneToMany(targetEntity="Annotation", mappedBy="document", cascade={"persist", "merge"})
      **/    
@@ -47,9 +50,11 @@ class Document extends Entity
     /**
      * Constructor
      *
-     * @var string $rdfFilePath  Relative path to RDF file
+     * @param string $rdfFilePath         Relative path to RDF file
+     * @param string $md5                 MD5 of this document
+     * @param array $annotationFilePaths  Relative path to annotation files (as array)
      */
-    public function __construct($rdfFilePath, $annotationFilePaths = array())
+    public function __construct($rdfFilePath, $md5 = null, $annotationFilePaths = array())
     {
         $this->annotations = new ArrayCollection();
 
@@ -57,6 +62,8 @@ class Document extends Entity
         foreach($annotationFilePaths as $name => $path) {
             $this->addAnnotationFilepath($name, $path);
         }
+
+        $this->setMd5($md5);
     }
 
     // --------------------------------------------------------------
@@ -64,11 +71,23 @@ class Document extends Entity
     /**
      * Set RDF File Path
      *
-     * @var string $rdfFilePath  Relative path to RDF file
+     * @param string $rdfFilePath  Relative path to RDF file
      */
     public function setRdfFilePath($path)
     {
         $this->rdfFilePath = $path;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Set MD5 for files
+     *
+     * @param string $md5
+     */
+    public function setMd5($md5)
+    {
+        $this->md5 = $md5;
     }
 
     // --------------------------------------------------------------

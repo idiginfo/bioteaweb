@@ -88,6 +88,7 @@ class IndexBuilder
     {
         //Get full path
         $fullPath = $this->files->resolvePath($relativePath);
+        $md5      = $this->files->getFilesMD5($relativePath);
 
         //Check file exists
         if ( ! is_readable($fullPath)) {
@@ -95,7 +96,7 @@ class IndexBuilder
         }
 
         //Build object
-        $documentObj = new Document($relativePath);
+        $documentObj = new Document($relativePath, $md5);
 
         //If so, add them to the object
         foreach($this->files->getAnnotationFiles($relativePath) as $name => $relAnnotPath) {
@@ -215,9 +216,6 @@ class IndexBuilder
 
     /**
      * Build a term object
-     *
-     * Checks if existing term exists in the database.  Returns a
-     * reference to that, or a new term
      *
      * @param string $term
      * @return Entities\Term
