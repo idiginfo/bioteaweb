@@ -53,6 +53,11 @@
             color: #333;
         }
 
+        ul#jsonlist .toggle {
+            color: blue;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -73,7 +78,7 @@
             //Get the JSON
             var content = $.parseJSON($('#json').text());
             $('#json').after("<div id='json_formatted'></div>");
-            JSONFormatter.format(content, {'appendTo': '#json_formatted', 'list_id' : 'jsonlist'});
+            JSONFormatter.format(content, {'appendTo': '#json_formatted', 'list_id' : 'jsonlist', 'collapse': true});
             $('#json').remove();
         }
     });

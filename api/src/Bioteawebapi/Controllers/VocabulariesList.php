@@ -83,7 +83,6 @@ class VocabulariesList extends Abstracts\ListController
             );
         }
 
-        //Not sure what to do with the vocabularies yet...
         return $outItems;
     }    
 }
