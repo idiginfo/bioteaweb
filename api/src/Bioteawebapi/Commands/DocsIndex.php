@@ -66,6 +66,7 @@ class DocsIndex extends Command
 
         //Add the task tracker and run the indexer
         $this->app['indexer']->setTaskTracker($tracker);
+        $this->app['indexer']->setLogger($this->app['monolog']);
         $this->app['indexer']->index($limit);
     }
 }

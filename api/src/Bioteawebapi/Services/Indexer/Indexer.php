@@ -16,7 +16,9 @@ namespace Bioteawebapi\Services\Indexer;
 use Bioteawebapi\Services\RDFFileClient;
 use Bioteawebapi\Exceptions\MySQLClientException;
 use Bioteawebapi\Entities\Document;
+
 use TaskTracker\Tracker;
+use Monolog\Logger;
 
 /**
  * Indexer indexes RDF documents into MySQL and optionally SOLR
@@ -69,6 +71,11 @@ class Indexer
      */
     private $taskTracker;
 
+    /**
+     * @var \Monolog\Logger
+     */
+    private $logger;
+
     // --------------------------------------------------------------
 
     /**
@@ -94,6 +101,18 @@ class Indexer
     public function setTaskTracker(Tracker $taskTracker)
     {
         $this->taskTracker = $taskTracker;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Set an optional logger
+     *
+     * @param \Monolog\Logger $logger
+     */
+    public function setLogger(Logger $logger)
+    {
+        $this->logger = $logger;
     }
 
     // --------------------------------------------------------------
@@ -205,7 +224,21 @@ class Indexer
                 }
 
             } catch (\Exception $e) {
+
+                //Set result to failed                
                 $result = self::FAILED;
+
+                //Log it if there is a logger
+                if ($this->logger) {
+
+                    $arr = array(
+                        'message'  => $e->getMessage(),
+                        'trace'    => $e->getTrace(),
+                        'location' => $e->getFile() . ":" . $e->getLine()
+                    );
+                    $this->logger->addError("Error while attempting to index " . $docPath, $arr);
+                }
+
             }
 
             //Inform task tracker
@@ -236,7 +269,7 @@ class Indexer
      *
      * @param Entities\Document $document
      * @param Array $insertions
-     * @return int  Skipped, Indexed, or Failed
+     * @return int  Skipped, Indexed
      */
     public function processItem(Document $document)
     {

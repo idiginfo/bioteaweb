@@ -42,10 +42,10 @@ require(BASEPATH . '/vendor/autoload.php');
 
 //Setup Classloader
 $loader = new UniversalClassLoader();
-$loader->registerNamespace('Bioteawebapi', BASEPATH . '/src');
-$loader->registerNamespace('TaskTracker', BASEPATH . '/src');
 
+$loader->registerNamespace('Bioteawebapi', BASEPATH . '/src');
 $loader->registerPrefix('EasyRdf', BASEPATH . '/vendor/njh/easyrdf/lib');
+
 $loader->register();
 
 //EasyRDF Lunacy
