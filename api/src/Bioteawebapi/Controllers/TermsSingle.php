@@ -70,7 +70,7 @@ class TermsSingle extends Abstracts\SingleEntityController
             }
         }
 
-        $output = new BasicView($viewParams);
+        $output = $this->app['viewfactory']->build('BasicView', array($viewParams));
 
         //Output it!
         switch($this->format) {

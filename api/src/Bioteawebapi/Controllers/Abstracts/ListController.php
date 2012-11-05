@@ -60,7 +60,8 @@ abstract class ListController extends Controller
 
 
         //Setup output view
-        $output = new PaginatedList($itemCount, $this->itemsPerPage);
+        $output = $this->app['viewfactory']->build('PaginatedList', array($itemCount, $this->itemsPerPage));
+        //$output = new PaginatedList($itemCount, $this->itemsPerPage);
         $output->setItems($items);
         $output->setOffset($offset);
 

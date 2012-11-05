@@ -46,11 +46,10 @@ require(__DIR__ . '/../src/bootstrap.php');
  */
 
 //Libraries
-$app['fosrest'] = new FormatNegotiator();
+$app['fosrest']     = new FormatNegotiator();
 
-//Set JSON pretty printer
-Bioteawebapi\Rest\View::setJsonFormatter(new webignition\JsonPrettyPrinter\JsonPrettyPrinter());
-Bioteawebapi\Rest\View::setDefaultTemplate(file_get_contents(BASEPATH . '/src/Bioteawebapi/Files/html_template.html'));
+$app['viewfactory'] = new Bioteawebapi\Rest\ViewFactory('Bioteawebapi\Views');
+$app['viewfactory']->setDefaultTemplate(file_get_contents(BASEPATH . '/src/Bioteawebapi/Files/html_template.html'));
 
 //Controllers
 $app['webapp'] = new RestApp($app);
@@ -61,6 +60,8 @@ $app['webapp']->add(new Bioteawebapi\Controllers\TopicsList($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\TopicsSingle($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\DocumentsList($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\DocumentsSingle($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesList($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesSingle($app));
 
 // ------------------------------------------------------------------
 

@@ -74,7 +74,7 @@ class Front extends Controller
     protected function getStats()
     {   
         //Get stats
-        $stats = new BasicView();
+        $stats = $this->app['viewfactory']->build('BasicView');
         $stats->counts = array(
             'documents'    => (int) $this->app['dbclient']->count('getDocuments'),
             'terms'        => (int) $this->app['dbclient']->count('getTerms'),

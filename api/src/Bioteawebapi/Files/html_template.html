@@ -26,12 +26,61 @@
         var {
             font-family: monospace;
         }
+
+        /* Json Formatter */
+        ul#jsonlist {
+            font-family: monospace;
+            font-size: 1.1em;
+            margin: 10px; 
+            padding: 10px;
+            background-color: #F5F5F5;
+        }
+        
+        ul#jsonlist i, ul#jsonlist b {
+            color: black;
+            font-style: normal; 
+        }
+        
+        ul#jsonlist ul {
+            margin: 3px 0 0 20px;
+            padding: 0;
+        }
+        
+        ul#jsonlist li {
+            padding: 0 0 3px;
+            list-style-type: none;
+            margin: 0;
+            color: #333;
+        }
+
     </style>
 </head>
 <body>
     <h1>bioteà - biomedical annotation API (<a href='http://biotea.idiginfo.org' title='Bioteà Homepage'>More Info</a>)</h1>
-    <h2>JSON Output - Use <var>?format=json</var> parameter to get native JSON output</h2>
+    <h2>This is a preview.  Use <var>?format=json</var> parameter to get native JSON output</h2>
 
     %content%
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+<script type='text/javascript'>
+
+    JSONFormatter=function(){var e=function(e,n){var r=$.extend({appendTo:"body",list_id:"json",collapse:false},n);var i=0;loopObjectOfObjects=function(e,t){$.each(e,function(e,n){if(typeof n=="object"){$("#"+r.list_id+" #"+t).append('<li><span>{</span> <ul id="'+t+"-"+e+'"></ul></li>');$.each(n,function(n,s){if(typeof s=="object"&&s!=null){$("#"+r.list_id+" #"+t+"-"+e).append("<li>"+n+' <span>{</span> <ul id="'+n+"-"+i+'"></ul></li>');loopAgain(s,n,n+"-"+i)}else{$("#"+r.list_id+" #"+t+"-"+e).append("<li>"+n+": "+s+"</li>")}})}else{$("#"+r.list_id+" #"+t).append("<li>"+n+"</li>")}})},loopAgain=function(e,t,n){i++;$.each(e,function(e,t){var s=e+"-"+i;var o='<ul id="'+s+'"></ul>';if(t!=null&&typeof t=="object"){if(t.length==0){$("#"+r.list_id+" #"+n).append("<li><i>"+e+":</i> []</li>")}else if(t.length>=1){$("#"+r.list_id+" #"+n).append("<li><b>"+e+":</b> <span>[</span> "+o+"</li>");loopObjectOfObjects(t,s)}else if(t.length==undefined){$("#"+r.list_id+" #"+n).append("<li><b>"+e+":</b> <span>{</span> "+o+"</li>");loopAgain(t,e,s)}}else{$("#"+r.list_id+" #"+n).append("<li><i>"+e+":</i> "+t+"</li>")}})},addClosingBraces=function(){$("#"+r.list_id+" span").each(function(){var e="<span>}</span>";if($(this).text()=="["){e="<span>]</span>"}$(this).parent().find("ul").eq(0).after(e)})};var s=$('<ul id="'+r.list_id+'" />');$(r.appendTo).append(s);$.each(e,function(e,t){if(t!=null&&typeof t=="object"){var n=false;var s=false;var o="";$.each(t,function(e,t){if(t!=null&&typeof t=="object"){if(t.length==undefined){n=true;o=e}else{n=false}}else{s=true}});if(n){$("#"+r.list_id).append("<li><b>"+e+':</b> <span>[</span><ul id="'+o+"-"+i+'"></ul></li>');loopObjectOfObjects(t,o+"-"+i)}else if(s){$("#"+r.list_id).append("<li><b>"+e+':</b> <span>[</span><ul id="'+o+"-"+i+'"></ul></li>');loopAgain(t,o,o+"-"+i)}else{$("#"+r.list_id).append("<li><b>"+e+':</b> <span>{</span><ul id="'+e+"-"+i+'"></ul></li>');loopAgain(t,e,e+"-"+i)}}else{$("#"+r.list_id).append("<li><i>"+e+":</i> "+t+"</li>")}});addClosingBraces();if(r.collapse){t(r.list_id)}},t=function(e){$("#"+e+" > li").find("ul").each(function(){$(this).parent().find("span").eq(0).after('<span class="toggle fake-link"> - </span>')});$(".toggle").next().slideUp().end().text(" + ");$(".toggle").live("click",function(){if($(this).next().is(":visible")){$(this).next().slideUp().end().text(" + ")}else{$(this).next().slideDown().end().text(" - ")}})};return{format:function(t,n){e(t,n)}}}();
+
+    $('document').ready(function() {
+
+        if ($("#json").length > 0) {
+
+            //Get the JSON
+            var content = $.parseJSON($('#json').text());
+            $('#json').after("<div id='json_formatted'></div>");
+            JSONFormatter.format(content, {'appendTo': '#json_formatted', 'list_id' : 'jsonlist'});
+            $('#json').remove();
+        }
+    });
+
+    // --------------------------------------------------------------
+
+</script>
+
 </body>
 </html>

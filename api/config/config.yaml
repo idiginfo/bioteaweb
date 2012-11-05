@@ -14,13 +14,6 @@ rdfpath: ./tests/fixtures/rdfSampleFolder
 #URL to RDF documents (full URL)
 rdfurl: http://localhost:8850/bioteaweb/api/tests/fixtures/rdfSampleFolder
 
-# SOLR Cores
-solr:
-    terms:
-        host: 127.0.0.1
-        port: 8080
-        path: /solr/
-
 # MySQL config
 mysql:
     host:     127.0.0.1
@@ -28,6 +21,22 @@ mysql:
     pass:     
     name:     bioteaweb
     cachedir: AUTO
+
+# SOLR Cores
+solr:
+    terms:
+        host: 127.0.0.1
+        port: 8080
+        path: /solr/
+
+#Logs (via Monolog)
+logs:
+    file:
+        path:  /tmp/bioteawebapi
+        level: info
+    email:
+        to:    root@localhost
+        level: error
 
 #Vocabularies
 vocabularies:
@@ -52,12 +61,3 @@ vocabularies:
     ncbitaxon:      http://purl.org/obo/owl/NCBITaxon#NCBITaxon_ 
     taxonomy:       http://www.uniprot.org/taxonomy/ 
     mddb:           http://purl.bioontology.org/ontology/MDDB/ 
-
-#Logs (via Monolog)
-logs:
-    file:
-        path:  /tmp/bioteawebapi
-        level: info
-    email:
-        to:    root@localhost
-        level: error
