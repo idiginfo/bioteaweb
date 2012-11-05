@@ -106,7 +106,34 @@ class Vocabulary extends Entity
     public function getTopics()
     {
         return $this->topics;
-    }    
+    }   
+
+    // --------------------------------------------------------------
+
+    public function getTerms()
+    {
+        $terms = array();
+
+        foreach($this->getTopics() as $topic) {
+            $terms = array_merge($terms, $topic->getTerms()->toArray());
+        }
+
+        return new ArrayCollection(array_values($terms));
+    }
+
+    // --------------------------------------------------------------
+
+    public function getDocuments()
+    {
+        $docs = array();
+
+        foreach($this->getTerms() as $term) {
+            $docs = array_merge($docs, $term->getDocuments()->toArray());
+        }
+        
+        return new ArrayCollection(array_values($docs));
+    }
+ 
 }
 
 /* EOF: Vocabulary.php */

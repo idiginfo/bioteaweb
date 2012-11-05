@@ -99,7 +99,7 @@ class TopicsList extends Abstracts\ListController
         }
 
         return $outItems;
-    }    
+    } 
 }
 
 /* EOF: TopicsList.php */

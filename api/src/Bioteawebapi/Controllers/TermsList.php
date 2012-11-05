@@ -25,7 +25,6 @@ class TermsList extends Abstracts\ListController
     {
         parent::configure();
         $this->add(new Parameter('prefix', '/^[\p{L}\d \-_]+$/i', "An optional prefix to limit query results"));
-        $this->add(new Parameter('topics', array(0, 1), "An optional prefix to include topic information about each term"));
     }
 
     // --------------------------------------------------------------
@@ -82,20 +81,7 @@ class TermsList extends Abstracts\ListController
         $includeTopics = (boolean) $this->getParameter('topics');
 
         foreach ($items as $termObj) {
-            $outArr = array('term' => $termObj->getTerm());
-
-            if ($includeTopics) {
-
-                foreach($termObj->getTopics() as $topic) {
-                    $outArr['topics'][] = array(
-                        'id'        => $topicObj->getId(),
-                        'uri'       => $topic->getUri(),
-                        'shortName' => $topic->getShortName()
-                    );
-                }
-            }
-
-            $outItems[] = $outArr;
+            $outItems[] = array('term' => $termObj->getTerm());
         }
 
         return $outItems;

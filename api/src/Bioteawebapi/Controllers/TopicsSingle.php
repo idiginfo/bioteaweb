@@ -43,7 +43,18 @@ class TopicsSingle extends Abstracts\SingleController
         $this->topicObj = $topicObj;
 
         //Return it
-        return $topicObj->toArray() ?: false;
+        if ($topicObj) {
+            $arr = $topicObj->toArray();
+
+            if ($topicObj->getVocabulary()) {
+                $arr['vocabulary'] = $topicObj->getVocabulary()->toArray();
+            }
+
+            return $arr;
+        }
+        else {
+            return false;
+        }
     }
 
     // --------------------------------------------------------------
@@ -84,9 +95,23 @@ class TopicsSingle extends Abstracts\SingleController
     protected function assignRelatedItems()
     {
         return array(
-            'vocabularies' => "Vocabularies",
+            'documents' => "Documents",
             'terms'    => "Terms"
         );
+    }
+
+    // --------------------------------------------------------------
+
+    protected function getRelatedItemsCount($which)
+    {
+        switch ($which) {
+            case 'terms':
+                return $this->topicObj->getTerms()->count();
+            break;
+            case 'documents':
+                return $this->topicObj->getDocuments()->count();
+            break;
+        }
     }
 
     // --------------------------------------------------------------
@@ -101,11 +126,53 @@ class TopicsSingle extends Abstracts\SingleController
      */
     protected function getRelatedItems($which, $offset, $limit)
     {
-        $viewParams = array();
+        $items = array();
 
-        //@TODO: Implement this.  Copy from terms
-        return $viewParams;
+        switch ($which) {
+
+            case 'terms':
+
+                $terms = $this->topicObj->getTerms()->slice($offset, $limit);
+                foreach($terms as $termObj) {
+                    $items[] = $termObj->toArray();
+                }
+
+            break;  
+            case 'documents':
+
+                $docs = $this->topicObj->getDocuments()->slice($offset, $limit);
+                foreach($docs as $docObj) {
+                    $items[] = $this->buildDocumentDetails($docObj);
+                }
+
+            break;
+        }     
+
+        return $items;
     }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Inputs a document class and outputs the URLS for the RDF files
+     * 
+     * @param Bioteawebapi\Entities\Document
+     * @return array
+     */
+    protected function buildDocumentDetails($document)
+    {
+        $resolver = $this->app['fileclient'];
+
+        $arr = array();
+        $arr['url'] = $resolver->resolveUrl($document->getRDFFilePath());
+        $arr['annotationUrls'] = array();
+
+        foreach ($document->getRDFAnnotationPaths() as $name => $path) {
+            $arr['annotationUrls'][$name] = $resolver->resolveUrl($path);
+        }
+
+        return $arr;
+    }    
 }
 
 /* EOF: TopicsSingle.php */

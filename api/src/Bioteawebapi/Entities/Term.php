@@ -107,7 +107,7 @@ class Term extends Entity
     // --------------------------------------------------------------
 
     /**
-     * Get documents from somewhere else in the graph
+     * Get documents that have this term
      *
      * @return Doctrine\Common\Collections\ArrayCollection
      */
@@ -130,6 +130,25 @@ class Term extends Entity
     public function getTopics()
     {
         return $this->topics;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getVocabularies()
+    {
+        $vocabs = array();
+
+        foreach($this->topics as $topic) {
+
+            if ($vocab = $topic->getVocabulary()) {
+                $vocabs[$vocab->getShortName()] = $vocab;
+            }
+        }
+
+        return new ArrayCollection(array_values($vocabs));
     }
 
     // --------------------------------------------------------------

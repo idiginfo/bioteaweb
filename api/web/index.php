@@ -60,8 +60,8 @@ $app['webapp']->add(new Bioteawebapi\Controllers\TopicsList($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\TopicsSingle($app));
 // $app['webapp']->add(new Bioteawebapi\Controllers\DocumentsList($app));
 // $app['webapp']->add(new Bioteawebapi\Controllers\DocumentsSingle($app));
-// $app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesList($app));
-// $app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesSingle($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesList($app));
+$app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesSingle($app));
 
 // ------------------------------------------------------------------
 

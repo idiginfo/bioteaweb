@@ -148,6 +148,20 @@ class Topic extends Entity
     }
     
     // --------------------------------------------------------------
+
+    /**
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getDocuments()
+    {
+        $docs = array();
+
+        foreach($this->getTerms() as $term) {
+            $docs = array_merge($docs, $term->getDocuments()->toArray());
+        }
+        
+        return new ArrayCollection(array_values($docs));
+    }
 }
 
 /* EOF: Topic.php */

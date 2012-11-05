@@ -21,11 +21,6 @@ use Bioteawebapi\Rest\View;
 class PaginatedList extends View
 {
     /**
-     * @var int  Total number of pages
-     */
-    private $numPages;
-
-    /**
      * @var int  Total number of items
      */ 
     private $numItems;
@@ -36,14 +31,14 @@ class PaginatedList extends View
     private $numPerPage;
 
     /**
-     * @var array  Array of items
-     */
-    private $items = array();
-
-    /**
      * @var int  The current page
      */
     private $page;
+
+    /**
+     * @var int  Total number of pages
+     */
+    private $numPages;
 
     /**
      * @var int  The start item number on the current page
@@ -54,6 +49,12 @@ class PaginatedList extends View
      * @var int  The end item number on the current page
      */
     private $lastItem;
+
+    /**
+     * @var array  Array of items
+     */
+    private $items = array();
+
 
     // --------------------------------------------------------------
 

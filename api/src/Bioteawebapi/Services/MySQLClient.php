@@ -151,7 +151,7 @@ class MySQLClient
     {
         if ($prefix) {
             $qb = $this->em->createQueryBuilder();
-            $where = $qb->expr()->like('e.uri', $qb->expr()->literal($prefix . '%'));
+            $where = $qb->expr()->like('e.shortName', $qb->expr()->literal($prefix . '%'));
         }
         else {
             $where = null;

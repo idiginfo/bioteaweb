@@ -88,8 +88,9 @@ class TermsSingle extends Abstracts\SingleController
     protected function assignRelatedItems()
     {
         return array(
-            'documents' => "Documents",
-            'topics'    => "Topics"
+            'documents'    => "Documents",
+            'topics'       => "Topics",
+            'vocabularies' => "Vocabularies"
         );
     }
 
@@ -132,6 +133,15 @@ class TermsSingle extends Abstracts\SingleController
                 }
 
             break;
+            case 'vocabularies':
+
+                $vocabs = $this->termObj->getVocabularies()->slice($offset, $limit);
+
+                foreach($vocabs as $vocabObj) {
+                    $items[] = $vocabObj->toArray();
+                }
+
+            break;
         }
 
         return $items;
@@ -147,6 +157,9 @@ class TermsSingle extends Abstracts\SingleController
             break;
             case 'documents':
                 return $this->termObj->getDocuments()->count();
+            break;
+            case 'vocabularies':
+                return $this->termObj->getVocabularies()->count();
             break;
         }
     }
