@@ -43,19 +43,19 @@ abstract class View
      *
      * For now, it just pretty-prints the JSON in <pre>...</pre> tags
      *
+     * @param string $content   Optioanlly, override the default content.     
      * @param string $template  Optionally override the default template.
      *                          Use %content% for content placeholder.
-     * @param string $content   Optioanlly, override the default content.
      * @return string
      */
-    public function toHtml($template = null, $content = null)
+    public function toHtml($content = null, $template = null)
     {
         if ( ! $template) {
             $template = $this->template;
         }
 
         if ( ! $content) {
-            $content = sprintf("<pre id='json'>%s</pre>", $this->toJson());
+            $content = sprintf("<pre class='json'>%s</pre>", $this->toJson());
         }
 
         //Replace the %content% placeholder with content

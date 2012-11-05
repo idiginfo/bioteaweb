@@ -38,7 +38,7 @@ class PaginatedList extends View
     /**
      * @var array  Array of items
      */
-    private $items;
+    private $items = array();
 
     /**
      * @var int  The current page
@@ -48,20 +48,26 @@ class PaginatedList extends View
     /**
      * @var int  The start item number on the current page
      */
-    private $first;
+    private $firstItem;
 
     /**
      * @var int  The end item number on the current page
      */
-    private $last;
+    private $lastItem;
 
     // --------------------------------------------------------------
 
+    /**
+     * Constructor
+     *
+     * The total number of items
+     * The total number of items
+     */
     public function __construct($numItems, $numPerPage)
     {
         $this->numItems = (int) $numItems;
         $this->numPerPage = (int) $numPerPage;
-        $this->first = 1; //assume no offset to start
+        $this->firstItem = 1; //assume no offset to start
     }
 
     // --------------------------------------------------------------
@@ -94,7 +100,7 @@ class PaginatedList extends View
      */
     public function setOffset($offset)
     {
-        $this->first = $offset + 1;
+        $this->firstItem = $offset + 1;
         $this->calculateInfo();
     }
 
@@ -119,16 +125,16 @@ class PaginatedList extends View
     private function calculateInfo()
     {
         //What we know is first, batch size, and total record size
-        $this->last = ($this->first - 1) + $this->numPerPage;
+        $this->lastItem = ($this->firstItem - 1) + $this->numPerPage;
 
         //Fix last if on last page
-        if ($this->last > $this->numItems) {
-            $this->last = $this->numItems;
+        if ($this->lastItem > $this->numItems) {
+            $this->lastItem = $this->numItems;
         }
 
         //Figre out page info
         $this->numPages = ceil($this->numItems / $this->numPerPage);
-        $this->page     = floor($this->first / $this->numPerPage) + 1;
+        $this->page     = floor($this->firstItem / $this->numPerPage) + 1;
     }
 
 }

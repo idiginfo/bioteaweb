@@ -107,6 +107,24 @@ class Term extends Entity
     // --------------------------------------------------------------
 
     /**
+     * Get documents from somewhere else in the graph
+     *
+     * @return Doctrine\Common\Collections\ArrayCollection
+     */
+    public function getDocuments()
+    {
+        $docs = array();
+        foreach($this->getAnnotations() as $annot) {
+            $doc = $annot->getDocument();
+            $docs[$doc->getId()] = $doc;
+        }
+
+        return new ArrayCollection(array_values($docs));
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * @return Doctrine\Common\Collections\ArrayCollection
      */
     public function getTopics()

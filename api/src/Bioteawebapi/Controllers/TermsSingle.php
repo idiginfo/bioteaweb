@@ -24,61 +24,154 @@ use Bioteawebapi\Views\BasicView;
 /**
  * Single term info Controller
  */
-class TermsSingle extends Abstracts\SingleEntityController
+class TermsSingle extends Abstracts\SingleController
 {
-    /** @inherit */
-    protected function configure()
+    /**
+     * @var Bioteawebapi\Entities\Term
+     */
+    private $termObj = null;
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get term based off its name
+     *
+     * @inherit
+     */
+    protected function getMainItem($identifier)
     {
-        $this->add(new Route('/terms/{term}'));
-        $this->add(new Format('text/html', 'html', "Returns information about a single term in HTML"));
-        $this->add(new Format('application/json', 'json', "Returns information about a single term in JSON"));
+        //Get it from the db
+        $termObj = array_shift($this->app['dbclient']->getTerms($identifier));
+
+        //Set it to a class property
+        $this->termObj = $termObj;
+
+        //Return it
+        return $termObj->toArray() ?: false;
     }
 
     // --------------------------------------------------------------
 
     /** @inherit */
-    protected function execute()
+    protected function getMainItemName()
     {
-        //Get information about a specific term
-        $termStr = urldecode($this->getPathSegment(2));
-        $termObj = array_shift($this->app['dbclient']->getTerms($termStr));
+        return "Term";
+    }
 
-        if ( ! $termObj) {
-            $this->app->abort(404, "Term Not Found");
+    // --------------------------------------------------------------
+
+    /** @inherit */
+    protected function assignRoutes()
+    {
+        return array('/terms/{term}' => "Get information about a single term and its related items");
+    }
+
+    // --------------------------------------------------------------
+
+    /** @inherit */
+    protected function assignHtmlDesc()
+    {
+        return "Returns information about a single term in HTML";
+    }
+
+    // --------------------------------------------------------------
+
+    /** @inherit */
+    protected function assignJsonDesc()
+    {
+        return "Returns information about a single term in JSON";
+    }
+
+    // --------------------------------------------------------------
+
+    /** @inherit */
+    protected function assignRelatedItems()
+    {
+        return array(
+            'documents' => "Documents",
+            'topics'    => "Topics"
+        );
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Get related items
+     *
+     * @param string $which
+     * @param int $offset
+     * @param int $limit
+     * @return array
+     */
+    protected function getRelatedItems($which, $offset, $limit)
+    {
+        $items = array();
+
+        switch ($which) {
+
+            case 'topics':
+
+                $topics = $this->termObj->getTopics()->slice($offset, $limit);
+                foreach($topics as $topicObj) {
+
+                    $arr = $topicObj->toArray();
+                    if ($topicObj->getVocabulary()) {
+                        $arr['vocabulary'] = $topicObj->getVocabulary()->toArray();
+                    }
+
+                    $items[] = $arr;
+                }
+
+            break;
+            case 'documents':
+
+                $docs = $this->termObj->getDocuments()->slice($offset, $limit);
+
+                foreach($docs as $docObj) {
+                    $items[] = $this->buildDocumentDetails($docObj);
+                }
+
+            break;
         }
 
-        //View Parameters
-        $viewParams = array();
-        $viewParams['term'] = $termObj->toArray();
+        return $items;
+    }
 
-        //Include topics and vocabularies
-        foreach($termObj->getTopics() as $topicObj) {
-            $arr = $topicObj->toArray();
-            if ($topicObj->getVocabulary()) {
-                $arr['vocabulary'] = $topicObj->getVocabulary()->toArray();
-            }
-            $viewParams['topics'][] = $arr;
+    // --------------------------------------------------------------
+
+    protected function getRelatedItemsCount($which)
+    {
+        switch ($which) {        
+            case 'topics':
+                return $this->termObj->getTopics()->count();
+            break;
+            case 'documents':
+                return $this->termObj->getDocuments()->count();
+            break;
+        }
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Inputs a document class and outputs the URLS for the RDF files
+     * 
+     * @param Bioteawebapi\Entities\Document
+     * @return array
+     */
+    protected function buildDocumentDetails($document)
+    {
+        $resolver = $this->app['fileclient'];
+
+        $arr = array();
+        $arr['url'] = $resolver->resolveUrl($document->getRDFFilePath());
+        $arr['annotationUrls'] = array();
+
+        foreach ($document->getRDFAnnotationPaths() as $name => $path) {
+            $arr['annotationUrls'][$name] = $resolver->resolveUrl($path);
         }
 
-        //Include documents related to this term
-        foreach($termObj->getAnnotations() as $annotObj) {
-            $docObj = $annotObj->getDocument();
-            $docArr = $this->buildDocumentDetails($docObj);
-
-            if ( ! isset($viewParams['documents']) OR ! in_array($docArr, $viewParams['documents'])) {
-                $viewParams['documents'][] = $docArr;
-            }
-        }
-
-        $output = $this->app['viewfactory']->build('BasicView', array($viewParams));
-
-        //Output it!
-        switch($this->format) {
-            case 'text/html':
-                return $output->toHtml();
-            case 'application/json':
-                return $output->toJson();
-        }        
+        return $arr;
     }
 }
 

@@ -34,6 +34,11 @@ class Parameter
      */
     private $description;
 
+    /**
+     * @var mixed
+     */
+    private $default;
+
     // --------------------------------------------------------------
 
     /**
@@ -43,7 +48,7 @@ class Parameter
      * @param string|array $allowedValues  Either regex or an array of accepatable values
      * @param string       $description    Optional description
      */
-    public function __construct($name, $allowedValues, $description = null)
+    public function __construct($name, $allowedValues, $description = null, $default = null)
     {
         if ($name == 'format') {
             throw new \InvalidArgumentException("'format' is a reserved parameter name");
@@ -52,6 +57,10 @@ class Parameter
         $this->name = $name;
         $this->allowedValues = $allowedValues;
         $this->description = $description;
+
+        if ($default) {
+            $this->default = $default;
+        }
     }
 
     // --------------------------------------------------------------
@@ -63,7 +72,12 @@ class Parameter
      */
     public function toArray()
     {
-        return get_object_vars($this);
+        $arr = get_object_vars($this);
+        if (is_null($arr['default'])) {
+            unset($arr['default']);
+        }
+
+        return $arr;
     }
     
     // --------------------------------------------------------------
@@ -140,6 +154,16 @@ class Parameter
     {
         return $this->description;
     }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @return mixed|null  NULL if no default
+     */
+    public function getDefault()
+    {
+        return $this->default ?: null;
+    }    
 }
 
 /* EOF: Parameter.php */

@@ -82,15 +82,8 @@ abstract class Controller
     {
         $summary = array();
 
-        //Route
-        $summary['route'] = $this->app['request']->getPathInfo();
-
-        //If there is a description...
-        if ($this->routes[$summary['route']]->getDescription()) {
-            $summary['description'] = $this->routes[$summary['route']]->getDescription();
-        }
-        else {
-            $summary['description'] = 'No Description';
+        foreach($this->routes as $route) {
+            $summary['routes'][] = $route->toArray();
         }
 
         //Get formats
@@ -161,9 +154,15 @@ abstract class Controller
      */
     public function getParameter($parameter)
     {
-        return (isset($this->parameters[$parameter]))
-            ? $this->parameters[$parameter]
-            : null;
+        if (isset($this->parameters[$parameter])) {
+            return $this->parameters[$parameter];
+        }
+        elseif (isset($this->acceptableParameters[$parameter])) {
+            return $this->acceptableParameters[$parameter]->getDefault();
+        }
+        else {
+            return null;
+        }
     }
 
     // --------------------------------------------------------------
