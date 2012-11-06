@@ -136,6 +136,14 @@ h1, h2, h3, h4, h5, h6 {
 		width: 100%;
 	}
 	
+
+#download2 a.external {
+	background: url(../images/external.png) top right no-repeat;
+		height: 55px;
+		padding-right: 0px;
+		line-height: 19px;
+		}
+	
 #download a.pdf {
 	background: url(../images/pdf.png) top right no-repeat;
 		height: 55px;

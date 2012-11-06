@@ -143,7 +143,8 @@ if (savefs) savefs.style.display="none";
 			<li><a class="second" href="api.php">API</a></li>
 			<li><a class="third" href="query.php">Run a Query</a></li>
 			<li><a class="first" href="mirror.php">Get the Data</a></li>
-			<li><a class="second" href="contact.php">Contact</a></li>
+			<li><a class="second" href="http://199.102.237.69:8888/sparql/beta7/" target="_blank">Working Model</a></li>
+			<li><a class="third" href="contact.php">Contact</a></li>
 		</ul>
 		</div>
 		<div class="two-thirds column space">&nbsp;</div>
