@@ -253,11 +253,13 @@ class Indexer
             if ($this->taskTracker) {
                 $msg = sprintf(
                     "Processing (build time...%s  process time...%s)",
-                    number_format($buildTime, 2), number_format($procTime, 2)
+                    (isset($buildTime)) ? number_format($buildTime, 2) : 0,
+                    (isset($procTime)) ? number_format($procTime, 2) : 0
                 );
                 $this->taskTracker->tick($msg, $result);
             }
 
+            //Increment the counters
             switch($result) {
                 case self::FAILED:  $this->numFailed++; break;
                 case self::SKIPPED: $this->numSkipped++; break;

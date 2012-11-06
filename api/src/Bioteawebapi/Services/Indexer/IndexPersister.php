@@ -36,6 +36,11 @@ use ReflectionObject;
 class IndexPersister
 {
     /**
+     * @const MySQL Mode .. If TRUE, then the faster, non-db agonstic MySQL code is used
+     */
+    const MYSQL_MODE = true;
+
+    /**
      * @var Doctrine\DBAL\Connection
      */
     private $dbal;
@@ -145,10 +150,26 @@ class IndexPersister
                     //Do the relationship between the term and the topic
                     $term_id = $term->getId();
                     $topic_id = $topic->getId();
-                    $q = "SELECT * FROM term_topic WHERE term_id = ? AND topic_id = ?";
-                    if ( ! $this->dbal->fetchArray($q, array($term_id, $topic_id))) {
-                        $this->dbal->insert('term_topic', array('term_id' => $term_id, 'topic_id' => $topic_id));
-                    }                        
+
+                    if (self::MYSQL_MODE) {
+
+                        $q = $this->dbal->prepare(
+                            "INSERT INTO term_topic (term_id, topic_id)
+                             VALUES (?, ?) ON DUPLICATE KEY UPDATE term_id=term_id;"
+                        );
+                        $q->bindValue(1, $term_id);
+                        $q->bindValue(2, $topic_id);
+
+                        $q->execute();
+                    }
+                    else {
+
+                        $q = "SELECT * FROM term_topic WHERE term_id = ? AND topic_id = ?";
+                        if ( ! $this->dbal->fetchArray($q, array($term_id, $topic_id))) {
+                            $this->dbal->insert('term_topic', array('term_id' => $term_id, 'topic_id' => $topic_id));
+                        }   
+
+                    }                     
                 }
 
                 //Add the annotation
@@ -181,22 +202,45 @@ class IndexPersister
      *
      * @param  object   $entities  Array of entities
      * @param  array    $cols      Columns to use for the INSERT statement
-     * @return boolean  Whether or not the entity was inserted or merely updated
+     * @return int                 The item ID
      */
     protected function conditionalInsertEntity($entity, Array $cols)
     {
-        //If item exists, then we simply apply the ID to the entity
-        if ($id = $this->checkItemExists($entity)) {
-            $this->setId($entity, $id);
-            return null;
-        }
-        else {
-            $tableName = $this->getTableNameForEntity($entity);
-            $this->dbal->insert($this->getTableNameForEntity($entity), $cols);
+        //MySQL Mode?
+        if (self::MYSQL_MODE) {
+
+            //build the SQL
+            $sql = sprintf(
+                "INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE `id`=LAST_INSERT_ID(`id`);",
+                $this->getTableNameForEntity($entity),
+                "`" . implode("`, `", array_keys($cols)) . "`",
+                str_repeat(("?, "), count($cols)-1) . "?"
+            );
+
+
+            //Build the statement
+            $stmt = $this->dbal->prepare($sql);
+            $colVals = array_values($cols);
+            for ($n = 0; $n < count($colVals); $n++) {
+                $stmt->bindValue($n+1, $colVals[$n]);
+            }
+
+            //Execute it and get the id
+            $stmt->execute();
             $id = $this->dbal->lastInsertId();
-            $this->setId($entity, $id);
-            return true;
         }
+        else {  //DB Agnostic (slower) way
+
+            //If item exists, then we simply apply the ID to the entity
+            if ( ! $id = $this->checkItemExists($entity)) {
+
+                $this->dbal->insert($this->getTableNameForEntity($entity), $cols);
+                $id = $this->dbal->lastInsertId();
+            }
+        }
+
+        $this->setId($entity, $id);
+        return $id;
     }
 
     // --------------------------------------------------------------
