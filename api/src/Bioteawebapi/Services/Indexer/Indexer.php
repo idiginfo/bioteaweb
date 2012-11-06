@@ -216,11 +216,19 @@ class Indexer
                 }
                 else {
 
-                    //Build the document
-                    $doc = $this->builder->buildDocument($docPath);
+                    $this->startTimer('build');
 
-                    //Process it
-                    $result = $this->processItem($doc);
+                        //Build the document
+                        $doc = $this->builder->buildDocument($docPath);
+
+                    $buildTime = $this->getTime('build');
+
+                    $this->startTimer('process');
+
+                        //Process it
+                        $result = $this->processItem($doc);
+
+                    $procTime = $this->getTime('process');
                 }
 
             } catch (\Exception $e) {
@@ -243,7 +251,11 @@ class Indexer
 
             //Inform task tracker
             if ($this->taskTracker) {
-                $this->taskTracker->tick("Indexing", $result);
+                $msg = sprintf(
+                    "Processing (build time...%s  process time...%s)",
+                    number_format($buildTime, 2), number_format($procTime, 2)
+                );
+                $this->taskTracker->tick($msg, $result);
             }
 
             switch($result) {
@@ -283,6 +295,31 @@ class Indexer
 
         //Return indexed
         return ($mySQLResult OR $solrResult) ? self::INDEXED : self::SKIPPED;
+    }
+
+    // --------------------------------------------------------------
+
+    //This stuff should become a trait!  (Problem is that the server is PHP 5.3)
+
+    /**
+     * @var array
+     */
+    private $timers = array();
+
+    /**
+     * Timer for benchmarking
+     *
+     * @param string $key
+     */
+    public function startTimer($key)
+    {
+        $this->timers[$key] = microtime(true);
+    }
+
+    public function getTime($key)
+    {
+        $now = microtime(true);
+        return $now - $this->timers[$key];
     }
 }
 
