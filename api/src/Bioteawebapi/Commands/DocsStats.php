@@ -27,7 +27,15 @@ use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
  */
 class DocsStats extends Command
 {
+    /**
+     * @var array
+     */
     private $stats = array();
+
+    /**
+     * @var \MongoDB
+     */
+    private $db;
 
     // --------------------------------------------------------------
 
@@ -36,13 +44,18 @@ class DocsStats extends Command
         $this->setName('docs:stats')->setDescription('Get some statistics from the documents');
         $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Limit number of documents analyzed', 0);
         $this->addOption('outfile', 'o', InputOption::VALUE_REQUIRED, 'Optional output file (default is to print to stdout');
+        $this->addOption('dumpinterval', 'd', InputOption::VALUE_REQUIRED, 'Dump Interval', 500);
+        $this->addOption('mongodb', 'm', InputOption::VALUE_REQUIRED, 'Mongo Database Connection String', 'mongodb://localhost:27017');
     }
+
 
     // --------------------------------------------------------------
 
     /** @inherit */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        //Let's just log the errors; not report them
+        error_reporting(0);
 
         //Setup tracker
         $tracker = new Tracker(new TrackerConsoleHandler($output));
@@ -63,12 +76,23 @@ class DocsStats extends Command
         $this->stats  = array();
         $journalStats = array();
 
+        //Setup database (don't catch exception)
+        $conn = new \Mongo($input->getOption('mongodb'));
+        $this->db = $conn->bioteaindexstats;
+
         //Main loop
         while ($docPath = $filemgr->getNextFile()) {
 
             //Get out if past limit
             if ($limit && $count >= $limit) {
                 break;
+            }
+
+            //Dump?
+            if ($count % $input->getOption('dumpinterval') == 0) {
+                $this->dump($this->stats, $journalStats);
+                $this->stats = array();
+                $journalStats = array();
             }
 
             //Do it
@@ -101,23 +125,30 @@ class DocsStats extends Command
             }            
         }
 
+        //One last dump
+        $this->dump($this->stats, $journalStats);
         $tracker->finish();
 
         //Final Report
         ob_start();
 
         echo "\nVocabularies\n============================================";
-        foreach($this->stats as $vocab => $items) {
-            echo "\n" . $vocab;
-            echo "\n\tTerms:  " . array_sum($items['terms']);
-            echo "\n\tTopics: " . array_sum($items['topics']);
-            echo "\n\tDocs:   " . array_sum($items['docs']);
+        foreach($this->db->listCollections() as $coll) {
+
+            $collName = $coll->getName();
+
+            if (substr($collName, 0, 6) == 'vocab_') {
+                echo "\n" . substr($collName, 6);
+                echo "\n\tTerms:  " . $this->db->$collName->find(array('type' => 'terms'))->count();
+                echo "\n\tTopics: " . $this->db->$collName->find(array('type' => 'topics'))->count();
+                echo "\n\tDocs:   " . $this->db->$collName->find(array('type' => 'docs'))->count();
+            }
         }
 
         echo "\n\n";
         echo "\nJournals\n============================================";
-        foreach($journalStats as $journal => $count) {
-            echo "\n" . $journal . ":   " . $count;
+        foreach($this->db->journals->find() as $journal) {
+            echo "\n\t" . $journal['name'] . ": " . $journal['count'];
         }
         echo "\n\n";
 
@@ -128,6 +159,61 @@ class DocsStats extends Command
         }
         else {
             $output->write(ob_get_clean());
+        }
+
+        $this->db->drop();      
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Dump to Mongo
+     *
+     * @var array $vocabs
+     * @var array $journals
+     */
+    private function dump($vocabs, $journals)
+    {
+        //Dump Vocabs
+        foreach ($vocabs as $vocab => $types) {
+
+            $vocabCollName = 'vocab_' . $vocab;
+            $vocabColl = $this->db->$vocabCollName;
+
+            foreach ($types as $type => $items) {
+
+                foreach ($items as $item => $count) {
+
+                    $result = $vocabColl->findOne(array('type' => $type, 'item' => $item));
+
+                    if ($result) {
+                        $newCount = $count + (int) $result['count'] + $count;
+                        $vocabColl->update(
+                            array('type' => $type, 'item' => $item),
+                            array('type' => $type, 'item' => $item, 'count' => $newCount)
+                        );
+                    }
+                    else {
+                        $vocabColl->insert(array('type' => $type, 'item' => $item, 'count' => $count));
+                    }
+                }
+            }
+        }
+
+        //Dump Journals
+        $journalColl = $this->db->journals;
+        foreach ($journals as $journal => $count) {
+
+
+            $result = $journalColl->findOne(array('name' => $journal));
+
+            if ($result) {
+                $newCount = $count + (int) $result['count'];
+                $journalColl->update(array('name' => $journal), array('name' => $journal, 'count' => $newCount));
+            }
+            else {
+                $journalColl->insert(array('name' => $journal, 'count' => $count));
+            }
         }
     }
 
@@ -160,25 +246,25 @@ class DocsStats extends Command
                 //If vocab...
                 if ($vocab) {
 
-                    $vocabUri = $vocab->getUri();
+                    $vocabName = $vocab->getShortName();
 
                     //Setup vocab array if not already set
-                    if ( ! isset($docStats[$vocabUri])) {
-                        $docStats[$vocabUri] = $this->initVocabArray();
-                        $docStats[$vocabUri]['docs'][$docStr] = 1;
+                    if ( ! isset($docStats[$vocabName])) {
+                        $docStats[$vocabName] = $this->initVocabArray();
+                        $docStats[$vocabName]['docs'][$docStr] = 1;
                     }
 
                     //Increment terms only once
-                    if ( ! isset($docStats[$vocabUri]['terms'][$termStr])) {
-                        $docStats[$vocabUri]['terms'][$termStr] = 1;
+                    if ( ! isset($docStats[$vocabName]['terms'][$termStr])) {
+                        $docStats[$vocabName]['terms'][$termStr] = 1;
                     }
 
                     //Increment topics every time
-                    if ( ! isset($docStats[$vocabUri]['topics'][$topicStr])) {
-                        $docStats[$vocabUri]['topics'][$topicStr] = 1;
+                    if ( ! isset($docStats[$vocabName]['topics'][$topicStr])) {
+                        $docStats[$vocabName]['topics'][$topicStr] = 1;
                     }
                     else {
-                        $docStats[$vocabUri]['topics'][$topicStr]++;
+                        $docStats[$vocabName]['topics'][$topicStr]++;
                     }
                 }
             }
