@@ -60,7 +60,7 @@ class DocsStats extends Command
         $tracker->start();
 
         //Setup stats
-        $this->stats = $this->initVocabArray();
+        $this->stats  = array();
         $journalStats = array();
 
         //Main loop
