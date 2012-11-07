@@ -67,7 +67,7 @@ class DocsStats extends Command
         while ($docPath = $filemgr->getNextFile()) {
 
             //Get out if past limit
-            if ($limit && $count > $limit) {
+            if ($limit && $count >= $limit) {
                 break;
             }
 
