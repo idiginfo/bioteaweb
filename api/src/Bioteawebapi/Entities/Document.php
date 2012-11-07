@@ -36,14 +36,16 @@ class Document extends Entity
     /** @Column(type="text", nullable=true) **/
     protected $rdfAnnotationPaths;
 
-    /** @Column(type="text", nullable=true) **/
+    /** @Column(type="string", nullable=true) **/
     protected $md5;
+
+    /** @Column(type="string", nullable=true) **/
+    protected $journal;
 
     /**
      * @OneToMany(targetEntity="Annotation", mappedBy="document", cascade={"persist", "merge"})
      **/    
     private $annotations;
-
 
     // --------------------------------------------------------------
 
@@ -64,6 +66,18 @@ class Document extends Entity
         }
 
         $this->setMd5($md5);
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Set Journal Title
+     *
+     * @param string Name of Journal
+     */
+    public function setJournal($journal)
+    {
+        $this->journal = $journal;
     }
 
     // --------------------------------------------------------------
@@ -150,6 +164,16 @@ class Document extends Entity
     public function getId()
     {
         return $this->id;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * @return string
+     */
+    public function getJournal()
+    {
+        return (string) $this->journal;
     }
 
     // --------------------------------------------------------------

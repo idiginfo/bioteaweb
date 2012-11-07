@@ -98,6 +98,11 @@ class IndexBuilder
         //Build object
         $documentObj = new Document($relativePath, $md5);
 
+        //Parse the main path
+        $xml   = new SimpleXMLElement($fullPath, 0, true);
+        $props = $this->parseMainFile($xml);
+        $documentObj->setJournal($props['journal']);
+
         //If so, add them to the object
         foreach($this->files->getAnnotationFiles($relativePath) as $name => $relAnnotPath) {
 
@@ -123,6 +128,30 @@ class IndexBuilder
     // --------------------------------------------------------------
 
     /**
+     * Parse the RDF XML and get items that we want from it
+     *
+     * @param SimpleXMLElement $xml
+     * @return array
+     */
+    protected function parseMainFile(SimpleXMLElement $xml)
+    {
+        $outItems = array();
+
+        $xml->registerXPathNamespace('dcterms', 'http://purl.org/dc/terms/');
+        $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');        
+
+        //Journal - Assume it is always the first dcterms:title item (could be dangerous...)
+        $journal = $xml->xpath('//rdf:Description/dcterms:title[1]');
+        if (count($journal) > 0) {
+            $outItems['journal'] = (string) $journal[0];
+        }
+
+        return $outItems;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Parse the RDF Annotation XML and build a document object graph
      *
      * @param \SimpleXMLElement $xml
@@ -137,6 +166,7 @@ class IndexBuilder
         $xml->registerXPathNamespace('ao', 'http://purl.org/ao/core/');
         $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
         $xml->registerXPathNamespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#');
+
 
         //Foreach annotation XML node, try to build an annotation
         foreach ($xml->xpath("//ao:Annotation") as $annot) {

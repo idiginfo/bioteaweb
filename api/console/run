@@ -47,6 +47,8 @@ $app['consoleapp']->add(new Bioteawebapi\Commands\DocsBuildZips($app));
 $app['consoleapp']->add(new Bioteawebapi\Commands\DocsDump($app));
 $app['consoleapp']->add(new Bioteawebapi\Commands\DocsIndex($app));
 $app['consoleapp']->add(new Bioteawebapi\Commands\DocsClear($app));
+$app['consoleapp']->add(new Bioteawebapi\Commands\DocsStats($app));
+
 
 // ------------------------------------------------------------------
 
