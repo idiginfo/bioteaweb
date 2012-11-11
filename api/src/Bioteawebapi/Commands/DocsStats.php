@@ -59,9 +59,6 @@ class DocsStats extends Command
             ));
         }
 
-        //Setup tracker
-        $tracker = new Tracker(new TrackerConsoleHandler($output));
-
         //Get the file manager and builder
         $filemgr = $this->app['fileclient'];
         $builder = $this->app['builder'];
@@ -72,6 +69,9 @@ class DocsStats extends Command
         //Count and tracker
         $count = 0;
         $limit = $input->getOption('limit');
+
+        //Setup tracker
+        $tracker = new Tracker(new TrackerConsoleHandler($output), $limit ?: -1);
         $tracker->start();
 
         //Setup stats

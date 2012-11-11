@@ -40,9 +40,18 @@ class Sandbox extends Command
     {
         //See how long it takes to just go through all the files with no processing...
         $tracker = new Tracker(new TrackerConsoleHandler($output));
+
+        //Load libraries
         $filemgr = $this->app['fileclient'];
+        $builder = $this->app['builder'];
+
+        //Do it with builder
         $tracker->start();
-        while ($filemgr->getNextFile()) {
+        while ($docPath = $filemgr->getNextFile()) {
+
+            $doc = $builder->buildDocument($docPath);
+            unset($doc);
+
             $tracker->tick();
         }
         $tracker->finish();
