@@ -16,6 +16,7 @@ namespace Bioteawebapi\Services;
 use RuntimeException;
 use RecursiveDirectoryIterator as RDI;
 use RecursiveIteratorIterator;
+use EasyRdf_Graph;
 
 /** 
  * Provides file access to RDF Files and annotations
@@ -204,6 +205,39 @@ class RDFFileClient
 
         //Return
         return $arr;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Count the triples in an RDF fileset (or single fiel)
+     *
+     * @TODO: MOVE This into its own class??
+     *
+     * @param string         $path
+     * @param boolean        $includeAnnots
+     * @param \EasyRDF_graph $graph          Optional (auto-constructs)     
+     * @return int
+     */
+    public function countTriples($path, $includeAnnots = true, EasyRdf_Graph $graph = null)
+    {   
+        //Optional runtime dependency injection
+        if ( ! $graph) {
+            $graph = new EasyRdf_Graph();
+        }
+
+        $num = 0;
+        $graph->parseFile($this->resolvePath($path));
+        $num = $graph->countTriples();
+
+        if ($includeAnnots) {
+            foreach($this->getAnnotationFiles($path, true) as $filePath) {
+                $graph->parseFile($filePath);
+                $num += $graph->countTriples();
+            }
+        }
+
+        return $num;
     }
 
     // --------------------------------------------------------------

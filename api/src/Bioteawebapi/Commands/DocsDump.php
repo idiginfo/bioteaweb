@@ -18,6 +18,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use EasyRdf_Graph;
 
 /**
  * A tool to dump information about docsets to the CLI
@@ -52,10 +53,11 @@ class DocsDump extends Command
         }
 
         //Build document
-        $document = $this->app['builder']->buildDocument($relPath);
+        $document   = $this->app['builder']->buildDocument($relPath);
+        $numTriples = $this->app['fileclient']->countTriples($relPath);
 
         //Generate Report
-        $output->writeln($this->generateReport($document));
+        $output->writeln($this->generateReport($document, $numTriples));
     }
 
     // --------------------------------------------------------------
@@ -64,9 +66,10 @@ class DocsDump extends Command
      * Generate a simple report
      *
      * @param BioteaDocSet $docset
+     * @param int $numTriples
      * @return string  Fit for output to the console
      */
-    protected function generateReport(Document $document)
+    protected function generateReport(Document $document, $numTriples)
     {
         $output  = "\n";
         $output .= "Filepath: " . $document->getRDFFilePath() . "\n";
@@ -74,6 +77,10 @@ class DocsDump extends Command
         foreach($document->getRDFAnnotationPaths() as $name => $path) {
             $output .= sprintf("Annotation File %s: %s\n", $name, $path);
         }
+
+        $output .= "\n-- Triples: --------------------------------\n";
+        $output .= sprintf("Number of Triples: %s", $numTriples);
+
 
         $output .= "\n-- Terms -----------------------------------\n";
 
