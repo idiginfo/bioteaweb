@@ -46,8 +46,8 @@ class DocsStats extends Command
         $this->addOption('mongo',   'm', InputOption::VALUE_REQUIRED, 'Mongo Connection String', 'mongodb://localhost:27017');
 
         //Options for main task
-        $this->addOption('limit',   'l', InputOption::VALUE_REQUIRED, 'Limit number of documents analyzed', 0);
-        $this->addOption('triples', 't', InputOption::VALUE_NONE,     "Include triples (adds a bunch of time)");
+        $this->addOption('limit',   'l', InputOption::VALUE_REQUIRED,  'Limit number of documents analyzed', 0);
+        $this->addOption('triples', 't', InputOption::VALUE_NONE,      "Include triples (adds a bunch of time)");
     }
 
 
@@ -131,21 +131,23 @@ class DocsStats extends Command
         $tracker->start("Sending files to Gearman workers...");
         while ($docPath = $this->app['fileclient']->getNextFile()) {
 
-            $msg = sprintf("Queued %s documents", number_format($count));
+            $msg = sprintf("Processing");
 
             //Get out if past limit
             if ($limit && $count >= $limit) {
                 break;
             }
-            
+
             //Create a worker task for the queue
             $data = array('docPath' => $docPath, 'doTriples' => (boolean) $input->getOption('triples'));
             $gearman->doBackground('processFile', json_encode($data), md5($docPath));
 
-            //Tracker...
+            //Increment
             $tracker->tick($msg);
             $count++;
+        
         }
+
         $tracker->finish();
 
         //Build a new tracker
@@ -164,7 +166,7 @@ class DocsStats extends Command
             $now        = microtime(true);
 
             $msg = sprintf(
-                "\rProcessing [%s of %s] | %s succeed | %s failed | %s elapsed", 
+                "Counting... [%s of %s] | %s succeed | %s failed | %s elapsed\r", 
                 number_format($numInDb),
                 number_format($count),
                 number_format($numSucceed),
@@ -209,12 +211,15 @@ class DocsStats extends Command
      */
     public function processFile(\GearmanJob $job)
     {
+        //Workload data
         $data = json_decode($job->workload(), true);
         $docPath   = $data['docPath'];
         $doTriples = $data['doTriples'];
 
+        //Collections
         $articleCollection  = $this->mongo->articles;
-        $journalsCollection = $this->mongo->journals;    
+        $journalsCollection = $this->mongo->journals;
+        $journalsCollection->ensureIndex('journal');
 
         //Do it
         try {
@@ -273,6 +278,8 @@ class DocsStats extends Command
 
         //Docs per vocabulary
         $vdoccoll = $this->mongo->vocabdoccounts;
+        $vdoccoll->ensureIndex('vocabulary');
+
         foreach($doc->getVocabularies() as $vocab) {
             $vdoccoll->update(
                 array('vocabulary' => $vocab->getShortName()),
@@ -286,7 +293,7 @@ class DocsStats extends Command
 
             $termStr  = (string) $term;
 
-            foreach($term->getTopics() as $topic) {
+            foreach($term->getTopics () as $topic) {
 
                 $topicStr = (string) $topic;
 
@@ -294,6 +301,7 @@ class DocsStats extends Command
                     $vocabName = $topic->getVocabulary()->getShortName();
                     $collName  = 'vocab_' . $vocabName;
                     $coll = $this->mongo->$collName;
+                    $coll->ensureIndex(array('type' => 1, 'value' => 1));
 
                     $coll->update(
                         array('type'   => 'term', 'value' => $termStr),
