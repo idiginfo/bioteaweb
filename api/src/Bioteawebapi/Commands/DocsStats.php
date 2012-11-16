@@ -45,6 +45,7 @@ class DocsStats extends Command
         $this->addOption('gearman', 'g', InputOption::VALUE_REQUIRED, 'Gearman server (default is localhost)', 'localhost');
         $this->addOption('mongo',   'm', InputOption::VALUE_REQUIRED, 'Mongo Connection String', 'mongodb://localhost:27017');
 
+        //Options for main task
         $this->addOption('limit',   'l', InputOption::VALUE_REQUIRED, 'Limit number of documents analyzed', 0);
         $this->addOption('triples', 't', InputOption::VALUE_NONE,     "Include triples (adds a bunch of time)");
     }
@@ -93,6 +94,9 @@ class DocsStats extends Command
 
     // --------------------------------------------------------------
 
+    /**
+     * Do Main Script
+     */
     protected function doMain(InputInterface $input, OutputInterface $output)
     {
         //Limit
@@ -118,7 +122,6 @@ class DocsStats extends Command
         //Gearman client
         $gearman = new \GearmanClient();
         $gearman->addServers($input->getOption('gearman'));
-        $gearman->setCompleteCallback(array($this, 'workerCallback'));
 
         //Count
         $count = 0;
@@ -128,7 +131,7 @@ class DocsStats extends Command
         $tracker->start("Sending files to Gearman workers...");
         while ($docPath = $this->app['fileclient']->getNextFile()) {
 
-            $msg = sprintf("Queued %s documents (__ in database)", number_format($count));
+            $msg = sprintf("Queued %s documents", number_format($count));
 
             //Get out if past limit
             if ($limit && $count >= $limit) {
@@ -177,14 +180,10 @@ class DocsStats extends Command
 
     // --------------------------------------------------------------
 
-    public function workerCallback(\GearmanTask $task)
-    {
-        echo $task->returnCode . "\n";
-    }
-
-    // --------------------------------------------------------------
-
-    protected function doWorker($input, $output)
+    /**
+     * Do Gearman Worker (for worker scripts)
+     */
+    protected function doWorker(InputInterface $input, OutputInterface $output)
     {
         $output->writeln("Starting worker task... PID: " . getmypid());
 
@@ -204,11 +203,11 @@ class DocsStats extends Command
     // --------------------------------------------------------------
 
     /**
-     * Process the file
+     * Process a file from a Gearman job
      *
-     * @param string $docPath
+     * @param \GearmanJob $job
      */
-    public function processFile($job)
+    public function processFile(\GearmanJob $job)
     {
         $data = json_decode($job->workload(), true);
         $docPath   = $data['docPath'];
@@ -227,6 +226,7 @@ class DocsStats extends Command
             $doc = $builder->buildDocument($docPath);
 
             //Foreach vocabulary in the document, get the number of terms and topics
+            //and dump them into the database.
             $vocabStats = $this->extractVocabInfo($doc);
             
             //Do the journal info
@@ -265,52 +265,50 @@ class DocsStats extends Command
      */
     private function extractVocabInfo(Document $doc)
     {
-        $docStr = md5((string) $doc);
-
         echo "Processing {$doc}...\n";
 
-        //Docstats
-        $docStats = array();
+        //Docs per vocabulary 
+        //Terms per vocabulary
+        //Topics per vocabulary
 
-        //Get items
-        foreach($doc->getAnnotations() as $annot) {
-            
-            $term    = $annot->getTerm();
-            $termStr = md5((string) $term);
+        //Docs per vocabulary
+        $vdoccoll = $this->mongo->vocabdoccounts;
+        foreach($doc->getVocabularies() as $vocab) {
+            $vdoccoll->update(
+                array('vocabulary' => $vocab->getShortName()),
+                array('$inc' => array('numdocs' => 1)),
+                array('upsert' => true)
+            );
+        }
+
+        //Terms and topics per vocabulary
+        foreach($doc->getTerms() as $term) {
+
+            $termStr  = (string) $term;
 
             foreach($term->getTopics() as $topic) {
 
-                $topicStr = md5((string) $topic);
-                $vocab = $topic->getVocabulary();
+                $topicStr = (string) $topic;
 
-                //If vocab...
-                if ($vocab) {
+                if ($topic->getVocabulary()) {
+                    $vocabName = $topic->getVocabulary()->getShortName();
+                    $collName  = 'vocab_' . $vocabName;
+                    $coll = $this->mongo->$collName;
 
-                    $vocabUri = $vocab->getUri();
+                    $coll->update(
+                        array('type'   => 'term', 'value' => $termStr),
+                        array('$inc'   => array('count' => 1)),
+                        array('upsert' => true)
+                    );
 
-                    //Setup vocab array if not already set
-                    if ( ! isset($docStats[$vocabUri])) {
-                        $docStats[$vocabUri] = array('docs' => array(), 'terms' => array(), 'topics' => array());
-                        $docStats[$vocabUri]['docs'][$docStr] = 1;
-                    }
-
-                    //Increment terms only once
-                    if ( ! isset($docStats[$vocabUri]['terms'][$termStr])) {
-                        $docStats[$vocabUri]['terms'][$termStr] = 1;
-                    }
-
-                    //Increment topics every time
-                    if ( ! isset($docStats[$vocabUri]['topics'][$topicStr])) {
-                        $docStats[$vocabUri]['topics'][$topicStr] = 1;
-                    }
-                    else {
-                        $docStats[$vocabUri]['topics'][$topicStr]++;
-                    }
+                    $coll->update(
+                        array('type'   => 'topic', 'value' => $topicStr),
+                        array('$inc'   => array('count' => 1)),
+                        array('upsert' => true)
+                    );
                 }
             }
         }
-
-        return $docStats;
     }
 }
 
