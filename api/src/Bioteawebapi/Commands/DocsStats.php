@@ -39,15 +39,18 @@ class DocsStats extends Command
     protected function configure()
     {
         $this->setName('docs:stats')->setDescription('Get some statistics from the documents');
-        $this->addArgument('mode', InputArgument::REQUIRED, "Either 'w'/'worker' for worker, or 'm'/'main' for main process");
+        $this->addArgument('mode', InputArgument::REQUIRED, "Either 'w'/'worker' for worker, 'm'/'main' for main process, or 'g'/'get'");
 
-        //Options
+        //General options
         $this->addOption('gearman', 'g', InputOption::VALUE_REQUIRED, 'Gearman server (default is localhost)', 'localhost');
         $this->addOption('mongo',   'm', InputOption::VALUE_REQUIRED, 'Mongo Connection String', 'mongodb://localhost:27017');
 
         //Options for main task
         $this->addOption('limit',   'l', InputOption::VALUE_REQUIRED,  'Limit number of documents analyzed', 0);
         $this->addOption('triples', 't', InputOption::VALUE_NONE,      "Include triples (adds a bunch of time)");
+
+        //Options for 'get'
+        $this->addOption('outdir', 'o', InputOption::VALUE_REQUIRED, 'Output directory for \'get\' mode', '.');
     }
 
 
@@ -60,12 +63,17 @@ class DocsStats extends Command
         $mode = $input->getArgument('mode');
 
         //Options check
-        if ($mode{0} == 'w') {
+        if ($mode{0} != 'm') {
             if ($input->getOption('limit') != 0) {
                 throw new \InvalidArgumentException("Limit can only be set for non-worker mode");
             }
             if ($input->getOption('triples') != null) {
                 throw new \InvalidArgumentException("Triples can only be set for non-worker mode");
+            }
+        }
+        if ($mode{0} != 'g') {
+            if ($input->getOption('outdir') != '.') {
+                throw new \InvalidArgumentException("Outdir can only be set for the 'get' mode");
             }
         }
 
@@ -87,6 +95,8 @@ class DocsStats extends Command
                 return $this->doWorker($input, $output);
             case 'm':
                 return $this->doMain($input, $output);
+            case 'g':
+                return $this->doGet($input, $output);
             default:
                 throw new \InvalidArgumentException("Mode must be 'worker' or 'main' (w or m)");
         }
@@ -178,6 +188,65 @@ class DocsStats extends Command
         }
 
         $output->writeln("All Done.");
+    }
+
+    // --------------------------------------------------------------
+
+    protected function doGet(InputInterface $input, OutputInterface $output)
+    {
+        //If no data, return error.
+        if ($this->mongo->articles->count() == 0) {
+            $output->writeln("<error>No data yet.  Have you run the stats script?</error>");
+            return;
+        }
+
+        //Outdir
+        $outdir = realpath($input->getOption('outdir'));
+
+        //If output dir is not writable, return error
+        if ( ! is_writable($outdir)) {
+            throw new \RuntimeException("Ouput directory not writable: " . $outdir);
+        }
+
+
+        //Journal CSV
+        $journalFileName = $outdir . DIRECTORY_SEPARATOR . 'biotea_journals_' . time() . '.csv';
+        $journalFH = fopen($journalFileName, 'w');
+        fputcsv($journalFH, array('Journal', '# Articles'));
+        foreach($this->mongo->journals->find() as $row) {
+            fputcsv($journalFH, array($row['journal'], $row['articles']));
+        }
+        fclose($journalFH);
+
+        //Vocab CSV
+        $vocabFileName = $outdir . DIRECTORY_SEPARATOR . 'biotea_vocabs_' . time() . '.csv';
+        $vocabFH = fopen($vocabFileName, 'w');
+        fputcsv($vocabFH, array('Vocabulary', '# Docs', '# Terms', '# Topics'));
+        foreach($this->mongo->listCollections() as $coll) {
+            if (substr($coll->getName(), 0, strlen('vocab_')) == 'vocab_') {
+                
+                $items = array();
+                $vocabName = substr($coll->getName(), strlen('vocab_'));
+
+                //Vocab name
+                $items[0] = $vocabName;
+
+                //Num docs
+                $row = $this->mongo->vocabdoccounts->findOne(array('vocabulary' => $vocabName));
+                $items[1] = $row['numdocs'];
+
+                //Num terms
+                $numterms = $coll->find(array('type' => 'term'))->count();
+                $items[2] = $numterms;
+
+                //Num topics
+                $numtopics = $coll->find(array('type' => 'topic'))->count();
+                $items[3] = $numtopics;
+
+                fputcsv($vocabFH, $items);
+            }
+        }
+        fclose($vocabFH);
     }
 
     // --------------------------------------------------------------
