@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+
+div.Article {
+	width: 80%;
+	border: 1px solid #BBB;
+	display: block;
+	padding: 2px 7px;
+	-moz-border-radius: 0 10px 0 10px;
+	-khtml-border-radius: 0 10px 0 10px;
+	-webkit-border-radius: 0 10px 0 10px;
+	border-radius: 10px 0 10px 0;
+	margin-left: 6px;
+	box-shadow: 3px 3px 4px #f3f3f3;
+	-moz-box-shadow: 3px 3px 4px #f3f3f3;
+	-khtml-box-shadow: 3px 3px 4px #f3f3f3;
+	-webkit-box-shadow: 3px 3px 4px #f3f3f3;
+}
+
+div.Article h1 {
+	font: bold 140% "Book Antiqua" arial;
+	margin: 0 0 5px 0;
+	padding: 10px 10px 5px 0;
+	color: #444;
+}
+
+div.Article p {
+	padding: 0px 0px 5px 0px;
+}
+
+div.Article span.summary {
+	font-style:italic
+}
+
+div.Article span.authors {
+	
+}
+
+div.Article a {
+   text-decoration: none;
+   border: none;
+   color: #339;
+   padding-right: 15px; padding-left: 10px;
+   background: transparent url(http://www.hunlock.com/images/external.gif) no-repeat center right;
+}
+
+/* Button to hide/show the left panel */
+div.Article ul.seeAlso a, ul.sameAs a { 
+   text-decoration: none;
+   border: none;
+   color: #339;
+   padding-right: 15px; padding-left: 10px;
+   background: transparent url(http://www.hunlock.com/images/external.gif) no-repeat center right;
+}
+
+div.Article ul.seeAlso li:before {
+	content: "See also \00BB \0020";
+}
+
+div.Article ul.seeAlso li {
+	list-style-type: none;
+}
+
+div.Article ul.sameAs li {
+	display: inline;
+	color: #339;
+}
+
+div.Article ul.sameAs:before {
+	content: "Same as \00BB \0020";
+}
+
+div.Article ul.annotations li {
+	display: inline;
+	margin:3px;
+}
+
+div.Article ul.annotations li:after {
+	content: "\0020";
+}
+
+div.Article a.topic:after {
+	content: "\0020";
+}
+
+div.Article a.topic:before {
+	content: "\0020";
+}
+
+div.Article ul.annotations {
+	text-align: center;
+}
+
+div.Article ul.annotations li.term span.name {
+   	color:#444;
+   	font-size: 0.5em;
+   	margin: 0 0 0 7px;
+    padding: 3px 3px;
+    margin:0 10px; height:35px;
+}
+
+div.Article ul.annotations li.term span.topics {
+   	background-color: #ECECEC;
+}
+
+
+
+
+
+
+

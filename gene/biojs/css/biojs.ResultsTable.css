@@ -1,0 +1,94 @@
+@CHARSET "UTF-8";
+
+div.ResultsTable {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	display: block;
+	font-size: 12px;
+	font-family: "Book Antiqua" arial;
+}
+
+div.ResultsTable table.dataTable {
+	
+}
+
+div.ResultsTable table.dataTable thead {
+    display:none;
+}
+
+div.ResultsTable h1.title {
+    font-size: 140%;
+    margin: 0 0 5px 0;
+	padding: 10px 10px 5px 0;
+	color: #444;
+	cursor: pointer;
+}
+
+div.ResultsTable h2.title {
+    margin: 0px;
+    font-size: 130%;
+}
+
+div.ResultsTable p.seeAlso a, 
+div.ResultsTable p.sameAs a { 
+   	margin: 0px 4px 0px 3px;
+	word-wrap: break-word;
+	text-decoration: none;
+	border: none;
+	background: transparent url(images/external.gif) no-repeat center right;
+	padding-right: 15px;
+}
+
+div.ResultsTable p.seeAlso a:before, 
+div.ResultsTable p.sameAs a:before {
+	content: "\0020";
+}
+
+ /*
+ * Rows coloring
+ */
+div.ResultsTable tr.selected td { background-color: transparent; }
+
+div.ResultsTable tr.odd { background-color: transparent; }
+div.ResultsTable tr.even { background-color: transparent; }
+
+div.ResultsTable tr.odd td.sorting_1, td.sorting_2, td.sorting_3 { background-color: transparent; }
+div.ResultsTable tr.even td.sorting_1, td.sorting_2, td.sorting_3 { background-color: transparent; }
+
+div.ResultsTable td div.content {
+    overflow-y: auto;
+}
+
+/* Contextual area  */
+div.ResultsTable div.contextual {
+    position: relative;
+    top: -5px;
+}
+
+div.ResultsTable div.contextual div.toggle {
+	width: 24px;
+	height: 24px;
+	position:relative;
+	float: right;
+	background-image: url('Rocky32px/iconset.png');
+	z-index:0;
+}
+
+div.ResultsTable div.contextual div:hover.toggle {
+	background-image: url('Rocky32px/iconset_hover.png');
+}
+
+div.ResultsTable div.contextual div.collapse {
+	background-position: 0 0;
+}
+
+div.ResultsTable div.contextual div.expand {
+	background-position: 0 -24px;
+}
+
+div.ResultsTable div.contextual span.highlight {
+    background-color: #E9E74A;
+}
+
+
