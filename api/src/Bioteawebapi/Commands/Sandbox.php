@@ -18,7 +18,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-use TaskTracker\Tracker;
+use TaskTracker\Tracker, TaskTracker\Tick;
 use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
 use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 
@@ -32,6 +32,7 @@ class Sandbox extends Command
     protected function configure()
     {
         $this->setName('sandbox')->setDescription('Sandbox for testing different strategies');
+        $this->addArgument('file', InputArgument::REQUIRED, "CSV file with PMIDs");
     }
 
     // --------------------------------------------------------------
@@ -41,20 +42,44 @@ class Sandbox extends Command
         //See how long it takes to just go through all the files with no processing...
         $tracker = new Tracker(new TrackerConsoleHandler($output));
 
-        //Load libraries
-        $filemgr = $this->app['fileclient'];
-        $builder = $this->app['builder'];
+        //Array to hold pmids
+        $pmids = array();
 
-        //Do it with builder
+        //Array to hold intersect
+        $intersect = array();
+
+        //Read from the file into an array
+        $fh = fopen($input->getArgument('file'), 'r');
+        if ( ! $fh) {
+            throw new \InvalidArgumentException("Could not read from file: " . $input->getArgument('file'));
+        }
+
+        //No headers; data starts immediately
+        while ($row = fgetcsv($fh)) {
+            $pmids[] = $row[1];
+        }
+
+        //Go through files and find intersect
         $tracker->start();
-        while ($docPath = $filemgr->getNextFile()) {
+        while ($docPath = $this->app['fileclient']->getNextFile()) {
 
-            $doc = $builder->buildDocument($docPath);
-            unset($doc);
+            $filename = basename($docPath);
 
-            $tracker->tick();
+            if (in_array($filename, $pmids)) {
+                $intersect[] = $filename;
+                $tracker->tick('Comparing...');
+            }
+            else {
+                $tracker->tick('Comparing...', Tick::SKIP);
+            }            
         }
         $tracker->finish();
+
+        //Dump report
+        $output->writeln("Matching:");
+        foreach ($intersect as $pmid) {
+            $output->writeln($pmid);
+        }
     }
 }
 
