@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+div.AnnotationsCloud {
+	overflow-y: auto;
+}
+
+div.AnnotationsCloud a.topic {
+	margin-right: 3px;
+	text-decoration: none;
+	border: none;
+	background: transparent url(images/external.gif) no-repeat center right;
+	padding-right: 15px;
+}
+
+div.AnnotationsCloud a.topic:before {
+	content: "\0020";
+}
+
+div.AnnotationsCloud.loading {
+    background: transparent url(images/loading.gif) no-repeat center center;
+}
+
+div.Tooltip a.topic:before {
+    content: "\0020";
+}
+
+div.Tooltip a.topic {
+	margin-right: 3px;
+	text-decoration: none;
+	border: none;
+	background: transparent url(images/external.gif) no-repeat center right;
+	padding-right: 15px;
+}

@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+div.TagCloud {
+	overflow: hidden;
+	//text-align: center;
+}
+
+div.TagCloud ul.tags {
+	margin:0; 
+	padding:0;
+}
+
+div.TagCloud ul.tags li {
+	list-style-type: none; 
+	margin: 0 10px; 
+	display:inline;
+}
+
+div.TagCloud li.tag:after {
+	content: "\0020";
+}
+
+div.TagCloud li.tag span.name {
+   	color:#444;
+   	font-size: 70%;
+   	margin: 7px;
+}
+
+div.TagCloud li.tag span.active {
+   	background: #54A419;
+	display: inline-block;
+	color: white;
+	position: relative;
+	padding: 0.16em;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	margin: 7px 7px 0 0;
+	text-decoration: none;
+	left: -10px;
+	height: 1.2em;
+}
+
+div.TagCloud li.tag span.active:after { 
+	display: inline-block;
+	border: 0.74em solid;
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: -1.4em;
+	top: 0;
+	content: "";
+	display: inline-block;
+	border-color: transparent transparent transparent #54A419
+}
+
+div.TagCloud li.tag span.value {
+   	background: #ECECEC;
+}
+

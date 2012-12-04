@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Query Results</title>
+    
+    <script type="text/javascript" src="biojs/dependencies/jquery/jquery-1.8.1.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="biojs/dependencies/jquery.jsPlumb-1.3.14-all.js"></script>
+
+	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.js"></script>
+	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.Graph.js"></script>
+	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.ResultsGraph.js"></script>
+
+    <link href="css/genesearch.css" rel="stylesheet" type="text/css"/>
+	<link href="biojs/css/biojs.Graph.css" rel="stylesheet" type="text/css"/>
+	
+	<script language="JavaScript" type="text/javascript">//<![CDATA[
+	    window.onload = function() {
+
+	    	resetGraph(); 
+	    	
+			jQuery('.back').click(function(){
+				showResults();
+			});
+			
+			if ( getUrlVars()["userQuery"] ) {
+				doSearch(getUrlVars()["userQuery"]);
+			}
+
+	    };
+	    
+	    function resetGraph() {
+	    	
+	    	delete resultsGraph;
+	    	
+	    	jQuery('#list').children().remove();
+	    	
+	    	var myGraph = new Biojs.ResultsGraph({
+				target: "list",
+				proxyUrl: 'biojs/dependencies/proxy/proxy.php',
+				viewport: { 
+					xMin: 0, 
+					xMax: jQuery(window).width(), 
+					yMin: 55, 
+					yMax: 55 + jQuery(window).height()
+				}
+			});
+	    	
+	    	myGraph.onDataArrived( function(e) {
+		    	showResults();
+			});
+	    	
+	    	Biojs.registerGlobal( 'resultsGraph', myGraph );
+	    }
+	    
+	    function showResults(){
+
+//			if ( !Biojs.Utils.isEmpty( resultsGraph.getAllNodes() ) ) {
+	    		jQuery('#list').show();
+	    		jQuery('#message').hide();
+	    		
+// 	    	} else {
+// 	    		jQuery('#list').hide();
+// 	    		jQuery('#message').html('No results using "' + userQuery + '" ').show();
+// 	    	}
+	    }
+
+	    function doSearch( query ) {
+
+            var userQuery = ( query == undefined )? jQuery('.searchbox .searchfield').val() : query;
+
+            //if ( !Biojs.Utils.isEmpty(userQuery) ) {
+            if ( userQuery != undefined && userQuery != ""  ) {
+                jQuery('.searchbox .searchfield').val(userQuery);
+                jQuery('#list').hide();
+                jQuery('#message').html('Searching...').show();
+                Biojs.registerGlobal( 'userQuery', userQuery );
+                resetGraph();
+                resultsGraph.setQuery( userQuery );
+            }
+
+            return false;
+
+	    } 
+	    
+	    function getUrlVars() {
+    		var vars = {};
+		    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		        vars[key] = value;
+		    });
+		    return vars;
+		}
+
+	    function showList () {
+	    	var userQuery = jQuery('.searchbox .searchfield').val();
+	    	
+	    	if ( userQuery != undefined && userQuery != "" && userQuery != "Search..."  ) {
+	    		window.location.href = "index.html" + "?userQuery="+userQuery;
+	    	} else {
+	    		window.location.href = "index.html";
+	    	}
+	    }
+	    
+	     //]]>
+	</script>
+
+</head>
+<body>
+	<div id="header" class="grid12 first">
+		<div class="grid6 first searchbox">
+			<span>Gene search</span>
+			<form class="searchform" onsubmit="doSearch();" action="#">
+				<input class="searchfield" type="text" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}">
+				<input class="searchbutton" type="button" value="Go" onclick="doSearch();">
+			</form>
+	        <span> Examples: <a onclick="doSearch('catalase');" style="cursor: pointer;">catalase</a>, <a onclick="doSearch('insulin');" style="cursor: pointer;">insulin</a></span>
+		</div>
+		<div class="grid3 toolbar"><img src="css/images/page.png" title="Go to list view" onclick="showList();" /></div>
+	</div>
+
+	<div class="grid12 clearfix first">
+
+		<div id="list" class="grid12 first"></div>
+		<div id="message" style="display:none;" class="grid12"></div>
+	
+	</div>
+	
+</body>
+</html>
