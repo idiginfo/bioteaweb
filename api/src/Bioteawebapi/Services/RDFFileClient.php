@@ -192,8 +192,9 @@ class RDFFileClient
         //Get the full paths for any annotation files
         //(hardcoded for now - perhaps send in as parameters)
         $arr = array(
-            'ncbo'     => $dirname . '/AO_annotations/' . $basename . '_ncboAnnotator.rdf',
-            'whatizit' => $dirname . '/Bio2RDF/' . $basename . '_whatizitUkPmcAll.rdf'
+            'ncbo'       => $dirname . '/AO_annotations/' . $basename . '_ncboAnnotator.rdf',
+            'whatizit'   => $dirname . '/AO_annotations/' . $basename . '_whatizitUkPmcAll.rdf',
+            'whatizitgo' => $dirname . '/AO_annotations/' . $basename . '_whatizitUkPmcGoterms.rdf'
         );
 
         //Change full paths to relative paths if we want that info
