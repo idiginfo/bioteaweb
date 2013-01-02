@@ -22,6 +22,8 @@ use TaskTracker\Tracker, TaskTracker\Tick;
 use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
 use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 
+use SimpleXMLElement;
+
 /**
  * Clear all documents in the system
  */
@@ -32,54 +34,53 @@ class Sandbox extends Command
     protected function configure()
     {
         $this->setName('sandbox')->setDescription('Sandbox for testing different strategies');
-        $this->addArgument('file', InputArgument::REQUIRED, "CSV file with PMIDs");
     }
 
     // --------------------------------------------------------------
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        //See how long it takes to just go through all the files with no processing...
+        //Tracker
         $tracker = new Tracker(new TrackerConsoleHandler($output));
-
-        //Array to hold pmids
-        $pmids = array();
-
-        //Array to hold intersect
-        $intersect = array();
-
-        //Read from the file into an array
-        $fh = fopen($input->getArgument('file'), 'r');
-        if ( ! $fh) {
-            throw new \InvalidArgumentException("Could not read from file: " . $input->getArgument('file'));
-        }
-
-        //No headers; data starts immediately
-        while ($row = fgetcsv($fh)) {
-            $pmids[] = $row[1];
-        }
 
         //Go through files and find intersect
         $tracker->start();
         while ($docPath = $this->app['fileclient']->getNextFile()) {
 
-            $filename = basename($docPath);
+            //Get the fullpath
+            $fullPath = $this->app['fileclient']->resolvePath($docPath);
 
-            if (in_array($filename, $pmids)) {
-                $intersect[] = $filename;
-                $tracker->tick('Comparing...');
+            //Build the XML object
+            $xml = new SimpleXMLElement($fullPath, 0, true);
+            $xml->registerXPathNamespace('dcterms', 'http://purl.org/dc/terms/');
+            $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
+
+            $totalCount = 0;
+
+            foreach ($xml->xpath("//rdf:Description") as $sec) {
+
+                //Attempt to get it from the hasTopic['rdf:resource'] attribute
+                $about = (string) $sec[0]->attributes('rdf', true)->about;
+
+                $canEndWith = array(
+                    '/Materials',
+                    '/Methods', 
+                    '/Materials-and-methods'
+                );
+
+                foreach($canEndWith as $cew) {
+
+                    $len = strlen($cew) * -1;
+                    if (strcasecmp($cew, substr($about, $len)) == 0) {
+                        $totalCount++;
+                        break;
+                    }
+                }
             }
-            else {
-                $tracker->tick('Comparing...', Tick::SKIP);
-            }            
-        }
-        $tracker->finish();
 
-        //Dump report
-        $output->writeln("Matching:");
-        foreach ($intersect as $pmid) {
-            $output->writeln($pmid);
+            $tracker->tick("Processing");    
         }
+        $tracker->finish("Total Count: " . number_format($totalCount, 0));
     }
 }
 
