@@ -22,65 +22,81 @@ use TaskTracker\Tracker, TaskTracker\Tick;
 use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
 use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 
+use SimpleXMLElement;
+
 /**
  * Clear all documents in the system
  */
 class Sandbox extends Command
 {
+    /**
+     * @var array
+     */
+    private $canEndWith = array(
+        '/Materials',
+        '/Methods', 
+        '/Materials-and-methods'
+    );
+
     // --------------------------------------------------------------
 
     protected function configure()
     {
         $this->setName('sandbox')->setDescription('Sandbox for testing different strategies');
-        $this->addArgument('file', InputArgument::REQUIRED, "CSV file with PMIDs");
     }
 
     // --------------------------------------------------------------
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        //See how long it takes to just go through all the files with no processing...
+        //Tracker
         $tracker = new Tracker(new TrackerConsoleHandler($output));
 
-        //Array to hold pmids
-        $pmids = array();
-
-        //Array to hold intersect
-        $intersect = array();
-
-        //Read from the file into an array
-        $fh = fopen($input->getArgument('file'), 'r');
-        if ( ! $fh) {
-            throw new \InvalidArgumentException("Could not read from file: " . $input->getArgument('file'));
-        }
-
-        //No headers; data starts immediately
-        while ($row = fgetcsv($fh)) {
-            $pmids[] = $row[1];
-        }
+        //Number of documents where Meterials/Methods found
+        $totalCount = 0;
 
         //Go through files and find intersect
         $tracker->start();
         while ($docPath = $this->app['fileclient']->getNextFile()) {
 
-            $filename = basename($docPath);
+            //Get the fullpath
+            $fullPath = $this->app['fileclient']->resolvePath($docPath);
 
-            if (in_array($filename, $pmids)) {
-                $intersect[] = $filename;
-                $tracker->tick('Comparing...');
+            if ($this->findMaterialsMethods($fullPath)) {
+                $totalCount++;
             }
-            else {
-                $tracker->tick('Comparing...', Tick::SKIP);
-            }            
-        }
-        $tracker->finish();
 
-        //Dump report
-        $output->writeln("Matching:");
-        foreach ($intersect as $pmid) {
-            $output->writeln($pmid);
+            $tracker->tick(sprintf("Processing (%s found)", number_format($totalCount, 0)));
         }
+
+        $tracker->finish("Total Count: " . number_format($totalCount, 0));
     }
+
+    // --------------------------------------------------------------
+
+    private function findMaterialsMethods($filePath)
+    {
+        $xml = new SimpleXMLElement($filePath, 0, true);
+        $xml->registerXPathNamespace('dcterms', 'http://purl.org/dc/terms/');
+        $xml->registerXPathNamespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#');
+
+        //Go through each description
+        foreach ($xml->xpath("//rdf:Description") as $sec) {
+
+            //Attempt to get the 'rdf:about' attribute of the item
+            $about = (string) $sec[0]->attributes('rdf', true)->about;
+
+            foreach($this->canEndWith as $cew) {
+                $len = strlen($cew) * -1;
+                if (strcasecmp($cew, substr($about, $len)) == 0) {
+                    return true;
+                }
+            }
+        }
+
+        //If made it here...
+        return false;
+    }    
 }
 
 /* EOF: Sandbox.php */
