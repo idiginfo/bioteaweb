@@ -9,9 +9,16 @@
 	<script type="text/javascript" src="biojs/dependencies/jquery.jsPlumb-1.3.14-all.js"></script>
 
 	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.js"></script>
+	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.Annotations.js"></script>
+	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.TagCloud.js"></script>
+	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.AnnotationsCloud.js"></script>
 	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.Graph.js"></script>
 	<script language="JavaScript" type="text/javascript" src="biojs/Biojs.ResultsGraph.js"></script>
+    <script language="JavaScript" type="text/javascript" src="biojs/Biojs.Tooltip.js"></script>
 
+	<link href="biojs/css/biojs.TagCloud.css" rel="stylesheet" type="text/css"/>
+	<link href="biojs/css/biojs.AnnotationsCloud.css" rel="stylesheet" type="text/css"/>
+	<link href="biojs/css/biojs.Tooltip.css" rel="stylesheet" type="text/css"/>
     <link href="css/genesearch.css" rel="stylesheet" type="text/css"/>
 	<link href="biojs/css/biojs.Graph.css" rel="stylesheet" type="text/css"/>
 	
@@ -27,6 +34,124 @@
 			if ( getUrlVars()["userQuery"] ) {
 				doSearch(getUrlVars()["userQuery"]);
 			}
+			
+			//Create a tooltip menu for groupBy 
+			this._tooltip = new Biojs.Tooltip({
+			      targetSelector: "#groupByIcon",
+			      cbRender: function( element, contentDiv ) {
+			    	  
+			    	  contentDiv.html('')
+			    	 	.append('<form id="groupByMenu" class="dropDownMenu">'+
+			    	 				'<fieldset>'+
+				    	 				'<legend>Group By:</legend>'+
+				    	 					'<span><input id="topicRadio" type="radio" name="groupBy" value="topic">'+
+				    	 					'<label for="topicRadio">Vocabulary</label></span>'+
+				    	 					'<span><input id="termRadio" type="radio" name="groupBy" value="term">'+
+				    	 					'<label for="termRadio">Term</label></span>'+
+// 				    	 					'<span><input id="noneRadio" type="radio" name="groupBy" value="none">'+
+// 				    	 					'<label for="noneRadio">All</label></span>'+
+			    	 				'</fieldset>'+
+			    	 			'</form>');
+
+			    	  jQuery("#" + resultsGraph.opt.groupBy + "Radio").prop("checked","checked");
+			    	  
+			    	  jQuery("#groupByMenu").change(function() {
+					  	  resultsGraph.groupBy( jQuery("input[name='groupBy']:checked").val() );
+					  });
+
+			      },
+			      position: Biojs.Tooltip.ELEMENT_POSITION,
+			      arrowType: Biojs.Tooltip.ARROW_TOP_MIDDLE
+			});
+		
+			//Create a tooltip menu for filterBy 
+			this._tooltip = new Biojs.Tooltip({
+			      targetSelector: "#filterByIcon",
+			      cbRender: function( element, contentDiv ) {
+			    	  
+			    	  var groupBy = jQuery("input[name='groupBy']:checked").val();
+			    	  
+			    	  contentDiv.html('')
+			    	 	.append('<form id="filterByMenu" class="dropDownMenu">'+
+			    	 				'<fieldset id="filterByTopics" >'+
+				    	 				'<legend>Remove:</legend>'+
+			    	 				'</fieldset>'+
+			    	 				'<fieldset>'+
+				    	 				'<legend>Filter:</legend>'+
+				    	 					'<span>Remove ' + groupBy + 's with less than <input id="freqText" type="text" name="freq" value="1"/>annotations</span>'+
+			    	 				'</fieldset>'+
+			    	 				'<fieldset>'+
+			    	 					'<span><input id="filterButton" type="button" name="filter" value="filter"/></span>'+
+		    	 					'</fieldset>'+
+			    	 			'</form>');
+
+			    	  // Populates the checkboxes
+			    	  var fieldset = contentDiv.children('form').children('#filterByTopics');
+			    	  var topic, showMaxItems = 5, item;
+			    	  
+			    	  for ( var key in Biojs.Annotations.TOPIC ) {
+			    		  topic = Biojs.Annotations.TOPIC[key].shortName;
+			    		  item = jQuery('<span><input id="' + topic + 'Checkbox" type="checkbox" name="' + topic + '" value="' + topic + '"/>'+
+		    	 					'<label for="' + topic + 'Checkbox">' + topic + '</label></span>')
+		    	 					.appendTo(fieldset);
+			    		  
+			    		  if ( --showMaxItems <= 0 ) item.hide();
+
+			    	  }
+			    	  
+			    	  jQuery('<a href="#">more...</a>')
+    	 					.click(function(){
+    	 						fieldset.children('a').toggle();
+    	 						fieldset.children('span').each(function(){ $(this).show(); })
+    	 					})
+    	 					.appendTo(fieldset);
+			    	  
+			    	  jQuery('<a href="#">less...</a>')
+		 					.click(function(){	 						
+		 						var showMaxItems = 5
+		 						fieldset.children('a').toggle(); 	
+		 						fieldset.children('span').each(function(){ 
+		 							if ( --showMaxItems <= 0 ) $(this).hide(); 
+		 						});
+		 					})
+		 					.hide()
+		 					.appendTo(fieldset);
+			    	  
+			    	  jQuery("#filterButton").click(function() {
+			    		  
+			    		  var freq = parseInt( jQuery('#freqText').val(), 10 );
+			    		  var topics = [];
+			    		  
+			    		  $('#filterByMenu input:checked').each(function() {
+			    			  topics.push($(this).attr('name'));
+						  });
+			    		  
+					  	  resultsGraph.applyFilter( { 'frequency': freq, 'topics':topics } );
+					  }); 
+			    	  
+			    	  //set current values
+			    	  jQuery('#freqText').val(resultsGraph.opt.filterBy.frequency);
+			    	  
+			    	  for ( var i in resultsGraph.opt.filterBy.topics ) {
+			    		  jQuery("input[name='" + resultsGraph.opt.filterBy.topics[i] + "']").prop('checked', true);  
+			    	  }
+
+			      },
+			      position: Biojs.Tooltip.ELEMENT_POSITION,
+			      arrowType: Biojs.Tooltip.ARROW_TOP_MIDDLE
+			});
+			
+			
+			jQuery('#animateIcon').click(function(){
+				resultsGraph.animate(true);
+				jQuery('.animationIcons').toggle();
+			});
+			
+			jQuery('#stopIcon').click(function(){
+				resultsGraph.animate(false);
+				jQuery('.animationIcons').toggle();
+			});
+			
 
 	    };
 	    
@@ -116,7 +241,13 @@
 			</form>
 	        <span> Examples: <a onclick="doSearch('catalase');" style="cursor: pointer;">catalase</a>, <a onclick="doSearch('insulin');" style="cursor: pointer;">insulin</a></span>
 		</div>
-		<div class="grid3 toolbar"><img src="css/images/page.png" title="Go to list view" onclick="showList();" /></div>
+		<div class="grid3 toolbar">
+			<img src="css/images/page.png" title="Return to the list" onclick="showList();" />
+			<img id="groupByIcon" src="css/images/group.png" title="Group edges" />
+			<img id="filterByIcon" src="css/images/filter.png" title="Filter edges" />
+			<img id="animateIcon" class="animationIcons" src="css/images/play.png" title="Play animation" style="display:none" />
+			<img id="stopIcon" class="animationIcons" src="css/images/stop.png" title="Stop animation" />
+		</div>
 	</div>
 
 	<div class="grid12 clearfix first">

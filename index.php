@@ -39,7 +39,7 @@ doHeader();
             <p><em>See examples of how our dataset is being used to create interesting web apps for scientists.</em></p>
             
             <div id="download2">
-	        <a class="external" href="http://199.102.237.69:8888/sparql/beta7/" target="_blank">Gene-based search and retrieval,<br />a first prototype</a>
+	        <a class="external" href="http://biotea.idiginfo.org/gene" target="_blank">Gene-based search and retrieval,<br />a first prototype</a>
             </div>
 
 

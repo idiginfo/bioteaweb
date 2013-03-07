@@ -143,7 +143,7 @@ if (savefs) savefs.style.display="none";
 			<li><a class="second" href="api.php">API</a></li>
 			<li><a class="third" href="query.php">Run a Query</a></li>
 			<li><a class="first" href="mirror.php">Get the Data</a></li>
-			<li><a class="second" href="http://199.102.237.69:8888/sparql/beta7/" target="_blank">Working Model</a></li>
+			<li><a class="second" href="http://biotea.idiginfo.org/gene/" target="_blank">Working Model</a></li>
 			<li><a class="third" href="contact.php">Contact</a></li>
 		</ul>
 		</div>
@@ -164,6 +164,7 @@ function doFooter() {
 <div id="footer">
 	<div class="container">
 		<a href="https://www.idiginfo.org" target="_blank"><img src="images/idiginfo.png" alt="iDigInfo" border="0" /></a>
+		<p class="copyright">Copyright © 2012. The Florida State University Research Foundation. All rights reserved.</p>
 	</div>
 	</div>
 

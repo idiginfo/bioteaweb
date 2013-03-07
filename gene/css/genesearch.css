@@ -362,4 +362,75 @@ div.loading {
     background: transparent url(images/loading.gif) no-repeat center center;
 }
 
+fieldset {
+	display: block;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+legend {
+	font-size: 95%;
+	font-weight: bold;
+	color: #FF7C00;
+	line-height: 150%;
+	margin: 0;
+	padding: 0 0 3px 0;
+	border: none;
+	display: block;
+	white-space: normal;
+	width: 100%;
+}
+
+.dropDownMenu {
+	text-align: left;
+	width: 110px;
+}
+
+.dropDownMenu input[type="radio"],
+.dropDownMenu input[type="checkbox"] {
+	opacity: 0;
+	float: left;
+	width: 18px;
+	position: absolute;
+}
+
+.dropDownMenu input[type="radio"]:checked + label {
+	background-image: url(images/radio.png);
+}
+
+.dropDownMenu input[type="checkbox"]:checked + label {
+	background-image: url(images/check.png);
+}
+
+.dropDownMenu input[type="radio"] + label,
+.dropDownMenu input[type="checkbox"] + label {
+	margin: 0;
+	clear: none;
+	padding: 5px 0 4px 24px;
+	cursor: pointer;
+	background: url(images/off.png) left center no-repeat;
+}
+
+.dropDownMenu input[type="text"] {
+	font-family: Arial, Sans-Serif;
+	font-size: 13px;
+	margin-bottom: 5px;
+	display: block;
+	padding: 4px;
+	width: 28px;
+	border: solid 1px #85b1de;
+}
+
+.dropDownMenu span {
+	margin: 0;
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+
+
+
+
 

@@ -234,7 +234,11 @@ li.options ul { margin: 0; font-style: normal; font-size: 14px; }
     }
     
 .options .api-code { background: #e4f0d4; width: 180px; }
-	
+
+.copyright {
+    text-align: right;
+    font-size: 90%;
+    }	
 
 /* #Page Styles
 ================================================== */
