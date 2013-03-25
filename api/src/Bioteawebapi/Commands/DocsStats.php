@@ -38,7 +38,7 @@ class DocsStats extends Command
 
     protected function configure()
     {
-        $this->setName('docs:stats')->setDescription('Get some statistics from the documents');
+        $this->setName('sandbox:stats')->setDescription('Get some statistics from the documents');
         $this->addArgument('mode', InputArgument::REQUIRED, "Either 'w'/'worker' for worker, 'm'/'main' for main process, or 'g'/'get'");
 
         //General options

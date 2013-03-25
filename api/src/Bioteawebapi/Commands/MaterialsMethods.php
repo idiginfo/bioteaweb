@@ -1,21 +1,9 @@
 <?php
 
-/**
- * Bioteaweb API
- *
- * A rest API frontend and indexer for the Biotea RDF project
- *
- * @link    http://biotea.idiginfo.org/api
- * @author  Casey McLaughlin <caseyamcl@gmail.com>
- * @license Copyright (c) Florida State University - All Rights Reserved
- */
-
-// ------------------------------------------------------------------
-
 namespace Bioteawebapi\Commands;
-use Symfony\Component\Console\Input\InputArgument;
+
+use Symfony\Component\Console\Command\Command as SymfonyCommand;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 use TaskTracker\Tracker, TaskTracker\Tick;
@@ -24,14 +12,12 @@ use TaskTracker\OutputHandler\Monolog as TrackerMonologHandler;
 
 use SimpleXMLElement;
 
-/**
- * Clear all documents in the system
- */
-class Sandbox extends Command
-{
-    /**
-     * @var array
-     */
+
+class MaterialsMethods extends Command
+{   
+   /**
+    * @var array
+    */
     private $canEndWith = array(
         '/Materials',
         '/Methods', 
@@ -39,10 +25,10 @@ class Sandbox extends Command
     );
 
     // --------------------------------------------------------------
-
+    
     protected function configure()
     {
-        $this->setName('sandbox:tests')->setDescription('Sandbox for testing different strategies');
+         $this->setName('sandbox:mmethods')->setDescription('Count Materials and Methods Sections in RDF Files');
     }
 
     // --------------------------------------------------------------
@@ -96,7 +82,7 @@ class Sandbox extends Command
 
         //If made it here...
         return false;
-    }    
+    }     
 }
 
-/* EOF: Sandbox.php */
+/* EOF: MaterialsMethods.php */
