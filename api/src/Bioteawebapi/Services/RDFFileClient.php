@@ -233,8 +233,11 @@ class RDFFileClient
 
         if ($includeAnnots) {
             foreach($this->getAnnotationFiles($path, true) as $filePath) {
-                $graph->parseFile($filePath);
-                $num += $graph->countTriples();
+
+                if (is_readable($filePath)) {
+                    $graph->parseFile($filePath);
+                    $num += $graph->countTriples();
+                }
             }
         }
 

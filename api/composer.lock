@@ -1,5 +1,5 @@
 {
-    "hash": "3bdd1882ad1ef493ce6c2553606b153a",
+    "hash": "95995da6509eaade66cce0e3e56ad576",
     "packages": [
         {
             "name": "caseyamcl/Configula",
@@ -103,6 +103,44 @@
                 "issues": "https://github.com/caseyamcl/tasktracker/issues"
             },
             "time": "2012-10-26 14:28:15"
+        },
+        {
+            "name": "colinmollenhour/credis",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colinmollenhour/credis.git",
+                "reference": "1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/1.2",
+                "reference": "1.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Client.php",
+                    "Cluster.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Mollenhour",
+                    "email": "colin@mollenhour.com"
+                }
+            ],
+            "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
+            "homepage": "https://github.com/colinmollenhour/credis",
+            "time": "2013-03-19 02:57:04"
         },
         {
             "name": "doctrine/common",
@@ -362,7 +400,7 @@
         },
         {
             "name": "friendsofsymfony/rest",
-            "version": "dev-master",
+            "version": "0.8.0",
             "target-dir": "FOS/Rest",
             "source": {
                 "type": "git",
@@ -1503,7 +1541,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "silex/silex": 20,
-        "friendsofsymfony/rest": 20,
         "easyrdf/easyrdf": 10,
         "taluu/doctrine-orm-provider": 20,
         "caseyamcl/tasktracker": 20

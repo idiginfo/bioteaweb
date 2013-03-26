@@ -13,17 +13,18 @@
 // ------------------------------------------------------------------
 
 namespace Bioteawebapi\Services\Indexer;
+
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\EventDispatcher\GenericEvent;
+
 use Bioteawebapi\Services\RDFFileClient;
 use Bioteawebapi\Exceptions\MySQLClientException;
 use Bioteawebapi\Entities\Document;
 
-use TaskTracker\Tracker;
-use Monolog\Logger;
+use LogicException;
 
 /**
  * Indexer indexes RDF documents into MySQL and optionally SOLR
- *
- * This is a trackable class (able to be used by the TaskTracker)
  */
 class Indexer
 {
@@ -67,14 +68,9 @@ class Indexer
     private $numFailed;
 
     /**
-     * @var \TaskTracker\Tracker
+     * @var Symfony\Component\EventDispatcher\EventDispatcherInterface
      */
-    private $taskTracker;
-
-    /**
-     * @var \Monolog\Logger
-     */
-    private $logger;
+    private $dispatcher;
 
     // --------------------------------------------------------------
 
@@ -93,26 +89,14 @@ class Indexer
 
     // --------------------------------------------------------------
 
-    /**
-     * Set an optional taskTracker
+    /** 
+     * Set the event dispatcher
      *
-     * @param \TaskTracker\Tracker
+     * @param Symfony\Component\EventDispatcher\EventDispatcherInterface
      */
-    public function setTaskTracker(Tracker $taskTracker)
+    public function setEventDispatcher(EventDispatcherInterface $dispatcher)
     {
-        $this->taskTracker = $taskTracker;
-    }
-
-    // --------------------------------------------------------------
-
-    /**
-     * Set an optional logger
-     *
-     * @param \Monolog\Logger $logger
-     */
-    public function setLogger(Logger $logger)
-    {
-        $this->logger = $logger;
+        $this->dispatcher = $dispatcher;
     }
 
     // --------------------------------------------------------------
@@ -156,7 +140,7 @@ class Indexer
     /**
      * Return the number of items skipped for the last run
      *
-     * return int
+     * @return int
      */
     public function getNumSkipped()
     {
@@ -184,7 +168,7 @@ class Indexer
      * @param  int          $limit  0 for no limit
      * @return int          The number processed (skipped, failed, and indexed)
      */
-    public function index($limit = 0)
+    public function indexAll($limit = 0)
     {
         //Reset counts
         $this->numIndexed = 0;
@@ -194,10 +178,8 @@ class Indexer
         //Reset the directory iterator in the file client
         $this->files->resetFileIterator();
 
-        //Inform task tracker we're starting
-        if ($this->taskTracker) {
-            $this->taskTracker->start();
-        }
+        //Inform the listeners that we're starting
+        $this->dispatch('indexer.startall', $this->files);
 
         //Get document graphs until we run out of files
         while ($docPath = $this->files->getNextFile()) {
@@ -216,19 +198,11 @@ class Indexer
                 }
                 else {
 
-                    $this->startTimer('build');
+                    //Build the document
+                    $doc = $this->builder->buildDocument($docPath);
 
-                        //Build the document
-                        $doc = $this->builder->buildDocument($docPath);
-
-                    $buildTime = $this->getTime('build');
-
-                    $this->startTimer('process');
-
-                        //Process it
-                        $result = $this->processItem($doc);
-
-                    $procTime = $this->getTime('process');
+                    //Process it
+                    $result = $this->index($doc);
                 }
 
             } catch (\Exception $e) {
@@ -236,27 +210,6 @@ class Indexer
                 //Set result to failed                
                 $result = self::FAILED;
 
-                //Log it if there is a logger
-                if ($this->logger) {
-
-                    $arr = array(
-                        'message'  => $e->getMessage(),
-                        'trace'    => $e->getTrace(),
-                        'location' => $e->getFile() . ":" . $e->getLine()
-                    );
-                    $this->logger->addError("Error while attempting to index " . $docPath, $arr);
-                }
-
-            }
-
-            //Inform task tracker
-            if ($this->taskTracker) {
-                $msg = sprintf(
-                    "Processing (build time...%s  process time...%s)",
-                    (isset($buildTime)) ? number_format($buildTime, 2) : 0,
-                    (isset($procTime)) ? number_format($procTime, 2) : 0
-                );
-                $this->taskTracker->tick($msg, $result);
             }
 
             //Increment the counters
@@ -265,13 +218,17 @@ class Indexer
                 case self::SKIPPED: $this->numSkipped++; break;
                 case self::INDEXED: $this->numIndexed++; break;
                 default:
-                    throw new \Exception("Invalid returned value from Indexer::process");
+                    throw new LogicException("Invalid returned value from Indexer::process");
             }
         }
 
-        $this->taskTracker->finish(
-            sprintf("Finished indexing %s documents.", number_format($this->getNumProcessed(), 0))
-        );
+        //Inform the listeners that we're starting
+        $this->dispatch('indexer.finishall', array(
+            'processed' => $this->getNumProcessed(),
+            'indexed'   => $this->numIndexed,
+            'failed'    => $this->numFailed,
+            'skipped'   => $this->numSkipped
+        ));
 
         return $this->getNumProcessed();
     }
@@ -285,44 +242,48 @@ class Indexer
      * @param Array $insertions
      * @return int  Skipped, Indexed
      */
-    public function processItem(Document $document)
+    public function index(Document $document)
     {
-        //MySQL Index
-        $mySQLResult = $this->persister->persistDocument($document);
+        try {
 
-        //SOLR Index for Terms - Optional
-        $solrResult = ($this->solr)
-            ? $this->solr->persistDocument($document)
-            : false;
+            $this->dispatch('indexer.before', $document);
+
+            //MySQL Index
+            $mySQLResult = $this->persister->persistDocument($document);
+
+            //SOLR Index for Terms - Optional
+            $solrResult = ($this->solr)
+                ? $this->solr->persistDocument($document)
+                : false;
+
+        } catch (\Exception $e) {
+            $this->dispatch('indexer.fail', $e, array('document' => $document));
+            throw $e;
+        }
 
         //Return indexed
-        return ($mySQLResult OR $solrResult) ? self::INDEXED : self::SKIPPED;
+        $result = ($mySQLResult OR $solrResult) ? self::INDEXED : self::SKIPPED;
+        $this->dispatch('indexer.after', $result, array('document' => $document));
+        return $result;
     }
+
 
     // --------------------------------------------------------------
 
-    //This stuff should become a trait!  (Problem is that the server is PHP 5.3)
-
     /**
-     * @var array
-     */
-    private $timers = array();
-
-    /**
-     * Timer for benchmarking
+     * Dispatch an event
      *
-     * @param string $key
+     * @param string $eventName  Refer to Symfony Event dispatcher naming rules
+     * @param string $subject    The event subject
+     * @param array  $arguments  Any additional data, if desired
      */
-    public function startTimer($key)
+    protected function dispatch($eventName, $subject, array $arguments = array())
     {
-        $this->timers[$key] = microtime(true);
-    }
-
-    public function getTime($key)
-    {
-        $now = microtime(true);
-        return $now - $this->timers[$key];
-    }
+        if ($this->dispatcher) {
+            $event = new GenericEvent($subject, $arguments);
+            $this->dispatcher->dispatch($eventName, $event);
+        }
+    }    
 }
 
 
