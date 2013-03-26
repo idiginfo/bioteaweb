@@ -69,7 +69,7 @@ class IndexPersister
         $this->dbal = $this->em->getConnection();
 
         //Setup cached table info
-        $ths->cachedTableInfo = array();
+        $this->cachedTableInfo = array();
     }
 
     // --------------------------------------------------------------

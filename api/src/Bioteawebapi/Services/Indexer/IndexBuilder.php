@@ -172,7 +172,8 @@ class IndexBuilder
         foreach ($xml->xpath("//ao:Annotation") as $annot) {
 
             //Extract Term and build a Term object
-            $termString = (string) array_shift($annot->xpath('ao:body'));
+            $_termVal = $annot->xpath('ao:body');
+            $termString = (string) array_shift($_termVal);
             $termObj = $this->buildTermObj($termString);
 
             //Extract Topics

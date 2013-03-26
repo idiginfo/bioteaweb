@@ -24,6 +24,8 @@ use TaskTracker\OutputHandler\SymfonyConsole as TrackerConsoleHandler;
 
 /**
  * Get some statistics from the documents
+ *
+ * Really quick and dirty
  */
 class DocsStats extends Command
 {
