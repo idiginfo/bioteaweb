@@ -1,3 +1,6 @@
 api/vendor
 api/config/config.local.yaml
 api/composer.phar
+arcstore/vendor
+arcstore/config/config.yml
+arcstore/composer.phar

@@ -1,0 +1,18 @@
+#
+# BioteaRDF System Configuration File
+#
+
+# MySQL Database Configuration
+rdfstore:
+    db_host: ##
+    db_name: ##
+    db_user: ##
+    db_pwd:  ##
+    endpoint_write_key: ##
+
+# MySQL state tracking Configuration
+# Use @rdfstore to make the same as rdfstore
+# Otherwise, use same attributes as rdfstore (db_host, db_name, etc)
+otherdb: @rdfstore
+
+# EOF
