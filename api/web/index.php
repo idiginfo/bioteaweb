@@ -62,8 +62,6 @@ $app['webapp']->add(new Bioteawebapi\Controllers\DocumentsList($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\DocumentsSingle($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesList($app));
 $app['webapp']->add(new Bioteawebapi\Controllers\VocabulariesSingle($app));
-$app['webapp']->add(new Bioteawebapi\Controllers\ArticlesController($app));
-
 
 // ------------------------------------------------------------------
 
