@@ -36,7 +36,10 @@ class DocumentsSingle extends Abstracts\SingleController
     /** @inherit */
     protected function assignRoutes()
     {
-        return array('/documents/{document}' => "Get information about a single document and its related items");
+        return array(
+            '/documents/{document}' => "Get information about a single document and its related items",
+            '/articles/{document}'   => "Alias for document/{document}"
+        );
     }
 
     // --------------------------------------------------------------

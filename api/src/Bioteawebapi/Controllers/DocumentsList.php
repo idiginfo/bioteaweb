@@ -27,7 +27,10 @@ class DocumentsList extends Abstracts\ListController
 
     protected function assignRoutes()
     {
-        return array('/documents' => "Get a list of document URLs");
+        return array(
+            '/documents' => "Get a list of document URLs",
+            '/articles'   => "Alias for documents"
+        );
     }
 
     // --------------------------------------------------------------
