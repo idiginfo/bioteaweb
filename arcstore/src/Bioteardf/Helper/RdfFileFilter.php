@@ -18,7 +18,12 @@ class RdfFileFilter extends RecursiveFilterIterator
 
     public function accept()
     {
-        return $this->current()->isFile() && preg_match("/\.rdf$/ui", $this->current()->getFilename());
+        if ($this->current()->isDir()) {
+            return true;
+        }
+        else {
+            return $this->current()->isFile() && preg_match("/\.rdf$/ui", $this->current()->getFilename());
+        }
     }
 
     public function __toString()
