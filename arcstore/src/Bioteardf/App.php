@@ -55,13 +55,6 @@ class App extends SilexApp
         $app =& $this;
 
         $this->get('/', function() use ($app) {
-            $q = $app['arc2.store']->query("select distinct ?Concept where {[] a ?Concept} LIMIT 100");
-
-            $data = print_r($q['result']['rows'], true);
-            return $data;
-        });
-
-        $this->get('/sparql', function() use ($app) {
             ob_start();
             $app['arc2.sparql']->go();
             return ob_get_clean();
