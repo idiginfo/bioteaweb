@@ -23,19 +23,8 @@ class Arc2ServiceProvider implements ServiceProviderInterface
             $config = $app['arc2.config'];
             $config['store_name'] = $app['arc2.store_name'];
 
-            //Setup the store
-            $store = ARC2::getStore($config);
-            if ( ! $store->isSetUp()) {
-                $store->setUp();
-            }
-
-            $errs = $store->getErrors();
-            if ( ! empty($errs)) {
-                throw new RuntimeException("Error setting up store:\n" . implode("\n", $errs));
-            }
-
-            //Return it
-            return $store;
+            //Return a new store
+            return ARC2::getStore($config);
         });
 
         //Endpoint

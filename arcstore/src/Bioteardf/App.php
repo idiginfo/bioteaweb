@@ -129,7 +129,7 @@ class App extends SilexApp
 
         //$app['loader']
         $app['loader'] = $app->Share(function() use ($app) {
-            return new Service\RdfLoader($app['arc2.parser'], $app['arc2.store']);
+            return new Service\RdfLoader($app['arc2.store']);
         });
 
         //$app['db']

@@ -37,7 +37,10 @@ class Sandbox extends Command
         $path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder/');
 
         foreach($this->app['files']->getIterator($path) as $f) {
-            var_dump($f->getBasename());
+            foreach($f as $fi) {
+                $output->writeln($fi->getPath() . '/' . $fi->getBasename());
+            }
+            $output->writeln("----------------------------------------");            
         }
 
     }    

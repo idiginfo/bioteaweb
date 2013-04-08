@@ -4,6 +4,7 @@ namespace Bioteardf\Service;
 
 use ARC2_RDFParser, ARC2_Store;
 use RuntimeException, Closure;
+use Bioteaardf\Model\BioteaRdfSet;
 
 class RdfLoader
 {
@@ -12,19 +13,13 @@ class RdfLoader
      */
     private $arcStore;
 
-    /**
-     * @var Closure
-     */
-    private $arcParserFactory;
-
     // --------------------------------------------------------------
 
     /**
      * Constructor
      */
-    public function __construct(Closure $arcParserFactory, ARC2_Store $arcStore)
+    public function __construct(ARC2_Store $arcStore)
     {
-        $this->arcParserFactory = $arcParserFactory;
         $this->arcStore  = $arcStore;
     }
 
@@ -54,42 +49,24 @@ class RdfLoader
         return (isset($result['t_count'])) ? $result['t_count'] : 0;
     }
 
-
     // --------------------------------------------------------------
 
     /**
-     * Parse RDF from file
+     * Load a set of RDF files
      *
-     * @param string $filepath  Full path to RDF file
-     * @return array  Array of triples
+     * @param Bitoeardf\Model\BioteaRdfSet $rdfSet
+     * @return int  The number of triples inserted
      */
-    public function parseFile($filepath)
-    {   
-        $parser = $this->arcParser();
+    public function loadFileSet(BioteaRdfSet $rdfSet)
+    {
+        $numTrips = 0;
 
-        //Ensure it is a string
-        $filepath = (string) $filepath;
-
-        //Read it
-        if ( ! is_readable($filepath)) {
-            throw new RuntimeException("Could not read file: " . $filepath);
+        foreach($rdfSet as $fp) {
+            $numTrips += $this->loadFile($fp);
         }
 
-        //Parse
-        $parser->parse($filepath);
-        return $parser->getTriples();
-    }
-
-
-    // --------------------------------------------------------------
-
-    /**
-     * Shortcut method to invoke arcParser closure property
-     */
-    private function arcParser()
-    {
-        return $this->arcParserFactory->__invoke();
-    }    
+        return $numTrips;
+    }   
 }
 
 /* EOF: RdfLoader.php */

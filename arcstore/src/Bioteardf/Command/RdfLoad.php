@@ -35,6 +35,7 @@ class RdfLoad extends Command
         $this->setDescription('Load RDF(s) into the datastore from a directory or file');
         $this->setHelp("If a file is specified, it will be loaded.  If a directory is specified, it will be loaded recursively");
         $this->AddArgument('source', InputArgument::REQUIRED, 'RDF file or directory to load from');
+        $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed files');
     }
 
     // --------------------------------------------------------------
@@ -49,27 +50,37 @@ class RdfLoad extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        //File iterator
         $filepath = $input->getArgument('source');
-        $files = $this->filesvc->getIterator($filepath);
+        $sets = $this->filesvc->getIterator($filepath);
 
-        $tracker = new Tracker(new TrackerConsole($output));
+        //Limit
+        $limit = $input->getOption('limit') ?: -1;
+
+        //Tracker
+        $tracker = new Tracker(new TrackerConsole($output, $limit));
 
         //Counters
         $numfiles = 0;
         $numtrips = 0;
 
-        $tracker->start("Processing first record (this can take a few seconds)");
+        $tracker->start("Processing first set (this can take a few seconds)");
 
         //Load each file up
-        foreach($files as $file) {
+        foreach($sets as $set) {
+
+            //Passed our limit?
+            if ($limit > -1 && $numfiles >= $limit) {
+                break;
+            }
 
             //Do it
-            $numtrips += $this->rdfloader->loadFile($file); 
+            $numtrips += $this->rdfloader->loadFileSet($set); 
             $numfiles++;
 
             //Progress bar
             $msg = sprintf(
-                "Processed %s files (%s triples)",
+                "Processed %s sets (%s triples)",
                 number_format($numfiles, 0),
                 number_format($numtrips, 0)
             );

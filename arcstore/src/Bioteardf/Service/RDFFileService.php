@@ -2,7 +2,7 @@
 
 namespace Bioteardf\Service;
 
-use File_Iterator as FileIterator;
+use Bioteardf\Helper\BioteaRdfSetIterator;
 use RecursiveDirectoryIterator as RDI;
 use RecursiveIteratorIterator;
 use SplFileInfo;
@@ -13,6 +13,7 @@ class RDFFileService
 {
     /**
      * Return an iterator wether the filepath is a directory or a single file
+     *
      * @return Iterator of SPLFileInfo Objects
      */
     public function getIterator($filepath)
@@ -22,7 +23,7 @@ class RDFFileService
         }
 
         return (is_dir($filepath))
-            ? new FileIterator(new RecursiveIteratorIterator(new RDI($filepath)), array('.rdf', '.RDF'))
+            ? new BioteaRdfSetIterator(new RecursiveIteratorIterator(new RDI($filepath)))
             : new ArrayIterator(array(new SplFileInfo($filepath)));
     }
 }
