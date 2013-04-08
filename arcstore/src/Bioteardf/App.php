@@ -82,6 +82,7 @@ class App extends SilexApp
 
         //Add Commands
         $register(new Command\RdfLoad());
+        $register(new Command\Sandbox());
 
         //Run it
         return $consoleApp->run();                

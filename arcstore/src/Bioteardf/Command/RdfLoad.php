@@ -63,11 +63,6 @@ class RdfLoad extends Command
         //Load each file up
         foreach($files as $file) {
 
-            //Skip directories
-            if ($file->isDir()) {
-                continue;
-            }
-
             //Do it
             $numtrips += $this->rdfloader->loadFile($file); 
             $numfiles++;

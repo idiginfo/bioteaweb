@@ -38,17 +38,20 @@ class RdfLoader
      */ 
     public function loadFile($filepath)
     {
-        //Parse it
-        $items = $this->parseFile($filepath);
+        //Ensure it is a string
+        $filepath = (string) $filepath;
 
-        $numtrips = 0;
-
-        foreach($items as $item) {
-            $result = $this->arcStore->insert($item, 'biotea');
-            $numtrips += isset($result['t_count']) ? $result['t_count'] : 0;
+        //Check it
+        if ( ! is_readable($filepath)) {
+            throw new RuntimeException("Could not read file: " . $filepath);
         }
 
-        return $numtrips;
+        //Read it
+        $fContents = file_get_contents($filepath);
+
+        //Insert
+        $result = $this->arcStore->insert($fContents, 'biotea');
+        return (isset($result['t_count'])) ? $result['t_count'] : 0;
     }
 
 
@@ -74,7 +77,7 @@ class RdfLoader
 
         //Parse
         $parser->parse($filepath);
-        return $parser->getSimpleIndex();
+        return $parser->getTriples();
     }
 
 

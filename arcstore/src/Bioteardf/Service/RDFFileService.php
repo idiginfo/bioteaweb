@@ -2,7 +2,7 @@
 
 namespace Bioteardf\Service;
 
-use Bioteardf\Helper\RdfFileFilter;
+use File_Iterator as FileIterator;
 use RecursiveDirectoryIterator as RDI;
 use RecursiveIteratorIterator;
 use SplFileInfo;
@@ -22,7 +22,7 @@ class RDFFileService
         }
 
         return (is_dir($filepath))
-            ? new RecursiveIteratorIterator(new RdfFileFilter(new RDI($filepath)))
+            ? new FileIterator(new RecursiveIteratorIterator(new RDI($filepath)), array('.rdf', '.RDF'))
             : new ArrayIterator(array(new SplFileInfo($filepath)));
     }
 }
