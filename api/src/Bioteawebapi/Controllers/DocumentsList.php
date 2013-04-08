@@ -59,10 +59,24 @@ class DocumentsList extends Abstracts\ListController
     /** @inherit */
     protected function getItems($offset, $limit)
     {
-        return $this->app['dbclient']->getDocuments($offset, $limit);
+        return $this->app['dbclient']->getDocuments(null, $offset, $limit);
     }
 
     // --------------------------------------------------------------
+
+    /**
+     * @inherit
+     */
+    protected function prepareResults(Array $items)
+    {
+        $outitems = array();
+
+        foreach($items as $item) {
+            $outitems[] = $item->toArray();
+        }
+
+        return $outitems;
+    }
 }
 
 /* EOF: DocumentsList.php */

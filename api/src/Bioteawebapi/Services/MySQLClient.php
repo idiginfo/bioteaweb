@@ -253,6 +253,7 @@ class MySQLClient
 
         //Return query
         $query = $qb->getQuery();
+
         return ($this->countOnly) ? $query->getSingleScalarResult() : $query->getResult();
     }
 
