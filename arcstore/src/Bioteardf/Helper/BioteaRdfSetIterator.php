@@ -3,7 +3,7 @@
 namespace Bioteardf\Helper;
 
 use RegexIterator, Iterator, SplFileInfo;
-use Bioteaardf\Model\BioteaRdfSet;
+use Bioteardf\Model\BioteaRdfSet;
 
 class BioteaRdfSetIterator extends RegexIterator
 {

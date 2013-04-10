@@ -8,6 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\ProgressHelper;
+use RuntimeException;
 
 class UtilDb extends Command
 {
@@ -28,14 +29,14 @@ class UtilDb extends Command
         $this->setName('util:db');
         $this->setDescription('Database utilites');
         $this->setHelp("Build the schema, clear the database, triples, or show database information");
-        $this->AddArgument('action', InputArgument::REQUIRED, 'Action to take', 'info');
+        $this->AddArgument('action', InputArgument::REQUIRED, 'Action to take');
     }
 
     // --------------------------------------------------------------
 
     protected function init(Application $app)
     {
-        $this->arcStore = $app['arc.store'];
+        $this->arcStore = $app['arc2.store'];
     }
 
     // --------------------------------------------------------------
@@ -65,7 +66,7 @@ class UtilDb extends Command
         //Build ARC
         if ( ! $this->arcStore->isSetUp()) {
 
-            $output->writeln("Setting up ARC2 Triplestore Tables...");
+            $this->output->write("\nSetting up ARC2 Triplestore Tables...");
 
             $this->arcStore->setUp();
             $errs = $this->arcStore->getErrors();
@@ -74,10 +75,10 @@ class UtilDb extends Command
                 throw new RuntimeException("Error setting up store:\n" . implode("\n", $errs));
             }
 
-            $outout->write("[ success ]");
+            $this->output->write("[ success ]\n");
         }
         else {
-            $output->writeln("ARC2 Triplestore Tables already setup.  Skipping.");
+            $this->output->writeln("ARC2 Triplestore Tables already setup.  Skipping.");
         }
         
     }
@@ -89,9 +90,9 @@ class UtilDb extends Command
         //Clear ARC
         if ($this->arcStore->isSetup())
         {
-            $output->writeln("Clearing ARC2 Triplestore Tables...");
+            $this->output->writeln("Clearing ARC2 Triplestore Tables...");
             $this->arcStore->reset();
-            $output->write("[ success ]");
+            $this->output->write("[ success ]");
         }
     }
 

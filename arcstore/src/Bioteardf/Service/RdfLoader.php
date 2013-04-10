@@ -4,7 +4,7 @@ namespace Bioteardf\Service;
 
 use ARC2_RDFParser, ARC2_Store;
 use RuntimeException, Closure;
-use Bioteaardf\Model\BioteaRdfSet;
+use Bioteardf\Model\BioteaRdfSet;
 
 class RdfLoader
 {
@@ -13,6 +13,11 @@ class RdfLoader
      */
     private $arcStore;
 
+    /**
+     * @var boolean
+     */
+    private $arcSetup;
+
     // --------------------------------------------------------------
 
     /**
@@ -20,7 +25,7 @@ class RdfLoader
      */
     public function __construct(ARC2_Store $arcStore)
     {
-        $this->arcStore  = $arcStore;
+        $this->arcStore = $arcStore;
     }
 
     // --------------------------------------------------------------
@@ -33,6 +38,10 @@ class RdfLoader
      */ 
     public function loadFile($filepath)
     {
+        if ( ! $this->arcSetup) {
+            $this->checkArc();
+        }
+
         //Ensure it is a string
         $filepath = (string) $filepath;
 
@@ -67,6 +76,22 @@ class RdfLoader
 
         return $numTrips;
     }   
+
+    // --------------------------------------------------------------
+
+    /**
+     * Check if ARC is setup and set a flag
+     *
+     * @throws RuntimeException
+     */
+    private function checkArc()
+    {
+        if ( ! $this->arcStore->isSetUp()) {
+            throw new RuntimeException("ARC2 Store is not setup!  Cannot load.");
+        }
+
+        $this->arcSetup = true;
+    }
 }
 
 /* EOF: RdfLoader.php */

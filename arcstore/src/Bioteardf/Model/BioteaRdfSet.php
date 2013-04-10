@@ -2,7 +2,8 @@
 
 namespace Bioteardf\Model;
 
-use SplFileInfo, IteratorAggregate, Countable;
+use SplFileInfo, IteratorAggregate, Countable,
+    ArrayIterator;
 
 /**
  * Represents an atomic set of Bitoea RDF files
@@ -56,7 +57,7 @@ class BioteaRdfSet implements IteratorAggregate, Countable
 
     public function getIterator()
     {
-        return array_merge(array($this->mainFile), array_values($this->annotationFiles));
+        return new ArrayIterator(array_merge(array($this->mainFile), array_values($this->annotationFiles)));
     }
 
     // --------------------------------------------------------------
