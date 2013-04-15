@@ -21,6 +21,11 @@ use TaskTracker\Tracker, TaskTracker\Tick,
 class RdfLoad extends Command
 {
     /**
+     * @var Bioteardf\Service\RdfLoader
+     */
+    private $loader;
+
+    /**
      * @var Bioteardf\Service\FilesService
      */
     private $filesvc;
@@ -56,20 +61,22 @@ class RdfLoad extends Command
 
     protected function init(Application $app)
     {
+        $this->loader        = $app['loader'];
         $this->filesvc       = $app['files'];
         $this->minionsClient = $app['minions.client'];
-        $this->loaderTask    = $app['minions.tasks']['load_file'];
+        $this->loaderTask    = $app['minions.tasks']['load_set'];
     }
 
     // --------------------------------------------------------------
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        //LEFT OFF HERE LEFT OFF HERE
-
         //File iterator
         $filepath = $input->getArgument('source');
         $sets = $this->filesvc->getIterator($filepath);
+
+        //Is asynchronous?
+        $async = $input->getOption('asynchronous');
 
         //Limit
         $limit = $input->getOption('limit') ?: -1;
@@ -78,34 +85,68 @@ class RdfLoad extends Command
         $tracker = new Tracker(new TrackerConsole($output, $limit));
 
         //Counters
-        $numfiles = 0;
+        $numsets  = 0;
         $numtrips = 0;
 
-        $tracker->start("Processing first set (this can take a few seconds)");
+        switch($async) {
 
-        //Load each file up
-        foreach($sets as $set) {
+            //If Asynchronous, load files into the queue to be processed by the LoadRdfFile Task
+            case true:
 
-            //Passed our limit?
-            if ($limit > -1 && $numfiles >= $limit) {
-                break;
-            }
+                $tracker->start();
 
-            //Do it
-            $numtrips += $this->rdfloader->loadFileSet($set); 
-            $numfiles++;
+                //Enqueue each set
+                foreach ($sets as $set) {
 
-            //Progress bar
-            $msg = sprintf(
-                "Processed %s sets (%s triples)",
-                number_format($numfiles, 0),
-                number_format($numtrips, 0)
-            );
+                    //Passed our limit?
+                    if ($limit > -1 && $numsets >= $limit) {
+                        break;
+                    }
 
-            $tracker->tick($msg);
+                    $this->minionsClient->enqueueNewTask('load_set', $set->toJson());
+                    $tracker->tick("Loading RDFs into Queue");
+                    $numsets++;
+                }
+
+                $tracker->finish("Done loading");
+
+                //@TODO: Query queue to see progress on unloading it until queue is empty...
+
+            break;
+
+            //If not, then load them one at a time synchronously
+            case false:
+            default:            
+
+                $tracker->start("Processing first set (this can take a few seconds)");
+
+                //Load each file up
+                foreach($sets as $set) {
+
+                    //Passed our limit?
+                    if ($limit > -1 && $numsets >= $limit) {
+                        break;
+                    }
+
+                    //Do it
+                    $numtrips += $this->loader->loadFileSet($set);
+                    $numsets++;
+
+                    //Progress bar
+                    $msg = sprintf(
+                        "Processed %s sets (%s triples)",
+                        number_format($numsets, 0),
+                        number_format($numtrips, 0)
+                    );
+
+                    $tracker->tick($msg);
+                }
+
+                $tracker->finish();
+
+            break;
+
         }
-
-        $tracker->finish();
     }
 }
 

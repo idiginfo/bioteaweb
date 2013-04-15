@@ -85,10 +85,13 @@ class App extends SilexApp
             $consoleApp->add($cmd);
         };
 
-        //Add Commands
+        //Add Biotea Commands
         $register(new Command\RdfLoad());
         $register(new Command\Sandbox());
         $register(new Command\UtilDb());
+
+        //Add other commands
+        $consoleApp->add(new MinionsWorkerCommand($app['minions.driver'], $app['minions.tasks'], $app['dispatcher']));
 
         //Run it
         return $consoleApp->run();                
@@ -130,7 +133,7 @@ class App extends SilexApp
 
         //$app['files']
         $app['files'] = $app->share(function() use ($app) {
-            return new Service\RDFFileService;
+            return new Service\RdfFileService;
         });
 
         //$app['loader']
@@ -140,8 +143,8 @@ class App extends SilexApp
 
         //$app['minons.tasks']
         $app['minions.tasks'] = new Pimple();
-        $app['minions.tasks']['load_file'] = $app['minions.tasks']->share(function() use ($app) {
-            return new Task\LoadRdfFile($app['loader']);
+        $app['minions.tasks']['load_set'] = $app['minions.tasks']->share(function() use ($app) {
+            return new Task\LoadRdfSet($app['loader']);
         });
 
         //$app['minions.client']

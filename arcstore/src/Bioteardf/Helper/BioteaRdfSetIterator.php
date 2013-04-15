@@ -3,61 +3,43 @@
 namespace Bioteardf\Helper;
 
 use RegexIterator, Iterator, SplFileInfo;
-use Bioteardf\Model\BioteaRdfSet;
+use Bioteardf\Service\RDFFileService;
 
 class BioteaRdfSetIterator extends RegexIterator
 {
     /**
-     * REGEX Pattern to identify main RDF files in a set
+     * @var Bioteardf\Service\RDFFileService
      */
-    const REGEX = "#.+/PMC[\d]+\.rdf$#i";
-
-    /**
-     * Relative path of the annotations files to the main RDF file path
-     */
-    const AOPATH = 'AO_annotations/';
+    private $fileSvc;
 
     // --------------------------------------------------------------
 
     /**
      * Constructor
+     *
+     * @param Iterator                         $iterator
+     * @param Bioteardf\Service\RDFFileService $fileSvc
+     * @param string                           $regex
      */
-    public function __construct(Iterator $iterator)
+    public function __construct(Iterator $iterator, RDFFileService $fileSvc, $regex)
     {
-        parent::__construct($iterator, self::REGEX);
+        parent::__construct($iterator, $regex);
+
+        $this->fileSvc = $fileSvc;
     }
 
     // --------------------------------------------------------------
 
     /**
-     * Override parent::current() to get entire set
+     * Override parent::current() to get a BioteaRdfSet object
      *
      * @return Bioteardf\Model\BioteaRdfSet
      */
     public function current()
     {
-        $curr = parent::current();
-        return new BioteaRdfSet($curr, $this->findAnnotationFiles($curr));
+        return $this->fileSvc->buildRdfSet(parent::current());  
     }
 
-    // --------------------------------------------------------------
-
-    /**
-     * Get the Annotation Files associated with a main file
-     *
-     * @param SplFileInfo
-     * @return array  Array of SplFileInfo Objects for associatd annotation files
-     */
-    private function findAnnotationFiles(SplFileInfo $fileinfo)
-    {
-        $aopath = $fileinfo->getPath() . '/' . trim(self::AOPATH, '/') . '/';
-
-        $arr = array();
-        foreach(glob($aopath . $fileinfo->getBasename('.rdf') . '_*.rdf') as $f) {
-            $arr[] = new SplFileInfo($f); 
-        }
-        return $arr;
-    }
 }
 
 /* EOF: BioteaRdfSetIterator.php */
