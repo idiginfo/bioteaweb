@@ -26,9 +26,14 @@ class RdfLoad extends Command
     private $filesvc;
 
     /**
-     * @var Bioteardf\Service\RdfLoader
+     * @var Minions\Client
      */
-    private $rdfloader;
+    private $minionsClient;
+
+    /**
+     * @var Bioteardf\Task\LoadRdfFile
+     */
+    private $loaderTask;
 
     // --------------------------------------------------------------
 
@@ -51,14 +56,17 @@ class RdfLoad extends Command
 
     protected function init(Application $app)
     {
-        $this->filesvc   = $app['files'];
-        $this->rdfloader = $app['loader'];
+        $this->filesvc       = $app['files'];
+        $this->minionsClient = $app['minions.client'];
+        $this->loaderTask    = $app['minions.tasks']['load_file'];
     }
 
     // --------------------------------------------------------------
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        //LEFT OFF HERE LEFT OFF HERE
+
         //File iterator
         $filepath = $input->getArgument('source');
         $sets = $this->filesvc->getIterator($filepath);

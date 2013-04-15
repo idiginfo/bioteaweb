@@ -5,6 +5,7 @@ namespace Bioteardf;
 use Minions\Command\Workers as MinionsWorkerCommand;
 use Minions\Driver\Redis as MinionsRedisDriver;
 use Minions\Client as MinionsClient;
+use Pimple;
 
 use Symfony\Component\Console\Application as ConsoleApp;
 use Bioteardf\Command\Command as BioteaCommand;
@@ -136,6 +137,19 @@ class App extends SilexApp
         $app['loader'] = $app->share(function() use ($app) {
             return new Service\RdfLoader($app['arc2.store']);
         });
+
+        //$app['minons.tasks']
+        $app['minions.tasks'] = new Pimple();
+        $app['minions.tasks']['load_file'] = $app['minions.tasks']->share(function() use ($app) {
+            return new Task\LoadRdfFile($app['loader']);
+        });
+
+        //$app['minions.client']
+        //$app['minions.cmd.workers']
+        $app->register(new Provider\MinionsServiceProvider(), array(
+            'minions.driver' => new MinionsRedisDriver($app['config']->redis['host'], $app['config']->redis['port']),
+            'minions.tasks'  => $app['minions.tasks']
+        ));
 
         //$app['db']
         //LEFT OFF HERE -- Use the Doctrine Loader to load Doctrine up for file state management
