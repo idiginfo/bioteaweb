@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d7ddd17dd255f07b4ed1053757a1aed7",
+    "hash": "60d56d906213d00f703588a5e83c2811",
     "packages": [
         {
             "name": "caseyamcl/configula",
@@ -55,6 +55,64 @@
             "time": "2012-12-03 18:41:17"
         },
         {
+            "name": "caseyamcl/minions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caseyamcl/minions.git",
+                "reference": "393f482310748f14f6a043a1ba194263257774ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caseyamcl/minions/zipball/393f482310748f14f6a043a1ba194263257774ad",
+                "reference": "393f482310748f14f6a043a1ba194263257774ad",
+                "shasum": ""
+            },
+            "require": {
+                "colinmollenhour/credis": ">=1.2",
+                "php": ">=5.3.0",
+                "pimple/pimple": ">=1.0.2",
+                "symfony/console": ">=2.2.0",
+                "symfony/event-dispatcher": ">=2.2.0",
+                "symfony/stopwatch": ">=2.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Minions": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Casey McLaughlin",
+                    "email": "caseyamcl@gmail.com",
+                    "homepage": "http://caseymclaughlin.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A distributed task processing framework built on Symfony components",
+            "homepage": "http://github.com/caseyamcl/minions",
+            "keywords": [
+                "asynchronous",
+                "cli",
+                "distributed",
+                "queue",
+                "redis",
+                "task"
+            ],
+            "support": {
+                "source": "https://github.com/caseyamcl/minions/tree/master",
+                "issues": "https://github.com/caseyamcl/minions/issues"
+            },
+            "time": "2013-04-15 14:36:03"
+        },
+        {
             "name": "caseyamcl/tasktracker",
             "version": "v1.0",
             "source": {
@@ -104,6 +162,44 @@
                 "task"
             ],
             "time": "2013-04-04 20:54:51"
+        },
+        {
+            "name": "colinmollenhour/credis",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colinmollenhour/credis.git",
+                "reference": "1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/1.2",
+                "reference": "1.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Client.php",
+                    "Cluster.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Mollenhour",
+                    "email": "colin@mollenhour.com"
+                }
+            ],
+            "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
+            "homepage": "https://github.com/colinmollenhour/credis",
+            "time": "2013-03-19 02:57:04"
         },
         {
             "name": "doctrine/common",
@@ -371,12 +467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Silex.git",
-                "reference": "93259933cd7a378abac61f25c94858ed45ee25db"
+                "reference": "1cd7f3f050b78dae4458d93892355720f56659f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Silex/zipball/93259933cd7a378abac61f25c94858ed45ee25db",
-                "reference": "93259933cd7a378abac61f25c94858ed45ee25db",
+                "url": "https://api.github.com/repos/fabpot/Silex/zipball/1cd7f3f050b78dae4458d93892355720f56659f9",
+                "reference": "1cd7f3f050b78dae4458d93892355720f56659f9",
                 "shasum": ""
             },
             "require": {
@@ -445,7 +541,7 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2013-04-10 10:09:17"
+            "time": "2013-04-11 12:23:56"
         },
         {
             "name": "symfony/console",
@@ -726,6 +822,53 @@
             "time": "2013-03-23 12:03:22"
         },
         {
+            "name": "symfony/stopwatch",
+            "version": "v2.2.1",
+            "target-dir": "Symfony/Component/Stopwatch",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Stopwatch.git",
+                "reference": "v2.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/v2.2.1",
+                "reference": "v2.2.1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Stopwatch Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-01-04 16:58:00"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v2.2.1",
             "target-dir": "Symfony/Component/Yaml",
@@ -781,7 +924,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "silex/silex": 20
+        "silex/silex": 20,
+        "caseyamcl/minions": 20
     },
     "platform": [
 

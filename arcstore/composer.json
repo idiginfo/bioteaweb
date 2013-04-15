@@ -1,5 +1,5 @@
 {
-    "name": "bioteardf",
+    "name": "idiginfo/bioteardf",
     "type": "package",
     "require": {
         "silex/silex"              : "1.0.*@dev",
@@ -8,8 +8,15 @@
         "caseyamcl/tasktracker"    : ">=1.0",
         "symfony/yaml"             : ">=2.2.0",
         "symfony/console"          : ">=2.2.0",
-        "doctrine/dbal"            : ">=2.3.3"
+        "doctrine/dbal"            : ">=2.3.3",
+        "caseyamcl/minions"        : "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com/caseyamcl/minions"
+        }
+    ],
     "autoload": {
         "psr-0": { "Bioteardf": "src/" }
     }

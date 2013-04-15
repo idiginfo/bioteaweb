@@ -2,6 +2,10 @@
 
 namespace Bioteardf;
 
+use Minions\Command\Workers as MinionsWorkerCommand;
+use Minions\Driver\Redis as MinionsRedisDriver;
+use Minions\Client as MinionsClient;
+
 use Symfony\Component\Console\Application as ConsoleApp;
 use Bioteardf\Command\Command as BioteaCommand;
 use Silex\Application as SilexApp;
@@ -129,7 +133,7 @@ class App extends SilexApp
         });
 
         //$app['loader']
-        $app['loader'] = $app->Share(function() use ($app) {
+        $app['loader'] = $app->share(function() use ($app) {
             return new Service\RdfLoader($app['arc2.store']);
         });
 
