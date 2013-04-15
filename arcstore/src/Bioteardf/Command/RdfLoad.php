@@ -14,6 +14,9 @@ use TaskTracker\Tracker, TaskTracker\Tick,
 
 /**
  * RDF Loader
+ *
+ * @TODO: CHANGES
+ * - Make the synchronous option work (already built the Task\LoadRdfFile class)
  */
 class RdfLoad extends Command
 {
@@ -31,11 +34,17 @@ class RdfLoad extends Command
 
     protected function configure()
     {
+        //Basic
         $this->setName('rdf:load');
         $this->setDescription('Load RDF(s) into the datastore from a directory or file');
         $this->setHelp("If a file is specified, it will be loaded.  If a directory is specified, it will be loaded recursively");
+
+        //Arguments
         $this->AddArgument('source', InputArgument::REQUIRED, 'RDF file or directory to load from');
-        $this->addOption('limit', 'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed files');
+
+        //Options
+        $this->addOption('limit',        'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed files');
+        $this->addOption('asynchronous', 'a', InputOption::VALUE_NONE,     'Perform the operation asynchronosuly (requires using the "worker" command)');
     }
 
     // --------------------------------------------------------------
