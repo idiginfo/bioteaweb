@@ -16,16 +16,25 @@ class RdfLoader
     /**
      * @var boolean
      */
-    private $arcSetup;
+    private $dbSetup;
+
+    /**
+     * @var Bioteardf\Service\BioteaRdfSetTracker
+     */
+    private $tracker;
 
     // --------------------------------------------------------------
 
     /**
      * Constructor
+     *
+     * @param ARC2_Store                            $arcStore
+     * @param BioteaRdf\Service\BitoeaRdfSetTracker $tracker
      */
-    public function __construct(ARC2_Store $arcStore)
+    public function __construct(ARC2_Store $arcStore, BioteaRdfSetTracker $tracker)
     {
         $this->arcStore = $arcStore;
+        $this->tracker  = $tracker;
     }
 
     // --------------------------------------------------------------
@@ -38,8 +47,8 @@ class RdfLoader
      */ 
     public function loadFile($filepath)
     {
-        if ( ! $this->arcSetup) {
-            $this->checkArc();
+        if ( ! $this->dbSetup) {
+            $this->checkDb();
         }
 
         //Ensure it is a string
@@ -64,16 +73,25 @@ class RdfLoader
      * Load a set of RDF files
      *
      * @param Bitoeardf\Model\BioteaRdfSet $rdfSet
-     * @return int  The number of triples inserted
+     * @return int|boolean  The number of triples inserted (false if skipped)
      */
     public function loadFileSet(BioteaRdfSet $rdfSet)
     {
-        $numTrips = 0;
+        //Is already loaded?
+        if ($this->tracker->isAlreadyLoaded($rdfSet)) {
+            return false;
+        }
 
+        //Load it
+        $numTrips = 0;
         foreach($rdfSet as $fp) {
             $numTrips += $this->loadFile($fp);
         }
 
+        //Record as loaded
+        $this->tracker->recordAsLoaded($rdfSet);
+
+        //Get it
         return $numTrips;
     }   
 
@@ -84,13 +102,17 @@ class RdfLoader
      *
      * @throws RuntimeException
      */
-    private function checkArc()
+    private function checkDb()
     {
         if ( ! $this->arcStore->isSetUp()) {
             throw new RuntimeException("ARC2 Store is not setup!  Cannot load.");
         }
 
-        $this->arcSetup = true;
+        if ( ! $this->tracker->isSetUp()) {
+            throw new RuntimeException("Tracker database is not setup!  Cannot load.");
+        }
+
+        $this->dbSetup = true;
     }
 }
 

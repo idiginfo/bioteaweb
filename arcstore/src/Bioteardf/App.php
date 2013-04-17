@@ -136,11 +136,6 @@ class App extends SilexApp
             return new Service\RdfFileService;
         });
 
-        //$app['loader']
-        $app['loader'] = $app->share(function() use ($app) {
-            return new Service\RdfLoader($app['arc2.store']);
-        });
-
         //$app['minons.tasks']
         $app['minions.tasks'] = new Pimple();
         $app['minions.tasks']['load_set'] = $app['minions.tasks']->share(function() use ($app) {
@@ -155,9 +150,17 @@ class App extends SilexApp
         ));
 
         //$app['db']
-        //LEFT OFF HERE -- Use the Doctrine Loader to load Doctrine up for file state management
-        //ALSO - Fix URI of graph so that it uses the Biotea URL (maybe a config parameter -- dunno)
-        //Once we can track the state of processed files, then we want to make overwriting optional on RDFLoader class
+        $app->register(new Provider\DoctrineServiceProvider);
+
+        //$app['file_tracker']
+        $app['file_tracker'] = $app->share(function() use ($app) {
+            return new Service\BioteaRdfSetTracker($app['db']);
+        });
+
+        //$app['loader']
+        $app['loader'] = $app->share(function() use ($app) {
+            return new Service\RdfLoader($app['arc2.store'], $app['file_tracker']);
+        });        
     }
 }
 

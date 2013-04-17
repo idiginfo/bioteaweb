@@ -22,6 +22,11 @@ class UtilDb extends Command
      */
     private $arcStore;
 
+    /**
+     * @var BioteaRdf\Service\BioteaRdfSetTracker
+     */
+    private $fileTracker;
+
     // --------------------------------------------------------------
 
     protected function configure()
@@ -36,7 +41,8 @@ class UtilDb extends Command
 
     protected function init(Application $app)
     {
-        $this->arcStore = $app['arc2.store'];
+        $this->arcStore    = $app['arc2.store'];
+        $this->fileTracker = $app['file_tracker'];
     }
 
     // --------------------------------------------------------------
@@ -52,8 +58,8 @@ class UtilDb extends Command
                 return $this->executeBuild();
             case 'info':
                 return $this->executeInfo();
-            case 'clear':
-                return $this->executeClear();
+            case 'reset':
+                return $this->executeReset();
             default:
                 throw new \RuntimeException("Invalid action");
         }
@@ -75,25 +81,43 @@ class UtilDb extends Command
                 throw new RuntimeException("Error setting up store:\n" . implode("\n", $errs));
             }
 
-            $this->output->write("[ success ]\n");
+            $this->output->writeln("[ success ]");
         }
         else {
             $this->output->writeln("ARC2 Triplestore Tables already setup.  Skipping.");
         }
-        
+
+        //Build Tracker
+        if ( ! $this->fileTracker->isSetUp()) {
+            $this->output->write("\nSetting up tracking tables...");
+            $this->fileTracker->setUp();
+            $this->output->writeln("[ success ]");
+        }
+        else {
+            $this->output->writeln("Tracking tables already setup.  Skipping");
+        }
     }
 
     // --------------------------------------------------------------
 
-    private function executeClear()
+    private function executeReset()
     {
         //Clear ARC
-        if ($this->arcStore->isSetup())
-        {
-            $this->output->writeln("Clearing ARC2 Triplestore Tables...");
+        if ($this->arcStore->isSetup()) {
+            $this->output->write("Clearing ARC2 Triplestore Tables...");
             $this->arcStore->reset();
-            $this->output->write("[ success ]");
+            $this->output->writeln("[ success ]");
         }
+
+        //Clear Tracker
+        if ($this->fileTracker->isSetUp()) {
+            $this->output->write("Clearing Tracking Tables...");
+            $this->fileTracker->reset();
+            $this->output->writeln("[ success ]");
+        }
+
+        //Build
+        $this->executeBuild();
     }
 
     // --------------------------------------------------------------

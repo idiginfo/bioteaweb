@@ -13,10 +13,7 @@ use TaskTracker\Tracker, TaskTracker\Tick,
     TaskTracker\OutputHandler\SymfonyConsole as TrackerConsole;
 
 /**
- * RDF Loader
- *
- * @TODO: CHANGES
- * - Make the synchronous option work (already built the Task\LoadRdfFile class)
+ * RDF Loader Command
  */
 class RdfLoad extends Command
 {
@@ -103,14 +100,15 @@ class RdfLoad extends Command
                         break;
                     }
 
-                    $this->minionsClient->enqueueNewTask('load_set', $set->toJson());
+                    $this->minionsClient->enqueueNewTask('load_set', $set->toJson(), 'load_rdf');
                     $tracker->tick("Loading RDFs into Queue");
                     $numsets++;
                 }
 
                 $tracker->finish("Done loading");
 
-                //@TODO: Query queue to see progress on unloading it until queue is empty...
+                $queueSize = $this->minionsClient->getQueueSizes('load_rdf');
+                $output->writeln(sprintf("Loaded %s items for procsesing.  Run rdf:loadstatus to monitor loading progress", number_format($numsets, 0)));
 
             break;
 
@@ -139,13 +137,12 @@ class RdfLoad extends Command
                         number_format($numtrips, 0)
                     );
 
-                    $tracker->tick($msg);
+                    $tracker->tick($msg, ($numtrips !== false) ? Tick::SUCCESS : Tick::SKIP);
                 }
 
                 $tracker->finish();
 
             break;
-
         }
     }
 }

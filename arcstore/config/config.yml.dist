@@ -13,6 +13,11 @@ rdfstore:
 # MySQL state tracking Configuration
 # Use @rdfstore to make the same as rdfstore
 # Otherwise, use same attributes as rdfstore (db_host, db_name, etc)
-otherdb: @rdfstore
+trackingdb: @rdfstore
+
+# Redis is used for distributed processing
+redis:
+    host: localhost
+    port: 6379
 
 # EOF

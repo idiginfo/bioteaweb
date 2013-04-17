@@ -35,6 +35,9 @@ class BioteaRdfSet implements IteratorAggregate, Countable
      */
     public function __construct(SplFileInfo $mainFile, array $annotationFiles = array())
     {
+        //Setup array
+        $this->annotationFiles = array();
+
         //Add mainfile
         $this->mainFile = $mainFile;
         $this->md5 = md5((string) $this->mainFile);
