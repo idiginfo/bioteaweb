@@ -11,8 +11,6 @@ use Symfony\Component\Console\Helper\ProgressHelper;
 
 /**
  * RDFLoad Status
- *
- * LEFT OFF HERE LEFT OFF HERE LEFT OFF HERE - NEED TO PLUG THIS INTO APP AND TEST
  */
 class RdfLoadStatus extends Command
 {
@@ -43,7 +41,7 @@ class RdfLoadStatus extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         //Query the queue for the number of items remaining...
-        $output->writeln("Queue size is " . number_format($this->minionsClient->getQueueSizes('load_rdf'), 0));
+        $output->writeln("Queue size is " . number_format($this->minionsClient->getQueueSize('load_rdf'), 0));
     }
 
 }

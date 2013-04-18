@@ -87,8 +87,9 @@ class App extends SilexApp
 
         //Add Biotea Commands
         $register(new Command\RdfLoad());
+        $register(new Command\RdfLoadStatus());
         $register(new Command\Sandbox());
-        $register(new Command\UtilDb());
+        $register(new Command\UtilDb($app['dispatcher']));
 
         //Add other commands
         $consoleApp->add(new MinionsWorkerCommand($app['minions.driver'], $app['minions.tasks'], $app['dispatcher']));
@@ -160,7 +161,14 @@ class App extends SilexApp
         //$app['loader']
         $app['loader'] = $app->share(function() use ($app) {
             return new Service\RdfLoader($app['arc2.store'], $app['file_tracker']);
-        });        
+        });      
+
+        //$app['dbmgr']
+        $app['dbmgr'] = $app->share(function() use ($app) {
+            $mgr = new Service\DatabaseManager($app['arc2.store'], $app['file_tracker'], $app['minions.client']);
+            $mgr->setDispatcher($app['dispatcher']);
+            return $mgr;
+        });
     }
 }
 

@@ -107,7 +107,7 @@ class RdfLoad extends Command
 
                 $tracker->finish("Done loading");
 
-                $queueSize = $this->minionsClient->getQueueSizes('load_rdf');
+                $queueSize = $this->minionsClient->getQueueSize('load_rdf');
                 $output->writeln(sprintf("Loaded %s items for procsesing.  Run rdf:loadstatus to monitor loading progress", number_format($numsets, 0)));
 
             break;

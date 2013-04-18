@@ -8,24 +8,57 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Helper\ProgressHelper;
+
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\EventDispatcher\GenericEvent;
 use RuntimeException;
 
-class UtilDb extends Command
+/**
+ * Utility command for building schema resetting tables and getting information about the database
+ */
+class UtilDb extends Command implements EventSubscriberInterface
 {
     /**
      * @var Symfony\Component\Console\Output\OutputInterface
      */
-    private $output;
+    private $callbackOutput;
 
     /**
-     * @var ARC2_Store
+     * @var Bioteardf\Service\DatabaseManager
      */
-    private $arcStore;
+    private $dbManager;
 
-    /**
-     * @var BioteaRdf\Service\BioteaRdfSetTracker
-     */
-    private $fileTracker;
+    // --------------------------------------------------------------
+
+    public function __construct(EventDispatcherInterface $dispatcher)
+    {
+        parent::__construct();
+        $dispatcher->addSubscriber($this);
+    }
+
+    // --------------------------------------------------------------
+
+    public static function getSubscribedEvents()
+    {
+        return array('bioteardf.dbmgr_event' => array('onDbMgrEvent'));
+    }
+
+    // --------------------------------------------------------------
+
+    public function onDbMgrEvent(GenericEvent $event)
+    {
+        $msg    = $event->getSubject();
+        $result = $event->getArgument('result');
+
+        if ($this->callbackOutput) {
+            $this->callbackOutput->writeln(sprintf(
+                "%s ... [ %s ]",
+                $msg,
+                ($result) ? "<fg=green>success</fg=green>" : "<fg=red>fail</fg=red>"
+            ));
+        }
+    }
 
     // --------------------------------------------------------------
 
@@ -41,8 +74,7 @@ class UtilDb extends Command
 
     protected function init(Application $app)
     {
-        $this->arcStore    = $app['arc2.store'];
-        $this->fileTracker = $app['file_tracker'];
+        $this->dbManager = $app['dbmgr'];
     }
 
     // --------------------------------------------------------------
@@ -50,7 +82,7 @@ class UtilDb extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         //Set output to class property
-        $this->output = $output;
+        $this->callbackOutput = $output;
 
         //Run
         switch($input->getArgument('action')) {
@@ -60,6 +92,8 @@ class UtilDb extends Command
                 return $this->executeInfo();
             case 'reset':
                 return $this->executeReset();
+            case 'clear':
+                return $this->executeClear();
             default:
                 throw new \RuntimeException("Invalid action");
         }
@@ -69,55 +103,25 @@ class UtilDb extends Command
 
     private function executeBuild()
     {
-        //Build ARC
-        if ( ! $this->arcStore->isSetUp()) {
+        $this->dbManager->build();
+    }
 
-            $this->output->write("\nSetting up ARC2 Triplestore Tables...");
+    // --------------------------------------------------------------
 
-            $this->arcStore->setUp();
-            $errs = $this->arcStore->getErrors();
-
-            if ( ! empty($errs)) {
-                throw new RuntimeException("Error setting up store:\n" . implode("\n", $errs));
-            }
-
-            $this->output->writeln("[ success ]");
-        }
-        else {
-            $this->output->writeln("ARC2 Triplestore Tables already setup.  Skipping.");
-        }
-
-        //Build Tracker
-        if ( ! $this->fileTracker->isSetUp()) {
-            $this->output->write("\nSetting up tracking tables...");
-            $this->fileTracker->setUp();
-            $this->output->writeln("[ success ]");
-        }
-        else {
-            $this->output->writeln("Tracking tables already setup.  Skipping");
-        }
+    private function executeClear()
+    {
+        $this->dbManager->clear();        
     }
 
     // --------------------------------------------------------------
 
     private function executeReset()
     {
-        //Clear ARC
-        if ($this->arcStore->isSetup()) {
-            $this->output->write("Clearing ARC2 Triplestore Tables...");
-            $this->arcStore->reset();
-            $this->output->writeln("[ success ]");
-        }
-
-        //Clear Tracker
-        if ($this->fileTracker->isSetUp()) {
-            $this->output->write("Clearing Tracking Tables...");
-            $this->fileTracker->reset();
-            $this->output->writeln("[ success ]");
-        }
-
-        //Build
+        $this->callbackOutput->writeln("\nClearing...\n");
+        $this->executeClear();
+        $this->callbackOutput->writeln("\nResetting schemas...\n");
         $this->executeBuild();
+        $this->callbackOutput->write("\n");
     }
 
     // --------------------------------------------------------------
