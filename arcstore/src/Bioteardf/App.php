@@ -155,7 +155,12 @@ class App extends SilexApp
 
         //$app['file_tracker']
         $app['file_tracker'] = $app->share(function() use ($app) {
-            return new Service\BioteaRdfSetTracker($app['db']);
+            return new Service\BioteaRdfSetTracker($app['db'], 'loaded_sets');
+        });
+
+        //$app['misc_data']
+        $app['misc_data'] = $app->share(function() use ($app) {
+            return new Service\MiscDataStore($app['db']);
         });
 
         //$app['loader']
@@ -165,7 +170,8 @@ class App extends SilexApp
 
         //$app['dbmgr']
         $app['dbmgr'] = $app->share(function() use ($app) {
-            $mgr = new Service\DatabaseManager($app['arc2.store'], $app['file_tracker'], $app['minions.client']);
+            $pSvcs = array($app['file_tracker'], $app['misc_data']);
+            $mgr = new Service\DatabaseManager($app['arc2.store'], $app['minions.client'], $pSvcs);
             $mgr->setDispatcher($app['dispatcher']);
             return $mgr;
         });

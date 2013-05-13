@@ -6,55 +6,65 @@ use Doctrine\DBAL\Schema\Schema;
 use Doctrine\DBAL\Schema\Comparator;
 use Doctrine\DBAL\Connection;
 
+use Bioteardf\Helper\PersistableService;
 use Bioteardf\Model\BioteaRdfSet;
 use DateTime, PDO;
 
 /**
- * Mapper interface to the database to track RDF files
- * to keep track of the state of RDF loading
+ * Mapper interface to the database to track RDF sets
+ * for state management purposes
  */
-class BioteaRdfSetTracker
+class BioteaRdfSetTracker implements PersistableService
 {
+    /**
+     * @var string
+     */
+    private $tableName;
+
     /**
      * @var Doctrine\DBAL\Connection
      */
     private $conn;
+
+    // --------------------------------------------------------------
 
     /**
      * Constructor
      *
      * @param Doctrine\DBAL\Connection
      */
-    public function __construct(Connection $conn)
+    public function __construct(Connection $conn, $tableName)
     {
-        $this->conn = $conn;
+        $this->conn      = $conn;
+        $this->tableName = $tableName;
     }
 
     // --------------------------------------------------------------
 
     /**
-     * Check to see if a particular RDF set has been loaded already  
+     * Check to see if a particular RDF set has been processed already  
      *
      * @param Biotaerdf\Model\BioteaRdfSet $rdfSet
-     * @return boolean  TRUE if loaded; FALSE if not yet
+     * @return boolean  TRUE if processed; FALSE if not yet
      */
-    public function isAlreadyLoaded(BioteaRdfSet $rdfSet)
+    public function isAlreadyProcessed(BioteaRdfSet $rdfSet)
     {
-        $q = $this->conn->executeQuery("SELECT * FROM loaded_sets WHERE md5 = ? ", array($rdfSet->md5));
+        $tableName = $this->tableName;
+        $q = $this->conn->executeQuery("SELECT * FROM {$tableName} WHERE md5 = ? ", array($rdfSet->md5));
         return ($q->rowCount() > 0);
     }
  
     // --------------------------------------------------------------
 
     /**
-     * Add or update a record in the database to indicate that a particular RDF dataset has been loaded
+     * Add or update a record in the database to indicate that a particular RDF dataset has been processed
      *
      * @param Biotaerdf\Model\BioteaRdfSet $rdfSet
      */
-    public function recordAsLoaded(BioteaRdfSet $rdfSet)
+    public function recordAsProcessed(BioteaRdfSet $rdfSet)
     {
         return $this->conn->insert(
-            'loaded_sets',
+            $this->tableName,
             array('md5' => $rdfSet->md5, 'timestamp' => new DateTime()),
             array(PDO::PARAM_STR, 'datetime')
         );
@@ -104,7 +114,7 @@ class BioteaRdfSetTracker
         $sm = $this->conn->getSchemaManager();
         $currentSchema = $sm->createSchema();
         $desiredSchema = clone $currentSchema;
-        $desiredSchema->dropTable('loaded_sets');
+        $desiredSchema->dropTable($this->tableName);
         $queries = $currentSchema->getMigrateToSql($desiredSchema, $this->conn->getDatabasePlatform());
 
         //Setup the tables in a transaction
@@ -133,7 +143,7 @@ class BioteaRdfSetTracker
         $currentSchema = $sm->createSchema();
         $desiredSchema = new Schema();
 
-        $myTable = $desiredSchema->createTable("loaded_sets");
+        $myTable = $desiredSchema->createTable($this->tableName);
         $myTable->addColumn("id", "integer", array("unsigned" => true, "autoincrement" => true));
         $myTable->addColumn("md5", "string", array("length" => 32));
         $myTable->addColumn("timestamp", "datetime");

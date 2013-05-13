@@ -5,6 +5,7 @@ namespace Bioteardf\Service;
 use ARC2_Store;
 use Minions\Client as MinionsClient;
 use Bioteardf\Service\BioteaRdfSetTracker;
+use Bioteardf\Helper\PersistableService;
 
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
@@ -19,9 +20,9 @@ class DatabaseManager
     private $arcStore;
 
     /**
-     * @var BioteaRdf\Service\BioteaRdfSetTracker
+     * @var arrya
      */
-    private $fileTracker;
+    private $persistableServices;
 
     /**
      * @var Minions\Client
@@ -35,11 +36,14 @@ class DatabaseManager
 
     // --------------------------------------------------------------
 
-    public function __construct(ARC2_store $arcStore, BioteaRdfSetTracker $tracker, MinionsClient $minions)
+    public function __construct(ARC2_store $arcStore, MinionsClient $minions, array $persistableSvcs = array())
     {
         $this->arcStore      = $arcStore;
-        $this->fileTracker   = $tracker;
         $this->minionsClient = $minions;
+
+        foreach($persistableSvcs as $svc) {
+            $this->addPersistService($svc);
+        }
     }
 
     // --------------------------------------------------------------
@@ -47,6 +51,13 @@ class DatabaseManager
     public function setDispatcher(EventDispatcherInterface $dispatcher)
     {
         $this->dispatcher = $dispatcher;
+    }
+
+    // --------------------------------------------------------------
+
+    public function addPersistService(PersistableService $svc)
+    {
+        $this->persistableServices[] = $svc;
     }
 
     // --------------------------------------------------------------
@@ -69,13 +80,15 @@ class DatabaseManager
             $this->dispatch("ARC2 Triplestore Tables already setup");
         }
 
-        //Build Tracker
-        if ( ! $this->fileTracker->isSetUp()) {
-            $this->fileTracker->setUp();
-            $this->dispatch("Setting up tracking tables");
-        }
-        else {
-            $this->dispatch("Tracking tables already setup");
+        //Build Other services
+        foreach ($this->persistableServices as $svc) {
+            if ( ! $svc->isSetUp()) {
+                $svc->setUp();
+                $this->dispatch(sprintf("Setting up tables for %s service", get_class($svc)));
+            }
+            else {
+                $this->dispatch(sprintf("Tables for %s service already setup", get_class($svc)));
+            }
         }
     }
 
@@ -89,10 +102,12 @@ class DatabaseManager
             $this->dispatch("Clearing ARC2 Triplestore Tables");
         }
 
-        //Clear Tracker
-        if ($this->fileTracker->isSetUp()) {
-            $this->fileTracker->reset();
-            $this->dispatch("Clearing Tracking Tables");
+        //Clear Other Service Tables
+        foreach ($this->persistableServices as $svc) {
+            if ($svc->isSetUp()) {
+                $svc->reset();
+                $this->dispatch(sprintf("Clearing tables for %s service", get_class($svc)));
+            }
         }
 
         //Clear Minions Queues

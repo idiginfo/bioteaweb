@@ -1,0 +1,20 @@
+TODO:
+ 1. Ensure miscData class works
+ 2. Working on model for terms/topics/vocabs (terms should be counted per topic)
+ 3. Finish terms/topics/vocabs extractor based on Builder from API
+ 3. Finish commands for materials and methods
+
+ Data will be stored in the miscData table as:
+
+
+ SUBJECT              ITEM        VALUE
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ vocab_ncbi_topics    http://--   ##
+ vocab_ncbi_topics    http://---  ##
+ vocab_ncbi_terms     http://--   ##
+ vocab_ncbi_terms     http://---  ##
+ vocab_nbci_docs      num         ##
+ 
+ vocab_ao_topics      http://--   ##
+ 
+ etc..

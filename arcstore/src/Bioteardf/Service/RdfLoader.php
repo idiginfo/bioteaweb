@@ -78,7 +78,7 @@ class RdfLoader
     public function loadFileSet(BioteaRdfSet $rdfSet)
     {
         //Is already loaded?
-        if ($this->tracker->isAlreadyLoaded($rdfSet)) {
+        if ($this->tracker->isAlreadyProcessed($rdfSet)) {
             return false;
         }
 
@@ -89,7 +89,7 @@ class RdfLoader
         }
 
         //Record as loaded
-        $this->tracker->recordAsLoaded($rdfSet);
+        $this->tracker->recordAsProcessed($rdfSet);
 
         //Get it
         return $numTrips;
