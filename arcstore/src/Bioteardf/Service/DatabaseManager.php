@@ -4,11 +4,10 @@ namespace Bioteardf\Service;
 
 use ARC2_Store;
 use Minions\Client as MinionsClient;
-use Bioteardf\Service\BioteaRdfSetTracker;
-use Bioteardf\Helper\PersistableService;
 
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\GenericEvent;
+
 /**
  * Class for managing Databases
  */
@@ -20,11 +19,6 @@ class DatabaseManager
     private $arcStore;
 
     /**
-     * @var arrya
-     */
-    private $persistableServices;
-
-    /**
      * @var Minions\Client
      */
     private $minionsClient;
@@ -34,16 +28,18 @@ class DatabaseManager
      */
     private $dispatcher;
 
+    /**
+     * @var Bioteardf\Service\DoctrineEntityManager
+     */
+    private $dem;
+
     // --------------------------------------------------------------
 
-    public function __construct(ARC2_store $arcStore, MinionsClient $minions, array $persistableSvcs = array())
+    public function __construct(ARC2_store $arcStore, DoctrineEntityManager $dem, MinionsClient $minions)
     {
         $this->arcStore      = $arcStore;
         $this->minionsClient = $minions;
-
-        foreach($persistableSvcs as $svc) {
-            $this->addPersistService($svc);
-        }
+        $this->dem           = $dem;
     }
 
     // --------------------------------------------------------------
@@ -51,13 +47,6 @@ class DatabaseManager
     public function setDispatcher(EventDispatcherInterface $dispatcher)
     {
         $this->dispatcher = $dispatcher;
-    }
-
-    // --------------------------------------------------------------
-
-    public function addPersistService(PersistableService $svc)
-    {
-        $this->persistableServices[] = $svc;
     }
 
     // --------------------------------------------------------------
@@ -80,15 +69,13 @@ class DatabaseManager
             $this->dispatch("ARC2 Triplestore Tables already setup");
         }
 
-        //Build Other services
-        foreach ($this->persistableServices as $svc) {
-            if ( ! $svc->isSetUp()) {
-                $svc->setUp();
-                $this->dispatch(sprintf("Setting up tables for %s service", get_class($svc)));
-            }
-            else {
-                $this->dispatch(sprintf("Tables for %s service already setup", get_class($svc)));
-            }
+        //Build other tables
+        if ( ! $this->dem->isSetup()) {
+            $this->dispatch("Setting up all other tables");
+            $this->dem->setup();
+        }
+        else {
+            $this->dispatch("Other tables already setup");
         }
     }
 
@@ -103,12 +90,11 @@ class DatabaseManager
         }
 
         //Clear Other Service Tables
-        foreach ($this->persistableServices as $svc) {
-            if ($svc->isSetUp()) {
-                $svc->reset();
-                $this->dispatch(sprintf("Clearing tables for %s service", get_class($svc)));
-            }
+        if ($this->dem->isSetup()) {
+            $this->dem->reset();
+            $this->dispatch("Clearing all other tables");
         }
+        
 
         //Clear Minions Queues
         $numQueues = count($this->minionsClient->listQueues());
@@ -141,6 +127,17 @@ class DatabaseManager
             $this->dispatcher->dispatch('bioteardf.dbmgr_event', $evt);
         }
     }
+
+    // --------------------------------------------------------------
+
+    protected function updateOrmSchema()
+    {
+        $queries = $this->checkOrmSchema(true);
+
+
+        return count($queries);
+    }
+   
 }
 
 /* EOF: DatabaseManager.php */

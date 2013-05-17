@@ -2,26 +2,33 @@
 
 namespace Bioteardf\Model;
 
+use Bioteardf\Helper\BaseEntity;
+use Doctrine\Common\Collections\ArrayCollection;
 use SplFileInfo, IteratorAggregate, Countable,
     ArrayIterator;
 
 /**
- * Entity Object - Represents an atomic set of Bitoea RDF files
+ * Represents an atomic set of Biotea RDF files
+ *
+ * @Entity
  */
-class BioteaRdfSet implements IteratorAggregate, Countable
-{
+class BioteaRdfSet extends BaseEntity implements IteratorAggregate, Countable
+{        
     /**
      * @var string
+     * @Column(type="string") 
      */
     protected $mainFile;
 
     /**
-     * @var array
+     * @var array  Public interface works like an array, but is persisted as JSON
+     * @Column(type="string") 
      */
     protected $annotationFiles;
 
     /**
      * @var string
+     * @Column(type="string") 
      */
     protected $md5;
 
@@ -35,9 +42,6 @@ class BioteaRdfSet implements IteratorAggregate, Countable
      */
     public function __construct(SplFileInfo $mainFile, array $annotationFiles = array())
     {
-        //Setup array
-        $this->annotationFiles = array();
-
         //Add mainfile
         $this->mainFile = $mainFile;
         $this->md5 = md5((string) $this->mainFile);
@@ -51,12 +55,19 @@ class BioteaRdfSet implements IteratorAggregate, Countable
     // --------------------------------------------------------------
 
     /**
+     * Get magic method
+     *
      * @param string $item
      * @return mixed
      */
     public function __get($item)
     {
-        return $this->$item;
+        switch($item) {
+            case 'annotationFiles':
+                return $this->getAnnotationFiles();
+            default:
+                return $this->$item;
+        }
     }    
 
     // --------------------------------------------------------------
@@ -68,7 +79,7 @@ class BioteaRdfSet implements IteratorAggregate, Countable
     {
         $data = array(
             'mainFile'        => (string) $this->mainFile,
-            'annotationFiles' => array_map(function($v) { return (string) $v; }, $this->annotationFiles),
+            'annotationFiles' => $this->getAnnotationFiles(false),
             'md5'             => $this->md5
         );
 
@@ -108,11 +119,36 @@ class BioteaRdfSet implements IteratorAggregate, Countable
     // --------------------------------------------------------------
 
     /**
+     * Get Annotation Files
+     * 
+     * @param boolean $asObjects
+     * @return array  Array of SplFileInfo objects or just strings
+     */
+    private function getAnnotationFiles($asObjects = true)
+    {
+        $afiles = json_decode($this->annotationFiles, true);
+
+        if ($asObjects) {
+            $afiles = array_map(function($v) {
+                return new SplFileInfo($v);
+            }, $afiles);
+        }
+
+        return $afiles;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Add an Annotation File
+     *
      * @param SplFileInfo $file
      */
     private function addAnnotationFile(SplFileInfo $file)
     {
-        $this->annotationFiles[] = $file;
+        $afiles = json_decode($this->annotationFiles, true) ?: array();
+        $afiles[] = (string) $file;
+        $this->annotationFiles = json_encode($afiles);
     }
 }
 

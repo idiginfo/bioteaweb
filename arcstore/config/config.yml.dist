@@ -2,18 +2,21 @@
 # BioteaRDF System Configuration File
 #
 
-# MySQL Database Configuration
+# ARC2 RDF Store Information
 rdfstore:
-    db_host: ##
-    db_name: ##
-    db_user: ##
-    db_pwd:  ##
-    endpoint_write_key: ##
+    db_host: localhost
+    db_name: bioteardf
+    db_user: root
+    db_pwd:  
+    endpoint_write_key: abc123
 
-# MySQL state tracking Configuration
-# Use @rdfstore to make the same as rdfstore
-# Otherwise, use same attributes as rdfstore (db_host, db_name, etc)
-trackingdb: @rdfstore
+# Database Configuration
+indexesdb:
+    driver:   pdo_mysql
+    host:     localhost
+    dbname:   bioteaindexes
+    user:     root
+    password: 
 
 # Redis is used for distributed processing
 redis:

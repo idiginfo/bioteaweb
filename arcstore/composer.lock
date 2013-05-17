@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "60d56d906213d00f703588a5e83c2811",
+    "hash": "784b16f2efdc3b4f3c7803278ecd25e2",
     "packages": [
         {
             "name": "caseyamcl/configula",
@@ -60,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caseyamcl/minions.git",
-                "reference": "faedc49f520bd51473667195d18ecd96008e1cc7"
+                "reference": "b108d07dc550d62aba5d58b3b57f09f4fd5ccac7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caseyamcl/minions/zipball/faedc49f520bd51473667195d18ecd96008e1cc7",
-                "reference": "faedc49f520bd51473667195d18ecd96008e1cc7",
+                "url": "https://api.github.com/repos/caseyamcl/minions/zipball/b108d07dc550d62aba5d58b3b57f09f4fd5ccac7",
+                "reference": "b108d07dc550d62aba5d58b3b57f09f4fd5ccac7",
                 "shasum": ""
             },
             "require": {
@@ -110,7 +110,7 @@
                 "source": "https://github.com/caseyamcl/minions/tree/master",
                 "issues": "https://github.com/caseyamcl/minions/issues"
             },
-            "time": "2013-04-18 12:42:46"
+            "time": "2013-05-01 19:46:59"
         },
         {
             "name": "caseyamcl/tasktracker",
@@ -272,16 +272,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "2.3.3"
+                "reference": "2.3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2.3.3",
-                "reference": "2.3.3",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/2.3.4",
+                "reference": "2.3.4",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +331,77 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-03-24 19:16:29"
+            "time": "2013-05-11 07:45:37"
+        },
+        {
+            "name": "doctrine/orm",
+            "version": "2.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/doctrine2.git",
+                "reference": "2.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2.3.4",
+                "reference": "2.3.4",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "2.3.*",
+                "ext-pdo": "*",
+                "php": ">=5.3.2",
+                "symfony/console": "2.*"
+            },
+            "suggest": {
+                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
+            },
+            "bin": [
+                "bin/doctrine",
+                "bin/doctrine.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\ORM": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Object-Relational-Mapper for PHP",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "orm"
+            ],
+            "time": "2013-05-11 07:51:12"
         },
         {
             "name": "pimple/pimple",
@@ -419,16 +489,16 @@
         },
         {
             "name": "semsol/arc2",
-            "version": "2.2.0",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/semsol/arc2.git",
-                "reference": "2.2.0"
+                "reference": "2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/semsol/arc2/zipball/2.2.0",
-                "reference": "2.2.0",
+                "url": "https://api.github.com/repos/semsol/arc2/zipball/2.2.3",
+                "reference": "2.2.3",
                 "shasum": ""
             },
             "require": {
@@ -459,56 +529,56 @@
                 "RDF",
                 "sparql"
             ],
-            "time": "2013-04-03 15:53:48"
+            "time": "2013-04-22 14:07:42"
         },
         {
             "name": "silex/silex",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Silex.git",
-                "reference": "1cd7f3f050b78dae4458d93892355720f56659f9"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Silex/zipball/1cd7f3f050b78dae4458d93892355720f56659f9",
-                "reference": "1cd7f3f050b78dae4458d93892355720f56659f9",
+                "url": "https://api.github.com/repos/fabpot/Silex/zipball/v1.0.0",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "pimple/pimple": "1.*",
-                "symfony/event-dispatcher": ">=2.1,<2.3-dev",
-                "symfony/http-foundation": ">=2.1,<2.3-dev",
-                "symfony/http-kernel": ">=2.1,<2.3-dev",
-                "symfony/routing": ">=2.1,<2.3-dev"
+                "symfony/event-dispatcher": ">=2.1,<2.4-dev",
+                "symfony/http-foundation": ">=2.1,<2.4-dev",
+                "symfony/http-kernel": ">=2.1,<2.4-dev",
+                "symfony/routing": ">=2.1,<2.4-dev"
             },
             "require-dev": {
                 "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
                 "monolog/monolog": ">=1.4,<2.0,>=1.4.1",
-                "swiftmailer/swiftmailer": "4.2.*",
-                "symfony/browser-kit": ">=2.1,<2.3-dev",
-                "symfony/config": ">=2.1,<2.3-dev",
-                "symfony/css-selector": ">=2.1,<2.3-dev",
-                "symfony/dom-crawler": ">=2.1,<2.3-dev",
-                "symfony/finder": ">=2.1,<2.3-dev",
-                "symfony/form": ">=2.1.4,<2.3-dev",
-                "symfony/locale": ">=2.1,<2.3-dev",
-                "symfony/monolog-bridge": ">=2.1,<2.3-dev",
-                "symfony/options-resolver": ">=2.1,<2.3-dev",
-                "symfony/process": ">=2.1,<2.3-dev",
-                "symfony/security": ">=2.1,<2.3-dev",
-                "symfony/serializer": ">=2.1,<2.3-dev",
-                "symfony/translation": ">=2.1,<2.3-dev",
-                "symfony/twig-bridge": ">=2.1,<2.3-dev",
-                "symfony/validator": ">=2.1,<2.3-dev",
+                "swiftmailer/swiftmailer": "5.*",
+                "symfony/browser-kit": ">=2.1,<2.4-dev",
+                "symfony/config": ">=2.1,<2.4-dev",
+                "symfony/css-selector": ">=2.1,<2.4-dev",
+                "symfony/dom-crawler": ">=2.1,<2.4-dev",
+                "symfony/finder": ">=2.1,<2.4-dev",
+                "symfony/form": ">=2.1.4,<2.4-dev",
+                "symfony/locale": ">=2.1,<2.4-dev",
+                "symfony/monolog-bridge": ">=2.1,<2.4-dev",
+                "symfony/options-resolver": ">=2.1,<2.4-dev",
+                "symfony/process": ">=2.1,<2.4-dev",
+                "symfony/security": ">=2.1,<2.4-dev",
+                "symfony/serializer": ">=2.1,<2.4-dev",
+                "symfony/translation": ">=2.1,<2.4-dev",
+                "symfony/twig-bridge": ">=2.1,<2.4-dev",
+                "symfony/validator": ">=2.1,<2.4-dev",
                 "twig/twig": ">=1.8.0,<2.0-dev"
             },
             "suggest": {
-                "symfony/browser-kit": ">=2.1,<2.3-dev",
-                "symfony/css-selector": ">=2.1,<2.3-dev",
-                "symfony/dom-crawler": ">=2.1,<2.3-dev",
-                "symfony/form": "To make use of the FormServiceProvider, >= 2.1.4 is required"
+                "symfony/browser-kit": ">=2.1,<2.4-dev",
+                "symfony/css-selector": ">=2.1,<2.4-dev",
+                "symfony/dom-crawler": ">=2.1,<2.4-dev",
+                "symfony/form": ">= 2.1.4,<2.4-dev"
             },
             "type": "library",
             "extra": {
@@ -541,7 +611,7 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2013-04-11 12:23:56"
+            "time": "2013-05-03 16:49:57"
         },
         {
             "name": "symfony/console",
@@ -914,6 +984,67 @@
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
             "time": "2013-03-23 07:49:54"
+        },
+        {
+            "name": "taluu/doctrine-orm-provider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Taluu/nutwerk-orm-extension.git",
+                "reference": "a63f8810e42c6d914e8b83651359755b8866a647"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Taluu/nutwerk-orm-extension/zipball/a63f8810e42c6d914e8b83651359755b8866a647",
+                "reference": "a63f8810e42c6d914e8b83651359755b8866a647",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">= 2.3.0, < 2.4.0-beta",
+                "doctrine/dbal": ">= 2.3.0, < 2.4.0-beta",
+                "doctrine/orm": ">= 2.3.0, < 2.4.0-beta",
+                "php": ">=5.3.2",
+                "silex/silex": "1.0.*"
+            },
+            "suggest": {
+                "symfony/console": "Necessary if you would like to use the Doctrine CLI tools"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Nutwerk\\Provider": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Jakubowski",
+                    "homepage": "http://nutwerk.de/"
+                },
+                {
+                    "name": "Baptiste \"Talus\" Clavié",
+                    "homepage": "http://www.talus-works.net"
+                }
+            ],
+            "description": "Doctrine ORM provider for Silex",
+            "homepage": "https://github.com/taluu/nutwerk-orm-extension",
+            "keywords": [
+                "database",
+                "doctrine",
+                "extension",
+                "orm",
+                "provider",
+                "silex"
+            ],
+            "time": "2012-11-09 09:46:57"
         }
     ],
     "packages-dev": [
@@ -924,7 +1055,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "silex/silex": 20,
+        "taluu/doctrine-orm-provider": 20,
         "caseyamcl/minions": 20
     },
     "platform": [

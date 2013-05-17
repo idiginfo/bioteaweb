@@ -1,11 +1,15 @@
 <?php
 
-namespace Bioteardf\Service;
+namespace Bioteardf\Service\TripleStore;
 
 use ARC2_RDFParser, ARC2_Store;
 use RuntimeException, Closure;
 use Bioteardf\Model\BioteaRdfSet;
+use Bioteardf\Service\RdfSetTracker;
 
+/**
+ * Class to Load Biotea RDF sets into the ARC2 Triplestore
+ */
 class RdfLoader
 {
     /**
@@ -31,7 +35,7 @@ class RdfLoader
      * @param ARC2_Store                            $arcStore
      * @param BioteaRdf\Service\BitoeaRdfSetTracker $tracker
      */
-    public function __construct(ARC2_Store $arcStore, BioteaRdfSetTracker $tracker)
+    public function __construct(ARC2_Store $arcStore, RdfSetTracker $tracker)
     {
         $this->arcStore = $arcStore;
         $this->tracker  = $tracker;
@@ -106,10 +110,6 @@ class RdfLoader
     {
         if ( ! $this->arcStore->isSetUp()) {
             throw new RuntimeException("ARC2 Store is not setup!  Cannot load.");
-        }
-
-        if ( ! $this->tracker->isSetUp()) {
-            throw new RuntimeException("Tracker database is not setup!  Cannot load.");
         }
 
         $this->dbSetup = true;

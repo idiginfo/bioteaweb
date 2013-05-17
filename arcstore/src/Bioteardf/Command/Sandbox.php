@@ -37,9 +37,10 @@ class Sandbox extends Command
         $path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder/');
 
         foreach($this->app['files']->getIterator($path) as $f) {
-            foreach($f as $fi) {
-                $output->writeln($fi->getPath() . '/' . $fi->getBasename());
-            }
+
+            $set      = $this->app['files']->buildRdfSet($f);
+            $objGraph = $this->app['parser']->analyzeSet($set);
+
             $output->writeln("----------------------------------------");            
         }
 

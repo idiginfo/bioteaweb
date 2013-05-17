@@ -4,7 +4,7 @@ namespace Bioteardf\Task;
 
 use Minions\TaskHandlerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Bioteardf\Service\RdfLoader;
+use Bioteardf\Service\TripleStore\RdfLoader;
 use Bioteardf\Model\BioteaRdfSet;
 use RuntimeException;
 use SplFileInfo;

@@ -10,6 +10,8 @@ use Pimple;
 use Symfony\Component\Console\Application as ConsoleApp;
 use Bioteardf\Command\Command as BioteaCommand;
 use Silex\Application as SilexApp;
+use Silex\Provider as SilexProvider;
+use Nutwerk\Provider\DoctrineORMServiceProvider;
 use Configula\Config;
 use Exception;
 
@@ -132,10 +134,30 @@ class App extends SilexApp
             'arc2.store_name' => 'biotea'
         ));
 
-        //$app['files']
-        $app['files'] = $app->share(function() use ($app) {
-            return new Service\RdfFileService;
-        });
+        //$app['db']
+        $app->register(new SilexProvider\DoctrineServiceProvider(), array(
+            'db.options' => array (
+                'driver'    => $app['config']->indexesdb['driver'],
+                'host'      => $app['config']->indexesdb['host'],
+                'dbname'    => $app['config']->indexesdb['dbname'],
+                'user'      => $app['config']->indexesdb['user'],
+                'password'  => $app['config']->indexesdb['password'],
+            )
+        ));
+
+        //$app['db.orm.em']
+        $app->register(new DoctrineORMServiceProvider(), array(
+            'db.orm.proxies_dir' => (isset($app['config']->mysql['cachedir']))
+                ? $app['config']->mysql['cachedir']
+                : sys_get_temp_dir(),
+            'db.orm.proxies_namespace'     => 'DoctrineProxy',
+            'db.orm.auto_generate_proxies' => true,
+            'db.orm.entities'              => array(array(
+                'type'      => 'annotation',
+                'path'      => $this->basepath('src/Bioteardf/Model'),
+                'namespace' => 'Bioteardf\Model'
+            ))
+        ));
 
         //$app['minons.tasks']
         $app['minions.tasks'] = new Pimple();
@@ -150,30 +172,35 @@ class App extends SilexApp
             'minions.tasks'  => $app['minions.tasks']
         ));
 
-        //$app['db']
-        $app->register(new Provider\DoctrineServiceProvider);
-
-        //$app['file_tracker']
-        $app['file_tracker'] = $app->share(function() use ($app) {
-            return new Service\BioteaRdfSetTracker($app['db'], 'loaded_sets');
+        //$app['dbmgr']
+        $app['dbmgr'] = $app->share(function() use ($app) {
+            $mgr = new Service\DatabaseManager(
+                $app['arc2.store'],
+                new Service\DoctrineEntityManager($app['db.orm.em']),
+                $app['minions.client']
+            );
+            $mgr->setDispatcher($app['dispatcher']);
+            return $mgr;
         });
 
-        //$app['misc_data']
-        $app['misc_data'] = $app->share(function() use ($app) {
-            return new Service\MiscDataStore($app['db']);
+        //$app['files']
+        $app['files'] = $app->share(function() use ($app) {
+            return new Service\RdfFileService;
+        });
+
+        //$app['parser']
+        $app['parser'] = $app->share(function() use ($app) {
+            return new Service\Indexes\BioteaRdfSetParser($app['config']->vocabularies ?: array());
+        });
+
+        //$app['tracker']
+        $app['tracker'] = $app->share(function() use ($app) {
+            return new Service\RdfSetTracker($app['db.orm.em']);
         });
 
         //$app['loader']
         $app['loader'] = $app->share(function() use ($app) {
-            return new Service\RdfLoader($app['arc2.store'], $app['file_tracker']);
-        });      
-
-        //$app['dbmgr']
-        $app['dbmgr'] = $app->share(function() use ($app) {
-            $pSvcs = array($app['file_tracker'], $app['misc_data']);
-            $mgr = new Service\DatabaseManager($app['arc2.store'], $app['minions.client'], $pSvcs);
-            $mgr->setDispatcher($app['dispatcher']);
-            return $mgr;
+            return new Service\TripleStore\RdfLoader($app['arc2.store'], $app['tracker']);
         });
     }
 }
