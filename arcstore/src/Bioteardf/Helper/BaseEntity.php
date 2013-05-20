@@ -32,6 +32,7 @@ abstract class BaseEntity
             ? false 
             : isset($this->$item);
     }
+
 }
 
 /* EOF: BaseEntity.php */

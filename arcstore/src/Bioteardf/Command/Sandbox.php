@@ -3,6 +3,7 @@
 namespace Bioteardf\Command;
 
 use Silex\Application;
+use Bioteardf\Exception\BioteaRdfParseException;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -34,12 +35,21 @@ class Sandbox extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder/');
+        //$path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder/PMC1134665.rdf');
+        $path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder');
 
-        foreach($this->app['files']->getIterator($path) as $f) {
+        foreach($this->app['files']->getIterator($path) as $set) {
 
-            $set      = $this->app['files']->buildRdfSet($f);
-            $objGraph = $this->app['parser']->analyzeSet($set);
+            $output->writeln("Analyzing:" . $set->mainFile->getBasename());
+
+            try {
+                $objGraph = $this->app['parser']->analyzeSet($set);
+                $output->writeln("Success");
+            }
+            catch (BioteaRdfParseException $e) {
+                $output->writeln("Error:" . $e->getMessage());
+            }
+            
 
             $output->writeln("----------------------------------------");            
         }

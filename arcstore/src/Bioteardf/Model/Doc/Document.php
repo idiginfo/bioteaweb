@@ -10,8 +10,7 @@ use Bioteardf\Helper\BaseEntity;
  * 
  * @Entity
  * @Table(uniqueConstraints={
- *   @UniqueConstraint(name="pmid", columns={"pmid"}),
- *   @UniqueConstraint(name="md5",  columns={"md5"})
+ *   @UniqueConstraint(name="pmid", columns={"pmid"})
  * }) 
  */
 class Document extends BaseEntity
@@ -23,28 +22,21 @@ class Document extends BaseEntity
     protected $pmid;
 
     /**
-     * @var string  MD5 of the BioteaRdfSet
-     * @Column(type="string") 
-     */ 
-    protected $md5;
-
-    /**
      * @var Doctrine\Common\Collections\ArrayCollection
      * @OneToMany(targetEntity="Paragraph", mappedBy="document")
      */    
-    private $paragraphs;    
+    protected $paragraphs;    
 
     /**
      * @var Journal
      * @ManyToOne(targetEntity="Journal", inversedBy="documents")
      */
-    private $journal;
+    protected $journal;
 
     // --------------------------------------------------------------
 
-    public function __construct($md5, $pmid = null)
+    public function __construct($pmid = null)
     {
-        $this->md5  = $md5;
         $this->pmid = $pmid;
 
         $this->sections = new ArrayCollection();
@@ -54,7 +46,7 @@ class Document extends BaseEntity
 
     public function __tostring()
     {
-        return $this->md5;
+        return $this->pmid;
     }
 
     // --------------------------------------------------------------

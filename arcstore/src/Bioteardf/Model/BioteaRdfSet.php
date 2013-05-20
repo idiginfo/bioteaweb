@@ -128,6 +128,10 @@ class BioteaRdfSet extends BaseEntity implements IteratorAggregate, Countable
     {
         $afiles = json_decode($this->annotationFiles, true);
 
+        if ( ! $afiles) {
+            return array();
+        }
+
         if ($asObjects) {
             $afiles = array_map(function($v) {
                 return new SplFileInfo($v);

@@ -35,11 +35,10 @@ class Topic extends BaseEntity
 
     // ----------------------------------------------------------------
 
-    public function __construct($uri, Vocabulary $vocabulary, Term $term)
+    public function __construct($uri, Vocabulary $vocabulary)
     {
         $this->uri = $uri;
         $this->vocabulary = $vocabulary;
-        $this->term       = $term;
     }
 
     // ----------------------------------------------------------------

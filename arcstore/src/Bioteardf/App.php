@@ -190,7 +190,10 @@ class App extends SilexApp
 
         //$app['parser']
         $app['parser'] = $app->share(function() use ($app) {
-            return new Service\Indexes\BioteaRdfSetParser($app['config']->vocabularies ?: array());
+            return new Service\Indexes\BioteaRdfSetParser(
+                new Service\Indexes\MainDocParser(),
+                new Service\Indexes\AnnotationSetParser($app['config']->vocabularies ?: array())
+            );
         });
 
         //$app['tracker']

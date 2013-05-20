@@ -40,7 +40,7 @@ class RdfFileService
 
         return (is_dir($filepath))
             ? new BioteaRdfSetIterator(new RecursiveIteratorIterator(new RDI($filepath)), $this, self::REGEX)
-            : new ArrayIterator(array(new SplFileInfo($filepath)));
+            : new ArrayIterator(array($this->buildRdfSet($filepath)));
     }
 
     // --------------------------------------------------------------

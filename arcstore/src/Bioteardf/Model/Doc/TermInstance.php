@@ -57,12 +57,12 @@ class TermInstance extends BaseEntity
     {
         //Need all of these
         $this->paragraph  = $paragraph;
-        $this->annotation = $annotation;
-        $this->startChar  = (int) $startChar;
-        $this->endChar    = (int) $endChar;
+        $this->annotation = $annot;
+        $this->startChar  = ($startChar !== null) ? (int) $startChar : null;
+        $this->endChar    = ($endChar !== null)   ? (int) $endChar : null;
 
         //Build identifier
-        $this->identifier = (string) $paragraph . ':::' . (string) $annotation->term;
+        $this->identifier = (string) $paragraph . ':::' . (string) $annot->term;
         if ($startChar && $endChar) {
             $this->identifier .= ':::' . $startChar . ':::' . $endChar;
         }

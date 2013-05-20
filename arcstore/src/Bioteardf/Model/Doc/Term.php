@@ -34,7 +34,7 @@ class Term extends BaseEntity
 
     public function __construct($term)
     {
-        $this->term = $term;
+        $this->term = strtolower($term);
         $this->annotations = new ArrayCollection();
         $this->topics      = new ArrayCollection();
     }
@@ -50,7 +50,7 @@ class Term extends BaseEntity
 
     public function addTopic(Topic $topic)
     {
-        $this->addSingle($topic, $this->topics);
+        $this->topics->add($topic);
     }
 
     // --------------------------------------------------------------
