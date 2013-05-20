@@ -3,7 +3,7 @@
 namespace Bioteardf\Model\Doc;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Bioteardf\Helper\BaseEntity;
+use Bioteardf\Helper\DocIndexEntity;
 
 /**
  * Vocabulary
@@ -14,7 +14,7 @@ use Bioteardf\Helper\BaseEntity;
  *   @UniqueConstraint(name="shortName", columns={"shortName"})
  * })   
  */
-class Vocabulary extends BaseEntity
+class Vocabulary extends DocIndexEntity
 {    
     /**
      * @var string

@@ -1,10 +1,18 @@
 TODO:
 ================================================
- 1. Ensure miscData class works
- 2. Working on model for terms/topics/vocabs (terms should be counted per topic)
- 3. Finish terms/topics/vocabs extractor based on Builder from API
- 3. Finish commands for materials and methods
+Need to finish the DocObjectRegistry class so that it
+will use existing DB objects where they exist, but it needs
+to have a way of uniqely identifying the important fields of persistable
+class and checking against those.
 
+Once that is done, refactor the Service\Indexes\DocParser class so that it uses
+this new class to factory all classes rather than simple using 'new' statements.
+
+Finally, finish the persister class so that it will persist the DocRegistry class, and
+it should do so automatically.
+
+Then, write a command to get the information that they are requesting in the format they want
+by running queries (queries that may take some time...)
 
 
 Leyla's desired output format:

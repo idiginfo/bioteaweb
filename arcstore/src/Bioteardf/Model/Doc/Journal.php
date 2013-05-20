@@ -3,7 +3,7 @@
 namespace Bioteardf\Model\Doc;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Bioteardf\Helper\BaseEntity;
+use Bioteardf\Helper\DocIndexEntity;
 
 /**
  * Journal Class
@@ -13,7 +13,7 @@ use Bioteardf\Helper\BaseEntity;
  *   @UniqueConstraint(name="name", columns={"name"})
  * }) 
  */
-class Journal extends BaseEntity
+class Journal extends DocIndexEntity
 {   
     /**
      * @var string

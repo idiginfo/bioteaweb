@@ -3,7 +3,7 @@
 namespace Bioteardf\Model\Doc;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Bioteardf\Helper\BaseEntity;
+use Bioteardf\Helper\DocIndexEntity;
 
 /**
  * Paragraph
@@ -13,7 +13,7 @@ use Bioteardf\Helper\BaseEntity;
  *   @UniqueConstraint(name="identifier", columns={"identifier"})
  * })  
  */
-class Paragraph extends BaseEntity
+class Paragraph extends DocIndexEntity
 {
     /**
      * @var string

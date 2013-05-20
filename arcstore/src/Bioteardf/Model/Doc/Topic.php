@@ -3,7 +3,7 @@
 namespace Bioteardf\Model\Doc;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Bioteardf\Helper\BaseEntity;
+use Bioteardf\Helper\DocIndexEntity;
 
 /**
  * Topic
@@ -13,7 +13,7 @@ use Bioteardf\Helper\BaseEntity;
  *   @UniqueConstraint(name="uri", columns={"uri"})
  * })  
  */
-class Topic extends BaseEntity
+class Topic extends DocIndexEntity
 {  
     /**
      * @var string

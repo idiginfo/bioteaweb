@@ -3,7 +3,7 @@
 namespace Bioteardf\Model\Doc;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Bioteardf\Helper\BaseEntity;
+use Bioteardf\Helper\DocIndexEntity;
 
 /**
  * Term Instance
@@ -13,7 +13,7 @@ use Bioteardf\Helper\BaseEntity;
  *   @UniqueConstraint(name="identifier", columns={"identifier"})
  * })  
  */
-class TermInstance extends BaseEntity
+class TermInstance extends DocIndexEntity
 {
     /**
      * @var int

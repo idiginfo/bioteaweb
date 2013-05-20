@@ -3,14 +3,14 @@
 namespace Bioteardf\Model\Doc;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use Bioteardf\Helper\BaseEntity;
+use Bioteardf\Helper\DocIndexEntity;
 
 /**
  * Annotation
  * 
  * @Entity
  */
-class Annotation extends BaseEntity
+class Annotation extends DocIndexEntity
 {   
     /**
      * @var Term
