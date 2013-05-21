@@ -4,7 +4,6 @@ namespace Bioteardf\Helper;
 
 /**
  * @MappedSuperclass
- * @HasLifecycleCallbacks
  */
 abstract class DocIndexEntity extends BaseEntity
 {
@@ -13,18 +12,6 @@ abstract class DocIndexEntity extends BaseEntity
      * @column(type="string", unique=true, nullable=false)
      */
     protected $locallyUniqueId;
-
-    // --------------------------------------------------------------
-
-    /**
-     * Set the locallyUniqueId
-     *
-     * @PrePersist
-     */
-    public function setLocallyUniqueId()
-    {
-        $this->locallyUniqueId = (string) $this;
-    }
 
     // --------------------------------------------------------------
 

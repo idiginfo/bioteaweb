@@ -22,6 +22,11 @@ class BioteaRdfSetParser
      */
     private $annotParser;
 
+    /**
+     * @var Bioteardf\Service\Indexes\DocObjectRegistryFactory
+     */
+    private $docObjFactory;
+
     // --------------------------------------------------------------
 
     /**
@@ -29,8 +34,9 @@ class BioteaRdfSetParser
      *
      * @param array   $vocabList  Key/value vocabulary list [shortname => full URI, etc.]
      */
-    public function __construct(MainDocParser $mainDocParser, AnnotationSetParser $annotParser)
+    public function __construct(DocObjectRegistryFactory $docObjFactory, MainDocParser $mainDocParser, AnnotationSetParser $annotParser)
     {
+        $this->docObjFactory = $docObjFactory;
         $this->mainDocParser = $mainDocParser;
         $this->annotParser   = $annotParser;
     }
@@ -40,26 +46,25 @@ class BioteaRdfSetParser
     /**
      * Analyze a set and return its terms/topics/vocabularies set
      *
-     * @param  Bioteardf\Model\BioteaRdfSet $rdfSet  RDF Set to analyze
-     * @return Bioteardf\Model\Doc\Document
+     * @param  Bioteardf\Model\BioteaRdfSet $rdfSet        RDF Set to analyze
+     * @return Bioteardf\Service\Indexes\DocObjectRegistry
      */
     public function analyzeSet(BioteaRdfSet $rdfSet)
     {
         //Derive PMID from the filename
         $pmid = substr($rdfSet->mainFile->getBaseName('.' . $rdfSet->mainFile->getExtension()), 3);
 
-        //Build a DocObj
-        $docObj = new Doc\Document($pmid);
+        $docReg = $this->docObjFactory->factory($rdfSet->md5, $pmid);
 
         //Parse Main File
-        $this->mainDocParser->parseFile($rdfSet->mainFile, $docObj);
+        $this->mainDocParser->parseFile($rdfSet->mainFile, $docReg);
 
         //Parse Annotation File
         foreach($rdfSet->annotationFiles as $annotFile) {
-            $this->annotParser->parseFile($annotFile, $docObj);
+            $this->annotParser->parseFile($annotFile, $docReg);
         }
 
-        return $docObj;
+        return $docReg;
     }
 
     // --------------------------------------------------------------

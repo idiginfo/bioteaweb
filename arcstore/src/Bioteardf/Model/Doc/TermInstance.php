@@ -17,13 +17,13 @@ class TermInstance extends DocIndexEntity
 {
     /**
      * @var int
-     * @Column(type="integer") 
+     * @Column(type="integer",nullable=true)
      */
     protected $startChar;
 
     /**
      * @var int
-     * @Column(type="integer") 
+     * @Column(type="integer",nullable=true) 
      */
     protected $endChar;
 
@@ -66,6 +66,8 @@ class TermInstance extends DocIndexEntity
         if ($startChar && $endChar) {
             $this->identifier .= ':::' . $startChar . ':::' . $endChar;
         }
+
+        $this->locallyUniqueId = (string) $this;        
     }
 
     // ----------------------------------------------------------------

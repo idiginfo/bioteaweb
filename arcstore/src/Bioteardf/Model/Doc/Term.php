@@ -37,6 +37,8 @@ class Term extends DocIndexEntity
         $this->term = strtolower($term);
         $this->annotations = new ArrayCollection();
         $this->topics      = new ArrayCollection();
+
+        $this->locallyUniqueId = (string) $this;
     }
 
     // ----------------------------------------------------------------
@@ -58,7 +60,7 @@ class Term extends DocIndexEntity
     public function addAnnotation(Annotation $annotation)
     {
         $this->annotations[] = $annotation;
-    }    
+    }   
 }
 
 /* EOF: Term.php */

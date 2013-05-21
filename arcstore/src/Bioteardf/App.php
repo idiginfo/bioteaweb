@@ -191,6 +191,7 @@ class App extends SilexApp
         //$app['parser']
         $app['parser'] = $app->share(function() use ($app) {
             return new Service\Indexes\BioteaRdfSetParser(
+                new Service\Indexes\DocObjectRegistryFactory($app['db.orm.em']),
                 new Service\Indexes\MainDocParser(),
                 new Service\Indexes\AnnotationSetParser($app['config']->vocabularies ?: array())
             );
@@ -199,6 +200,11 @@ class App extends SilexApp
         //$app['tracker']
         $app['tracker'] = $app->share(function() use ($app) {
             return new Service\RdfSetTracker($app['db.orm.em']);
+        });
+
+        //$app['persister']
+        $app['persister'] = $app->share(function() use ($app) {
+            return new Service\Indexes\DocObjectPersister($app['db.orm.em']);
         });
 
         //$app['loader']

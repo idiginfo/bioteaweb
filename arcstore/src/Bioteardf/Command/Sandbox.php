@@ -40,17 +40,19 @@ class Sandbox extends Command
 
         foreach($this->app['files']->getIterator($path) as $set) {
 
-            $output->writeln("Analyzing:" . $set->mainFile->getBasename());
-
             try {
+                //Analyze it
+                $output->writeln("Analyzing:" . $set->mainFile->getBasename());
                 $objGraph = $this->app['parser']->analyzeSet($set);
+
+                //Persist it
+                $result = $this->app['persister']->persist($objGraph);
                 $output->writeln("Success");
             }
             catch (BioteaRdfParseException $e) {
                 $output->writeln("Error:" . $e->getMessage());
             }
             
-
             $output->writeln("----------------------------------------");            
         }
 

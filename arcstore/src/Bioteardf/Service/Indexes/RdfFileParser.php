@@ -3,7 +3,6 @@
 namespace Bioteardf\Service\Indexes;
 
 use Bioteardf\Exception\BioteaRdfParseException;
-use Bioteardf\Model\Doc;
 use SimpleXMLElement, Exception, SplFileInfo;
 
 /**
@@ -11,11 +10,11 @@ use SimpleXMLElement, Exception, SplFileInfo;
  */
 abstract class RdfFileParser
 {
-    public function parseFile(SplFileInfo $file, Doc\Document $doc)
+    public function parseFile(SplFileInfo $file, DocObjectRegistry $docReg)
     {
         try {
             $xml = @new SimpleXMLElement((string) $file, 0, true);
-            $docObj = $this->parse($xml, $doc);
+            $this->parse($xml, $docReg);
         }
         catch (Exception $e) {
             throw new BioteaRdfParseException("Could not extract XML from file: " . (string) $file);            
@@ -24,11 +23,11 @@ abstract class RdfFileParser
 
     // --------------------------------------------------------------
 
-    public function parseRaw($xmlString, Doc\Document $doc)
+    public function parseRaw($xmlString, DocObjectRegistry $docReg)
     {
         try {
             $xml = @new SimpleXMLElement($xmlString);
-            $docObj = $this->parse($xml, $doc);
+            $this->parse($xml, $docReg);
         }
         catch (Exception $e) {
             throw new BioteaRdfParseException("Could not extract XML");            
@@ -37,7 +36,7 @@ abstract class RdfFileParser
 
     // --------------------------------------------------------------
 
-    abstract public function parse(SimpleXMLElement $xml, Doc\Document $doc);
+    abstract public function parse(SimpleXMLElement $xml, DocObjectRegistry $docReg);
 }
 
 /* EOF: ParserInterface.php */

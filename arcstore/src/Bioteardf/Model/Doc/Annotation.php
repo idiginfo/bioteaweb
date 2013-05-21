@@ -36,6 +36,8 @@ class Annotation extends DocIndexEntity
     {
         $this->identifier    = $identifier;
         $this->termInstances = new ArrayCollection();
+
+        $this->locallyUniqueId = (string) $this;        
     }
 
     // ----------------------------------------------------------------
@@ -50,7 +52,7 @@ class Annotation extends DocIndexEntity
     public function addTermInstance(TermInstance $termInstance)
     {
         $this->termInstances[] = $termInstance;
-    }        
+    }            
 }
 
 /* EOF: Annotation.php */

@@ -39,6 +39,8 @@ class Topic extends DocIndexEntity
     {
         $this->uri = $uri;
         $this->vocabulary = $vocabulary;
+
+        $this->locallyUniqueId = (string) $this;        
     }
 
     // ----------------------------------------------------------------

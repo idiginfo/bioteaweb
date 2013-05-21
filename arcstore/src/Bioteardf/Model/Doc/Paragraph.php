@@ -46,6 +46,8 @@ class Paragraph extends DocIndexEntity
         $this->identifier    = $identifier;
         $this->content       = $content;
         $this->termInstances = new ArrayCollection();
+
+        $this->locallyUniqueId = (string) $this;        
     }
 
     // ----------------------------------------------------------------
@@ -60,7 +62,7 @@ class Paragraph extends DocIndexEntity
     public function addTermInstance(TermInstance $termInstance)
     {
         $this->termInstances[] = $termInstance;
-    }    
+    }   
 }
 
 /* EOF: Paragraph.php */

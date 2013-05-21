@@ -41,6 +41,8 @@ class Vocabulary extends DocIndexEntity
         $this->uri       = $uri;
         $this->shortName = $shortName;
         $this->topics    = new ArrayCollection();
+
+        $this->locallyUniqueId = (string) $this;        
     }
 
     // ----------------------------------------------------------------

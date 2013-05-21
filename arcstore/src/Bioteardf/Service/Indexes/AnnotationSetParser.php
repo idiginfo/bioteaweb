@@ -42,45 +42,45 @@ class AnnotationSetParser extends RdfFileParser
 
     // --------------------------------------------------------------
 
-    public function parse(SimpleXMLElement $xml, Doc\Document $doc)
+    public function parse(SimpleXMLElement $xml, DocObjectRegistry $docReg)
     {
         //Go through each annotation entity
         foreach ($xml->xpath('ao:Annotation') as $annot) {
-            $this->extractAnnotation($annot, $xml, $doc);
+            $this->extractAnnotation($annot, $xml, $docReg);
         }
 
         //Also go through the aot:ExactQualifier entities
         foreach ($xml->xpath('aot:ExactQualifier') as $annot) {
-            $this->extractAnnotation($annot, $xml, $doc);
+            $this->extractAnnotation($annot, $xml, $docReg);
         }
     }
 
     // --------------------------------------------------------------
 
-    private function extractAnnotation(SimpleXMLElement $annotXml, SimpleXMLElement $mainXml, Doc\Document $doc)
+    private function extractAnnotation(SimpleXMLElement $annotXml, SimpleXMLElement $mainXml, DocObjectRegistry $docReg)
     {
         //Get the annotation and the term
         $annotId   = (string) $annotXml->attributes('rdf', true)->about;
         $annotTerm = (string) current($annotXml->xpath('ao:body'));
 
         //Build objects
-        $annotObj = new Doc\Annotation($annotId);
-        $termObj  = new Doc\Term($annotTerm);
+        $annotObj = $docReg->getObj('Annotation', $annotId);
+        $termObj  = $docReg->getObj('Term', $annotTerm);
 
         //Get the context instances
         foreach($annotXml->xpath('ao:context') as $context) {
-            $this->extractContextInformation($context, $annotObj, $termObj, $mainXml, $doc);
+            $this->extractContextInformation($context, $annotObj, $termObj, $mainXml, $docReg);
         }    
 
         //Add topic/vocabulary information
         foreach ($annotXml->xpath('ao:hasTopic') as $topicXml) {
-            $this->extractTopicInformation($topicXml, $termObj);
+            $this->extractTopicInformation($topicXml, $termObj, $docReg);
         }
     }
 
     // --------------------------------------------------------------
 
-    private function extractContextInformation(SimpleXMLElement $contextXml, Doc\Annotation $annotObj, Doc\Term $termObj, SimpleXMLElement $mainXml, Doc\Document $doc)
+    private function extractContextInformation(SimpleXMLElement $contextXml, Doc\Annotation $annotObj, Doc\Term $termObj, SimpleXMLElement $mainXml, DocObjectRegistry $docReg)
     {
         //Start and end characters for this context default to null
         $startChar = null;
@@ -113,7 +113,7 @@ class AnnotationSetParser extends RdfFileParser
         }
 
         //Get the paragraph object for the given id
-        foreach($doc->paragraphs as $pgrh) {
+        foreach($docReg->getDocObj()->paragraphs as $pgrh) {
             if (strcasecmp($paragraphId, $pgrh->identifier) == 0) {
                 $paragraphObj = $pgrh;
             }
@@ -124,13 +124,13 @@ class AnnotationSetParser extends RdfFileParser
             throw new BioteaRdfParseException("Could not resolve paragraph for " . $paragraphId);
         }
 
-        $instance = new Doc\TermInstance($paragraphObj, $annotObj, $startChar, $endChar);
+        $instance = $docReg->getObj('TermInstance', array($paragraphObj, $annotObj, $startChar, $endChar));
         $annotObj->addTermInstance($instance);
     }
 
     // --------------------------------------------------------------
 
-    private function extractTopicInformation(SimpleXMLElement $topicXml, Doc\Term $termObj)
+    private function extractTopicInformation(SimpleXMLElement $topicXml, Doc\Term $termObj, DocObjectRegistry $docReg)
     {
         $topicUris = array();
 
@@ -152,8 +152,8 @@ class AnnotationSetParser extends RdfFileParser
             $vocabUri = $this->deriveVocabForTopic($topicUri);
 
             if ($vocabUri) {
-                $vocabObj = new Doc\Vocabulary($vocabUri, array_search($vocabUri, $this->vocabList));
-                $topicObj = new Doc\Topic($topicUri, $vocabObj);
+                $vocabObj = $docReg->getObj('Vocabulary', array($vocabUri, array_search($vocabUri, $this->vocabList)));
+                $topicObj = $docReg->getObj('Topic', array($topicUri, $vocabObj));
                 $termObj->addTopic($topicObj);
             }
         }
