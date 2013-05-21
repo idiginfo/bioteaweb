@@ -9,9 +9,6 @@ use Bioteardf\Helper\DocIndexEntity;
  * Paragraph
  * 
  * @Entity
- * @Table(uniqueConstraints={
- *   @UniqueConstraint(name="identifier", columns={"identifier"})
- * })  
  */
 class Paragraph extends DocIndexEntity
 {
@@ -23,7 +20,7 @@ class Paragraph extends DocIndexEntity
 
     /**
      * @var string
-     * @Column(type="string") 
+     * @Column(type="text") 
      */
     protected $identifier;
 
@@ -41,13 +38,14 @@ class Paragraph extends DocIndexEntity
 
     // --------------------------------------------------------------
 
-    public function __construct($identifier, $content)
+    public function __construct($identifier, $content, Document $document)
     {
         $this->identifier    = $identifier;
         $this->content       = $content;
         $this->termInstances = new ArrayCollection();
+        $this->document      = $document;
 
-        $this->locallyUniqueId = (string) $this;        
+        $this->locallyUniqueId = hash('sha256', $identifier);      
     }
 
     // ----------------------------------------------------------------

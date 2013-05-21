@@ -12,10 +12,12 @@ use Symfony\Component\Console\Helper\ProgressHelper;
 use TaskTracker\Tracker, TaskTracker\Tick, 
     TaskTracker\OutputHandler\SymfonyConsole as TrackerConsole;
 
+use Bioteardf\Task\IndexRdfSet;
+
 /**
- * RDF Loader Command
+ * RDF Indexer Command
  */
-class MaterialsMethods extends Command
+class RdfIndex extends Command
 {
     /**
      * @var Bioteardf\Service\FilesService
@@ -23,34 +25,30 @@ class MaterialsMethods extends Command
     private $filesvc;
 
     /**
-     * @var Bioteardf\Service\MiscDataStore
-     */
-    private $miscDataStore;
-
-    /**
      * @var Minions\Client
      */
     private $minionsClient;
 
     /**
-     * @var Bioteardf\Task\LoadRdfFile
+     * @var Bioteardf\Task\IndexRdfSet
      */
-    private $loaderTask;
+    private $indexerTask;
 
     // --------------------------------------------------------------
 
     protected function configure()
     {
         //Basic
-        $this->setName('misc:mnm');
-        $this->setDescription('Evaluate number of materials and methods in a set of RDF files');
-        $this->setHelp("If a file is specified, it will be analyzed.  If a directory is specified, it will be analyzed recursively");
+        $this->setName('rdf:index');
+        $this->setDescription('Index RDF(s) into the index database from a directory or file');
+        $this->setHelp("If a file is specified, it will be indexed.  If a directory is specified, it will be indexed recursively");
 
         //Arguments
-        $this->AddArgument('source', InputArgument::REQUIRED, 'RDF file or directory to load from');
+        $this->AddArgument('source', InputArgument::REQUIRED, 'RDF file or directory to index from');
 
         //Options
         $this->addOption('limit',        'l', InputOption::VALUE_REQUIRED, 'Limit number of indexed files');
+        $this->addOption('force-all',    'f', InputOption::VALUE_NONE,     'Index documents even if they have already been indexed before');        
         $this->addOption('asynchronous', 'a', InputOption::VALUE_NONE,     'Perform the operation asynchronosuly (requires using the "worker" command)');
     }
 
@@ -58,9 +56,9 @@ class MaterialsMethods extends Command
 
     protected function init(Application $app)
     {
-        $this->minionsClient = $app['minions.client'];
         $this->filesvc       = $app['files'];
-        $this->miscDataStore = $app['misc_data'];
+        $this->minionsClient = $app['minions.client'];
+        $this->indexerTask   = $app['minions.tasks']['index_set'];
     }
 
     // --------------------------------------------------------------
@@ -77,13 +75,16 @@ class MaterialsMethods extends Command
         //Limit
         $limit = $input->getOption('limit') ?: -1;
 
+        //Force all?
+        $force = (boolean) $input->getOption('force-all') ?: false;
+
         //Tracker
         $tracker = new Tracker(new TrackerConsole($output, $limit));
 
         //Counters
         $numsets  = 0;
-        $numtrips = 0;
 
+        //Mode
         switch($async) {
 
             //If Asynchronous, load files into the queue to be processed by the LoadRdfFile Task
@@ -99,15 +100,16 @@ class MaterialsMethods extends Command
                         break;
                     }
 
-                    $this->minionsClient->enqueueNewTask('load_set', $set->toJson(), 'load_rdf');
-                    $tracker->tick("Loading RDFs into Queue");
+                    $taskData = array('rdfSet' => $set->toJson(), 'force' => $force);
+                    $this->minionsClient->enqueueNewTask('index_set', $taskData, 'index_rdf');
+                    $tracker->tick("Loading RDF sets into Queue");
                     $numsets++;
                 }
 
                 $tracker->finish("Done loading");
 
-                $queueSize = $this->minionsClient->getQueueSize('load_rdf');
-                $output->writeln(sprintf("Loaded %s items for procsesing.  Run rdf:load:status to monitor loading progress", number_format($numsets, 0)));
+                $queueSize = $this->minionsClient->getQueueSize('index_rdf');
+                $output->writeln(sprintf("Loaded %s items for processing.  Run rdf:index:status to monitor indexing progress", number_format($numsets, 0)));
 
             break;
 
@@ -115,7 +117,7 @@ class MaterialsMethods extends Command
             case false:
             default:            
 
-                $tracker->start("Evaluating first set (this can take a few seconds)");
+                $tracker->start("Processing first set (this can take a few seconds)");
 
                 //Load each file up
                 foreach($sets as $set) {
@@ -126,17 +128,12 @@ class MaterialsMethods extends Command
                     }
 
                     //Do it
-                    $numtrips += $this->loader->loadFileSet($set);
+                    $taskData = array('rdfSet' => $set->toJson(), 'force' => $force);
+                    $result = $this->indexerTask->run($taskData);
                     $numsets++;
 
-                    //Progress bar
-                    $msg = sprintf(
-                        "Processed %s sets (%s triples)",
-                        number_format($numsets, 0),
-                        number_format($numtrips, 0)
-                    );
-
-                    $tracker->tick($msg, ($numtrips !== false) ? Tick::SUCCESS : Tick::SKIP);
+                    //Result maps directly to TaskTracker\Tick Constants
+                    $tracker->tick("Indexing RDF Sets", $result);
                 }
 
                 $tracker->finish();
@@ -146,4 +143,4 @@ class MaterialsMethods extends Command
     }
 }
 
-/* EOF: MaterialsMethods.php */
+/* EOF: RdfIndex.php */

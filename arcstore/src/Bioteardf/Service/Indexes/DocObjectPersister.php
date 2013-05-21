@@ -3,7 +3,7 @@
 namespace Bioteardf\Service\Indexes;
 
 use Doctrine\ORM\EntityManager;
-
+use Bioteardf\Service\BioteaRdfSetTracker;
 /**
  * Doc Object Persister
  */
@@ -34,16 +34,28 @@ class DocObjectPersister
         $graph = $dor->getGraph();
 
         //Things must be done in a particular order        
-        $this->persistSet($graph['Document']);
-        $this->persistSet($graph['Journal']);        
-        $this->persistSet($graph['Paragraph']);
-        $this->persistSet($graph['Vocabulary']);
-        $this->persistSet($graph['Topic']);
-        $this->persistSet($graph['Term']);
-        $this->persistSet($graph['Annotation']);
-        $this->persistSet($graph['TermInstance']);
+        $this->persistSet($graph, 'Document');
+        $this->persistSet($graph, 'Journal');        
+        $this->persistSet($graph, 'Paragraph');
+        $this->persistSet($graph, 'Vocabulary');
+        $this->persistSet($graph, 'Topic');
+        $this->persistSet($graph, 'Term');
+        $this->persistSet($graph, 'Annotation');
+        $this->persistSet($graph, 'TermInstance');
         $this->em->flush();
+
+        //Return true
         return true;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
+     * Cleanup the memory space (use with caution!)
+     */
+    public function cleanup()
+    {
+        $this->em->clear();
     }
 
     // --------------------------------------------------------------
@@ -51,12 +63,15 @@ class DocObjectPersister
     /**
      * Persist set and remove it from the graph
      *
-     * @param array  Array of objects
+     * @param array  The graph
+     * @param string $setName
      */
-    private function persistSet(array $set)
+    private function persistSet(array $graph, $setName)
     {
-        foreach($set as $obj) {
-            $this->em->persist($obj);
+        if (isset($graph[$setName])) {
+            foreach($graph[$setName] as $obj) {
+                $this->em->persist($obj);
+            }
         }
     }
 

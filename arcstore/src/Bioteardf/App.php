@@ -89,8 +89,10 @@ class App extends SilexApp
 
         //Add Biotea Commands
         $register(new Command\RdfLoad());
+        $register(new Command\RdfIndex());
         $register(new Command\RdfLoadStatus());
         $register(new Command\Sandbox());
+        $register(new Command\IndexReports());
         $register(new Command\UtilDb($app['dispatcher']));
 
         //Add other commands
@@ -164,6 +166,9 @@ class App extends SilexApp
         $app['minions.tasks']['load_set'] = $app['minions.tasks']->share(function() use ($app) {
             return new Task\LoadRdfSet($app['loader']);
         });
+        $app['minions.tasks']['index_set'] = $app['minions.tasks']->share(function() use ($app) {
+            return new Task\IndexRdfSet($app['tracker'], $app['parser'], $app['persister']);
+        });
 
         //$app['minions.client']
         //$app['minions.cmd.workers']
@@ -210,6 +215,16 @@ class App extends SilexApp
         //$app['loader']
         $app['loader'] = $app->share(function() use ($app) {
             return new Service\TripleStore\RdfLoader($app['arc2.store'], $app['tracker']);
+        });
+
+        //$app['indexes.reports']
+        $app['indexes.reports'] = $app->share(function() use ($app) {
+
+            $reportBag = new Pimple(array(
+                'numDocsPerJournalWithMM' => new Service\Indexes\Report\NumDocsPerJournalWithMM()
+            ));
+
+            return new Service\Indexes\ReportRunner($reportBag, $app['db.orm.em']);
         });
     }
 }

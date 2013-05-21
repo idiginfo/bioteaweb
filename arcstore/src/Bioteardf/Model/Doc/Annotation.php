@@ -26,18 +26,19 @@ class Annotation extends DocIndexEntity
 
     /**
      * @var string
-     * @Column(type="string") 
+     * @Column(type="text") 
      */
     protected $identifier;
 
     // --------------------------------------------------------------
 
-    public function __construct($identifier)
+    public function __construct($identifier, Term $term)
     {
         $this->identifier    = $identifier;
         $this->termInstances = new ArrayCollection();
-
-        $this->locallyUniqueId = (string) $this;        
+        $this->term          = $term;
+        
+        $this->locallyUniqueId = hash('sha256', $identifier);
     }
 
     // ----------------------------------------------------------------

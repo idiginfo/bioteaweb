@@ -26,7 +26,7 @@ class Term extends DocIndexEntity
 
     /**
      * @var ArrayCollection    
-     * @OneToMany(targetEntity="Topic", mappedBy="terms")
+     * @OneToMany(targetEntity="Topic", mappedBy="term")
      */
     protected $topics;
 

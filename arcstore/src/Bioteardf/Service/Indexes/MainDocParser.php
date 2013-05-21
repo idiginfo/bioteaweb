@@ -25,7 +25,8 @@ class MainDocParser extends RdfFileParser
             $pgrhName    = (string) $pgrh->attributes('rdf', TRUE)->about;
             $pgrhContent = utf8_encode((string) current($pgrh->xpath('cnt:chars')));
 
-            $docObj->addParagraph($docReg->getObj('Paragraph', array($pgrhName, $pgrhContent)));
+            $pgrphObj = $docReg->getObj('Paragraph', array($pgrhName, $pgrhContent, $docObj));
+            $docObj->addParagraph($pgrphObj);
         }     
     }
 }

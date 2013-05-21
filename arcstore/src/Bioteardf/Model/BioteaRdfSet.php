@@ -11,6 +11,9 @@ use SplFileInfo, IteratorAggregate, Countable,
  * Represents an atomic set of Biotea RDF files
  *
  * @Entity
+ * @Table(uniqueConstraints={
+ *   @UniqueConstraint(name="pmid", columns={"pmid"})
+ * })  
  */
 class BioteaRdfSet extends BaseEntity implements IteratorAggregate, Countable
 {        
@@ -30,7 +33,7 @@ class BioteaRdfSet extends BaseEntity implements IteratorAggregate, Countable
      * @var string
      * @Column(type="string") 
      */
-    protected $md5;
+    protected $pmid;
 
     // --------------------------------------------------------------
 
@@ -43,8 +46,8 @@ class BioteaRdfSet extends BaseEntity implements IteratorAggregate, Countable
     public function __construct(SplFileInfo $mainFile, array $annotationFiles = array())
     {
         //Add mainfile
+        $this->pmid = substr($mainFile->getBaseName('.' . $mainFile->getExtension()), 3);
         $this->mainFile = $mainFile;
-        $this->md5 = md5((string) $this->mainFile);
 
         //Add annotation files
         foreach($annotationFiles as $af) {
@@ -80,7 +83,7 @@ class BioteaRdfSet extends BaseEntity implements IteratorAggregate, Countable
         $data = array(
             'mainFile'        => (string) $this->mainFile,
             'annotationFiles' => $this->getAnnotationFiles(false),
-            'md5'             => $this->md5
+            'pmid'            => $this->pmid
         );
 
         return json_encode($data);

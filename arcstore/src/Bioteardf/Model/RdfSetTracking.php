@@ -19,10 +19,10 @@ class RdfSetTracking extends BaseEntity
     protected $id;
 
     /**
-     * @var string  MD5 of BioteaRdfSet
+     * @var string  PMID of BioteaRdfSet
      * @Column(type="string")
      */
-    protected $md5;
+    protected $pmid;
 
     /**
      * @var string  Action taken (ie loaded into ARC2store, database, etc)
@@ -38,9 +38,9 @@ class RdfSetTracking extends BaseEntity
 
     // --------------------------------------------------------------
 
-    public function __construct($md5, $action)
+    public function __construct($pmid, $action)
     {
-        $this->md5       = $md5;
+        $this->pmid      = $pmid;
         $this->action    = $action;
         $this->timestamp = new DateTime();
     }

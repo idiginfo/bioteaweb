@@ -51,10 +51,7 @@ class BioteaRdfSetParser
      */
     public function analyzeSet(BioteaRdfSet $rdfSet)
     {
-        //Derive PMID from the filename
-        $pmid = substr($rdfSet->mainFile->getBaseName('.' . $rdfSet->mainFile->getExtension()), 3);
-
-        $docReg = $this->docObjFactory->factory($rdfSet->md5, $pmid);
+        $docReg = $this->docObjFactory->factory($rdfSet->pmid);
 
         //Parse Main File
         $this->mainDocParser->parseFile($rdfSet->mainFile, $docReg);

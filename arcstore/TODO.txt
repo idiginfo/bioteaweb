@@ -15,6 +15,8 @@ Then, write a command to get the information that they are requesting in the for
 by running queries (queries that may take some time...)
 
 
+
+
 Leyla's desired output format:
 ================================================
 Col1: Vocabulary name

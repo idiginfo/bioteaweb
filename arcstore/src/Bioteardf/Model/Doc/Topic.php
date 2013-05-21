@@ -35,12 +35,13 @@ class Topic extends DocIndexEntity
 
     // ----------------------------------------------------------------
 
-    public function __construct($uri, Vocabulary $vocabulary)
+    public function __construct($uri, Vocabulary $vocabulary, Term $term)
     {
         $this->uri = $uri;
         $this->vocabulary = $vocabulary;
+        $this->term       = $term;
 
-        $this->locallyUniqueId = (string) $this;        
+        $this->locallyUniqueId = (string) $this;  
     }
 
     // ----------------------------------------------------------------

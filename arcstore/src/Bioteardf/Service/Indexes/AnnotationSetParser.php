@@ -64,8 +64,8 @@ class AnnotationSetParser extends RdfFileParser
         $annotTerm = (string) current($annotXml->xpath('ao:body'));
 
         //Build objects
-        $annotObj = $docReg->getObj('Annotation', $annotId);
         $termObj  = $docReg->getObj('Term', $annotTerm);
+        $annotObj = $docReg->getObj('Annotation', array($annotId, $termObj));
 
         //Get the context instances
         foreach($annotXml->xpath('ao:context') as $context) {
@@ -153,8 +153,7 @@ class AnnotationSetParser extends RdfFileParser
 
             if ($vocabUri) {
                 $vocabObj = $docReg->getObj('Vocabulary', array($vocabUri, array_search($vocabUri, $this->vocabList)));
-                $topicObj = $docReg->getObj('Topic', array($topicUri, $vocabObj));
-                $termObj->addTopic($topicObj);
+                $topicObj = $docReg->getObj('Topic', array($topicUri, $vocabObj, $termObj));
             }
         }
     }

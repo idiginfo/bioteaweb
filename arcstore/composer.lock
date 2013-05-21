@@ -60,12 +60,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caseyamcl/minions.git",
-                "reference": "b108d07dc550d62aba5d58b3b57f09f4fd5ccac7"
+                "reference": "cb87d353af87730c322c757a18739dd3823a29eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caseyamcl/minions/zipball/b108d07dc550d62aba5d58b3b57f09f4fd5ccac7",
-                "reference": "b108d07dc550d62aba5d58b3b57f09f4fd5ccac7",
+                "url": "https://api.github.com/repos/caseyamcl/minions/zipball/cb87d353af87730c322c757a18739dd3823a29eb",
+                "reference": "cb87d353af87730c322c757a18739dd3823a29eb",
                 "shasum": ""
             },
             "require": {
@@ -110,7 +110,7 @@
                 "source": "https://github.com/caseyamcl/minions/tree/master",
                 "issues": "https://github.com/caseyamcl/minions/issues"
             },
-            "time": "2013-05-01 19:46:59"
+            "time": "2013-05-21 17:28:53"
         },
         {
             "name": "caseyamcl/tasktracker",

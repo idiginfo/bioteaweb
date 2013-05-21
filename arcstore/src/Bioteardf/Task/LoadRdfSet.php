@@ -2,19 +2,17 @@
 
 namespace Bioteardf\Task;
 
+use Bioteardf\Helper\RdfSetTask;
 use Minions\TaskHandlerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Bioteardf\Service\TripleStore\RdfLoader;
 use Bioteardf\Model\BioteaRdfSet;
-use RuntimeException;
-use SplFileInfo;
-
 /**
  * Very simple wrapper class for loading RDF Sets
  *
  * This particular class only happens to be used when run asynchronously
  */
-class LoadRdfSet implements TaskHandlerInterface
+class LoadRdfSet extends RdfSetTask implements TaskHandlerInterface
 {  
     /**
      * @var BioteaRdf\Service\RdfLoader $loader
@@ -46,22 +44,6 @@ class LoadRdfSet implements TaskHandlerInterface
     {
         $set = $this->deserializeRdfSet($data[0]);
         return $this->loader->loadFileSet($set);
-    }
-
-    // --------------------------------------------------------------
-
-    private function deserializeRdfSet($jsonData)
-    {
-        $data = json_decode($jsonData);
-        $mainFile   = new SplFileInfo($data->mainFile);
-        $annotFiles = array_map(
-            function($fp) {
-                return new SplFileInfo($fp);
-            },
-            $data->annotationFiles
-        );
-
-        return new BioteaRdfSet($mainFile, $annotFiles);
     }
 }
 

@@ -9,9 +9,6 @@ use Bioteardf\Helper\DocIndexEntity;
  * Term Instance
  * 
  * @Entity
- * @Table(uniqueConstraints={
- *   @UniqueConstraint(name="identifier", columns={"identifier"})
- * })  
  */
 class TermInstance extends DocIndexEntity
 {
@@ -41,7 +38,7 @@ class TermInstance extends DocIndexEntity
 
     /**
      * @var string  Calculated value based on paragraph and start/end char
-     * @Column(type="string")      
+     * @Column(type="text")      
      */
     protected $identifier;
 
@@ -67,7 +64,7 @@ class TermInstance extends DocIndexEntity
             $this->identifier .= ':::' . $startChar . ':::' . $endChar;
         }
 
-        $this->locallyUniqueId = (string) $this;        
+        $this->locallyUniqueId = hash('sha256', $this->identifier);       
     }
 
     // ----------------------------------------------------------------

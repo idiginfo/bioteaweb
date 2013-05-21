@@ -38,13 +38,13 @@ class DocObjectRegistry implements ArrayAccess
      *
      * @param Doctrine\ORM\EntityManager
      */
-    public function __construct(EntityManager $em = null, $md5, $pmid = null)
+    public function __construct(EntityManager $em = null, $pmid)
     {
         $this->em       = $em;
         $this->registry = array();
 
         $className = self::DOC_NS . 'Document';
-        $obj = new $className($md5, $pmid);
+        $obj = new $className($pmid);
 
         $this->docObj = $this->checkForExisting($obj) ?: $obj;
     }

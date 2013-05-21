@@ -10,8 +10,7 @@ use Bioteardf\Helper\DocIndexEntity;
  * 
  * @Entity
  * @Table(uniqueConstraints={
- *   @UniqueConstraint(name="pmid", columns={"pmid"}),
- *   @UniqueConstraint(name="md5", columns={"md5"})
+ *   @UniqueConstraint(name="pmid", columns={"pmid"})
  * }) 
  */
 class Document extends DocIndexEntity
@@ -21,12 +20,6 @@ class Document extends DocIndexEntity
      * @Column(type="string")     
      */
     protected $pmid;
-
-    /**
-     * @var string
-     * @Column(type="string")
-     */
-    protected $md5;
 
     /**
      * @var Doctrine\Common\Collections\ArrayCollection
@@ -42,9 +35,8 @@ class Document extends DocIndexEntity
 
     // --------------------------------------------------------------
 
-    public function __construct($md5, $pmid = null)
+    public function __construct($pmid = null)
     {
-        $this->md5  = $md5;
         $this->pmid = $pmid;
 
         $this->sections = new ArrayCollection();
@@ -56,7 +48,7 @@ class Document extends DocIndexEntity
 
     public function __tostring()
     {
-        return $this->md5;
+        return $this->pmid;
     }
 
     // --------------------------------------------------------------

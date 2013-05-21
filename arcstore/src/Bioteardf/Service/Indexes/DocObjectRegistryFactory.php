@@ -23,9 +23,9 @@ class DocObjectRegistryFactory
 
     // --------------------------------------------------------------
 
-    public function factory($md5, $pmid = null)
+    public function factory($pmid = null)
     {
-        return new DocObjectRegistry($this->em, $md5, $pmid);
+        return new DocObjectRegistry($this->em, $pmid);
     }
 }
 

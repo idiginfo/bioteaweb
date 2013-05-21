@@ -4,6 +4,7 @@ namespace Bioteardf\Service;
 
 use Doctrine\ORM\EntityManager;
 use Bioteardf\Model\BioteaRdfSet;
+use Bioteardf\Model\RdfSetTracking;
 
 /**
  * RDF Set Tracker
@@ -26,8 +27,8 @@ class RdfSetTracker
 
     public function actionAlreadyPerformed(BioteaRdfSet $rdfSet, $action)
     {
-        $data = array('md5' => $rdfSet->md5, 'action' => $action);
-        $result = $em->getRepository('Bioteardf\Model\RdfSetTracking')->findOneBy($data);
+        $data = array('pmid' => $rdfSet->pmid, 'action' => $action);
+        $result = $this->em->getRepository('Bioteardf\Model\RdfSetTracking')->findOneBy($data);
 
         return (boolean) $result;
     }
@@ -36,7 +37,7 @@ class RdfSetTracker
 
     public function recordAction(BioteaRdfSet $rdfSet, $action)
     {
-        $obj = new RdfSetTracking($rdfSet->md5, $action);
+        $obj = new RdfSetTracking($rdfSet->pmid, $action);
         $this->em->persist($obj);
         $this->em->flush();
     }
