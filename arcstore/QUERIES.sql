@@ -13,7 +13,7 @@ SELECT Journal.name, COUNT(Document.id)
 FROM Journal LEFT JOIN Document ON Document.journal_id = Journal.id
 GROUP BY Journal.name;
 
---Number of Documents where M&M Exists Per Journal
+-- !! Number of Documents where M&M Exists Per Journal
 SELECT Journal.name, COUNT(DISTINCT Document.pmid) AS numDocs
 FROM Journal LEFT JOIN  
     (Document INNER JOIN Paragraph ON Paragraph.document_id = Document.id)

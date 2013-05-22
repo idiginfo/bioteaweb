@@ -140,7 +140,7 @@ class DocObjectRegistry implements ArrayAccess
     private function register(DocIndexEntity $instance)
     {
         //The unique ID is a string version of the instance
-        $uniqueId  = (string) $instance;
+        $uniqueId  = $instance->locallyUniqueId;
         $shortName = join('', array_slice(explode('\\', get_class($instance)), -1));
 
 
@@ -158,7 +158,7 @@ class DocObjectRegistry implements ArrayAccess
     private function checkForExisting(DocIndexEntity $instance)
     {
         //The unique ID is a string version of the instance
-        $uniqueId  = (string) $instance;
+        $uniqueId  = $instance->locallyUniqueId;
         $className = get_class($instance);
         $shortName = join('', array_slice(explode('\\', get_class($instance)), -1));
 
