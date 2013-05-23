@@ -64,7 +64,7 @@ class TermInstance extends DocIndexEntity
             $this->identifier .= ':::' . $startChar . ':::' . $endChar;
         }
 
-        $this->locallyUniqueId = hash('sha256', $this->identifier);       
+        $this->locallyUniqueId = strtolower(hash('sha256', $this->identifier));
     }
 
     // ----------------------------------------------------------------

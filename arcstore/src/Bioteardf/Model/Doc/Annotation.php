@@ -38,7 +38,7 @@ class Annotation extends DocIndexEntity
         $this->termInstances = new ArrayCollection();
         $this->term          = $term;
         
-        $this->locallyUniqueId = hash('sha256', $identifier);
+        $this->locallyUniqueId = hash('sha256', strtolower($identifier));
     }
 
     // ----------------------------------------------------------------

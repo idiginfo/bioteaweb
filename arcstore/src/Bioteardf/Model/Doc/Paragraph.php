@@ -45,7 +45,7 @@ class Paragraph extends DocIndexEntity
         $this->termInstances = new ArrayCollection();
         $this->document      = $document;
 
-        $this->locallyUniqueId = hash('sha256', $identifier);      
+        $this->locallyUniqueId = hash('sha256', strtolower($identifier));
     }
 
     // ----------------------------------------------------------------

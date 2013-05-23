@@ -41,7 +41,7 @@ class Topic extends DocIndexEntity
         $this->vocabulary = $vocabulary;
         $this->term       = $term;
 
-        $this->locallyUniqueId = hash('sha256', (string) $this); 
+        $this->locallyUniqueId = hash('sha256', strtolower((string) $this)); 
     }
 
     // ----------------------------------------------------------------

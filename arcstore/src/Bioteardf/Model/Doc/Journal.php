@@ -41,7 +41,7 @@ class Journal extends DocIndexEntity
         $this->name      = $name;
         $this->documents = new ArrayCollection();
 
-        $this->locallyUniqueId = (string) $this;
+        $this->locallyUniqueId = strtolower((string) $this);
     }
 
     // --------------------------------------------------------------
