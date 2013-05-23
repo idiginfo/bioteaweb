@@ -221,7 +221,8 @@ class App extends SilexApp
         $app['indexes.reports'] = $app->share(function() use ($app) {
 
             $reportBag = new Pimple(array(
-                'numDocsPerJournalWithMM' => new Service\Indexes\Report\NumDocsPerJournalWithMM()
+                'numDocsPerJournalWithMM' => new Service\Indexes\Report\NumDocsPerJournalWithMM(),
+                'TermsNumInstancesInMM'   => new Service\Indexes\Report\TermsNumInstancesInMM()
             ));
 
             return new Service\Indexes\ReportRunner($reportBag, $app['db.orm.em']);

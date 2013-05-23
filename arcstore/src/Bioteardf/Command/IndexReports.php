@@ -22,7 +22,6 @@ class IndexReports extends Command
      */
     private $reportRunner;
 
-
     // --------------------------------------------------------------
 
     protected function configure()
@@ -57,6 +56,9 @@ class IndexReports extends Command
             foreach($this->reportRunner->getReportDescriptions() as $key => $desc) {
                 $output->writeln($key . ": " . $desc);
             }
+        }
+        else {
+            $this->reportRunner->outputReport($reportName, $output);
         }
     }
 }
