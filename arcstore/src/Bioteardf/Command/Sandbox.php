@@ -24,6 +24,7 @@ class Sandbox extends Command
         $this->setName('sandbox');
         $this->setDescription('A Sandbox');
         $this->setHelp("For messing around");
+        $this->AddArgument('source', InputArgument::OPTIONAL, 'RDF file or directory to load from');
     }
 
     // --------------------------------------------------------------
@@ -41,9 +42,12 @@ class Sandbox extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        //$path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder/PMC1134665.rdf');
-        $path = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder');
-        //$path = realpath('/vagrant/web/test');
+        //$defpath = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder/PMC1134665.rdf');
+        //$defpath = realpath('/vagrant/web/test');
+        $defpath = realpath('/vagrant/web/bioteaweb/api/tests/fixtures/rdfSampleFolder');
+
+        //Set the path
+        $path = $input->getArgument('source') ?: $defpath;
 
         //Tracker
         $tracker = new Tracker(new TrackerConsole($output));
