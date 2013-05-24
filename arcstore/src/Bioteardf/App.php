@@ -193,10 +193,20 @@ class App extends SilexApp
             return new Service\RdfFileService;
         });
 
+        //$app['indexes.registry.factory']
+        $app['indexes.registry.factory'] = $app->share(function() use ($app) {
+            return new Service\Indexes\DocObjectRegistryFactory($app['db.orm.em']);
+        });
+
+        //$app['indexes.registry.factory.nodb']
+        $app['indexes.registry.factory.nodb'] = $app->share(function() use ($app) {
+            return new Service\Indexes\DocObjectRegistryFactory();
+        });
+
         //$app['parser']
         $app['parser'] = $app->share(function() use ($app) {
             return new Service\Indexes\BioteaRdfSetParser(
-                new Service\Indexes\DocObjectRegistryFactory($app['db.orm.em']),
+                $app['indexes.registry.factory'],
                 new Service\Indexes\MainDocParser(),
                 new Service\Indexes\AnnotationSetParser($app['config']->vocabularies ?: array())
             );

@@ -38,7 +38,7 @@ class DocObjectRegistry implements ArrayAccess
      *
      * @param Doctrine\ORM\EntityManager
      */
-    public function __construct(EntityManager $em = null, $pmid)
+    public function __construct($pmid, EntityManager $em = null)
     {
         $this->em       = $em;
         $this->registry = array();
@@ -57,16 +57,22 @@ class DocObjectRegistry implements ArrayAccess
         return isset($graph[$offset]);
     }
 
+    // --------------------------------------------------------------
+
     public function offsetGet($offset)
     {
         $graph = $this->getGraph();
         return $graph[$offset];
     }
 
+    // --------------------------------------------------------------
+
     public function offsetSet($offset, $value)
     {
         throw new LogicException("Cannot make state changes to object graph through array interface.  Use getObj()");
     }
+
+    // --------------------------------------------------------------
 
     public function offsetUnset($offset)
     {
@@ -166,10 +172,13 @@ class DocObjectRegistry implements ArrayAccess
         if (isset($this->registry[$shortName][$uniqueId])) {
             return $this->registry[$shortName][$uniqueId];
         }
-        else { //Check the DB
+        elseif ($this->em) { //Check the DB
             $repo = $this->em->getRepository($className);
             $obj  = $repo->findOneBy(array('locallyUniqueId' => $uniqueId));
             return $obj;
+        }
+        else {
+            return false;
         }
     }
 }

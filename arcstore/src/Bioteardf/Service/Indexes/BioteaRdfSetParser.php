@@ -44,6 +44,18 @@ class BioteaRdfSetParser
     // --------------------------------------------------------------
 
     /**
+     * Optionally set the registry factory at runtime
+     *
+     * @param Bioteardf\Service\Indexes\DocObjectRegistryFactory
+     */
+    public function setDocObjectRegistryFactory(DocObjectRegistryFactory $docObjFactory)
+    {
+        $this->docObjFactory = $docObjFactory;
+    }
+
+    // --------------------------------------------------------------
+
+    /**
      * Analyze a set and return its terms/topics/vocabularies set
      *
      * @param  Bioteardf\Model\BioteaRdfSet $rdfSet        RDF Set to analyze
